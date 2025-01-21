@@ -32,7 +32,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+                    <div className="grid md:grid-cols-1 gap-6 grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
 
 
                         <div className="grid grid-cols-2 gap-3">

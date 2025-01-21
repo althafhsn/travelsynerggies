@@ -394,8 +394,8 @@ const Explore = () => {
     const [project, setProject] = useState(projects[0]);
 
     const handleSlideChange = (swiper: any) => {
-        const currentSlideIndex = swiper.activeIndex;
-        setProject(projects[currentSlideIndex]);
+        const realIndex = swiper.realIndex; // Use realIndex for proper looping
+        setProject(projects[realIndex]);
     };
 
     return (
@@ -412,7 +412,7 @@ const Explore = () => {
             className="min-h-[80vh] w-full py-12"
         >
             <div className="container mx-auto px-4 xl:px-0">
-                <div className="flex flex-col xl:flex-row xl:gap-8">
+                <div className="flex flex-col xl:flex-row xl:gap-6">
                     {/* Left Column - Main Image and Title */}
                     <div className="w-full xl:w-1/3">
                         <Swiper
@@ -420,6 +420,12 @@ const Explore = () => {
                             slidesPerView={1}
                             className="mb-8 xl:mb-0"
                             onSlideChange={handleSlideChange}
+                            loop={true}
+                            autoplay={{
+                                delay: 6000,  // 6 seconds delay
+                                disableOnInteraction: false,  // Allow autoplay to continue after user interaction
+                            }}
+                            
                         >
                             {projects.map((project, index) => (
                                 <SwiperSlide key={`slide-${index}`}>
@@ -429,22 +435,26 @@ const Explore = () => {
                                             <div className="space-y-6 xl:order-1">
                                                 <div className="text-center xl:text-start">
                                                     <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-                                                        {project.fName} <span className="text-orange-500">{project.lName}</span>
+                                                        {project.fName}{' '}
+                                                        <span className="text-orange-500">{project.lName}</span>
                                                     </h1>
-                                                    <p className="text-gray-400 max-w-2xl xl:max-w-none mx-auto xl:mx-0">
-                                                        {project.description}
-                                                    </p>
+                                                    {/* Fixed Height Container for Description */}
+                                                    <div className="h-[100px] overflow-hidden">
+                                                        <p className="text-gray-400 max-w-2xl xl:max-w-none mx-auto xl:mx-0">
+                                                            {project.description}
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
 
                                             {/* Image Section */}
                                             <div className="xl:order-2">
-                                                <div className="relative h-[300px] md:h-[80vh] xl:h-[675px] w-full rounded-lg overflow-hidden">
+                                                <div className="relative h-[300px] md:h-[500px] xl:h-[620px] w-full rounded-lg overflow-hidden">
                                                     <div className="absolute inset-0 bg-black/10 z-10" />
                                                     <Image
                                                         src={project.image}
                                                         fill
-                                                        className="object-cover"
+                                                        className="object-fill"
                                                         alt={`${project.fName} ${project.lName}`}
                                                         priority
                                                     />
@@ -457,39 +467,55 @@ const Explore = () => {
 
                             {/* Slider Navigation */}
                             <WorkSliderButton
-                                containerStyle="flex gap-2 absolute right-0 bottom-[calc(40%_-_22px)]  z-20 w-full justify-between "
-                                btnStyle="bg-white/50 hover:bg-white/20 text-orange-500 text-[40px] w-[40px] flex justify-center item-center transition-all rounded-full"
+                                containerStyle="flex gap-2 absolute right-0 bottom-[calc(20%_-_22px)] md:bottom-[calc(40%_-_22px)] z-20 w-full justify-between"
+                                btnStyle="bg-orange-500 hover:bg-orange-500/90 text-white text-[40px] w-[40px] flex justify-center item-center transition-all rounded-full"
                                 iconsStyle="w-6 h-6"
                             />
                         </Swiper>
                     </div>
 
+
                     {/* Right Column - Stack Cards */}
                     <div className="w-full xl:w-2/3">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6  xl:mt-0">
+                        <div className="grid grid-cols-1 md:grid-cols-3  xl:mt-0">
                             {project.stack.map((item, index) => (
                                 <article
                                     key={index}
-                                    className="relative isolate flex flex-col justify-end overflow-hidden px-2 pb-8 pt-40 w-[280px] h-[380px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+                                    className="group relative isolate flex flex-col justify-end overflow-hidden pb-12 pt-40 w-[230px] h-[330px] lg:w-[230px] lg:h-[330px] xl:w-[260px] xl:h-[360px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
                                 >
                                     {/* Background Image */}
                                     <img
                                         src={item.image}
                                         alt={item.name}
-                                        className="absolute inset-0 h-full w-full object-cover"
+                                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out"
                                     />
                                     {/* Gradient Overlay */}
                                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
                                     {/* Text Content */}
                                     <div className="z-10 relative px-4">
-                                        <h3 className="mt-3 text-lg font-bold text-orange-500 truncate">
+                                        {/* Title */}
+                                        <h3 className="text-lg font-bold text-orange-500 mb-2 transition-opacity duration-300 ease-in-out group-hover:opacity-100 opacity-90">
                                             {item.name}
                                         </h3>
-                                        <p className="mt-2 overflow-hidden text-sm leading-6 text-gray-300 line-clamp-3">
-                                            {item.description}
-                                        </p>
+                                        {/* Description */}
+                                        <div
+                                            className="overflow-hidden max-h-[3.6em] group-hover:max-h-[20em] transition-[max-height] duration-1000
+                                            ease-in-out"
+                                        >
+                                            <p className="text-sm leading-6 text-gray-300">
+                                                {item.description}
+                                            </p>
+                                        </div>
                                     </div>
                                 </article>
+
+
+
+
+
+
+
+
 
 
                             ))}

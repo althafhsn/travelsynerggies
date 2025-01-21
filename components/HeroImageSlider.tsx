@@ -5,6 +5,7 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 
 export interface SlideImage {
     title: string;
@@ -170,17 +171,17 @@ const ImageSlider: React.FC = () => {
             <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-50 flex gap-3">
                 <button
                     onClick={prevSlide}
-                    className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/50 text-white font-bold hover:bg-orange-500 transition-colors duration-500"
+                    className="w-10 h-10 md:w-12 md:h-12 rounded-full  text-orange-500 font-bold hover:text-white  transition-colors duration-500"
                     aria-label="Previous slide"
                 >
-                    {'<'}
+                    <MdKeyboardArrowLeft className='text-[3em]' />
                 </button>
                 <button
                     onClick={nextSlide}
-                    className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/50 text-white font-bold hover:bg-orange-500  transition-colors duration-500"
+                    className="w-10 h-10 md:w-12 md:h-12 rounded-full  text-orange-500 font-bold hover:text-white transition-colors duration-500"
                     aria-label="Next slide"
                 >
-                    {'>'}
+                    <MdKeyboardArrowRight className='text-[3em]' />
                 </button>
             </div>
         </div>
