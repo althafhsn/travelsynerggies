@@ -19,65 +19,16 @@ const Hero = () => {
     }, [statements.length]);
     return (
         <div>
-            <main className="min-h-screen relative mt-20">
+            <main className=" relative">
                 {/* Hero Background - Changed from fixed to absolute */}
-
-
-                {/* Sticky Header with transparent background */}
-
-
-                {/* Hero Section */}
-                <section className="relative lg:min-h-screen flex items-center py-6 ">
-                    <div className="absolute inset-0 w-full top-0 -z-10">
-                        <img
-                            src="/landing/hero.jpg"
-                            alt="Hero background"
-                            className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-black/60"></div>
-                    </div>
-                    <div className="text-center lg:text-start mx-auto lg:mx-0 px-6">
-                        <h1 className="text-white text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold  leading-tight">
-                            Experience the world<br />
-                            Live the moment
-                        </h1>
-
-                        <div className="flex items-center gap-4 mt-8 text-gray-100 xl:max-w-[520px] h-[30px]">
-                            <AnimatePresence mode="wait" initial={false}>
-                                <motion.div
-                                    key={currentIndex}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    exit={{ opacity: 0, y: -20 }}
-                                    transition={{
-                                        duration: 0.8,
-                                        ease: "easeInOut"
-                                    }}
-                                    className="absolute font-serif"
-                                >
-                                    <p className="text-sm md:text-lg lg:text-xl whitespace-nowrap">
-                                        {statements[currentIndex]}
-                                    </p>
-                                </motion.div>
-                            </AnimatePresence>
-                        </div>
-
-                        <button className="mt-12 bg-yellow-500 text-black px-6 py-3 font-medium hover:bg-yellow-600 transition-all flex items-center gap-2">
-                            Explore more
-                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                            </svg>
-                        </button>
-                    </div>
-                </section>
 
                 {/* About Section with proper background */}
                 <section className="relative py-16">
                     <div className="absolute inset-0 bg-black/10"></div>
                     <div className="container mx-auto px-8 relative">
-                        <div className="grid md:grid-cols-2 gap-8 items-center  lg:text-start px-2">
+                        <div className="grid lg:grid-cols-2 gap-8 items-center  lg:text-start px-2">
                             <div>
-                                <h2 className="text-white text-5xl font-serif font-bold text-center">Marhaba !</h2>
+                                <h2 className="text-orange-500 text-5xl font-serif font-bold text-center">Marhaba !</h2>
                                 <p className="text-gray-400 mt-8 leading-relaxed">
                                     At Travel Synergies, we take pride in being recognized as a global leader in Destination Management. With an unwavering commitment to excellence, we offer unparalleled services that redefine the art of travel and event planning, creating lasting memories and experiences of a lifetime.
                                 </p>
@@ -100,7 +51,7 @@ const Hero = () => {
                                     </div>
                                 </div>
 
-                                <button className="mt-12 border border-yellow-500 text-yellow-500 px-6 py-3 hover:bg-yellow-500 hover:text-black transition-all flex items-center gap-2">
+                                <button className="mt-12 border border-orange-500 text-orange-500 px-6 py-3 hover:bg-orange-500 hover:text-black transition-all flex items-center gap-2">
                                     Read More
                                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -108,7 +59,7 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className="relative hidden lg:block">
+                            <div className="relative hidden md:block">
                                 <img
                                     src="/landing/about.jpg"
                                     alt="Suspension bridge"

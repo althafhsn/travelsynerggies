@@ -1,24 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @import 'swiper/css';
+@import 'swiper/css/effect-fade';
+@import 'swiper/css/autoplay'; */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: hsl(0, 0%, 0%);
+    /* Black background */
+    --foreground: hsl(0, 0%, 100%);
+    /* White text for contrast */
+    --radius: 0.5rem;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    /* Hide scrollbar */
+    overflow-y: scroll;
+    /* Allow vertical scrolling */
+  }
+
+  /* Hide scrollbar for modern browsers */
+  body::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
   }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
