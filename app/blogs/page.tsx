@@ -3,17 +3,23 @@
 import { useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { FooterLink } from '@/constants';
+import ServiceBlog from '@/components/Footer/OurServiceSpectrum';
 
 const BlogContent: React.FC = () => {
   const searchParams = useSearchParams();
 
   const navigationLinks: FooterLink[] = [
+    { title: 'Our Service Spectrum', href: '#our-service-spectrum' },
     { title: 'Terms & Conditions', href: '#terms-conditions' },
-    { title: 'Where Did You Find Us', href: '#find-us' },
     { title: 'Privacy Cookies', href: '#privacy-cookies' },
     { title: 'Sustainable Tourism', href: '#sustainable-tourism' },
     { title: 'Bucket List', href: '#bucket-list' },
-    { title: 'Outbound Holidays', href: '#outbound-holidays' }
+    { title: 'Outbound Holidays', href: '#outbound-holidays' },
+    { title: 'Safety Guidelines', href: '#safety-guidelines' },
+    { title: 'About Us', href: '#about-us' },
+    { title: 'Careers', href: '#careers' },
+    { title: 'Contact Us', href: '#contact-us' },
+    { title: 'Partners', href: '#partners' }
   ];
 
   useEffect(() => {
@@ -67,7 +73,7 @@ const BlogContent: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="min-h-screen py-12">
       <div className="container mx-auto px-4">
         {/* Navigation Tabs */}
         <div className="flex flex-wrap gap-4 mb-8">
@@ -75,11 +81,12 @@ const BlogContent: React.FC = () => {
             <a
               key={link.title}
               href={link.href}
-              className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
+              className="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition"
             >
               {link.title}
             </a>
           ))}
+
         </div>
 
         {/* Blog Sections */}
@@ -92,6 +99,9 @@ const BlogContent: React.FC = () => {
               </div>
             </section>
           ))}
+        </div>
+        <div id='our-service-spectrum' className="scroll-mt-16">
+          <ServiceBlog />
         </div>
       </div>
     </div>
