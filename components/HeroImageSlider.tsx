@@ -18,25 +18,25 @@ const sliderData: SlideImage[] = [
     {
         title: "SANTORINI",
         name: "The Geek Island",
-        image: "/outbound/hero/img4.jpg",
+        image: "/outbound/hero/img4.webp",
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae."
     },
     {
         title: "PARCO NAZINALE",
         name: "Dalle Cinwue Tarre",
-        image: "/outbound/hero/img2.jpg",
+        image: "/outbound/hero/img2.webp",
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae."
     },
     {
         title: "PARADISE ISLAND",
         name: "The Bahamas",
-        image: "/outbound/hero/img1.jpg",
+        image: "/outbound/hero/img1.webp",
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae."
     },
     {
         title: "BE BE LAKE",
         name: "Bac Kan Province ",
-        image: "/outbound/hero/img3.jpg",
+        image: "/outbound/hero/img3.webp",
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae."
     },
 ];

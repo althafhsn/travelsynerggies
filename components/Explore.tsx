@@ -449,7 +449,7 @@ const Explore = () => {
 
                                             {/* Image Section */}
                                             <div className="xl:order-2">
-                                                <div className="relative h-[300px] md:h-[500px] xl:h-[620px] w-full rounded-lg overflow-hidden">
+                                                <div className="relative h-[420px] md:h-[520px] xl:h-[620px] w-full rounded-lg overflow-hidden">
                                                     <div className="absolute inset-0 bg-black/10 z-10" />
                                                     <Image
                                                         src={project.image}
@@ -467,7 +467,7 @@ const Explore = () => {
 
                             {/* Slider Navigation */}
                             <WorkSliderButton
-                                containerStyle="flex gap-2 absolute right-0 bottom-[calc(20%_-_22px)] md:bottom-[calc(40%_-_22px)] z-20 w-full justify-between"
+                                containerStyle="flex gap-2 absolute right-0 bottom-[calc(35%_-_22px)] md:bottom-[calc(40%_-_22px)] z-20 w-full justify-between"
                                 btnStyle="bg-orange-500 hover:bg-orange-500/90 text-white text-[40px] w-[40px] flex justify-center item-center transition-all rounded-full"
                                 iconsStyle="w-6 h-6"
                             />
@@ -481,7 +481,7 @@ const Explore = () => {
                             {project.stack.map((item, index) => (
                                 <article
                                     key={index}
-                                    className="group relative isolate flex flex-col justify-end overflow-hidden pb-12 pt-40 w-[230px] h-[330px] lg:w-[230px] lg:h-[330px] xl:w-[260px] xl:h-[360px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+                                    className="group relative isolate flex flex-col justify-end overflow-hidden pb-12 pt-40 w-[260px] h-[360px] md:w-[230px] lg:h-[330px] xl:w-[260px] xl:h-[360px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
                                 >
                                     {/* Background Image */}
                                     <img
