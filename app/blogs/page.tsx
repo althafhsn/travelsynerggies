@@ -1,0 +1,100 @@
+'use client';
+import { useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { FooterLink } from '@/constants';
+
+const BlogsPage: React.FC = () => {
+    const searchParams = useSearchParams();
+
+    const navigationLinks: FooterLink[] = [
+        { title: 'Terms & Conditions', href: '#terms-conditions' },
+        { title: 'Where Did You Find Us', href: '#find-us' },
+        { title: 'Privacy Cookies', href: '#privacy-cookies' },
+        { title: 'Sustainable Tourism', href: '#sustainable-tourism' },
+        { title: 'Bucket List', href: '#bucket-list' },
+        { title: 'Outbound Holidays', href: '#outbound-holidays' }
+    ];
+
+    useEffect(() => {
+        const hash = window.location.hash;
+        if (hash) {
+            const id = hash.replace('#', '');
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [searchParams]);
+
+    interface BlogSection {
+        id: string;
+        title: string;
+        content: string;
+    }
+
+    const blogSections: BlogSection[] = [
+        {
+            id: 'terms-conditions',
+            title: 'Terms & Conditions',
+            content: 'Your terms and conditions content goes here...'
+        },
+        {
+            id: 'find-us',
+            title: 'Where Did You Find Us',
+            content: 'Your where did you find us content goes here...'
+        },
+        {
+            id: 'privacy-cookies',
+            title: 'Privacy Cookies',
+            content: 'Your privacy cookies content goes here...'
+        },
+        {
+            id: 'sustainable-tourism',
+            title: 'Sustainable Tourism',
+            content: 'Your sustainable tourism content goes here...'
+        },
+        {
+            id: 'bucket-list',
+            title: 'Bucket List',
+            content: 'Your bucket list content goes here...'
+        },
+        {
+            id: 'outbound-holidays',
+            title: 'Outbound Holidays',
+            content: 'Your outbound holidays content goes here...'
+        }
+    ];
+
+    return (
+        <div className="min-h-screen  py-12">
+            <div className="container mx-auto px-4">
+                {/* Navigation Tabs */}
+                <div className="flex flex-wrap gap-4 mb-8">
+                    {navigationLinks.map((link) => (
+                        <a
+                            key={link.title}
+                            href={link.href}
+                            className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
+                        >
+                            {link.title}
+                        </a>
+                    ))}
+                </div>
+
+                {/* Blog Sections */}
+                <div className="space-y-16">
+                    {blogSections.map((section) => (
+                        <section key={section.id} id={section.id} className="scroll-mt-16">
+                            <h2 className="text-3xl font-bold mb-6">{section.title}</h2>
+                            <div className="prose max-w-none">
+                                <p>{section.content}</p>
+                            </div>
+                        </section>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default BlogsPage;

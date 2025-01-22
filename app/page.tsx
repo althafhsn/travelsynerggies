@@ -14,7 +14,6 @@ export default function Home() {
       <FeaturesSection />
       <Explore />
       <ContactSection />
-      <Footer />
     </div>
   );
 }

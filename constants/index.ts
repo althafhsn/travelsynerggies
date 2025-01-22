@@ -6,6 +6,10 @@ export const NAV_LINKS = [
     { href: '/', key: 'social_responsibility', label: 'Social Responsibility ' },
     { href: '/', key: 'contact', label: 'Contact' },
   ];
+  export interface FooterLink {
+    title: string;
+    href: string;
+  }
   
   // About SECTION
   export const PEOPLE_URL = [

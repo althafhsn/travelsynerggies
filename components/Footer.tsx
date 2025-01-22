@@ -63,8 +63,13 @@ const Footer = () => {
                                 <p className="font-semibold text-orange-500 dark:text-white"></p>
 
                                 <div className="flex flex-col items-start mt-5 space-y-2">
-                                    <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500">Why Choose Us</p>
+                                    <a href="/blogs#terms-conditions">
+                                        <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500">Why Choose Us</p>
+                                    </a>
+                                    <a href="/blogs#find-us">
                                     <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500">Whre To Find Us</p>
+                                    </a>
+                                    
                                     <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500">Sustainable Tourisum</p>
                                     <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500">Blogs</p>
                                     <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500">Trade Service</p>
@@ -77,7 +82,10 @@ const Footer = () => {
                                     <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500">Special Offers</p>
                                     <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500">Destinations</p>
                                     <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500">About Destinations</p>
+                                    <a href="#outbound-holidays">
+
                                     <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500">Posts</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
