@@ -32,12 +32,17 @@ const ContactButton: React.FC<ContactButtonProps> = ({ icon, title, phoneNumber,
                             <FiMail className="w-4 h-4 md:w-8 md:h-8 lg:w-12 lg:h-12 text-white group-hover:text-gray-900" />
                         )}
                         <div className="text-center px-2">
-                            <h2 className="text-white text-sm md:text-lg lg:text-2xl group-hover:text-gray-900 font-bold mb-2">
+                            <h2 className="text-white text-[11px] md:text-lg lg:text-2xl group-hover:text-gray-900 font-bold mb-2">
                                 {title}
                             </h2>
-                            {phoneNumber || email && (
+                            {phoneNumber && (
                                 <p className="text-white group-hover:text-gray-800 text-[9px] md:text-sm mb-1 truncate">
-                                    {phoneNumber || email}
+                                    {phoneNumber}
+                                </p>
+                            )}
+                            {email && (
+                                <p className="text-white group-hover:text-gray-800 text-[9px] md:text-sm mb-1 truncate">
+                                    {email}
                                 </p>
                             )}
 
@@ -65,21 +70,17 @@ export default function ContactSection() {
     return (
         <div className="px-4 md:px-8 py-16 md:py-20 mx-auto">
             <div className="container mx-auto px-4 xl:px-0">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-8 lg:gap-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 lg:gap-16">
                     {/* Left Section */}
-                    <div className="text-orange-500 text-center flex lg:text-start col-span-1  items-center">
-                        <h1 className=" leading-[1.1] font-bold mb-6 text-2xl md:text-5xl font-serif">
+                    <div className="text-orange-500 flex flex-col items-center justify-center md:items-start text-center md:text-start md:col-span-1">
+                        <h1 className="leading-[1.1] font-bold mb-6 text-2xl md:text-5xl font-serif">
                             Contact a Travel <br />
-                            <span className='text-white'>
-
-                                Designer
-                            </span>
+                            <span className="text-white">Designer</span>
                         </h1>
-
                     </div>
 
                     {/* Right Section */}
-                    <div className="grid  grid-cols-2 justify-between items-center col-span-2 -gap-3">
+                    <div className="grid grid-cols-2 justify-between items-center md:col-span-2 -gap-3">
                         {/* Call Us Button */}
                         <ContactButton
                             icon="phone"
@@ -92,12 +93,13 @@ export default function ContactSection() {
                         <ContactButton
                             icon="mail"
                             title="Send an Enquiry"
-                            email='info@travelsynergies.com'
+                            email="info@travelsynergies.com"
                         />
                     </div>
                 </div>
             </div>
         </div>
+
 
     );
 }
