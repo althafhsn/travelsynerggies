@@ -122,11 +122,11 @@ const BucketListPage: React.FC = () => {
     return (
         <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden py-12 px-4">
-                <h1 className="text-3xl font-extrabold text-center text-orange-700 mb-12">
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-orange-600 mb-6 text-center">
                     Bucket List
                 </h1>
 
-                <p className="text-xl text-center text-gray-700  mx-auto mb-12">
+                <p className="text-sm  text-gray-700  mx-auto mb-12">
                     At Travel Synergies, we're passionate about turning your travel dreams into unforgettable adventures. From marveling at iconic landmarks like the Eiffel Tower or the Great Wall of China to soaking in the natural wonders of the Amazon Rainforest or the Northern Lights, our curated bucket list showcases the best experiences the world has to offer.
                 </p>
 
@@ -135,8 +135,8 @@ const BucketListPage: React.FC = () => {
                         <div className="flex flex-wrap justify-center sm:flex-nowrap">
                             <button
                                 className={`px-10 py-3 m-1 sm:m-0 rounded-full transition-colors ${activeSection === 'destinations'
-                                        ? 'bg-orange-600 text-white'
-                                        : 'text-gray-700 hover:bg-orange-100'
+                                        ? 'bg-orange-500 text-white'
+                                        : 'text-gray-700'
                                     }`}
                                 onClick={() => setActiveSection('destinations')}
                             >
@@ -145,7 +145,7 @@ const BucketListPage: React.FC = () => {
                             <button
                                 className={`px-4 py-3 m-1 sm:m-0 rounded-full transition-colors ${activeSection === 'dining'
                                         ? 'bg-orange-500 text-white'
-                                        : 'text-gray-700 hover:bg-orange-100'
+                                        : 'text-gray-700 '
                                     }`}
                                 onClick={() => setActiveSection('dining')}
                             >
@@ -162,10 +162,11 @@ const BucketListPage: React.FC = () => {
                             key={index}
                             className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow"
                         >
-                            <h3 className="text-2xl font-semibold text-orange-500 mb-4">
+                            <h3 className="text-lg font-semibold text-orange-500 mb-1">
                                 {item.title}
                             </h3>
-                            <p className="text-gray-600">
+                            
+                            <p className="text-gray-600 text-sm">
                                 {item.description}
                             </p>
                         </div>
@@ -173,7 +174,7 @@ const BucketListPage: React.FC = () => {
                 </div>
 
                 <div className="text-center mt-12">
-                    <p className="text-xl text-gray-700 mb-6">
+                    <p className="text-xl text-gray-700 mb-6 font-bold">
                         Let's make your global travel bucket list a reality!
                     </p>
                 </div>

@@ -8,9 +8,10 @@ interface ContactButtonProps {
     title: string;
     phoneNumber?: string;
     isOnline?: boolean;
+    email?: string;
 }
 
-const ContactButton: React.FC<ContactButtonProps> = ({ icon, title, phoneNumber, isOnline }) => {
+const ContactButton: React.FC<ContactButtonProps> = ({ icon, title, phoneNumber, isOnline, email }) => {
     const handleClick = () => {
         if (phoneNumber) {
             window.location.href = `tel:${phoneNumber}`;
@@ -34,11 +35,12 @@ const ContactButton: React.FC<ContactButtonProps> = ({ icon, title, phoneNumber,
                             <h2 className="text-white text-sm md:text-lg lg:text-2xl group-hover:text-gray-900 font-bold mb-2">
                                 {title}
                             </h2>
-                            {phoneNumber && (
-                                <p className="text-white group-hover:text-gray-800 text-sm md:text-lg lg:text-2xl mb-1 truncate">
-                                    {phoneNumber}
+                            {phoneNumber || email && (
+                                <p className="text-white group-hover:text-gray-800 text-sm  mb-1 truncate">
+                                    {phoneNumber || email}
                                 </p>
                             )}
+
                             {isOnline && (
                                 <p className="text-orange-400 group-hover:text-gray-700 text-[10px] md:text-sm xl:text-lg">
                                     We are online now
@@ -65,13 +67,11 @@ export default function ContactSection() {
             <div className="container mx-auto px-4 xl:px-0">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-8 lg:gap-16">
                     {/* Left Section */}
-                    <div className="text-orange-500 text-center lg:text-start col-span-1 ">
+                    <div className="text-orange-500 text-center flex lg:text-start col-span-1  items-center">
                         <h1 className="text-[2em] xl:text-[3em] leading-[1.1] font-bold mb-6">
-                            Contact a Travel Researcher
+                            Contact a Travel Designer
                         </h1>
-                        <p className="text-orange-50 text-lg lg:text-xl">
-                            We always aim to reply within 24 hours.
-                        </p>
+
                     </div>
 
                     {/* Right Section */}
@@ -80,14 +80,15 @@ export default function ContactSection() {
                         <ContactButton
                             icon="phone"
                             title="Call Us"
-                            phoneNumber="+91 95654563"
+                            phoneNumber="+971 544552595"
                             isOnline={true}
                         />
 
                         {/* Enquiry Button */}
                         <ContactButton
                             icon="mail"
-                            title="Send us an Enquiry"
+                            title="Send an Enquiry"
+                            email='info@travelsynergies.com'
                         />
                     </div>
                 </div>

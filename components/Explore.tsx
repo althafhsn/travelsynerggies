@@ -8,6 +8,7 @@ import 'swiper/css';
 
 import Image from 'next/image';
 import WorkSliderButton from '@/components/WorkSliderButton';
+import { CiLocationOn } from 'react-icons/ci';
 
 type jurnels = {
     fName: string;
@@ -17,6 +18,7 @@ type jurnels = {
         image: string;
         name: string;
         description: string;
+        location?: string;
     }[];
     image: string;
 
@@ -31,32 +33,38 @@ const projects: jurnels[] = [
             {
                 image: '/outbound/treasures-unveiled/img1.webp',
                 name: 'Maldives',
-                description: 'A tropical haven of crystal-clear waters, overwater bungalows and pristine white-sand beaches, the Maldives promises serene luxury and unparalleled beach stays.'
+                description: 'A tropical haven of crystal-clear waters, overwater bungalows and pristine white-sand beaches, the Maldives promises serene luxury and unparalleled beach stays.',
+                location: 'Maldives'
             },
             {
                 image: '/outbound/treasures-unveiled/img2.webp',
                 name: 'Hawaii',
-                description: 'A blend of lush rainforests, dramatic volcanic landscapes and golden beaches, Hawaii is a vibrant paradise offering aloha spirit and breathtaking sunsets.'
+                description: 'A blend of lush rainforests, dramatic volcanic landscapes and golden beaches, Hawaii is a vibrant paradise offering aloha spirit and breathtaking sunsets.',
+                location: 'Hawaii'
             },
             {
                 image: '/outbound/treasures-unveiled/img3.webp',
                 name: 'Brazil',
-                description: 'From the iconic beaches of Rio to the vast Amazon rainforest, Brazil dazzles with its natural beauty, vibrant culture and infectious samba rhythms that would lure any soul to move.'
+                description: 'From the iconic beaches of Rio to the vast Amazon rainforest, Brazil dazzles with its natural beauty, vibrant culture and infectious samba rhythms that would lure any soul to move.',
+                location: 'Brazil'
             },
             {
                 image: '/outbound/treasures-unveiled/img4.webp',
                 name: 'Havana – Cuba ',
-                description: 'Step back in time to Havana, where colonial charm, vintage cars and a lively Caribbean vibe make it a unique tropical escape'
+                description: 'Step back in time to Havana, where colonial charm, vintage cars and a lively Caribbean vibe make it a unique tropical escape',
+                location: 'Cuba'
             },
             {
                 image: '/outbound/treasures-unveiled/img5.webp',
                 name: 'Sri Lanka ',
-                description: 'Known as the "Pearl of the Indian Ocean," Sri Lanka is a land of timeless charm and breathtaking beauty with lush tea plantations, incredible wildlife, golden beaches and rich cultural heritage, wrapped in warm hospitality. '
+                description: 'Known as the "Pearl of the Indian Ocean," Sri Lanka is a land of timeless charm and breathtaking beauty with lush tea plantations, incredible wildlife, golden beaches and rich cultural heritage, wrapped in warm hospitality. ',
+                location: 'Sri Lanka'
             },
             {
                 image: '/outbound/treasures-unveiled/img6.webp',
                 name: 'Seychelles',
-                description: 'A tropical paradise with stunning beaches, gorgeous landscapes, and abundant nature, Seychelles blends rich culture with lively nightlife, offering everything from serene nature to unforgettable beach parties.'
+                description: 'A tropical paradise with stunning beaches, gorgeous landscapes, and abundant nature, Seychelles blends rich culture with lively nightlife, offering everything from serene nature to unforgettable beach parties.',
+                location: 'Seychelles'
             },
 
         ],
@@ -70,33 +78,33 @@ const projects: jurnels[] = [
         stack: [
             {
                 image: '/outbound/wildlife-safaris/img1.webp',
-                name: 'Masai Mara, Kenya ',
-                description: 'The Masai Mara is a world-renowned safari destination in Kenya, known for its Great Migration of wildebeest and zebras. It’s home to the Big Five and offers breathtaking savannah landscapes rich in wildlife and Maasai culture.'
+                name: 'Masai Mara, Kenya',
+                description: 'The Masai Mara is a world-renowned safari destination in Kenya, known for its Great Migration of wildebeest and zebras. It’s home to the Big Five and offers breathtaking savannah landscapes rich in wildlife and Maasai culture.',
             },
             {
                 image: '/outbound/wildlife-safaris/img2.webp',
                 name: 'Yala, Sri Lanka',
-                description: 'Yala National Park is famed for its dense leopard population and diverse wildlife. Located in southeast Sri Lanka, it offers safari experiences across lush jungles, grasslands and lagoons, offering incredible sightings of elephants, crocodiles and birdlife.'
+                description: 'Yala National Park is famed for its dense leopard population and diverse wildlife. Located in southeast Sri Lanka, it offers safari experiences across lush jungles, grasslands and lagoons, offering incredible sightings of elephants, crocodiles and birdlife.',
             },
             {
                 image: '/outbound/wildlife-safaris/img3.webp',
-                name: 'Kruger Park,  South Africa ',
-                description: 'Kruger National Park is one of Africa’s largest game reserves, offering incredible biodiversity. Visitors can spot the Big Five and enjoy self-drive safaris or guided tours amidst stunning stunning wild landscape.'
+                name: 'Kruger Park, South Africa',
+                description: 'Kruger National Park is one of Africa’s largest game reserves, offering incredible biodiversity. Visitors can spot the Big Five and enjoy self-drive safaris or guided tours amidst stunning stunning wild landscape.',
             },
             {
                 image: '/outbound/wildlife-safaris/img4.webp',
                 name: 'Liwonde, Malawi',
-                description: 'Liwonde National Park is a hidden gem in Malawi, known for its tranquil river safaris along the Shire River. It’s a sanctuary for elephants, hippos and an increasing number of rhinos and cheetahs.'
+                description: 'Liwonde National Park is a hidden gem in Malawi, known for its tranquil river safaris along the Shire River. It’s a sanctuary for elephants, hippos and an increasing number of rhinos and cheetahs.',
             },
             {
                 image: '/outbound/wildlife-safaris/img5.webp',
                 name: 'Tanjung Putting, Borneo',
-                description: "Tanjung Puting is a tropical haven for orangutans in Borneo. Accessible via river cruises, it features dense rainforests, exotic wildlife, and conservation efforts focused on preserving these primates' natural habitat."
+                description: "Tanjung Puting is a tropical haven for orangutans in Borneo. Accessible via river cruises, it features dense rainforests, exotic wildlife, and conservation efforts focused on preserving these primates' natural habitat.",
             },
             {
                 image: '/outbound/wildlife-safaris/img6.webp',
-                name: 'Cabo San Lucas, Mexico',
-                description: 'Cabo San Lucas is known for whale watching opportunities. From December to April, visitors can witness majestic humpback and gray whales migrating through its crystal clear waters, making it a paradise for marine wildlife enthusiasts.'
+                name: 'Cabo San Lucas, Maxico',
+                description: 'Cabo San Lucas is known for whale watching opportunities. From December to April, visitors can witness majestic humpback and gray whales migrating through its crystal clear waters, making it a paradise for marine wildlife enthusiasts.',
             },
 
         ],
@@ -350,32 +358,32 @@ const projects: jurnels[] = [
         stack: [
             {
                 image: '/outbound/spiritual-awakenings/img1.webp',
-                name: 'Vatican – Italy',
+                name: 'Vatican, Italy',
                 description: 'The heart of Catholicism, Vatican City inspires with St. Peter’s Basilica, the Sistine Chapel, and a profound sense of faith and history.'
             },
             {
                 image: '/outbound/spiritual-awakenings/img2.webp',
-                name: 'Erechtheion - Greece',
+                name: 'Erechtheion, Greece',
                 description: 'This ancient temple on the Acropolis of Athens exudes sacred beauty, blending mythology and history in its iconic Caryatid porch.'
             },
             {
                 image: '/outbound/spiritual-awakenings/img3.webp',
-                name: 'Jerusalem – Israel',
+                name: 'Jerusalem, Israel',
                 description: 'A spiritual crossroads for Islam, Christianity and Judaism, Jerusalem captivates with its sacred sites like the Western Wall, Church of the Holy Sepulchre and Dome of the Rock.'
             },
             {
                 image: '/outbound/spiritual-awakenings/img4.webp',
-                name: 'Wat Chaiwatthanaram – Thailand',
+                name: 'Wat Chaiwatthanaram, Thailand',
                 description: 'This stunning temple in Ayutthaya, Thailand, is a serene reminder of Buddhist teachings, with its intricate architecture and tranquil riverside setting.'
             },
             {
                 image: '/outbound/spiritual-awakenings/img5.webp',
-                name: 'Ulun Danu Beratan – Indonesia',
+                name: 'Ulun Danu Beratan, Indonesia',
                 description: 'Nestled on Bali’s Lake Beratan, this water temple radiates peace and harmony, offering spiritual solace amid misty mountain backdrops.'
             },
             {
                 image: '/outbound/spiritual-awakenings/img6.webp',
-                name: 'Blue Mosque – Turkey',
+                name: 'Blue Mosque, Turkey',
                 description: 'An architectural marvel in Istanbul, the Blue Mosque mesmerizes with its grand domes, intricate tilework and the serene call to prayer echoing through its courtyards.'
             },
 
@@ -425,7 +433,7 @@ const Explore = () => {
                                 delay: 6000,  // 6 seconds delay
                                 disableOnInteraction: false,  // Allow autoplay to continue after user interaction
                             }}
-                            
+
                         >
                             {projects.map((project, index) => (
                                 <SwiperSlide key={`slide-${index}`}>
@@ -439,7 +447,7 @@ const Explore = () => {
                                                         <span className="text-orange-500">{project.lName}</span>
                                                     </h1>
                                                     {/* Fixed Height Container for Description */}
-                                                    <div className="h-[100px] overflow-hidden">
+                                                    <div className="h-[150px] overflow-hidden">
                                                         <p className="text-gray-400 max-w-2xl xl:max-w-none mx-auto xl:mx-0">
                                                             {project.description}
                                                         </p>
@@ -449,7 +457,7 @@ const Explore = () => {
 
                                             {/* Image Section */}
                                             <div className="xl:order-2">
-                                                <div className="relative h-[420px] md:h-[520px] xl:h-[620px] w-full rounded-lg overflow-hidden">
+                                                <div className="relative h-[420px] md:h-[520px] xl:h-[580px] w-full rounded-lg overflow-hidden">
                                                     <div className="absolute inset-0 bg-black/10 z-10" />
                                                     <Image
                                                         src={project.image}
@@ -467,7 +475,7 @@ const Explore = () => {
 
                             {/* Slider Navigation */}
                             <WorkSliderButton
-                                containerStyle="flex gap-2 absolute right-0 bottom-[calc(35%_-_22px)] md:bottom-[calc(40%_-_22px)] z-20 w-full justify-between"
+                                containerStyle="flex gap-2 absolute right-0 bottom-[calc(35%_-_22px)] md:bottom-[calc(35%_-_22px)] z-20 w-full justify-between px-2"
                                 btnStyle="bg-orange-500 hover:bg-orange-500/90 text-white text-[40px] w-[40px] flex justify-center item-center transition-all rounded-full"
                                 iconsStyle="w-6 h-6"
                             />
@@ -495,21 +503,24 @@ const Explore = () => {
                                     {/* Text Content */}
                                     <div className="z-10 relative px-4">
                                         {/* Title */}
-                                        <h3 className="text-lg font-bold text-orange-500 mb-2 transition-opacity duration-300 ease-in-out group-hover:opacity-100 opacity-90">
-                                            {item.name}
-                                        </h3>
-                                        {/* Description */}
-                                        <div
-                                            className="overflow-hidden max-h-[3.6em] group-hover:max-h-[20em] transition-[max-height] duration-1000
-                                            ease-in-out"
-                                        >
-                                            <p className="text-sm leading-6 text-gray-300">
-                                                {item.description}
-                                            </p>
+
+                                        <div className='flex justify-start gap-2'>
+                                            <div className='text-lg text-orange-500 '>
+                                                <CiLocationOn />
+                                            </div>
+                                            <h3 className="text-[12px] font-serif text-orange-500 mb-2 transition-opacity duration-300 ease-in-out group-hover:opacity-100 opacity-90">
+                                                {item.name}
+                                            </h3>
                                         </div>
+                                        {/* Description */}
+                                        <p
+                                            className="text-xs leading-6 text-gray-300 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[10em] group-hover:mt-4 transition-[opacity,max-height,margin-top] duration-500 ease-in-out  font-serif"
+                                        >
+                                            {item.description}
+                                        </p>
+
                                     </div>
                                 </article>
-
 
 
 

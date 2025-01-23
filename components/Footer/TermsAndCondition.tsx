@@ -7,12 +7,14 @@ interface TermSection {
 }
 
 const TermsAndConditions: React.FC = () => {
-    const [activeSection, setActiveSection] = useState<string | null>(null);
+    const [activeSection, setActiveSection] = useState<string | null>('Introduction');
 
     const termsSections: TermSection[] = [
         {
             title: 'Introduction',
-            content: 'At Travel Synergies, we are committed to providing our customers with the best possible travel experiences in the UAE. To ensure that we can deliver on this promise, we have established the following terms and conditions, which are designed to protect both our customers and our company.',
+            content: ['At Travel Synergies, we are committed to providing our customers with the best possible travel experiences in the UAE. To ensure that we can deliver on this promise, we have established the following terms and conditions, which are designed to protect both our customers and our company.',
+                ''
+            ],
             type: 'paragraph'
         },
         {
@@ -68,7 +70,7 @@ const TermsAndConditions: React.FC = () => {
         },
         {
             title: 'Acceptance',
-            content: 'By making a booking with Travel Synergies, customers acknowledge that they have read, understood and accepted these terms and conditions.',
+            content: ['By making a booking with Travel Synergies, customers acknowledge that they have read, understood and accepted these terms and conditions.',],
             type: 'paragraph'
         }
     ];
@@ -77,7 +79,7 @@ const TermsAndConditions: React.FC = () => {
         if (section.type === 'paragraph') {
             return <p className="text-gray-600 leading-relaxed">{section.content as string}</p>;
         }
-        
+
         return (
             <ul className="list-disc list-outside pl-5 space-y-2 text-gray-600">
                 {(section.content as string[]).map((item, idx) => (
@@ -91,23 +93,22 @@ const TermsAndConditions: React.FC = () => {
         <div className=" bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
                 <div className="p-6 md:p-10">
-                    <h1 className="text-3xl md:text-4xl font-bold text-center text-orange-600 mb-10">
+                    <h1 className="ext-xl md:text-2xl lg:text-3xl font-bold text-orange-600 mb-6 text-center">
                         Terms and Conditions
                     </h1>
 
-                    {/* Sidebar Navigation for Large Screens */}
+
                     <div className="flex flex-col md:flex-row gap-8">
                         {/* Sidebar */}
-                        <div className="w-full md:w-1/4 space-y-2">
+                        <div className="w-full md:w-1/5 space-y-2">
                             {termsSections.map((section, index) => (
                                 <button
                                     key={index}
                                     onClick={() => setActiveSection(section.title)}
-                                    className={`w-full text-left px-4 py-2 rounded transition-colors duration-300 ${
-                                        activeSection === section.title 
-                                        ? 'bg-orange-500 text-white' 
+                                    className={`w-full text-left px-2 py-2 rounded transition-colors duration-300 text-sm ${activeSection === section.title
+                                        ? 'bg-orange-500 text-white'
                                         : 'hover:bg-orange-100 text-gray-700'
-                                    }`}
+                                        }`}
                                 >
                                     {section.title}
                                 </button>
@@ -115,22 +116,24 @@ const TermsAndConditions: React.FC = () => {
                         </div>
 
                         {/* Content Area */}
-                        <div className="w-full md:w-3/4">
+                        <div className="w-full md:w-3/4 flex items-center justify-center">
                             {activeSection ? (
-                                <div>
+                                <div className="flex items-center justify-center w-full">
                                     {termsSections
                                         .filter(section => section.title === activeSection)
                                         .map((section, index) => (
-                                            <div key={index} className="space-y-4">
-                                                <h2 className="text-2xl font-semibold text-orange-600 border-b pb-2">
+                                            <div
+                                                key={index}
+                                                className="space-y-4 flex flex-col items-start justify-center w-full"
+                                            >
+                                                <h2 className="text-lg font-semibold text-orange-500 border-b pb-2 w-full">
                                                     {section.title}
                                                 </h2>
-                                                <div className="mt-4">
+                                                <div className="mt-4 text-sm text-left w-full">
                                                     {renderSectionContent(section)}
                                                 </div>
                                             </div>
-                                        ))
-                                    }
+                                        ))}
                                 </div>
                             ) : (
                                 <div className="text-center text-gray-500 py-10">
@@ -138,6 +141,35 @@ const TermsAndConditions: React.FC = () => {
                                 </div>
                             )}
                         </div>
+                        {/* <div className="w-full md:w-3/4 flex flex-col items-center justify-between h-full">
+                            {activeSection ? (
+                                <div className="flex flex-col w-full h-full">
+                                    {termsSections
+                                        .filter(section => section.title === activeSection)
+                                        .map((section, index) => (
+                                            <div
+                                                key={index}
+                                                className="flex flex-col h-full w-full"
+                                            >
+                                                <h2 className="text-lg font-semibold text-orange-600 border-b pb-2 text-left w-full">
+                                                    {section.title}
+                                                </h2>
+
+                                                <div className="flex flex-grow items-center justify-center mt-4 text-sm text-left">
+                                                    <div className="w-full">{renderSectionContent(section)}</div>
+                                                </div>
+                                            </div>
+                                        ))}
+                                </div>
+                            ) : (
+                                <div className="text-center text-gray-500 py-10">
+                                    <p>Select a section to view details</p>
+                                </div>
+                            )}
+                        </div> */}
+
+
+
                     </div>
                 </div>
             </div>

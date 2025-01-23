@@ -145,7 +145,7 @@ const SustainableToursm: React.FC = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                     {/* Our Service Spectrum */}
                     <div>
-                        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-orange-700 mb-6">Our Service Spectrum</h2>
+                        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-orange-600 mb-6">Our Service Spectrum</h2>
                         {serviceSpectrumDetails.map((service, index) => (
                             <div key={index} className="mb-4">
                                 <h3 className="font-semibold text-orange-500">{service.title}</h3>
@@ -167,7 +167,7 @@ const SustainableToursm: React.FC = () => {
 
                     {/* Discover Your Dream Destinations */}
                     <div>
-                        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-orange-700 mb-6">Discover Your Dream Destinations</h2>
+                        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-orange-600 mb-6">Discover Your Dream Destinations</h2>
                         {destinationDetails.map((destination, index) => (
                             <div key={index} className="mb-4">
                                 <h3 className="font-semibold text-orange-500 ">{destination.title}</h3>

@@ -39,9 +39,9 @@ const BlogContent: React.FC = () => {
   }, [searchParams]);
 
   return (
-    <div className="min-h-screen">
-      <div className="sticky top-0 bg-gray-400">
-        <nav className="container p-4 max-w-8xl bg-gray-400 w-48">
+    <div className="min-h-screen bg-white">
+      <div className="sticky top-0 bg-black/50">
+        <nav className="container p-4 max-w-8xl w-48">
           <img src="/whitelogo.png" alt="logo" />
         </nav>
       </div>

@@ -95,15 +95,15 @@ const SafetyGuidelinesBlog: React.FC = () => {
         <div className="min-h-screen bg-gray-100 text-gray-800 p-4 sm:p-8">
             <div className="container max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden p-4 sm:p-8">
                 {/* Title */}
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-orange-700 mb-6">
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-orange-600 mb-6 text-center">
                     Global Travel Safety Guidelines
                 </h1>
 
                 {/* Introduction */}
-                <p className="text-base sm:text-lg text-black mb-4">
+                <p className="text-sm text-black mb-1">
                     Your health and safety while on your trip is of the utmost importance to us. We operate in many countries around the world, all of which have differing standards and local regulations that may not always meet the standards we’re used to at home.
                 </p>
-                <p className="text-base sm:text-lg text-black mb-8">
+                <p className="text-sm  text-black mb-8">
                     We always try to provide as much information as possible about local conditions. However, we recommend that you carry out some background research about the destinations you’re going to and any inherent risks involved in visiting these countries or in undertaking particular activities. The information below is designed to help ensure that you have a safe and enjoyable trip.
                 </p>
 
@@ -124,11 +124,11 @@ const SafetyGuidelinesBlog: React.FC = () => {
                 </div>
 
                 {/* Content Section */}
-                <div className="bg-white shadow-lg rounded-2xl p-4 sm:p-8 min-h-[65vh]">
-                    <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-orange-500 mb-4 sm:mb-6">
+                <div className="bg-white rounded-2xl p-4 sm:p-8 min-h-[47vh]">
+                    <h2 className="text-lg font-semibold text-orange-500 mb-4 sm:mb-6">
                         {sections.find((s) => s.id === activeSection)?.title}
                     </h2>
-                    <ul className="text-gray-700 leading-relaxed text-sm sm:text-base">
+                    <ul className="text-gray-700 leading-relaxed text-sm">
                         {sections.find((s) => s.id === activeSection)?.content.map((item, index) => (
                             <li key={index} className="flex items-start mb-2">
                                 <div className="text-xs sm:text-sm">
@@ -141,9 +141,9 @@ const SafetyGuidelinesBlog: React.FC = () => {
                 </div>
 
                 {/* Emergency Preparedness */}
-                <div className="mt-8 sm:mt-12 text-center">
-                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-4">
-                        Stay Safe, Travel Smart
+                <div className=" text-center">
+                    <h3 className="text-lg  font-bold text-gray-800 mb-4">
+                        Stay Safe, Travel Smart!
                     </h3>
                 </div>
             </div>
