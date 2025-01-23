@@ -48,13 +48,13 @@ const Footer: React.FC = () => {
                 { text: "Privacy Cookies", href: "/blogs#privacy-cookies" },
                 { text: "Sustainable Tourism", href: "/blogs#sustainable-tourism" },
                 { text: "Bucket List", href: "/blogs#bucket-list" },
-                { text: "Outbound Holidays", href: "/blogs#outbound-holidays" }
             ]
         },
         information: {
             title: "",
             links: [
                 { text: "Safety Guidelines", href: "/blogs#safety-guidelines" },
+                { text: "Environment Policy", href: "/blogs#environment-policy" },
 
             ]
         },

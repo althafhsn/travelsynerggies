@@ -82,7 +82,7 @@ const SustainableTourismBlog = () => {
                                         className="bg-gray-100 p-4 rounded-lg shadow-md grid grid-cols-7 "
                                     >
                                         {/* Icon Section */}
-                                        <div className=' col-span-1 flex items-center justify-center'>
+                                        <div className=' col-span-1 md:flex items-center justify-center hidden'>
 
                                             <div className="h-[20px] w-[20px] flex-shrink-0">
                                                 {initiative.icon}
@@ -90,9 +90,9 @@ const SustainableTourismBlog = () => {
                                         </div>
 
                                         {/* Text Content Section */}
-                                        <div className="ml-4  col-span-6">
-                                            <h3 className="text-lg font-bold text-black">{initiative.title}</h3>
-                                            <p className="text-gray-600 min-h-16">{initiative.description}</p>
+                                        <div className="ml-4  col-span-6 w-full">
+                                            <h3 className="md:text-lg text-sm font-bold text-black">{initiative.title}</h3>
+                                            <p className="text-gray-600 min-h-16 md:text-sm text-xs ">{initiative.description}</p>
                                         </div>
                                     </div>
 

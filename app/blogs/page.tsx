@@ -6,9 +6,9 @@ import { FooterLink } from '@/constants';
 import ServiceBlog from '@/components/Footer/OurServiceSpectrum';
 import TermsAndConditions from '@/components/Footer/TermsAndCondition';
 import SustainableTourismBlog from '@/components/Footer/SustainableToursm';
-import BucketListBlog from '@/components/Footer/BucketList';
 import OutboundTravelBlog from '@/components/Footer/OutboundHolidays';
 import SafetyGuidelinesBlog from '@/components/Footer/SaftyTravel';
+import BucketListPage from '@/components/Footer/BucketList';
 
 const BlogContent: React.FC = () => {
   const searchParams = useSearchParams();
@@ -39,7 +39,13 @@ const BlogContent: React.FC = () => {
   }, [searchParams]);
 
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen">
+      <div className="sticky top-0 bg-gray-400">
+        <nav className="container p-4 max-w-8xl bg-gray-400 w-48">
+          <img src="/whitelogo.png" alt="logo" />
+        </nav>
+      </div>
+
       <div className="container mx-auto px-4">
         <div id='our-service-spectrum' className="scroll-mt-16">
           <ServiceBlog />
@@ -52,7 +58,7 @@ const BlogContent: React.FC = () => {
           <SustainableTourismBlog />
         </div>
         <div id='bucket-list' className="scroll-mt-16">
-          <BucketListBlog />
+          <BucketListPage />
         </div>
         <div id='outbound-holidays' className="scroll-mt-16">
           <OutboundTravelBlog />

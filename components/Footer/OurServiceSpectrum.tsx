@@ -1,173 +1,186 @@
-import React from 'react';
+import { m } from "framer-motion";
+import { GoDotFill } from "react-icons/go";
 
-interface ServiceSection {
-    title: string;
-    subtitle: string;
-    description: string;
-    expertise?: string;
-    portfolio: string[];
-    commitment: string;
-    additionalInfo?: {
-        title: string;
-        items: string[];
-    };
-}
+const SustainableToursm: React.FC = () => {
+    const serviceSpectrumDetails = [
+        {
+            title: 'Tailored Vacation Packages',
+            details: [
+                'Choice of Accommodation: Handpicked options ranging from boutique hotels and all-inclusive resorts to private villas and standard hotels.',
+                'Dedicated Experts: Experienced travel consultants design itineraries tailored to personal interests, budgets and preferences.',
+                'Exclusive Inclusions: Special activities, private guided tours and off the beaten track experiences.'
+            ]
+        },
+        {
+            title: 'Group Tours',
+            details: [
+                'Comprehensive Planning: Pre-designed itineraries with seamless coordination for large groups.',
+                'Expert Tour Leaders: Accompanied by professional guides ensuring a hassle-free experience.',
+                'Customizable Add-ons: Optional excursions, meals and upgrades to suit individual preferences within the group.'
+            ]
+        },
+        {
+            title: 'Corporate and MICE Travel',
+            details: [
+                'Venue Selection: Partnerships with premium venues for conferences, meetings and events globally.',
+                'Customized Solutions: Tailor-made itineraries integrating business objectives with leisure activities.',
+                'Event Experts: Dedicated MICE specialists manage logistics, from registration to post-event analysis.'
+            ]
+        },
+        {
+            title: 'Luxury Travel Experiences',
+            details: [
+                'Exclusive Stays: High-end resorts, luxury cruises and private islands.',
+                'Concierge Services: 24/7 assistance with bookings, private chauffeurs and personal assistants.',
+                'Bespoke Experiences: Exclusive access to prestigious events, private chefs and insider access moments.'
 
-const ServiceBlog: React.FC = () => {
-    const services: ServiceSection[] = [
-        {
-            title: "TS – FIT's",
-            subtitle: "Elevating Travel Experiences",
-            description: "Travel Synergies specializes in crafting personalized travel experiences tailored to individual preferences. As a leading DMC, we offer exceptional leisure holiday services, including highly customizable FIT options for ultimate travel freedom.",
-            expertise: "We are Experts in Handling Individual Travelers (FIT's). Our dedicated team is passionate about travel and brings a deep understanding of the UAE and its unique offerings.",
-            portfolio: [
-                "Choice of flexible accommodation",
-                "Logistics and ground services",
-                "Professional guides with local insights",
-                "Convenient booking engine",
-                "Conceirge service",
-                "Restaurant reservations",
-                "Access to tickets"
-            ],
-            commitment: "Our team is commited to go above and beyond to provide personalized service at every step of the journey. From curating bespoke itineraries to offering round-the-clock support, we ensure a seamless and enriching travel experience to ensure our guests experience the best of what the destination has to offer."
+            ]
         },
         {
-            title: "TS – Groups",
-            subtitle: "The Pioneer in Group Travel",
-            description: "We specialize in creating unforgettable experiences, from intimate gatherings to grand-scale events. Leveraging our expertise, we seamlessly connect with the perfect hotels, venues, tours and logistics. Our portfolio spans diplomatic events, concerts, sporting spectacles and corporate MICE programs, all powered by advanced in-house technology for flawless execution.",
-            expertise: "Our dedicated team brings a wealth of knowledge with hands-on experience to deliver tailored solutions, catering to specific requests and value additions that exceeds expectations. ",
-            portfolio: [
-                "Leisure group tours",
-                "Corporate retreat",
-                "Reunions & family get togethers",
-                "Logistics & planning",
-                "Activity coordination",
-                "Itinerary design",
-            ],
-            commitment: "Our team is committed to delivering exceptional services for leisure groups, ensuring every journey exceeds expectations. Our approach is client-centric, and we work closely with our partners to understand their preferences and customize our services to create unforgettable group tours"
-        },
-        {
-            title: "TS - MICE",
-            subtitle: "Making M.I.C.E Experiences More Exciting",
-            description: "We specialize in creating unforgettable experiences, from intimate gatherings to grand-scale events. Leveraging our expertise, we seamlessly connect with the perfect hotels, venues, tours and logistics. Our portfolio spans diplomatic events, concerts, sporting spectacles and corporate MICE programs, all powered by advanced in-house technology for flawless execution.",
-            expertise: "At Travel Synergies, we specialize in delivering comprehensive M.I.C.E. services, dedicated to delivering exceptional and seamless event experiences with extensive expertise.",
-            portfolio: [
-                "Dedicated experts",
-                "Venue sourcing",
-                "Technology integration",
-                "Branding",
-                "Cultural immersion",
-                "Team building",
-                "Post event evaluation",
-            ],
-            commitment: "Our team has successfully handled several high-profile events for partners such as Visa, Takeda, Nestle, Johnson and Johnson, Kaspersky, Astra Zeneca, Novartis, Pfizer, Stada, Chanel, Microsoft, Samsung, Mars, BAT, Loreal, Colgate, Santander."
-        },
-        {
-            title: "TS – Congresses",
-            subtitle: "Premier Congresses of Global Excellence",
-            description: "At Travel Synergies, we are a leading Professional Congress Organizer (PCO) with a proven history of managing and delivering world-class congresses and events. Our portfolio includes prestigious global events, such as those organized by the United Nations for the Federal Government of the UAE, showcasing our expertise and commitment to excellence.",
-            expertise: "With a team of seasoned professionals, we bring deep industry knowledge and precision to every project. We have successfully managed congresses of all scales, from small intimate gatherings to large international events from diverse industries.",
-            portfolio: [
-                "Venue sourcing & logistics",
-                "Congress management",
-                "Marketing, promotions & branding",
-                "Contract negotiations",
-                "On-site management",
-            ],
-            commitment: "*  ITU (International elecommunication Union) Congresses* WTSA (World Telecommunication Standardization Assembly)* GSS (Global Standards Symposium):* WCIT (World Conference on International Telecommunications)"
-        },
+            title: 'Specialty Tours',
+            details: [
+                'Expert Guidance: Trained professionals for adventure activities ensuring safety and quality.',
+                'Specialized Gear: Access to high-quality equipment for activities like trekking, scuba diving, and skiing.',
+                'Local Insights: Guided tours with expert naturalists, historians, or cultural ambassadors.'
 
-        // Add other services similarly...
+            ]
+        },
+        {
+            title: 'Cruise Vacations',
+            details: [
+                'Wide Selection: Cruises to match every style, from luxury liners to intimate river cruises.',
+                'Custom Shore Excursions: Unique onshore activities tailored to each port of call.',
+                'All-Inclusive Packages: Meals, entertainment and optional choices for upgrades for suite accommodations.'
+
+            ]
+        },
+        {
+            title: 'Travel Insurance',
+            details: [
+                'Flexible Plans: Coverage options for medical emergencies, trip cancellations, and baggage loss.',
+                'Global Reach: Policies accepted in multiple countries with 24/7 international assistance.',
+                'Comprehensive Cover: Comprehensive support during unforeseen circumstances.'
+
+            ]
+        },
+        {
+            title: 'Flight and Accommodation Booking',
+            details: [
+                'Global Inventory: Access to 3 million hotels and partnerships with major airlines for competitive pricing.',
+                'Custom Preferences: Choices based on star rating, location, amenities and flight class.',
+                '•	Dynamic Packages: Bundled deals combining flights, stays and activities for cost savings.'
+
+            ]
+        },
+        {
+            title: '24/7 Customer Support',
+            details: [
+                'Round-the-Clock Assistance: Helplines available for travelers before, during and after their trip.',
+                'Comprehensive Solutions: Support for itinerary changes, emergency bookings, or travel disruptions.',
+                'Multilingual Support: Services in multiple languages for diverse customer needs.'
+
+            ]
+        },
+        {
+            title: 'Our Commitment to Excellence',
+            details: [
+                'At Travel Synergies, we are driven by a passion for creating exceptional travel experiences that inspire and satisfy. With a commitment to quality, innovation and personalized services, we strive to redefine the way you explore the world. ',
+                'With years of industry expertise and a proven track record, Travel Synergies is a trusted partner for all your travel needs. Our partnerships with leading providers and our focus on customer satisfaction ensure that every journey is safe, comfortable and memorable.'
+
+            ]
+        },
+    ];
+
+    const destinationDetails = [
+        {
+            title: 'Treasures Unveiled',
+            description: 'Escape to idyllic tropical paradises where sun-kissed beaches, turquoise waters and lush greenery create the perfect setting for relaxation and rejuvenation. Whether it’s the Maldives, Sri Lanka or the Seychelles, indulge in luxury resorts, serene landscapes and unforgettable island vibes.'
+
+        },
+        {
+            title: 'Wildlife Safaris',
+            description: 'Embark on thrilling wildlife safaris to witness majestic creatures in their natural habitats. From the Big Five in Africa to the tigers of India, these adventures offer close encounters with nature’s wonders, guided by expert naturalists for an unforgettable experience.'
+
+        },
+        {
+            title: 'City Breaks',
+            description: 'Discover the charm of vibrant cities worldwide with quick getaways tailored to your preferences. Immerse yourself in cultural landmarks, buzzing nightlife and world-class dining, whether it’s New York, Paris or Tokyo. Perfect for those seeking excitement and exploration.'
+
+        },
+        {
+            title: 'Cultural Immersions',
+            description: 'Dive into the rich traditions and heritage of destinations around the globe. Explore ancient temples, vibrant festivals and local customs that provide an authentic glimpse into the heart of each destination. Travel with purpose and connect with the stories of the past and present.'
+
+        },
+        {
+            title: 'Architectural Wonders',
+            description: 'Marvel at the architecutal masterpiece of renowned structures by visiting iconic architectural masterpieces. From the Great wall of China to the world wonders of the Taj Mahal and the intricate details of Angkor Wat. Sites inspire awe and celebrate human creativity across eras.'
+
+        },
+        {
+            title: 'Enthralling Adventures',
+            description: 'Marvel at the architecutal masterpiece of renowned structures by visiting iconic architectural masterpieces. From the Great wall of China to the world wonders of the Taj Mahal and the intricate details of Angkor Wat. Sites inspire awe and celebrate human creativity across eras.'
+
+        },
+        {
+            title: 'Culinary Journeys',
+            description: "Savor the world’s finest cuisines with tours designed for food enthusiasts. Taste authentic dishes, explore bustling markets and learn from master chefs to experience the flavors thatdefine each destination."
+
+        },
+        {
+            title: 'Romantic Escapes',
+            description: 'Craft unforgettable moments with tailor-made romantic escapes. Whether it’s a candlelit dinner on a private beach or a hot air balloon ride over rolling vineyards, these trips are perfect for couples seeking connection and intimacy.'
+
+        },
+        {
+            title: 'Spiritual Awakenings',
+            description: 'A spiritual awakening is a profound journey of connection and inner peace. Sparked by sacred spaces like churches, mosques and temples inspire reflection and spiritual well-being. Rich with history and devotion, offer a tranquil escape from the modern rush.'
+
+        }
     ];
 
     return (
-        <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 ">
-            <div className="mx-auto">
-                <h1 className="text-4xl font-bold text-center text-orange-700 mb-12">
-                    Our Service Spectrum
-                </h1>
+        <section className="bg-gray-100 text-gray-800 p-8">
+            <div className="container max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden p-4">
+                <div className="grid md:grid-cols-2 gap-8">
+                    {/* Our Service Spectrum */}
+                    <div>
+                        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-orange-700 mb-6">Our Service Spectrum</h2>
+                        {serviceSpectrumDetails.map((service, index) => (
+                            <div key={index} className="mb-4">
+                                <h3 className="font-semibold text-orange-500">{service.title}</h3>
+                                <ul className=" text-xs md:text-sm text-gray-600">
+                                    {service.details.map((item, index) => (
+                                        <li key={index} className="flex ">
+                                            <div className="text-xs">
 
-                <div className="grid gap-8">
-                    {services.map((service, index) => (
-                        <div 
-                            key={index} 
-                            className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
-                        >
-                            <div className="p-6">
-                                <div className="space-y-6">
-                                    {/* Header Section */}
-                                    <div className="border-b border-gray-200 pb-4">
-                                        <h2 className="text-3xl font-semibold text-orange-500 mb-2">
-                                            {service.title}
-                                        </h2>
-                                        <p className="text-xl text-gray-700 font-medium">
-                                            {service.subtitle}
-                                        </p>
-                                    </div>
-
-                                    {/* Main Content */}
-                                    <div className="space-y-6">
-                                        <p className="text-gray-600 leading-relaxed">
-                                            {service.description}
-                                        </p>
-
-                                        {service.expertise && (
-                                            <div className="bg-orange-50 p-4 rounded-lg">
-                                                <p className="text-gray-700">
-                                                    {service.expertise}
-                                                </p>
+                                                <GoDotFill className="mr-2 mt-[3px] " />
                                             </div>
-                                        )}
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
 
-                                        {/* Service Portfolio */}
-                                        <div>
-                                            <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                                                Our Service Portfolio
-                                            </h3>
-                                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                                {service.portfolio.map((item, idx) => (
-                                                    <li key={idx} className="flex items-center space-x-2">
-                                                        <span className="w-2 h-2 bg-orange-500 rounded-full" />
-                                                        <span className="text-gray-600">{item}</span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
-
-                                        {/* Commitment Section */}
-                                        <div className="bg-gray-50 p-6 rounded-lg">
-                                            <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                                                Our Commitment
-                                            </h3>
-                                            <p className="text-gray-600 leading-relaxed">
-                                                {service.commitment}
-                                            </p>
-                                        </div>
-
-                                        {/* Additional Info if available */}
-                                        {service.additionalInfo && (
-                                            <div className="border-t border-gray-200 pt-6">
-                                                <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                                                    {service.additionalInfo.title}
-                                                </h3>
-                                                <ul className="list-disc list-inside space-y-2">
-                                                    {service.additionalInfo.items.map((item, idx) => (
-                                                        <li key={idx} className="text-gray-600">
-                                                            {item}
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
+
+                    {/* Discover Your Dream Destinations */}
+                    <div>
+                        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-orange-700 mb-6">Discover Your Dream Destinations</h2>
+                        {destinationDetails.map((destination, index) => (
+                            <div key={index} className="mb-4">
+                                <h3 className="font-semibold text-orange-500 ">{destination.title}</h3>
+                                <p className="text-xs md:text-sm text-gray-600 ">{destination.description}</p>
+                            </div>
+                        ))}
+                    </div>
+
+
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
-export default ServiceBlog;
+export default SustainableToursm;

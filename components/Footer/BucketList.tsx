@@ -1,122 +1,185 @@
-import React from 'react';
-import { FaBinoculars } from 'react-icons/fa';
+import React, { useState } from 'react';
 
-const BucketListBlog = () => {
-    const activities = [
+const bucketListData = {
+    destinations: [
         {
-            //   icon: <AtvQuad className="w-12 h-12 text-orange-600" />,
-            title: "Desert Adventures",
-            items: [
-                "Rev up for an adrenaline-filled dune buggy ride across the Arabian Desert.",
-                "Embark on a camel safari and experience the traditional timeless Bedouin lifestyle.",
-                "Unwind at a desert camp for a complete experience, including stargazing and a delicious Arabic feast."
-            ]
+            title: "Great Wall of China",
+            description: "A marvel of ancient engineering, the Great Wall winds over 13,000 miles through majestic landscapes, standing as a symbol of China's resilience and rich heritage."
         },
         {
-            //   icon: <FaBinoculars  className="w-12 h-12 text-orange-600" />,
-            title: "City Breaks",
-            items: [
-                "Explore the iconic Burj Khalifa and take in the breathtaking views of Dubai from the top.",
-                "Visit the stunning Sheikh Zayed Grand Mosque in Abu Dhabi and explore the UAE's rich history.",
-                "Wander through the vibrant streets of Dubai's Old Town and discover the city's hidden gems.",
-                "Master local flavors in a traditional Arabic cooking class and experience how to make delicious local dishes.",
-                "Explore the local souks (markets) and haggle for souvenirs and traditional goods.",
-                "Attend a traditional Arabic music and dance performance and experience the rich cultural heritage of the UAE."
-            ]
+            title: "Hot Air Ballooning in Cappadocia",
+            description: "Float above the mystic landscapes of Cappadocia, where fairy chimneys, ancient cave dwellings and vibrant valleys create a mesmerizing panorama."
         },
         {
-            //   icon: <SkydivingAlt className="w-12 h-12 text-orange-600" />,
-            title: "Adventure Activities",
-            items: [
-                "Go skydiving over the Palm Jumeirah and take in the stunning aerial views of Dubai.",
-                "Soar in a hot air balloon ride to capture the stunning sunrise over the stunning desert landscape.",
-                "Experience the thrilling zip line adventure through the mountains of Ras Al Khaimah."
-            ]
+            title: "Temples in Egypt",
+            description: "Discover the grandeur of ancient Egypt as you explore iconic temples like Karnak, Luxor, and Abu Simbel, steeped in millennia-old history and mystique"
         },
         {
-            //   icon: <Spa className="w-12 h-12 text-orange-600" />,
-            title: "Luxury Indulgence",
-            items: [
-                "Indulge in a luxury shopping spree at the Dubai Mall and treat yourself to the treasures from opulent boutiques.",
-                "Relax and rejuvenate your mind and body with a spa day at a luxurious resort."
-            ]
+            title: "Maldives",
+            description: "A tropical haven of crystal-clear waters, overwater bungalows and pristine white-sand beaches, the Maldives promises serene luxury and unparalleled beach stays."
         },
         {
-            //   icon: <GolfBall className="w-12 h-12 text-orange-600" />,
-            title: "Golfing",
-            items: [
-                "Tee off at the iconic Dubai Creek Golf & Yacht Club and enjoy the stunning views of the city.",
-                "Play a round of golf at the prestigious Emirates Golf Club and challenge your skills.",
-                "Refine your skills with golfing lessons from professional instructors."
-            ]
+            title: "New York",
+            description: "The city that never sleeps, New York dazzles with its towering skyline, popular attractions, diverse neighborhoods and vibrant atmosphere."
         },
         {
-            //   icon: <Ship className="w-12 h-12 text-orange-600" />,
-            title: "Yachting",
-            items: [
-                "Cruise at sunset along the Dubai Marina and take in breathtaking city views.",
-                "Embark on a luxury yacht tour of the Arabian Gulf's crystal-clear waters.",
-                "Learn the art of sailing with professional yachting lessons."
-            ]
+            title: "Machu Picchu, Peru",
+            description: "Perched high in the Andes, Machu Picchu is a mystical Incan city known for its remarkable stone structures and breathtaking mountain views."
         },
         {
-            //   icon: <Horse className="w-12 h-12 text-orange-600" />,
-            title: "Horse Riding",
-            items: [
-                "Embark on a horseback journey through the desert and experience the timeless traditions of the Bedouin way of life."
-            ]
+            title: "Santorini – Greece ",
+            description: "With its whitewashed houses, azure-domed churches and breathtaking sunsets over the Aegean Sea, Santorini sets the stage for an idyllic getaway."
         },
         {
-            //   icon: <MusicNote className="w-12 h-12 text-orange-600" />,
-            title: "Nightlife & Clubs",
-            items: [
-                "Indulge in luxury and excitement at some of the country's most iconic venues, including the Dubai Marina's Cavalli Club and Burj Khalifa's Armani/Privé.",
-                "Dance the night away at the upscale and glamorous nightclub in Downtown Dubai.",
-                "Unwind with a cocktail at a rooftop bar, enjoying panoramic views of the city.",
-                "Explore the dynamic nightlife across the city for a lively and unforgettable evening.",
-                "Experience the diverse entertainment with a bar hopping tour."
-            ]
+            title: "Masai Mara, Kenya ",
+            description: "The Masai Mara is a world-renowned safari destination in Kenya, known for its Great Migration of wildebeest and zebras. It’s home to the Big Five and offers breathtaking savannah landscapes rich in wildlife and Maasai culture."
         },
         {
-            //   icon: <Theater className="w-12 h-12 text-orange-600" />,
-            title: "Opera and Concerts",
-            items: [
-                "Attend a live performance at the Dubai Opera House and enjoy the stunning architectural masterpiece.",
-                "Explore the UAE's cultural landmarks to gain deeper insights into the region's artistic and architectural heritage."
-            ]
-        }
-    ];
+            title: "Rome ",
+            description: "Rome, the Eternal city captivates visitors with its ancient landmarks, stunning art and romantic atmosphere offering a perfect blend of history and culture, along with the finest Italian cuisine."
+        },
+        {
+            title: "Japan",
+            description: "Discover Japan’s harmonious blend of tradition and modernity, from tranquil tea ceremonies and ancient temples to neon-lit cities and innovative art."
+        },
+        {
+            title: "Venice – Italy",
+            description: "Known as the Rose City, Petra features stunning architecture and ancient ruins, carved into sandstone cliffs that is a marvel in the desert landscape."
+        },
+        {
+            title: "Petra, Jordan",
+            description: "Known as the Rose City, Petra features stunning architecture and ancient ruins, carved into sandstone cliffs that is a marvel in the desert landscape."
+        },
+        {
+            title: "Venice – Italy",
+            description: "Lose yourself in the timeless romance of Venice, where gondola rides through enchanting canals and charming piazzas evoke a fairy tale-like experience."
+        },
+        {
+            title: "Sri Lanka",
+            description: "Known as the 'Pearl of the Indian Ocean,' Sri Lanka is a land of timeless charm and breathtaking beauty with lush tea plantations, incredible wildlife, golden beaches and rich cultural heritage, wrapped in warm hospitality. "
+        },
+        {
+            title: "Vatican – Italy  ",
+            description: "The heart of Catholicism, Vatican City inspires with St. Peter’s Basilica, the Sistine Chapel, and a profound sense of faith and history."
+        },
+        {
+            title: "Blue Mosque – Turkey",
+            description: "An architectural marvel in Istanbul, the Blue Mosque mesmerizes with its grand domes, intricate tilework and the serene call to prayer echoing through its courtyards."
+        },
+        {
+            title: "Castles in Germany",
+            description: "Step into a fairy tale as you explore Germany’s majestic castles, steeped in history, romance and architectural splendor which takes you back in time."
+        },
+
+    ],
+    dining: [
+        {
+            title: "Dinner in the Sky – Brussels, Belgium",
+            description: "Enjoy a meal 150 feet above the ground with Dinner in the Sky. This thrilling dining experience offers a bird's-eye view of the city while being served gourmet dishes by top chefs."
+        },
+        {
+            title: "Ithaa Undersea Restaurant – Maldives",
+            description: "Located beneath the ocean's surface, Ithaa offers diners a chance to enjoy a meal surrounded by vibrant marine life. As the world's first all-glass underwater restaurant."
+        },
+        {
+            title: "El Celler de Can Roca – Girona, Spain",
+            description: "For food connoisseurs, this Michelin-starred restaurant is a must-visit. Run by three brothers, El Celler de Can Roca offers avant-garde cuisine paired with a curated selection of wines."
+        },
+        {
+            title: "The Rock Restaurant – Zanzibar, Tanzania",
+            description: "Situated on a rock in the Indian Ocean, this picturesque restaurant offers a dining experience like no other. Accessible by boat, The Rock serves fresh seafood with panoramic ocean views, making it an unforgettable destination for romantic dinners."
+        },
+        {
+            title: "Noma – Copenhagen, Denmark",
+            description: "Frequently topping the lists of the world’s best restaurants, Noma offers a truly unique dining experience based on New Nordic cuisine. With seasonal menus that incorporate foraged ingredients, dining at Noma is both a culinary adventure and a celebration of Scandinavian heritage."
+        },
+        {
+            title: "Supperclub – Amsterdam, Netherlands",
+            description: 'Known for its "dinner-as-performance" concept, Supperclub offers a fusion of entertainment and gourmet food. Guests are invited to lie on beds or lounge on sofas as they enjoy multi-course meals, all while being immersed in live music, art, and performance.'
+        },
+        {
+            title: "Mamma Rosa's Trattoria – Positano, Italy",
+            description: "A charming cliffside restaurant overlooking the Amalfi Coast, Mamma Rosa's Trattoria offers delicious, authentic Italian cuisine in one of the most picturesque settings. Dining here feels like being part of a family, where homemade pasta and regional specialties steal the show.."
+        },
+        {
+            title: "Helsinki's Löyly – Helsinki, Finland",
+            description: "Combining sauna culture with dining, Löyly in Helsinki offers the unique opportunity to relax in a traditional Finnish sauna while enjoying a meal with a view of the Baltic Sea. The restaurant serves fresh, organic dishes, making it an ultimate experience of relaxation and culinary delight."
+        },
+        {
+            title: "Le Jules Verne – Paris, France",
+            description: "Located on the second floor of the Eiffel Tower, this Michelin-starred restaurant offers stunning views of Paris as you dine. With its elegant French cuisine, Le Jules Verne combines exquisite dining with the magic of one of the most iconic landmarks in the world."
+        },
+        {
+            title: "Ristorante Grotta Palazzese – Polignano a Mare, Italy",
+            description: "Situated inside a natural cave overlooking the Adriatic Sea, Grotta Palazzese offers a dramatic dining experience. Enjoy fine Mediterranean cuisine as the sound of crashing waves echoes beneath the cave’s vaulted ceiling."
+        },
+    ]
+};
+
+const BucketListPage: React.FC = () => {
+    const [activeSection, setActiveSection] = useState<'destinations' | 'dining'>('destinations');
 
     return (
-        <div className="min-h-screen bg-gray-100  px-4 sm:px-6 lg:px-8 py-8">
-            <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
-                <div className="p-6 md:p-10">
-                    <h1 className="text-3xl font-bold text-orange-700 mb-4 text-center">Bucket List</h1>
-                    <p className="text-lg text-gray-600 ">
-                        Discover extraordinary experiences curated by Travel Synergies to make your UAE trip unforgettable.
+        <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden py-12 px-4">
+                <h1 className="text-3xl font-extrabold text-center text-orange-700 mb-12">
+                    Bucket List
+                </h1>
+
+                <p className="text-xl text-center text-gray-700  mx-auto mb-12">
+                    At Travel Synergies, we're passionate about turning your travel dreams into unforgettable adventures. From marveling at iconic landmarks like the Eiffel Tower or the Great Wall of China to soaking in the natural wonders of the Amazon Rainforest or the Northern Lights, our curated bucket list showcases the best experiences the world has to offer.
+                </p>
+
+                <div className="flex justify-center mb-8">
+                    <div className="bg-white shadow-md md:rounded-full">
+                        <div className="flex flex-wrap justify-center sm:flex-nowrap">
+                            <button
+                                className={`px-10 py-3 m-1 sm:m-0 rounded-full transition-colors ${activeSection === 'destinations'
+                                        ? 'bg-orange-600 text-white'
+                                        : 'text-gray-700 hover:bg-orange-100'
+                                    }`}
+                                onClick={() => setActiveSection('destinations')}
+                            >
+                                Destinations
+                            </button>
+                            <button
+                                className={`px-4 py-3 m-1 sm:m-0 rounded-full transition-colors ${activeSection === 'dining'
+                                        ? 'bg-orange-500 text-white'
+                                        : 'text-gray-700 hover:bg-orange-100'
+                                    }`}
+                                onClick={() => setActiveSection('dining')}
+                            >
+                                Dining Experiences
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-6">
+                    {bucketListData[activeSection].map((item, index) => (
+                        <div
+                            key={index}
+                            className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow"
+                        >
+                            <h3 className="text-2xl font-semibold text-orange-500 mb-4">
+                                {item.title}
+                            </h3>
+                            <p className="text-gray-600">
+                                {item.description}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+
+                <div className="text-center mt-12">
+                    <p className="text-xl text-gray-700 mb-6">
+                        Let's make your global travel bucket list a reality!
                     </p>
-
-
-                    <main className="container mx-auto px-4 py-8">
-                        {activities.map((activity, index) => (
-                            <section key={index} className={`mb-12 ${index % 2 === 0 ? 'bg-gray-100 p-6 rounded-lg' : ''}`}>
-                                <div className="flex items-center mb-4">
-                                    {/* {activity.icon} */}
-                                    <h2 className="text-2xl font-bold text-orange-500 ml-4">{activity.title}</h2>
-                                </div>
-                                <ul className="list-disc pl-6 text-gray-600">
-                                    {activity.items.map((item, itemIndex) => (
-                                        <li key={itemIndex}>{item}</li>
-                                    ))}
-                                </ul>
-                            </section>
-                        ))}
-                    </main>
-
                 </div>
             </div>
         </div>
     );
 };
 
-export default BucketListBlog;
+export default BucketListPage;
