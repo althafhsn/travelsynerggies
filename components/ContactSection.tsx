@@ -68,8 +68,12 @@ export default function ContactSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-8 lg:gap-16">
                     {/* Left Section */}
                     <div className="text-orange-500 text-center flex lg:text-start col-span-1  items-center">
-                        <h1 className="text-[2em] xl:text-[3em] leading-[1.1] font-bold mb-6">
-                            Contact a Travel Designer
+                        <h1 className=" leading-[1.1] font-bold mb-6 text-2xl md:text-5xl font-serif">
+                            Contact a Travel <br />
+                            <span className='text-white'>
+
+                                Designer
+                            </span>
                         </h1>
 
                     </div>
