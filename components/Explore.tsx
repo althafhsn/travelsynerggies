@@ -484,8 +484,9 @@ const Explore = () => {
                                     className="group relative isolate flex flex-col justify-end overflow-hidden pb-12 pt-40 w-[260px] h-[360px] md:w-[230px] lg:h-[330px] xl:w-[260px] xl:h-[360px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
                                 >
                                     {/* Background Image */}
-                                    <img
+                                    <Image
                                         src={item.image}
+                                        fill
                                         alt={item.name}
                                         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out"
                                     />
