@@ -489,7 +489,7 @@ const Explore = () => {
                             {project.stack.map((item, index) => (
                                 <article
                                     key={index}
-                                    className="group relative isolate flex flex-col justify-end overflow-hidden pb-12 pt-40 w-[260px] h-[360px] md:w-[230px] lg:h-[330px] xl:w-[260px] xl:h-[360px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+                                    className="group relative isolate flex flex-col justify-end overflow-hidden pb-6 pt-40 w-[260px] h-[360px] md:w-[230px] lg:h-[330px] xl:w-[260px] xl:h-[360px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
                                 >
                                     {/* Background Image */}
                                     <Image
@@ -501,26 +501,26 @@ const Explore = () => {
                                     {/* Gradient Overlay */}
                                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
                                     {/* Text Content */}
-                                    <div className="z-10 relative px-4">
-                                        {/* Title */}
-
-                                        <div className='flex justify-start gap-2'>
-                                            <div className='text-lg text-orange-500 '>
+                                    <div className="z-10 relative px-4 flex flex-col h-full justify-end">
+                                        {/* Title (Name at the very bottom) */}
+                                        <div className="flex  gap-2">
+                                            <div className="text-lg font-bold text-orange-500">
                                                 <CiLocationOn />
                                             </div>
-                                            <h3 className="text-[12px] font-serif text-orange-500 mb-2 transition-opacity duration-300 ease-in-out group-hover:opacity-100 opacity-90">
+                                            <h3 className="text-[13px] font-bold text-orange-500 mb-2 transition-opacity duration-300 ease-in-out group-hover:opacity-90 opacity-90">
                                                 {item.name}
                                             </h3>
                                         </div>
-                                        {/* Description */}
+                                        {/* Description (Hover animation only for description) */}
                                         <p
-                                            className="text-xs leading-6 text-gray-300 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[10em] group-hover:mt-4 transition-[opacity,max-height,margin-top] duration-500 ease-in-out  font-serif"
+                                            className="text-xs leading-5 text-gray-300 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[11em] group-hover:mt-2 transition-[opacity,max-height,margin-top] duration-500 ease-in-out font-serif"
                                         >
                                             {item.description}
                                         </p>
-
                                     </div>
                                 </article>
+
+
                             ))}
                         </div>
                     </div>
