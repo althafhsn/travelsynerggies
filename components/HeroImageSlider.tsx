@@ -37,7 +37,7 @@ const sliderData: SlideImage[] = [
     },
 ];
 
-const ANIMATION_DURATION = 7000; // Slide duration in milliseconds
+const ANIMATION_DURATION = 3000; // Slide duration in milliseconds
 
 const ImageSlider: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -83,7 +83,7 @@ const ImageSlider: React.FC = () => {
                                 exit="exit"
                                 transition={{
                                     opacity: { duration: 0.6 },
-                                    x: { duration: 0.6, ease: "easeInOut" },
+                                    x: { duration: 0.6, },
                                 }}
                                 style={{
                                     backgroundImage: `url(${slide.image})`,

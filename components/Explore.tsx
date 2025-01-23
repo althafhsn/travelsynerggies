@@ -518,6 +518,7 @@ const Explore = () => {
                                         >
                                             {item.description}
                                         </p>
+
                                     </div>
                                 </article>
                             ))}
