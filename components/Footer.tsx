@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
                                     key={index}
                                     href={social.href}
                                     target="_blank"
-                                    className="w-6 md:w-12 h-6 md:h-12 flex items-center justify-center text-2xl md:text-4xl  hover:text-black hover:bg-orange-500 hover:scale-110 rounded-full  shadow-md transition-all duration-300 hover:shadow-lg"
+                                    className="w-6 md:w-12 h-6 md:h-12 flex items-center justify-center text-2xl md:text-4xl  hover:text-black hover:bg-orange-500 hover:scale-125 rounded-full  shadow-md transition-all duration-300 hover:shadow-lg"
                                 >
                                     {social.icon}
                                 </Link>
