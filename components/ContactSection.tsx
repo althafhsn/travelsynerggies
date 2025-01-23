@@ -36,13 +36,13 @@ const ContactButton: React.FC<ContactButtonProps> = ({ icon, title, phoneNumber,
                                 {title}
                             </h2>
                             {phoneNumber || email && (
-                                <p className="text-white group-hover:text-gray-800 text-sm  mb-1 truncate">
+                                <p className="text-white group-hover:text-gray-800 text-[9px] md:text-sm mb-1 truncate">
                                     {phoneNumber || email}
                                 </p>
                             )}
 
                             {isOnline && (
-                                <p className="text-orange-400 group-hover:text-gray-700 text-[10px] md:text-sm xl:text-lg">
+                                <p className="text-orange-400 group-hover:text-gray-700 text-[9px] md:text-sm xl:text-lg">
                                     We are online now
                                 </p>
                             )}
