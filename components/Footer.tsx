@@ -33,13 +33,14 @@ const Footer: React.FC = () => {
         register: {
             title: "",
             links: [
-                { text: "Our Service Spectrum", href: "/blogs#our-service-spectrum" }
+                { text: "Our Service Spectrum", href: "/blogs#our-service-spectrum" },
+                { text: "Blogs", href: "/" }
             ]
         },
         company: {
             title: "",
             links: [
-                { text: "Terms and Conditions", href: "/careers" },
+                { text: "Terms and Conditions", href: "/blogs#terms-conditions" },
                 { text: "Privacy Cookies", href: "/blogs#privacy-cookies" },
                 { text: "Sustainable Tourism", href: "/blogs#sustainable-tourism" },
                 { text: "Bucket List", href: "/blogs#bucket-list" },

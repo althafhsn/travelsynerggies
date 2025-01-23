@@ -4,6 +4,11 @@ import { useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { FooterLink } from '@/constants';
 import ServiceBlog from '@/components/Footer/OurServiceSpectrum';
+import TermsAndConditions from '@/components/Footer/TermsAndCondition';
+import SustainableTourismBlog from '@/components/Footer/SustainableToursm';
+import BucketListBlog from '@/components/Footer/BucketList';
+import OutboundTravelBlog from '@/components/Footer/OutboundHolidays';
+import SafetyGuidelinesBlog from '@/components/Footer/SaftyTravel';
 
 const BlogContent: React.FC = () => {
   const searchParams = useSearchParams();
@@ -33,75 +38,27 @@ const BlogContent: React.FC = () => {
     }
   }, [searchParams]);
 
-  interface BlogSection {
-    id: string;
-    title: string;
-    content: string;
-  }
-
-  const blogSections: BlogSection[] = [
-    {
-      id: 'terms-conditions',
-      title: 'Terms & Conditions',
-      content: 'Your terms and conditions content goes here...'
-    },
-    {
-      id: 'find-us',
-      title: 'Where Did You Find Us',
-      content: 'Your where did you find us content goes here...'
-    },
-    {
-      id: 'privacy-cookies',
-      title: 'Privacy Cookies',
-      content: 'Your privacy cookies content goes here...'
-    },
-    {
-      id: 'sustainable-tourism',
-      title: 'Sustainable Tourism',
-      content: 'Your sustainable tourism content goes here...'
-    },
-    {
-      id: 'bucket-list',
-      title: 'Bucket List',
-      content: 'Your bucket list content goes here...'
-    },
-    {
-      id: 'outbound-holidays',
-      title: 'Outbound Holidays',
-      content: 'Your outbound holidays content goes here...'
-    }
-  ];
-
   return (
     <div className="min-h-screen py-12">
       <div className="container mx-auto px-4">
-        {/* Navigation Tabs */}
-        <div className="flex flex-wrap gap-4 mb-8">
-          {navigationLinks.map((link) => (
-            <a
-              key={link.title}
-              href={link.href}
-              className="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition"
-            >
-              {link.title}
-            </a>
-          ))}
-
-        </div>
-
-        {/* Blog Sections */}
-        <div className="space-y-16">
-          {blogSections.map((section) => (
-            <section key={section.id} id={section.id} className="scroll-mt-16">
-              <h2 className="text-3xl font-bold mb-6">{section.title}</h2>
-              <div className="prose max-w-none">
-                <p>{section.content}</p>
-              </div>
-            </section>
-          ))}
-        </div>
         <div id='our-service-spectrum' className="scroll-mt-16">
           <ServiceBlog />
+        </div>
+        <div id='terms-conditions' className="scroll-mt-16" >
+          <TermsAndConditions />
+        </div>
+
+        <div id='sustainable-tourism' className="scroll-mt-16">
+          <SustainableTourismBlog />
+        </div>
+        <div id='bucket-list' className="scroll-mt-16">
+          <BucketListBlog />
+        </div>
+        <div id='outbound-holidays' className="scroll-mt-16">
+          <OutboundTravelBlog />
+        </div>
+        <div id='safety-guidelines' className="scroll-mt-16">
+          <SafetyGuidelinesBlog />
         </div>
       </div>
     </div>

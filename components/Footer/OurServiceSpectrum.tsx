@@ -34,25 +34,56 @@ const ServiceBlog: React.FC = () => {
         {
             title: "TS – Groups",
             subtitle: "The Pioneer in Group Travel",
-            description: "We excel in crafting seamless and personalized group travel experiences. From small tours to corporate retreats or family vacations, our expertise and resources bring your vision to life, ensuring every journey is memorable and stress-free.",
-            expertise: "Our dedicated team brings a wealth of knowledge with hands-on experience to deliver tailored solutions, catering to specific requests and value additions that exceeds expectations.",
+            description: "We specialize in creating unforgettable experiences, from intimate gatherings to grand-scale events. Leveraging our expertise, we seamlessly connect with the perfect hotels, venues, tours and logistics. Our portfolio spans diplomatic events, concerts, sporting spectacles and corporate MICE programs, all powered by advanced in-house technology for flawless execution.",
+            expertise: "Our dedicated team brings a wealth of knowledge with hands-on experience to deliver tailored solutions, catering to specific requests and value additions that exceeds expectations. ",
             portfolio: [
                 "Leisure group tours",
                 "Corporate retreat",
                 "Reunions & family get togethers",
                 "Logistics & planning",
                 "Activity coordination",
-                "Itinerary design"
+                "Itinerary design",
             ],
-            commitment: "Our team is committed to delivering exceptional services for leisure groups, ensuring every journey exceeds expectations. Our approach is client-centric, and we work closely with our partners to understand their preferences and customize our services to create unforgettable group tours."
+            commitment: "Our team is committed to delivering exceptional services for leisure groups, ensuring every journey exceeds expectations. Our approach is client-centric, and we work closely with our partners to understand their preferences and customize our services to create unforgettable group tours"
         },
+        {
+            title: "TS - MICE",
+            subtitle: "Making M.I.C.E Experiences More Exciting",
+            description: "We specialize in creating unforgettable experiences, from intimate gatherings to grand-scale events. Leveraging our expertise, we seamlessly connect with the perfect hotels, venues, tours and logistics. Our portfolio spans diplomatic events, concerts, sporting spectacles and corporate MICE programs, all powered by advanced in-house technology for flawless execution.",
+            expertise: "At Travel Synergies, we specialize in delivering comprehensive M.I.C.E. services, dedicated to delivering exceptional and seamless event experiences with extensive expertise.",
+            portfolio: [
+                "Dedicated experts",
+                "Venue sourcing",
+                "Technology integration",
+                "Branding",
+                "Cultural immersion",
+                "Team building",
+                "Post event evaluation",
+            ],
+            commitment: "Our team has successfully handled several high-profile events for partners such as Visa, Takeda, Nestle, Johnson and Johnson, Kaspersky, Astra Zeneca, Novartis, Pfizer, Stada, Chanel, Microsoft, Samsung, Mars, BAT, Loreal, Colgate, Santander."
+        },
+        {
+            title: "TS – Congresses",
+            subtitle: "Premier Congresses of Global Excellence",
+            description: "At Travel Synergies, we are a leading Professional Congress Organizer (PCO) with a proven history of managing and delivering world-class congresses and events. Our portfolio includes prestigious global events, such as those organized by the United Nations for the Federal Government of the UAE, showcasing our expertise and commitment to excellence.",
+            expertise: "With a team of seasoned professionals, we bring deep industry knowledge and precision to every project. We have successfully managed congresses of all scales, from small intimate gatherings to large international events from diverse industries.",
+            portfolio: [
+                "Venue sourcing & logistics",
+                "Congress management",
+                "Marketing, promotions & branding",
+                "Contract negotiations",
+                "On-site management",
+            ],
+            commitment: "*  ITU (International elecommunication Union) Congresses* WTSA (World Telecommunication Standardization Assembly)* GSS (Global Standards Symposium):* WCIT (World Conference on International Telecommunications)"
+        },
+
         // Add other services similarly...
     ];
 
     return (
         <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 ">
             <div className="mx-auto">
-                <h1 className="text-4xl font-bold text-center text-gray-900 mb-12">
+                <h1 className="text-4xl font-bold text-center text-orange-700 mb-12">
                     Our Service Spectrum
                 </h1>
 
