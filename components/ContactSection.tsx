@@ -20,32 +20,37 @@ const ContactButton: React.FC<ContactButtonProps> = ({ icon, title, phoneNumber,
     return (
         <button
             onClick={handleClick}
-            className="w-full h-full group"
+            className=" "
         >
-            <div className="relative md:w-40 md:h-40 w-32 h-32 lg:w-52 lg:h-52 xl:w-64 xl:h-64 mx-auto transform transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div className="absolute inset-0 rounded-full border border-white/20 hover:border-orange-500 hover:bg-orange-500 transition-all duration-300 flex flex-col items-center justify-center gap-2 lg:gap-4 xl:gap-6 bg-gray-900">
-                    {icon === 'phone' ? (
-                        <FiPhone className="w-4 h-4 md:w-8 md:h-8 lg:w-12 lg:h-12 text-white group-hover:text-gray-900" />
-                    ) : (
-                        <FiMail className="w-4 h-4 md:w-8 md:h-8 lg:w-12 lg:h-12 text-white group-hover:text-gray-900" />
-                    )}
-                    <div className="text-center">
-                        <h2 className="text-white text-sm md:text-lg lg:text-2xl group-hover:text-gray-900 font-bold mb-2">
-                            {title}
-                        </h2>
-                        {phoneNumber && (
-                            <p className="text-white group-hover:text-gray-800 text-sm md:text-lg lg:text-2xl mb-1">
-                                {phoneNumber}
-                            </p>
+            <div className="relative md:w-40 md:h-40 w-32 h-32 lg:w-52 lg:h-52 xl:w-64 xl:h-64 mx-auto">
+                <div className='group'>
+                    <div className="absolute inset-0 rounded-full border border-white/20 hover:border-orange-500 hover:bg-orange-500 flex group-hover:scale-110 flex-col items-center justify-center gap-2 lg:gap-4 xl:gap-6 bg-gray-900 transform transition-transform duration-300 ease-in-out overflow-hidden">
+                        {icon === 'phone' ? (
+                            <FiPhone className="w-4 h-4 md:w-8 md:h-8 lg:w-12 lg:h-12 text-white group-hover:text-gray-900" />
+                        ) : (
+                            <FiMail className="w-4 h-4 md:w-8 md:h-8 lg:w-12 lg:h-12 text-white group-hover:text-gray-900" />
                         )}
-                        {isOnline && (
-                            <p className="text-orange-400 group-hover:text-gray-700 text-[10px]  md:text-sm xl:text-lg">
-                                We are online now
-                            </p>
-                        )}
+                        <div className="text-center px-2">
+                            <h2 className="text-white text-sm md:text-lg lg:text-2xl group-hover:text-gray-900 font-bold mb-2">
+                                {title}
+                            </h2>
+                            {phoneNumber && (
+                                <p className="text-white group-hover:text-gray-800 text-sm md:text-lg lg:text-2xl mb-1 truncate">
+                                    {phoneNumber}
+                                </p>
+                            )}
+                            {isOnline && (
+                                <p className="text-orange-400 group-hover:text-gray-700 text-[10px] md:text-sm xl:text-lg">
+                                    We are online now
+                                </p>
+                            )}
+                        </div>
                     </div>
                 </div>
+
             </div>
+
+
         </button>
 
 

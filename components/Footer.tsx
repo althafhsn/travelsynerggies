@@ -1,5 +1,9 @@
+
+import Link from 'next/link';
 import React from 'react';
 
+import { CiFacebook, CiInstagram } from "react-icons/ci";
+import { FaWhatsapp, FaXTwitter } from 'react-icons/fa6';
 interface Link {
     text: string;
     href: string;
@@ -7,7 +11,7 @@ interface Link {
 
 interface SocialLink {
     href: string;
-    icon: string;
+    icon: any;
     alt: string;
 }
 
@@ -51,7 +55,7 @@ const Footer: React.FC = () => {
             title: "",
             links: [
                 { text: "Safety Guidelines", href: "/blogs#safety-guidelines" },
- 
+
             ]
         },
         destinations: {
@@ -68,10 +72,10 @@ const Footer: React.FC = () => {
     };
 
     const socialLinks: SocialLink[] = [
-        { href: "https://facebook.com", icon: "https://www.svgrepo.com/show/303114/facebook-3-logo.svg", alt: "Facebook" },
-        { href: "https://twitter.com", icon: "https://www.svgrepo.com/show/303115/twitter-3-logo.svg", alt: "Twitter" },
-        { href: "https://instagram.com", icon: "https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg", alt: "Instagram" },
-        { href: "https://wa.me/1234567890", icon: "https://www.svgrepo.com/show/475692/whatsapp-color.svg", alt: "WhatsApp" }
+        { href: "https://facebook.com", icon: <CiFacebook />, alt: "Facebook" },
+        { href: "https://twitter.com", icon: <FaXTwitter />, alt: "Twitter" },
+        { href: "https://instagram.com", icon: <CiInstagram />, alt: "Instagram" },
+        { href: "https://wa.me/1234567890", icon: <FaWhatsapp />, alt: "WhatsApp" }
     ];
 
     const FooterLinkColumn: React.FC<FooterLinkColumnProps> = ({ title, links }) => (
@@ -92,32 +96,34 @@ const Footer: React.FC = () => {
     return (
         <div>
             <footer className="font-sans">
-                <hr className="border-orange-500 md:my-8 h-2" />
+                <hr className="border-orange-500 md:mt-8 h-2" />
                 <div className="container px-6 py-6 mx-auto">
                     {/* Logo and Social Media Section */}
-                    <div className="flex flex-col md:flex-row items-center justify-between pb-8">
-                        <div className="flex flex-1 gap-4 hover:cursor-pointer pb-5 md:pb-0">
-                            <img src="/whitelogo.png" alt="Logo" className="w-48" />
+                    <div className="flex items-center justify-between pb-8">
+                        {/* Logo Section */}
+                        <div className="flex flex-1 gap-4 items-center hover:cursor-pointer pb-5 md:pb-0">
+                            <img
+                                src="/whitelogo.png"
+                                alt="Logo"
+                                className="md:w-48 w-36 transition-transform duration-300 hover:scale-105"
+                            />
                         </div>
-                        
+
+                        {/* Social Links Section */}
                         <div className="flex gap-4 hover:cursor-pointer sm:scale-75 sm:justify-end">
                             {socialLinks.map((social, index) => (
-                                <a 
+                                <Link
                                     key={index}
-                                    href={social.href} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
+                                    href={social.href}
+                                    target="_blank"
+                                    className="w-6 md:w-12 h-6 md:h-12 flex items-center justify-center text-2xl md:text-4xl  hover:text-black hover:bg-orange-500 hover:scale-110 rounded-full  shadow-md transition-all duration-300 hover:shadow-lg"
                                 >
-                                    <img 
-                                        src={social.icon} 
-                                        width="30" 
-                                        height="30" 
-                                        alt={social.alt} 
-                                    />
-                                </a>
+                                    {social.icon}
+                                </Link>
                             ))}
                         </div>
                     </div>
+
 
                     {/* Main Footer Content */}
                     <div className="grid grid-cols-1 lg:grid-cols-6 gap-8">
@@ -128,7 +134,7 @@ const Footer: React.FC = () => {
                             <FooterLinkColumn {...navigationLinks.information} />
                             <FooterLinkColumn {...navigationLinks.destinations} />
                         </div>
-                        
+
                         {/* Subscription Section - Takes 2 columns on large screens */}
                         <div className="lg:col-span-2">
                             <div className="bg-gray-800/20 p-6 rounded-lg">
@@ -136,11 +142,11 @@ const Footer: React.FC = () => {
                                     Subscribe our newsletter to get updates
                                 </h1>
                                 <div className="flex flex-col space-y-3">
-                                    <input 
-                                        id="email" 
-                                        type="email" 
-                                        className="px-4 py-2 text-gray-700 bg-white border rounded-md focus:border-orange-400 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-orange-300" 
-                                        placeholder="Email Address" 
+                                    <input
+                                        id="email"
+                                        type="email"
+                                        className="px-4 py-2 text-gray-700 bg-white border rounded-md focus:border-orange-400 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-orange-300"
+                                        placeholder="Email Address"
                                     />
                                     <button className="px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform focus:outline-none bg-orange-500 rounded-lg hover:bg-orange-600 focus:ring focus:ring-orange-300 focus:ring-opacity-80">
                                         Subscribe

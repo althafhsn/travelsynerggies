@@ -126,7 +126,7 @@ const ImageSlider: React.FC = () => {
                                 variants={contentVariants}
                                 initial="initial"
                                 animate="animate"
-                                className="text-orange-500 text-3xl md:text-5xl lg:text-8xl font-bold uppercase leading-none"
+                                className="text-orange-500 text-3xl md:text-4xl lg:text-6xl font-bold uppercase leading-none"
                             >
                                 {sliderData[currentIndex].title}
                             </motion.h2>
@@ -136,7 +136,7 @@ const ImageSlider: React.FC = () => {
                                 variants={contentVariants}
                                 initial="initial"
                                 animate="animate"
-                                className="text-2xl md:text-4xl lg:text-8xl font-bold uppercase leading-none"
+                                className="text-2xl md:text-3xl lg:text-4xl font-bold uppercase leading-none"
                                 style={{
                                     textShadow: '3px 4px 4px rgba(255, 255, 255, 0.8)'
                                 }}
