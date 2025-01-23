@@ -12,7 +12,7 @@ interface FeatureProps {
 
 const Feature: React.FC<FeatureProps> = ({ icon, title, description }) => (
   <div className="flex flex-col items-center text-center p-12 space-y-6 min-w-[400px] ">
-    <div className="p-6 bg-white/50 rounded-lg text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300 ease-in-out transform hover:scale-125 cursor-pointer">
+    <div className="p-6 bg-gray-50 rounded-lg text-orange-500 hover:bg-orange-500 hover:text-white  transition-all duration-300 ease-in-out transform hover:scale-125 cursor-pointer">
       {icon}
     </div>
     <h3 className="text-orange-500 font-semibold text-xl tracking-wide mt-4">{title}</h3>

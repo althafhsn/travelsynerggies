@@ -40,11 +40,7 @@ const BlogContent: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="sticky top-0 bg-black/50">
-        <nav className="container p-4 max-w-8xl w-48">
-          <img src="/whitelogo.png" alt="logo" />
-        </nav>
-      </div>
+      
 
       <div className="container mx-auto px-4">
         <div id='our-service-spectrum' className="scroll-mt-16">
