@@ -441,13 +441,13 @@ const Explore = () => {
                                         <div className="grid grid-cols-1 gap-8 items-center">
                                             {/* Title and Description Section */}
                                             <div className="space-y-6 xl:order-1">
-                                                <div className="text-center xl:text-start">
+                                                <div className="text-center xl:text-start flex flex-col  justify-center ">
                                                     <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white">
                                                         {project.fName}{' '}
                                                         <span className="text-orange-500">{project.lName}</span>
                                                     </h1>
                                                     {/* Fixed Height Container for Description */}
-                                                    <div className="h-[150px] overflow-hidden">
+                                                    <div className="h-[140px] overflow-hidden">
                                                         <p className="text-gray-400 max-w-2xl xl:max-w-none mx-auto xl:mx-0">
                                                             {project.description}
                                                         </p>
@@ -457,7 +457,7 @@ const Explore = () => {
 
                                             {/* Image Section */}
                                             <div className="xl:order-2">
-                                                <div className="relative h-[420px] md:h-[520px] xl:h-[580px] w-full rounded-lg overflow-hidden">
+                                                <div className="relative h-[420px] md:h-[520px] xl:h-[590px] w-full rounded-lg overflow-hidden">
                                                     <div className="absolute inset-0 bg-black/10 z-10" />
                                                     <Image
                                                         src={project.image}
@@ -507,13 +507,13 @@ const Explore = () => {
                                             <div className="text-lg font-bold text-orange-500">
                                                 <CiLocationOn />
                                             </div>
-                                            <h3 className="text-[13px] font-bold text-orange-500 mb-2 transition-opacity duration-300 ease-in-out group-hover:opacity-90 opacity-90">
+                                            <h3 className="text-[15px] font-bold text-orange-500 mb-2 transition-opacity duration-300 ease-in-out group-hover:opacity-90 opacity-90">
                                                 {item.name}
                                             </h3>
                                         </div>
                                         {/* Description (Hover animation only for description) */}
                                         <p
-                                            className="text-xs leading-5 text-gray-300 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[11em] group-hover:mt-2 transition-[opacity,max-height,margin-top] duration-500 ease-in-out font-serif"
+                                            className="text-xs leading-5 text-gray-300 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[11em] group-hover:mt-2 transition-[opacity,max-height,margin-top] duration-500 ease-in-out "
                                         >
                                             {item.description}
                                         </p>

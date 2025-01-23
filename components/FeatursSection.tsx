@@ -1,5 +1,11 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+
 import { MdDesignServices, MdLightbulb } from "react-icons/md";
 import { FaGlobe, FaHotel, FaPlaneDeparture, FaHeadset } from 'react-icons/fa'
 import { GiTrophyCup } from "react-icons/gi";
@@ -10,9 +16,9 @@ interface FeatureProps {
   description: string;
 }
 
-const Feature: React.FC<FeatureProps> = ({ icon, title, description }) => (
-  <div className="flex flex-col items-center text-center p-12 space-y-6 min-w-[400px] ">
-    <div className="p-6 bg-gray-50 rounded-lg text-orange-500 hover:bg-orange-500 hover:text-white  transition-all duration-300 ease-in-out transform hover:scale-125 cursor-pointer">
+const Feature = ({ icon, title, description }: FeatureProps) => (
+  <div className="flex flex-col items-center text-center p-12 space-y-6 min-w-[400px]">
+    <div className="p-6 bg-gray-50 rounded-lg text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300 ease-in-out transform hover:scale-125 cursor-pointer">
       {icon}
     </div>
     <h3 className="text-orange-500 font-semibold text-xl tracking-wide mt-4">{title}</h3>
@@ -24,17 +30,15 @@ const Feature: React.FC<FeatureProps> = ({ icon, title, description }) => (
 );
 
 const FeaturesSection = () => {
-  const [position, setPosition] = useState(0);
-
   const features = [
     {
       icon: <MdDesignServices size={32} />,
-      title: "•	Tailored Itineraries",
+      title: "Tailored Itineraries",
       description: "We design personalized travel plans that reflect your interests, whether it's cultural immersion, adventure, relaxation or a combination of experiences."
     },
     {
       icon: <FaGlobe size={32} />,
-      title: "Global Destinations ",
+      title: "Global Destinations",
       description: "Our extensive network allows us to offer journeys to a wide array of destinations across Africa, Asia, Europe, the Americas and beyond."
     },
     {
@@ -64,39 +68,39 @@ const FeaturesSection = () => {
     }
   ];
 
-  const doubledFeatures = [...features, ...features];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setPosition((prevPosition) => {
-        const newPosition = prevPosition - 1;
-        if (Math.abs(newPosition) >= features.length * 432) {
-          return 0;
-        }
-        return newPosition;
-      });
-    }, 30);
-
-    return () => clearInterval(interval);
-  }, [features.length]);
-
   return (
-    <div className="w-full overflow-hidden py-2 ">
-      <div
-        className="flex transition-transform duration-300"
-        style={{
-          transform: `translateX(${position}px)`,
+    <div className="w-full py-2 overflow-hidden">
+      <Swiper
+        modules={[Autoplay]}
+        spaceBetween={20}
+        slidesPerView="auto"
+        loop={true}
+        speed={5000}
+        autoplay={{
+          delay: 0,
+          waitForTransition: true,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: false,
+          stopOnLastSlide: false
         }}
+        breakpoints={{
+          640: {
+            slidesPerView: 'auto',
+            spaceBetween: 20
+          }
+        }}
+        className="w-full"
       >
-        {doubledFeatures.map((feature, index) => (
-          <Feature
-            key={index}
-            icon={feature.icon}
-            title={feature.title}
-            description={feature.description}
-          />
+        {features.map((feature, index) => (
+          <SwiperSlide key={index} className="!w-auto">
+            <Feature
+              icon={feature.icon}
+              title={feature.title}
+              description={feature.description}
+            />
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </div>
   );
 };

@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 
 export interface SlideImage {
-    title: string;
     name: string;
     image: string;
     description: string;
@@ -12,28 +11,25 @@ export interface SlideImage {
 
 const sliderData: SlideImage[] = [
     {
-        title: "SANTORINI",
-        name: "The Geek Island",
+        name: " Vietnam",
         image: "/outbound/hero/img4.webp",
         description: "Uncover the vibrant culture and landscapes of Vietnam."
     },
     {
-        title: "PARCO NAZINALE",
-        name: "Dalle Cinwue Tarre",
+        name: "Santorini",
         image: "/outbound/hero/img2.webp",
         description: "Experience the captivating views of Santorini"
     },
     {
-        title: "PARADISE ISLAND",
+
         name: "Italy",
-        image: "/outbound/hero/img1.webp",
+        image: "/outbound/hero/img3.webp",
         description: "A journey through art, history and flavors of Italy"
     },
     {
-        title: "BE BE LAKE",
-        name: "Bac Kan Province ",
-        image: "/outbound/hero/img3.webp",
-        description: "Where turquoise waters meet golden sands."
+        name: "Bahamas",
+        image: "/outbound/hero/img1.webp",
+        description: "Where turquoise waters meet golden sands"
     },
 ];
 
@@ -94,15 +90,6 @@ const ImageSlider: React.FC = () => {
                             >
                                 {/* Content */}
                                 <div className="absolute top-1/2 left-4 md:left-12 lg:left-24 transform -translate-y-1/2 text-white max-w-xs md:max-w-lg">
-                                    <motion.h2
-                                        initial={{ opacity: 0, y: 50 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        exit={{ opacity: 0, y: -50 }}
-                                        transition={{ duration: 0.6 }}
-                                        className="text-orange-500 text-3xl md:text-4xl lg:text-6xl font-bold uppercase leading-none"
-                                    >
-                                        {slide.title}
-                                    </motion.h2>
 
                                     <motion.h3
                                         initial={{ opacity: 0, y: 50 }}
