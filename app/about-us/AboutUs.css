@@ -5,16 +5,21 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-    top: 25%;
+    
     z-index: 1000;
+    scale: 60%;
 
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
 
-    color: orange;
+    color: #ff9800;
 
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    color:#f57c00 ;
 }
 
 .swiper-button-next {
@@ -49,13 +54,13 @@
 }
 
 .teamswiper .swiper-button-prev {
-    top: 93% !important;
+    top: 98% !important;
     left: 35% !important;
     z-index: 100 !important;
 }
 
 .teamswiper .swiper-button-next {
-    top: 93% !important;
+    top: 98% !important;
     right: 35% !important;
     z-index: 100 !important;
 }
