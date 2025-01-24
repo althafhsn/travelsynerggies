@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
         destinations: {
             title: "",
             links: [
-                { text: "About Us", href: "/blogs#about-us" },
+                { text: "About Us", href: "/about-us" },
                 { text: "Partners", href: "/blogs#partners" },
                 { text: "Parters Login", href: "/" },
                 { text: "Why Choose Us", href: "/" },
@@ -141,16 +141,22 @@ const Footer: React.FC = () => {
                                 <h1 className="text-xl font-semibold tracking-tight text-orange-500 mb-4">
                                     Subscribe our newsletter to get updates
                                 </h1>
-                                <div className="flex flex-col space-y-3">
+                                <div className="max-w-md mx-auto lg:bg-transparent lg:border border-gray-300 rounded-3xl max-lg:py-3 lg:rounded-full lg:h-12 lg:p-1.5 flex flex-col sm:flex-row items-center gap-3 sm:gap-6 lg:gap-0">
                                     <input
-                                        id="email"
-                                        type="email"
-                                        className="px-4 py-2 text-gray-700 bg-white border rounded-md focus:border-orange-400 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-orange-300"
-                                        placeholder="Email Address"
+                                        type="text"
+                                        name="email"
+                                        className="py-2 px-6 bg-transparent rounded-full max-lg:border border-gray-300 text-gray-100 placeholder:text-gray-100 focus:outline-none flex-1 lg:py-2 lg:px-6"
+                                        placeholder="Enter your email.."
                                     />
-                                    <button className="px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform focus:outline-none bg-orange-500 rounded-lg hover:bg-orange-600 focus:ring focus:ring-orange-300 focus:ring-opacity-80">
-                                        Subscribe
-                                    </button>
+                                    <div className="sm:w-full sm:items-center flex sm:justify-center items-end justify-end">
+                                        <button
+                                            type="submit"
+                                            className="py-2 px-2 w-full text-sm bg-orange-500 rounded-full text-white font-semibold hover:bg-orange-700 transition-all"
+                                        >
+                                            Subscribe
+                                        </button>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
