@@ -31,9 +31,9 @@ const AboutUs: React.FC = () => {
             <section className="py-2 relative z-0 ">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="max-w-2xl mx-auto text-4xl font-bold text-white mb-5 md:text-5xl md:leading-normal font-manrope">
-                        WHO ARE <span className="text-orange-500">WE</span> ?
+                        WHO WE <span className="text-orange-500">WE</span> ?
                     </h1>
-                    <p className="max-w-sm mx-auto text-sm text-gray-100 mb-9">
+                    <p className=" mx-auto text-sm text-gray-100 mb-9">
                         Travel synergies transform individual journeys into rich, collaborative experiences by connecting travelers, local communities, and innovative technologies.
                     </p>
                 </div>

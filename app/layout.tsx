@@ -29,7 +29,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="sticky top-0 bg-black/50 z-10">
-          <nav className="container p-4 max-w-8xl w-48">
+          <nav className="container p-4 max-w-8xl w-48 lg:w-56 lg:ms-24">
             <img src="/whitelogo.png" alt="logo" />
           </nav>
         </div>

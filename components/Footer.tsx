@@ -139,7 +139,7 @@ const Footer: React.FC = () => {
                         <div className="lg:col-span-2">
                             <div className="bg-gray-800/20 p-6 rounded-lg">
                                 <h1 className="text-xl font-semibold tracking-tight text-orange-500 mb-4">
-                                    Subscribe our newsletter to get updates
+                                    Subscribe to our newsletter to get updates
                                 </h1>
                                 <div className="max-w-md mx-auto lg:bg-transparent lg:border border-gray-300 rounded-3xl max-lg:py-3 lg:rounded-full lg:h-12 lg:p-1.5 flex flex-col sm:flex-row items-center gap-3 sm:gap-6 lg:gap-0">
                                     <input
