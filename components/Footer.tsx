@@ -101,13 +101,16 @@ const Footer: React.FC = () => {
                     {/* Logo and Social Media Section */}
                     <div className="flex items-center justify-between pb-8">
                         {/* Logo Section */}
-                        <div className="flex flex-1 gap-4 items-center hover:cursor-pointer pb-5 md:pb-0">
-                            <img
-                                src="/whitelogo.png"
-                                alt="Logo"
-                                className="md:w-48 w-36 transition-transform duration-300 hover:scale-105"
-                            />
-                        </div>
+                        <Link href='/'>
+
+                            <div className="flex flex-1 gap-4 items-center hover:cursor-pointer pb-5 md:pb-0">
+                                <img
+                                    src="/whitelogo.png"
+                                    alt="Logo"
+                                    className="md:w-48 w-36 transition-transform duration-300 hover:scale-105"
+                                />
+                            </div>
+                        </Link>
 
                         {/* Social Links Section */}
                         <div className="flex gap-4 hover:cursor-pointer sm:scale-75 sm:justify-end">

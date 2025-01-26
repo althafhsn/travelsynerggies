@@ -438,11 +438,11 @@ const Explore = () => {
                             {projects.map((project, index) => (
                                 <SwiperSlide key={`slide-${index}`}>
                                     <div className="sticky top-0 xl:relative">
-                                        <div className="grid grid-cols-1 gap-8 items-center">
+                                        <div className="grid grid-cols-1 gap-1 items-center">
                                             {/* Title and Description Section */}
                                             <div className="space-y-6 xl:order-1">
-                                                <div className="text-center xl:text-start flex flex-col  justify-center ">
-                                                    <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+                                                <div className="text-center xl:text-start flex flex-col  justify-center  ">
+                                                    <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white pt-9">
                                                         {project.fName}{' '}
                                                         <span className="text-orange-500">{project.lName}</span>
                                                     </h1>
@@ -457,7 +457,7 @@ const Explore = () => {
 
                                             {/* Image Section */}
                                             <div className="xl:order-2">
-                                                <div className="relative h-[420px] md:h-[520px] xl:h-[590px] w-full rounded-lg overflow-hidden">
+                                                <div className="relative h-[420px] md:h-[520px] xl:h-[580px] w-full rounded-lg overflow-hidden">
                                                     <div className="absolute inset-0 bg-black/10 z-10" />
                                                     <Image
                                                         src={project.image}

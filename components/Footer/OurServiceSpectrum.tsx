@@ -1,7 +1,48 @@
-import { m } from "framer-motion";
+import React from 'react';
 import { GoDotFill } from "react-icons/go";
 
-const SustainableToursm: React.FC = () => {
+interface ServiceDetail {
+    title: string;
+    details: string[];
+}
+
+interface DestinationDetail {
+    title: string;
+    description: string;
+}
+
+const ServiceSpectrum: React.FC<{ services: ServiceDetail[] }> = ({ services }) => (
+    <div>
+        <h2 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">Our Service Spectrum</h2>
+        {services.map((service, index) => (
+            <div key={index} className="mb-4">
+                <h3 className="font-semibold text-orange-500">{service.title}</h3>
+                <ul className="text-xs md:text-sm text-gray-600">
+                    {service.details.map((item, itemIndex) => (
+                        <li key={itemIndex} className="flex items-center">
+                            <GoDotFill className="mr-2 mt-[3px] text-orange-500" />
+                            <span>{item}</span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        ))}
+    </div>
+);
+
+const DestinationDetails: React.FC<{ destinations: DestinationDetail[] }> = ({ destinations }) => (
+    <div>
+        <h2 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">Discover Your Dream Destinations</h2>
+        {destinations.map((destination, index) => (
+            <div key={index} className="mb-4">
+                <h3 className="font-semibold text-orange-500">{destination.title}</h3>
+                <p className="text-xs md:text-sm text-gray-600">{destination.description}</p>
+            </div>
+        ))}
+    </div>
+);
+
+const SustainableTourism: React.FC = () => {
     const serviceSpectrumDetails = [
         {
             title: 'Tailored Vacation Packages',
@@ -90,7 +131,6 @@ const SustainableToursm: React.FC = () => {
             ]
         },
     ];
-
     const destinationDetails = [
         {
             title: 'Treasures Unveiled',
@@ -142,45 +182,13 @@ const SustainableToursm: React.FC = () => {
     return (
         <section className="bg-gray-100 text-gray-800 p-8">
             <div className="container max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden p-4">
-                <div className="grid md:grid-cols-2 gap-8">
-                    {/* Our Service Spectrum */}
-                    <div>
-                        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-orange-600 mb-6">Our Service Spectrum</h2>
-                        {serviceSpectrumDetails.map((service, index) => (
-                            <div key={index} className="mb-4">
-                                <h3 className="font-semibold text-orange-500">{service.title}</h3>
-                                <ul className=" text-xs md:text-sm text-gray-600">
-                                    {service.details.map((item, index) => (
-                                        <li key={index} className="flex ">
-                                            <div className="text-xs">
-
-                                                <GoDotFill className="mr-2 mt-[3px] " />
-                                            </div>
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-
-                            </div>
-                        ))}
-                    </div>
-
-                    {/* Discover Your Dream Destinations */}
-                    <div>
-                        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-orange-600 mb-6">Discover Your Dream Destinations</h2>
-                        {destinationDetails.map((destination, index) => (
-                            <div key={index} className="mb-4">
-                                <h3 className="font-semibold text-orange-500 ">{destination.title}</h3>
-                                <p className="text-xs md:text-sm text-gray-600 ">{destination.description}</p>
-                            </div>
-                        ))}
-                    </div>
-
-
+                <div className="grid  gap-8 p-16">
+                    <ServiceSpectrum services={serviceSpectrumDetails} />
+                    <DestinationDetails destinations={destinationDetails} />
                 </div>
             </div>
         </section>
     );
 };
 
-export default SustainableToursm;
+export default SustainableTourism;

@@ -93,7 +93,7 @@ const TermsAndConditions: React.FC = () => {
         <div className=" bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
                 <div className="p-6 md:p-10">
-                    <h1 className="ext-xl md:text-2xl lg:text-3xl font-bold text-orange-600 mb-6 text-center">
+                    <h1 className="ext-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">
                         Terms and Conditions
                     </h1>
 

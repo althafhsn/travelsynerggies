@@ -31,7 +31,7 @@ const AboutUs: React.FC = () => {
             <section className="py-2 relative z-0 ">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="max-w-2xl mx-auto text-4xl font-bold text-white mb-5 md:text-5xl md:leading-normal font-manrope">
-                        WHO WE <span className="text-orange-500">WE</span> ?
+                        WHO <span className="text-orange-500">WE</span> ARE ?
                     </h1>
                     <p className=" mx-auto text-sm text-gray-100 mb-9">
                         Travel synergies transform individual journeys into rich, collaborative experiences by connecting travelers, local communities, and innovative technologies.
@@ -45,9 +45,9 @@ const AboutUs: React.FC = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
                         <div className="">
                             <img
-                                src="https://pagedone.io/asset/uploads/1702034769.png"
+                                src="/about/about1.webp"
                                 alt=""
-                                className="object-cover"
+                                className="object-cover h-[55vh] w-[500px]"
                             />
                         </div>
                         <div className="pb-24 flex ">
@@ -79,28 +79,47 @@ const AboutUs: React.FC = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
                         <div className="lg:pr-24 flex ">
                             <div className="w-full">
-                                <img
-                                    src="https://pagedone.io/asset/uploads/1702034785.png"
-                                    alt="About Us tailwind page"
-                                    className="block lg:hidden mb-9 mx-auto object-cover"
-                                />
+
                                 <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-orange-500 mb-9 max-lg:text-center font-manrope">
-                                   Technology
+                                    Technology
                                 </h2>
                                 <p className="text-sm text-gray-200 max-md:text-center max-w-2xl mx-auto py-2">
-                                    Step into a world of innovation and convenience tailored for our valued trade partners, facilitated by our robust technology. Leveraging on our long connections to the entire hospitality segment over the decades, we've skilfully unearthed the essence of seamless modern travel. Our vision was to elevate the traditional manual processes of tour operations into a digital realm, all while preserving the authenticity and efficiency that characterizes the travel industry.
-                                    Within our refined system, you'll discover comprehensive B2B booking solutions, which serves as a seamless gateway to an expansive array of services, alleviating both your team and your customers of unnecessary time constraints and stress. Experience travel solutions that exemplify both convenience and perfection.
+                                    Step into a world of innovation and convenience tailored for our valued trade partners, facilitated by our robust technology. Leveraging on our long connections to the entire hospitality segment over the decades, we've skilfully unearthed the essence of seamless modern travel. Our vision was to elevate the traditional manual processes of tour operations into a digital realm, all while preserving the authenticity and efficiency that characterizes the travel industry. Within our refined system, you'll discover comprehensive B2B booking solutions, which serves as a seamless gateway to an expansive array of services, alleviating both your team and your customers of unnecessary time constraints and stress. Experience travel solutions that exemplify both convenience and perfection.
+
 
                                 </p>
                             </div>
                         </div>
                         <div className="img-box">
                             <img
-                                src="https://pagedone.io/asset/uploads/1702034785.png"
+                                src="about/about2.webp"
+                                alt="About Us tailwind page"
+                                className="hidden lg:block object-cover scale-95"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="py-6 lg:py8">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
+                        <div className="img-box">
+                            <img
+                                src="about/about3.webp"
                                 alt="About Us tailwind page"
                                 className="hidden lg:block object-cover"
                             />
                         </div>
+                        <div className="lg:pr-24 flex ">
+                            <div className="w-full flex items-center justify-center">
+                                <p className="text-sm text-gray-200 max-md:text-center max-w-2xl mx-auto py-2">
+
+                                    With Evintry, our advanced travel platform, we revolutionize the event planning landscape by offering a one-stop platform for all your event needs. Our cutting-edge technology ensures real-time solutions for booking events, tickets, hotels, transportation and logistics, creating an unparalleled experience for both organizers and attendees.
+
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>

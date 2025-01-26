@@ -27,9 +27,9 @@ const ContactButton: React.FC<ContactButtonProps> = ({ icon, title, phoneNumber,
                 <div className='group'>
                     <div className="absolute inset-0 rounded-full border border-white/20 hover:border-orange-500 hover:bg-orange-500 flex group-hover:scale-110 flex-col items-center justify-center gap-2 lg:gap-4 xl:gap-6 bg-gray-900 transform transition-transform duration-300 ease-in-out overflow-hidden">
                         {icon === 'phone' ? (
-                            <FiPhone className="w-4 h-4 md:w-8 md:h-8 lg:w-12 lg:h-12 text-white group-hover:text-gray-900" />
+                            <FiPhone className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 text-white group-hover:text-gray-900" />
                         ) : (
-                            <FiMail className="w-4 h-4 md:w-8 md:h-8 lg:w-12 lg:h-12 text-white group-hover:text-gray-900" />
+                            <FiMail className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 text-white group-hover:text-gray-900" />
                         )}
                         <div className="text-center px-2">
                             <h2 className="text-white text-[11px] md:text-lg lg:text-2xl group-hover:text-gray-900 font-bold mb-2">
@@ -47,7 +47,7 @@ const ContactButton: React.FC<ContactButtonProps> = ({ icon, title, phoneNumber,
                             )}
 
                             {isOnline && (
-                                <p className="text-orange-400 group-hover:text-gray-700 text-[9px] md:text-sm xl:text-lg">
+                                <p className="text-orange-400 group-hover:text-gray-700 text-[9px] md:text-sm">
                                     We are online now
                                 </p>
                             )}
@@ -73,9 +73,9 @@ export default function ContactSection() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 lg:gap-16">
                     {/* Left Section */}
                     <div className="text-orange-500 flex flex-col items-center justify-center md:items-start text-center md:text-start md:col-span-1">
-                        <h1 className="leading-[1.1] font-bold mb-6 text-2xl md:text-5xl font-serif">
-                            Contact a Travel <br />
-                            <span className="text-white">Designer</span>
+                        <h1 className="leading-[2] font-bold mb-6 text-2xl md:text-5xl font-serif">
+                            Contact Your  <br />
+                            <span className="text-white">Travel Designer</span>
                         </h1>
                     </div>
 

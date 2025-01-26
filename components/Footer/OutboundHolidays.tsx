@@ -48,7 +48,7 @@ const OutboundTravelBlog = () => {
         <div className="min-h-screen bg-gray-100  px-4 sm:px-6 lg:px-8 pt-8">
             <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
                 <div className="p-6 md:p-10">
-                    <h1 className="ext-xl md:text-2xl lg:text-3xl font-bold text-orange-600 mb-6 text-center">Outbound Travel Market</h1>
+                    <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">Outbound Travel Market</h1>
                     <p className="text-sm text-gray-600 ">
                         The UAE's outbound travel market is experiencing significant growth, driven by the nation's rising affluence and a population eager to explore the world. As a leading travel company in the region, Travel Synergies is perfectly positioned to leverage this trend and meet the evolving demands of UAE travelers.
                     </p>
