@@ -50,7 +50,7 @@ const projects: jurnels[] = [
             },
             {
                 image: '/outbound/treasures-unveiled/img4.webp',
-                name: 'Havana – Cuba ',
+                name: 'Cuba ',
                 description: 'Step back in time to Havana, where colonial charm, vintage cars and a lively Caribbean vibe make it a unique tropical escape',
                 location: 'Cuba'
             },
@@ -129,7 +129,7 @@ const projects: jurnels[] = [
             {
                 image: '/outbound/city-breaks/img3.webp',
                 name: 'London',
-                description: 'Canada’s cultural hub, Toronto boasts a mix of iconic landmarks like the CN Tower, bustling neighborhoods and a thriving arts and food scene.'
+                description: 'London is a historic yet contemporary city, featuring iconic landmarks like Big Ben and the Tower of London, along with vibrant theaters, museums and diverse global cuisine. '
             },
             {
                 image: '/outbound/city-breaks/img4.webp',
@@ -152,7 +152,7 @@ const projects: jurnels[] = [
 
     },
     {
-        fName: 'Caltural',
+        fName: 'Cultural',
         lName: 'Immersions',
         description: 'Dive into the rich traditions and heritage of destinations around the globe. Explore ancient temples, vibrant festivals and local customs that provide an authentic glimpse into the heart of each destination. Travel with purpose and connect with the stories of the past and present.',
         stack: [
@@ -274,7 +274,7 @@ const projects: jurnels[] = [
     {
         fName: 'Culinary',
         lName: 'Journeys',
-        description: 'Savor the world’s finest cuisines with tours designed for food enthusiasts. Taste authentic dishes, explore bustling markets and learn from master chefs to experience the flavors thatdefine each destination.',
+        description: 'Savor the world’s finest cuisines with tours designed for food enthusiasts. Taste authentic dishes, explore bustling markets and learn from master chefs to experience the flavors that define each destination.',
         stack: [
             {
                 image: '/outbound/culinary-journeys/img1.webp',
@@ -457,7 +457,7 @@ const Explore = () => {
 
                                             {/* Image Section */}
                                             <div className="xl:order-2">
-                                                <div className="relative h-[420px] md:h-[520px] xl:h-[580px] w-full rounded-lg overflow-hidden">
+                                                <div className="relative h-[420px] md:h-[540px] xl:h-[600px] w-full rounded-lg overflow-hidden">
                                                     <div className="absolute inset-0 bg-black/10 z-10" />
                                                     <Image
                                                         src={project.image}
@@ -489,7 +489,7 @@ const Explore = () => {
                             {project.stack.map((item, index) => (
                                 <article
                                     key={index}
-                                    className="group relative isolate flex flex-col justify-end overflow-hidden pb-6 pt-40 w-[260px] h-[360px] md:w-[230px] lg:h-[330px] xl:w-[260px] xl:h-[360px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+                                    className="group relative isolate flex flex-col justify-end overflow-hidden pb-6 pt-40 w-[260px] h-[360px] md:w-[230px] lg:h-[340px] xl:w-[260px] xl:h-[370px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
                                 >
                                     {/* Background Image */}
                                     <Image

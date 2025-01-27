@@ -23,20 +23,20 @@ const CareerOpportunity: React.FC<CareerOpportunityProps> = ({
   return (
     <div className="bg-gray-200 rounded-lg shadow-md p-6 flex flex-col justify-between">
       <div>
-        <h3 className="text-xl font-bold mb-2 text-gray-800">{title}</h3>
-        <p className="text-gray-600">{description}</p>
+        <h3 className="text-lg md:text-xl font-bold mb-2 text-gray-800">{title}</h3>
+        <p className="text-gray-600 text-[12px] md:text-sm">{description}</p>
       </div>
       <div className="flex items-center justify-between  mt-4">
         <div className="flex gap-3">
 
           <span
-            className='px-3 py-1 rounded-full text-sm font-medium text-green-100 bg-green-500'
+            className='px-3 py-1 rounded-full text-[9px] md:text-sm font-medium text-green-100 bg-green-500'
 
           >
             Full Time
           </span>
           <span
-            className='px-3 py-1 rounded-full text-sm font-medium text-blue-100 bg-blue-500'
+            className='px-3 py-1 rounded-full text-[9px] md:text-sm  font-medium text-blue-100 bg-blue-500'
           >
             Remote
           </span>
@@ -44,13 +44,13 @@ const CareerOpportunity: React.FC<CareerOpportunityProps> = ({
         <div className="flex gap-2">
 
           <a href={moreDetailsLink}
-            className="bg-orange-500 hover:bg-orange-600 hover:scale-105 ease-in-out transition-all duration-300  text-white px-4 py-2 rounded-md"
+            className="bg-orange-500 hover:bg-orange-600 hover:scale-105 ease-in-out transition-all duration-300 text-[9px] md:text-sm    text-white px-4 py-2 rounded-md"
           >
             More Details
           </a>
 
           <a href={applyLink}
-            className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md  hover:scale-105 ease-in-out transition-all duration-300"
+            className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md  text-[9px] md:text-sm  hover:scale-105 ease-in-out transition-all duration-300"
           >
             Apply Now
           </a>
@@ -119,9 +119,9 @@ const Careers: React.FC = () => {
   return (
     <div className="min-h-screen">
       <div className="flex flex-col items-start justify-center text-white bg-bg-career min-h-[70vh] bg-cover">
-        <div className="container max-w-7xl mx-auto">
+        <div className="container max-w-7xl mx-auto flex flex-col  items-center md:items-start">
           <motion.h1
-            className="text-xl font-bold font-sans mb-4 text-orange-500"
+            className="text-lg md:text-xl font-bold font-sans mb-4 text-orange-500"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -129,13 +129,13 @@ const Careers: React.FC = () => {
             Join Our Team
           </motion.h1>
           <motion.h2
-            className="text-5xl mb-8"
+            className="text-xl md:text-3xl lg:text-4xl xl:text-5xl mb-8"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             Embark on a journey with <br />
-            <span className="font-semibold">Travel Synergies</span>.
+            <span className="font-bold ">Travel Synergies</span>.
           </motion.h2>
           <Link href='#career-application'>
 
@@ -146,16 +146,16 @@ const Careers: React.FC = () => {
         </div>
       </div>
       <div className="my-4 container max-w-7xl mx-auto">
-        <h2 className="text-lg text-green-800 py-4 text-center">
+        <h2 className="text-sm md:text-lg text-green-800 py-4 text-center">
           Are you passionate about travel and eager to explore the world? Do you thrive in a dynamic, fast-paced environment where every day brings new adventures? If so, Travel Synergies invites you to join our team and be part of an exciting journey!
         </h2>
 
-        <p className="text-sm text-gray-100">
+        <p className="text-xs md:text-sm text-gray-100 px-2">
           At Travel Synergies, we believe that travel has the power to transform lives, broaden horizons, and create unforgettable memories. As a leading player in the travel industry, we specialize in curating unique and immersive experiences for our customers, ensuring that every journey is as extraordinary as the destinations themselves.
         </p>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center text-white container max-w-7xl mx-auto py-10">
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center text-white container max-w-7xl mx-auto py-10 px-2">
         {/* Map through the career opportunities array */}
         {careerOpportunities.map((item, index) => (
           <div
@@ -171,7 +171,7 @@ const Careers: React.FC = () => {
 
       <div className=" py-12 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold mb-8 mx-auto text-center">Career Opportunities</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-8 mx-auto text-center">Career Opportunities</h2>
           <div className="grid  gap-6">
             {opportunities.map((opportunity, index) => (
               <CareerOpportunity key={index} {...opportunity} />
@@ -269,13 +269,13 @@ const Careers: React.FC = () => {
                 <div className="md:flex md:items-center">
                   <label className="block text-gray-500 font-bold">
                     <input className="mr-2 leading-tight" type="checkbox" />
-                    <span className="text-sm text-white">
+                    <span className=" text-[7px] md:text-sm text-white">
                       Send me your newsletter!
                     </span>
                   </label>
                 </div>
                 <button
-                  className="shadow bg-orange-500 rounded-full hover:bg-orange-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 "
+                  className="shadow bg-orange-500 rounded-full hover:bg-orange-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 text-[9px] md:text-sm"
                   type="submit">
                   Send Message
                 </button>

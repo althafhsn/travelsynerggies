@@ -31,7 +31,7 @@ const partners = [
 
 const Partners: React.FC = () => {
     return (
-        <div className="min-h-screen bg-gray-100  px-6 sm:px-6 lg:px-8 pt-8">
+        <div className=" bg-gray-100  px-6 sm:px-6 lg:px-8 py-12">
             <div
 
                 className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden "

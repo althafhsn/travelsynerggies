@@ -10,6 +10,7 @@ import OutboundTravelBlog from '@/components/Footer/OutboundHolidays';
 import SafetyGuidelinesBlog from '@/components/Footer/SaftyTravel';
 import BucketListPage from '@/components/Footer/BucketList';
 import Partners from '@/components/Footer/Parnters';
+import WhyChooseUs from '@/components/Footer/WhyChoosUs';
 
 const BlogContent: React.FC = () => {
   const searchParams = useSearchParams();
@@ -21,7 +22,8 @@ const BlogContent: React.FC = () => {
     { title: 'Bucket List', href: 'bucket-list' },
     { title: 'Outbound Holidays', href: 'outbound-holidays' },
     { title: 'Safety Guidelines', href: 'safety-guidelines' },
-    { title: 'Parntners', href: 'partners' }
+    { title: 'Parntners', href: 'partners' },
+    { title: 'Why Choose Us', href :'why-choose-us'}
   ];
 
   // Automatically scroll to section based on URL hash
@@ -49,7 +51,7 @@ const BlogContent: React.FC = () => {
   return (
     <div className="min-h-screen bg-white relative">
       {/* Navigation Buttons */}
-      <div className="sticky top-16 bg-white shadow-md z-50 hidden md:block">
+      <div className="sticky top-24 bg-white/20 shadow-md z-50 hidden md:block">
         <div className="container mx-auto px-4 py-2 flex flex-wrap gap-2 items-center justify-center">
           {navigationLinks.map((link) => (
             <button
@@ -85,6 +87,9 @@ const BlogContent: React.FC = () => {
         </div>
         <div id="partners" className="scroll-mt-16">
           <Partners />
+        </div>
+        <div id="why-choose-us" className="scroll-mt-16">
+          <WhyChooseUs />
         </div>
       </div>
     </div>

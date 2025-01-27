@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Header from "@/components/Heder";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,11 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="sticky top-0 bg-black/50 z-10">
-          <nav className="container p-4 max-w-8xl w-48 lg:w-56 lg:ms-24">
-            <Link href='/'>
-              <img src="/whitelogo.png" alt="logo" />
-            </Link>
-          </nav>
+          <Header />
         </div>
         {children}
         <Footer />

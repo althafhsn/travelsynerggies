@@ -127,7 +127,7 @@ const ImageSlider: React.FC = () => {
                                         transition={{ duration: 1 }}
                                         className="mt-4 text-sm md:text-lg ml-1"
                                     >
-                                        <button className='bg-orange-500 px-4 py-2 rounded-full text-lg hover:scale-110 transition-all duration-300 ease-in-out hover:bg-orange-600'>
+                                        <button className='bg-orange-500 px-4 py-2 rounded-sm text-lg hover:scale-110 transition-all duration-300 ease-in-out hover:bg-orange-600'>
                                             Contact Us
                                         </button>
                                     </motion.div>

@@ -64,27 +64,27 @@ const Footer: React.FC = () => {
                 { text: "About Us", href: "/about-us" },
                 { text: "Partners", href: "/blogs#partners" },
                 { text: "Parters Login", href: "/" },
-                { text: "Why Choose Us", href: "/" },
+                { text: "Why Choose Us", href: "/blogs#why-choose-us" },
                 { text: "Career", href: "/career" },
-                { text: "Contact Us", href: "/blogs#contact-us" }
+                { text: "Contact Us", href: "/contact" }
             ]
         }
     };
 
     const socialLinks: SocialLink[] = [
-        { href: "https://facebook.com", icon: <CiFacebook />, alt: "Facebook" },
-        { href: "https://twitter.com", icon: <FaXTwitter />, alt: "Twitter" },
-        { href: "https://instagram.com", icon: <CiInstagram />, alt: "Instagram" },
+        { href: "https://web.facebook.com/travelsynergies/?_rdc=1&_rdr#", icon: <CiFacebook />, alt: "Facebook" },
+        { href: "https://x.com/travelsynergies", icon: <FaXTwitter />, alt: "Twitter" },
+        { href: "https://www.instagram.com/travel.synergies/?hl=en ", icon: <CiInstagram />, alt: "Instagram" },
         { href: "https://wa.me/1234567890", icon: <FaWhatsapp />, alt: "WhatsApp" }
     ];
 
     const FooterLinkColumn: React.FC<FooterLinkColumnProps> = ({ title, links }) => (
         <div>
-            {title && <p className="font-semibold text-orange-500 dark:text-white">{title}</p>}
+            {title && <p className="font-semibold  text-orange-500 dark:text-white">{title}</p>}
             <div className="flex flex-col items-start mt-5 space-y-2">
                 {links.map((link, index) => (
                     <a key={index} href={link.href}>
-                        <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500">
+                        <p className="text-white text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500">
                             {link.text}
                         </p>
                     </a>
