@@ -182,7 +182,7 @@ const SustainableTourism: React.FC = () => {
     return (
         <section className="bg-gray-100 text-gray-800 p-8">
             <div className="container max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden p-4">
-                <div className="grid  gap-8 p-16">
+                <div className="grid  gap-8 p-0 md:p-16">
                     <ServiceSpectrum services={serviceSpectrumDetails} />
                     <DestinationDetails destinations={destinationDetails} />
                 </div>

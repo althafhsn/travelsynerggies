@@ -57,7 +57,7 @@ const BlogContent: React.FC = () => {
             <button
               key={link.href}
               onClick={() => handleScrollToSection(link.href)}
-              className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600 transition"
+              className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600 transition text-sm"
             >
               {link.title}
             </button>
@@ -66,7 +66,7 @@ const BlogContent: React.FC = () => {
       </div>
 
       {/* Content Sections */}
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto md:px-4 mt-10">
         <div id="our-service-spectrum" className="scroll-mt-16">
           <ServiceBlog />
         </div>

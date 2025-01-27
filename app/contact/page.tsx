@@ -13,7 +13,7 @@ const page = () => {
                     className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                     <iframe width="100%" height="100%" className="absolute inset-0" title="map"
 
-                        src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.119786148887!2d55.2791003423128!3d25.22391930286927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f42edc1655555%3A0xe16ff90c3baca253!2sNassima%20Tower%20Hotel%20Apartments%20%7C%20Sheikh%20Zayed%20Road%20%7C%20Dubai!5e0!3m2!1sen!2slk!4v1738002478329!5m2!1sen!2slk"
                     ></iframe>
                     <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
                         <div className="lg:w-1/2 px-6">
@@ -47,7 +47,7 @@ const page = () => {
                         <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                     </div>
                     <button className="text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">Button</button>
-                    
+
                 </div>
             </div>
         </section>
