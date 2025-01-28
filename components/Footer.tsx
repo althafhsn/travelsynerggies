@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             title: "",
             links: [
                 { text: "Terms and Conditions", href: "/blogs#terms-conditions" },
-                { text: "Privacy Cookies", href: "/blogs#privacy-cookies" },
+                { text: "Privacy Cookies", href: "/privacy-policy" },
                 { text: "Sustainable Tourism", href: "/blogs#sustainable-tourism" },
                 { text: "Bucket List", href: "/blogs#bucket-list" },
             ]
@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
             <div className="flex flex-col items-start mt-5 space-y-2">
                 {links.map((link, index) => (
                     <a key={index} href={link.href}>
-                        <p className="text-white text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500">
+                        <p className="text-white text-xs transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500">
                             {link.text}
                         </p>
                     </a>

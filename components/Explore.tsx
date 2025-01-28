@@ -103,7 +103,7 @@ const projects: jurnels[] = [
             },
             {
                 image: '/outbound/wildlife-safaris/img6.webp',
-                name: 'Cabo San Lucas, Maxico',
+                name: 'Cabo San Lucas, Mexico',
                 description: 'Cabo San Lucas is known for whale watching opportunities. From December to April, visitors can witness majestic humpback and gray whales migrating through its crystal clear waters, making it a paradise for marine wildlife enthusiasts.',
             },
 
@@ -163,7 +163,7 @@ const projects: jurnels[] = [
             },
             {
                 image: '/outbound/cultural-immersions/img2.webp',
-                name: 'Maxico',
+                name: 'Mexico',
                 description: 'Experience Mexico’s colorful culture through its lively mariachi music, historic ruins, spirited fiestas, and mouthwatering cuisine.'
             },
             {
@@ -499,12 +499,12 @@ const Explore = () => {
                                         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out"
                                     />
                                     {/* Gradient Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                                    {/* <div className="absolute inset-0 bg-gradient-to-t from-white-900/40 via-transparent"></div> */}
                                     {/* Text Content */}
                                     <div className="z-10 relative px-4 flex flex-col h-full justify-end">
                                         {/* Title (Name at the very bottom) */}
-                                        <div className="flex  gap-2">
-                                            <div className="text-lg font-bold text-orange-500">
+                                        <div className="flex gap-[1px]">
+                                            <div className="text-lg font-extrabold text-orange-500 m-[3px]">
                                                 <CiLocationOn />
                                             </div>
                                             <h3 className="text-[15px] font-bold text-orange-500 mb-2 transition-opacity duration-300 ease-in-out group-hover:opacity-90 opacity-90">
@@ -513,7 +513,7 @@ const Explore = () => {
                                         </div>
                                         {/* Description (Hover animation only for description) */}
                                         <p
-                                            className="text-xs leading-5 text-gray-300 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[11em] group-hover:mt-2 transition-[opacity,max-height,margin-top] duration-500 ease-in-out "
+                                            className="text-xs leading-5 text-white opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[11em] group-hover:mt-2 transition-[opacity,max-height,margin-top] duration-500 ease-in-out "
                                         >
                                             {item.description}
                                         </p>

@@ -1,4 +1,5 @@
 import React from "react";
+import Partners from "./Parnters";
 
 const WhyChooseUs = () => {
   const partners = [
@@ -63,7 +64,7 @@ const WhyChooseUs = () => {
     <div className=" bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden py-12 px-4">
         <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">Why Choose Travel Synergies?</h1>
-        <p className="text-sm md:text-lg mt-2 md:mt-4 text-gray-800">
+        <p className="text-sm  text-center mt-2 md:mt-4 text-gray-800">
           At Travel Synergies, we are dedicated to crafting exceptional travel experiences that go beyond expectations.
         </p>
 
@@ -93,22 +94,14 @@ const WhyChooseUs = () => {
               <h3 className="text-sm md:text-lg  font-bold text-gray-800">Unbeatable Prices</h3>
               <p className="text-gray-600 mt-2 md:mt-4 text-xs md:text-sm">
                 Travel should be accessible to everyone, and we provide the best deals without compromising quality.
-              </p> 
+              </p>
             </div>
           </div>
         </section>
 
-        <section className="my-6 md:my-12">
-          <h2 className="text-lg md:text-2xl font-semibold text-orange-500 text-center">Meet Our Partners</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-4 md:mt-6">
-            {partners.map((partner, index) => (
-              <div key={index} className="bg-white shadow-md rounded-xl p-4 md:p-6">
-                <h3 className="font-bold text-gray-800 text-xs md:text-sm">{partner.name}</h3>
-                <p className="text-gray-600 mt-2 md:mt-4 text-xs md:text-sm">{partner.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        {/* <section className="my-6 md:my-12" id='partners'>
+          <Partners />
+        </section> */}
       </div>
     </div>
   );

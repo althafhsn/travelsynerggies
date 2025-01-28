@@ -90,90 +90,64 @@ const TermsAndConditions: React.FC = () => {
     };
 
     return (
-        <div className=" bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
-                <div className="p-6 md:p-10">
-                    <h1 className="ext-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">
-                        Terms and Conditions
-                    </h1>
-
-
-                    <div className="flex flex-col md:flex-row gap-8">
-                        {/* Sidebar */}
-                        <div className="w-full md:w-1/5 space-y-2">
-                            {termsSections.map((section, index) => (
-                                <button
-                                    key={index}
-                                    onClick={() => setActiveSection(section.title)}
-                                    className={`w-full text-left px-2 py-2 rounded transition-colors duration-300 text-sm ${activeSection === section.title
-                                        ? 'bg-orange-500 text-white'
-                                        : 'hover:bg-orange-100 text-gray-700'
-                                        }`}
-                                >
-                                    {section.title}
-                                </button>
-                            ))}
-                        </div>
-
-                        {/* Content Area */}
-                        <div className="w-full md:w-3/4 flex items-center justify-center">
-                            {activeSection ? (
-                                <div className="flex items-center justify-center w-full">
-                                    {termsSections
-                                        .filter(section => section.title === activeSection)
-                                        .map((section, index) => (
-                                            <div
-                                                key={index}
-                                                className="space-y-4 flex flex-col items-start justify-center w-full"
-                                            >
-                                                <h2 className="text-lg font-semibold text-orange-500 border-b pb-2 w-full">
-                                                    {section.title}
-                                                </h2>
-                                                <div className="mt-4 text-sm text-left w-full">
-                                                    {renderSectionContent(section)}
-                                                </div>
+        <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+            <div className="p-6 md:p-10">
+                {/* Title */}
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">
+                    Terms and Conditions
+                </h1>
+    
+                {/* Grid Layout */}
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+                    {/* Sidebar Navigation */}
+                    <div className="space-y-2 md:space-y-4" role="tablist">
+                        {termsSections.map((section, index) => (
+                            <button
+                                key={index}
+                                onClick={() => setActiveSection(section.title)}
+                                role="tab"
+                                tabIndex={0}
+                                aria-selected={activeSection === section.title}
+                                className={`w-full px-5 py-3 rounded-sm text-xs md:text-sm font-semibold transition-all duration-300 text-start ${
+                                    activeSection === section.title
+                                        ? 'bg-orange-500 text-white scale-105 shadow-md'
+                                        : 'bg-gray-100 text-orange-500 hover:bg-orange-200'
+                                }`}
+                            >
+                                {section.title}
+                            </button>
+                        ))}
+                    </div>
+    
+                    {/* Content Section */}
+                    <div className="md:col-span-4 bg-gray-50 p-6 rounded-lg shadow-md">
+                        {activeSection ? (
+                            <div className="w-full">
+                                {termsSections
+                                    .filter(section => section.title === activeSection)
+                                    .map((section, index) => (
+                                        <div key={index} className="space-y-4">
+                                            <h2 className="text-lg font-bold text-orange-600 border-b pb-2">
+                                                {section.title}
+                                            </h2>
+                                            <div className="text-sm text-gray-700 leading-relaxed">
+                                                {renderSectionContent(section)}
                                             </div>
-                                        ))}
-                                </div>
-                            ) : (
-                                <div className="text-center text-gray-500 py-10">
-                                    <p>Select a section to view details</p>
-                                </div>
-                            )}
-                        </div>
-                        {/* <div className="w-full md:w-3/4 flex flex-col items-center justify-between h-full">
-                            {activeSection ? (
-                                <div className="flex flex-col w-full h-full">
-                                    {termsSections
-                                        .filter(section => section.title === activeSection)
-                                        .map((section, index) => (
-                                            <div
-                                                key={index}
-                                                className="flex flex-col h-full w-full"
-                                            >
-                                                <h2 className="text-lg font-semibold text-orange-600 border-b pb-2 text-left w-full">
-                                                    {section.title}
-                                                </h2>
-
-                                                <div className="flex flex-grow items-center justify-center mt-4 text-sm text-left">
-                                                    <div className="w-full">{renderSectionContent(section)}</div>
-                                                </div>
-                                            </div>
-                                        ))}
-                                </div>
-                            ) : (
-                                <div className="text-center text-gray-500 py-10">
-                                    <p>Select a section to view details</p>
-                                </div>
-                            )}
-                        </div> */}
-
-
-
+                                        </div>
+                                    ))}
+                            </div>
+                        ) : (
+                            <div className="text-center text-gray-500 py-10">
+                                <p>Select a section to view details</p>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    
     );
 };
 

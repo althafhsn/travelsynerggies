@@ -91,64 +91,67 @@ const SafetyGuidelinesBlog: React.FC = () => {
         }
     ];
 
+    const activeContent = sections.find((s) => s.id === activeSection);
+
     return (
-        <div className="min-h-screen bg-gray-100 text-gray-800 p-4 sm:p-8">
-            <div className="container max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden p-4 sm:p-8">
-                {/* Title */}
-                <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">
-                    Global Travel Safety Guidelines
-                </h1>
-
-                {/* Introduction */}
-                <p className="text-sm text-black mb-1">
-                    Your health and safety while on your trip is of the utmost importance to us. We operate in many countries around the world, all of which have differing standards and local regulations that may not always meet the standards we’re used to at home.
-                </p>
-                <p className="text-sm  text-black mb-8">
-                    We always try to provide as much information as possible about local conditions. However, we recommend that you carry out some background research about the destinations you’re going to and any inherent risks involved in visiting these countries or in undertaking particular activities. The information below is designed to help ensure that you have a safe and enjoyable trip.
-                </p>
-
-                {/* Navigation Buttons */}
-                <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8">
+        <div className=" bg-gray-100 text-gray-800 p-4 sm:p-8">
+        <div className="container mx-auto bg-white shadow-xl rounded-lg overflow-hidden p-6 sm:p-8">
+            {/* Title */}
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">
+                Global Travel Safety Guidelines
+            </h1>
+    
+            <p className="text-sm text-black mb-4 text-center">
+                Your health and safety while on your trip is of the utmost importance to us...
+            </p>
+    
+            {/* Grid Layout */}
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+                {/* Sidebar Navigation */}
+                <div className="space-y-2 md:space-y-4" role="tablist">
                     {sections.map((section) => (
                         <button
                             key={section.id}
                             onClick={() => setActiveSection(section.id)}
-                            className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full transition-colors text-sm sm:text-base ${activeSection === section.id
-                                    ? 'bg-orange-500 text-white'
-                                    : 'bg-white text-orange-500 hover:bg-orange-100'
-                                }`}
+                            role="tab"
+                            tabIndex={0}
+                            aria-selected={activeSection === section.id}
+                            className={`w-full px-5 py-3 rounded-sm text-sm md:text-sm font-semibold transition-all duration-300 text-start ${
+                                activeSection === section.id
+                                    ? 'bg-orange-500 text-white scale-105 shadow-md'
+                                    : ' bg-gray-100 text-orange-500 hover:bg-orange-200'
+                            }`}
                         >
                             {section.title}
                         </button>
                     ))}
                 </div>
-
+    
                 {/* Content Section */}
-                <div className="bg-white rounded-2xl p-4 sm:p-8 min-h-[47vh]">
-                    <h2 className="text-lg font-semibold text-orange-500 mb-4 sm:mb-6">
-                        {sections.find((s) => s.id === activeSection)?.title}
+                <div className="md:col-span-4 bg-gray-50 p-6 rounded-lg shadow-md">
+                    <h2 className="text-lg md:text-xl font-bold text-orange-600 mb-4">
+                        {activeContent?.title || 'Section not found'}
                     </h2>
-                    <ul className="text-gray-700 leading-relaxed text-sm">
-                        {sections.find((s) => s.id === activeSection)?.content.map((item, index) => (
-                            <li key={index} className="flex items-start mb-2">
-                                <div className="text-xs sm:text-sm">
-                                    <GoDotFill className="mr-2 mt-[3px]" />
-                                </div>
-                                <span>{item}</span>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-
-                {/* Emergency Preparedness */}
-                <div className=" text-center">
-                    <h3 className="text-lg  font-bold text-gray-800 mb-4">
-                        Stay Safe, Travel Smart!
-                    </h3>
+    
+                    {activeContent ? (
+                        <ul className="text-gray-700 leading-relaxed text-sm space-y-3">
+                            {activeContent.content.map((item, index) => (
+                                <li key={index} className="flex items-start">
+                                    
+                                    <span>{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    ) : (
+                        <p className="text-gray-500 text-sm">
+                            Content not found. Please select a valid section.
+                        </p>
+                    )}
                 </div>
             </div>
         </div>
-
+    </div>
+    
     );
 };
 

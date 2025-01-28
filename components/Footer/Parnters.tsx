@@ -34,18 +34,66 @@ const partners = [
         description:
             "SeatonTrips is our partner in providing affordable and convenient travel solutions. With a focus on budget-friendly travel, SeatonTrips offers a wide range of tours and activities that cater to all budgets and interests.",
     },
+    {
+        name: "RidesNmore",
+        img: '/partners/SeatonTrips.jpg',
+        description:
+            "Experience global connectivity with RidesnMore, a transportation giant and our trusted partner for transportation solutions. Whether it’s a private car or a 50-seater coach, RidesnMore ensures reliable point-to-point transfers across the globe.",
+    },
+    {
+        name: "Tix2Gigs",
+        img: '/partners/SeatonTrips.jpg',
+        description:
+            "Looking for the hottest tickets in town? Look no further than Tix2Gigs, our partner in providing access to the most sought-after events. From concerts to sports games, Tix2Gigs offers a wide range of tickets to the most popular events.",
+    },
+    {
+        name: "Evintry",
+        img: '/partners/SeatonTrips.jpg',
+        description:
+            "Evintry is a platform that revolutionizes the event planning landscape by offering a one-stop platform for all event needs with its cutting-edge technology that ensures real-time solutions, creating an unparalleled experience for both organizers and attendees.",
+    },
+    {
+        name: "MyTravcon",
+        img: '/partners/SeatonTrips.jpg',
+        description:
+            "A comprehensive travel concierge service providing personalized travel planning and management, ensuring hassle-free and memorable journeys. Our personalized concierge services are handled with utmost precision and care.",
+    },
+    {
+        name: "Venu Menu",
+        img: '/partners/SeatonTrips.jpg',
+        description:
+            "A smart venue discovery platform connecting event planners with top-rated venues worldwide, simplifying the booking process with tailored recommendations. They provide comprehensive facilities and services whilst providing the tools to choose the right venue.",
+    },
+    {
+        name: "Synergy Marketing Reps",
+        img: '/partners/SeatonTrips.jpg',
+        description:
+            "The world’s first Sales and Marketing representation company which owns and operates its own online booking platform that can connect clients/partners complete inventory. The SMR partner offices globally connect us with the right industry partners.",
+    },
+    {
+        name: "ToursnTrips",
+        img: '/partners/SeatonTrips.jpg',
+        description:
+            "ToursnTrips is our trusted partner for global excursions and sightseeing, offering diverse travel experiences that cater to every interest and destination.",
+    },
+    {
+        name: "RateOcto",
+        img: '/partners/SeatonTrips.jpg',
+        description:
+            "Rate Octo offers an unmatched online booking solution for travel industry and hospitality experts, providing cutting-edge technology to manage rates efficiently and maximize revenue opportunities.",
+    },
 ];
 
 const Partners: React.FC = () => {
     return (
-        <div className=" bg-gray-100  px-6 sm:px-6 lg:px-8 py-12">
+        <div className=" bg-gray-100  px-6 lg:px-8 py-12">
             <div
 
                 className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden "
             >
-                <div className="p-6 md:p-10">
+                <div className="p-6 md:px-10">
                     <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">Partners</h1>
-                    <p className="text-sm  text-gray-600 p-2">
+                    <p className="text-sm  text-gray-600 p-2 text-center">
                         At Travel Synergies, we believe that partnerships are key to delivering
                         exceptional travel experiences. That’s why we collaborate with top
                         industry leaders to offer you an extensive selection of premium
@@ -53,22 +101,25 @@ const Partners: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2  mx-auto">
-                    {partners.map((partner, index) => (
-                        <div
-                            key={index}
-
-                            className="bg-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-xl m-3"
-                        >
-                            <div className="flex flex-row justify-between">
-                                <h2 className="text-lg font-semibold mb-4 text-gray-800">
-                                    {partner.name}
-                                </h2>
-                                <Image src={partner.img} alt={partner.name} width={70} height={20}/>                            </div>
-
-                            <p className="text-gray-600 text-sm">{partner.description}</p>
+                <div className="grid md:grid-cols-1 mx-auto px-4">
+                    <section className="my-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-4 md:mt-6">
+                            {partners.map((partner, index) => (
+                                <div key={index} className="bg-white shadow-md rounded-xl p-4 md:p-6 flex flex-col items-center text-center">
+                                    {/* Logo */}
+                                    <img
+                                        src={partner.img} // Partner logo URL
+                                        alt={`${partner.name} Logo`}
+                                        className="w-16 h-16 md:w-20 md:h-20 object-contain mb-4"
+                                    />
+                                    {/* Name */}
+                                    <h3 className="font-extrabold text-orange-500 text-sm md:text-lg ">{partner.name}</h3>
+                                    {/* Description */}
+                                    <p className="text-gray-600 mt-2 md:mt-4 text-xs md:text-sm">{partner.description}</p>
+                                </div>
+                            ))}
                         </div>
-                    ))}
+                    </section>
                 </div>
             </div>
         </div>

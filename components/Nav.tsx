@@ -27,10 +27,6 @@ const Nav = () => {
             name: 'About',
             path: '/about-us'
         },
-        {
-            name: 'contact',
-            path: '/contact'
-        },
     ]
     return (
         <nav className="flex gap-8 ">

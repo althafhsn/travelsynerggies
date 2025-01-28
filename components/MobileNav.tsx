@@ -26,10 +26,7 @@ const links = [
         name: 'About',
         path: '/about-us'
     },
-    {
-        name: 'contact',
-        path: '/contact'
-    },
+        
 ]
 const MobileNav = () => {
     const pathName = usePathname();
