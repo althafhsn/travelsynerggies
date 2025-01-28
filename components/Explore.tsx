@@ -581,37 +581,38 @@ const Explore = () => {
                         <div className="grid grid-cols-1 md:grid-cols-3  xl:mt-0">
                             {project.stack.map((item, index) => (
                                 <article
-                                    key={index}
-                                    className="group relative isolate flex flex-col justify-end overflow-hidden pb-6 pt-40 w-[260px] h-[360px] md:w-[230px] lg:h-[340px] xl:w-[260px] xl:h-[370px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
-                                >
-                                    {/* Background Image */}
-                                    <Image
-                                        src={item.image}
-                                        fill
-                                        alt={item.name}
-                                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out"
-                                    />
-                                    {/* Gradient Overlay */}
-                                    {/* <div className="absolute inset-0 bg-gradient-to-t from-white-900/40 via-transparent"></div> */}
-                                    {/* Text Content */}
-                                    <div className="z-10 relative px-4 flex flex-col h-full justify-end">
-                                        {/* Title (Name at the very bottom) */}
-                                        <div className="flex gap-[1px]">
-                                            <div className="text-lg font-extrabold text-orange-500 m-[3px]">
-                                                <CiLocationOn />
-                                            </div>
-                                            <h3 className="text-[15px] font-bold text-orange-500 mb-2 transition-opacity duration-300 ease-in-out group-hover:opacity-90 opacity-90">
-                                                {item.name}
-                                            </h3>
+                                key={index}
+                                className="group relative isolate flex flex-col justify-end overflow-hidden pb-6 pt-40 w-[260px] h-[360px] md:w-[230px] lg:h-[340px] xl:w-[260px] xl:h-[370px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+                            >
+                                {/* Background Image */}
+                                <Image
+                                    src={item.image}
+                                    fill
+                                    alt={item.name}
+                                    className="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-out"
+                                />
+                                {/* Gradient Overlay */}
+                                <div className="absolute bottom-0 left-0 right-0 w-full h-[40%] group-hover:bg-black/50 transition-all duration-500 ease-in-out group-hover:h-[50%]"></div>
+                                {/* Text Content */}
+                                <div className="z-10 relative px-4 flex flex-col h-full justify-end ">
+                                    {/* Title (Name at the very bottom) */}
+                                    <div className="flex gap-[1px]">
+                                        <div className="text-lg font-extrabold text-orange-500 m-[3px]">
+                                            <CiLocationOn />
                                         </div>
-                                        {/* Description (Hover animation only for description) */}
-                                        <p
-                                            className="text-xs leading-5 text-white opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[11em] group-hover:mt-2 transition-[opacity,max-height,margin-top] duration-500 ease-in-out "
-                                        >
-                                            {item.description}
-                                        </p>
+                                        <h3 className="text-[15px] font-extrabold text-orange-500 mb-2 transition-opacity duration-300 ease-in-out group-hover:opacity-90 opacity-90">
+                                            {item.name}
+                                        </h3>
                                     </div>
-                                </article>
+                                    {/* Description (Hover animation only for description) */}
+                                    <p
+                                        className="text-xs leading-5 text-white opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[11em] group-hover:mt-2 transition-[opacity,max-height,margin-top] duration-500 ease-in-out"
+                                    >
+                                        {item.description}
+                                    </p>
+                                </div>
+                            </article>
+                            
 
 
                             ))}
