@@ -362,19 +362,20 @@ const projects: jurnels[] = [
                 description: 'The heart of Catholicism, Vatican City inspires with St. Peter’s Basilica, the Sistine Chapel, and a profound sense of faith and history.'
             },
             {
-                image: '/outbound/spiritual-awakenings/img2.webp',
-                name: 'Erechtheion, Greece',
-                description: 'This ancient temple on the Acropolis of Athens exudes sacred beauty, blending mythology and history in its iconic Caryatid porch.'
+                image: '/outbound/spiritual-awakenings/img4.webp',
+                name: 'Wat Chaiwatthanaram, Thailand',
+                description: 'This stunning temple in Ayutthaya, Thailand, is a serene reminder of Buddhist teachings, with its intricate architecture and tranquil riverside setting.'
             },
+
             {
                 image: '/outbound/spiritual-awakenings/img3.webp',
                 name: 'Jerusalem, Israel',
                 description: 'A spiritual crossroads for Islam, Christianity and Judaism, Jerusalem captivates with its sacred sites like the Western Wall, Church of the Holy Sepulchre and Dome of the Rock.'
             },
             {
-                image: '/outbound/spiritual-awakenings/img4.webp',
-                name: 'Wat Chaiwatthanaram, Thailand',
-                description: 'This stunning temple in Ayutthaya, Thailand, is a serene reminder of Buddhist teachings, with its intricate architecture and tranquil riverside setting.'
+                image: '/outbound/spiritual-awakenings/img2.webp',
+                name: 'Erechtheion, Greece',
+                description: 'This ancient temple on the Acropolis of Athens exudes sacred beauty, blending mythology and history in its iconic Caryatid porch.'
             },
             {
                 image: '/outbound/spiritual-awakenings/img5.webp',
@@ -389,6 +390,98 @@ const projects: jurnels[] = [
 
         ],
         image: '/outbound/spiritual-awakenings/main.webp',
+
+    },
+    {
+        fName: 'Winter ',
+        lName: 'Exitnment',
+        description: 'Escape to idyllic tropical paradises where sun-kissed beaches, turquoise waters and lush greenery create the perfect setting for relaxation and rejuvenation. Whether it’s the Maldives, Sri Lanka or the Seychelles, indulge in luxury resorts, serene landscapes and unforgettable island vibes.',
+        stack: [
+            {
+                image: '/outbound/treasures-unveiled/img1.webp',
+                name: 'Maldives',
+                description: 'A tropical haven of crystal-clear waters, overwater bungalows and pristine white-sand beaches, the Maldives promises serene luxury and unparalleled beach stays.',
+                location: 'Maldives'
+            },
+            {
+                image: '/outbound/treasures-unveiled/img2.webp',
+                name: 'Hawaii',
+                description: 'A blend of lush rainforests, dramatic volcanic landscapes and golden beaches, Hawaii is a vibrant paradise offering aloha spirit and breathtaking sunsets.',
+                location: 'Hawaii'
+            },
+            {
+                image: '/outbound/treasures-unveiled/img3.webp',
+                name: 'Brazil',
+                description: 'From the iconic beaches of Rio to the vast Amazon rainforest, Brazil dazzles with its natural beauty, vibrant culture and infectious samba rhythms that would lure any soul to move.',
+                location: 'Brazil'
+            },
+            {
+                image: '/outbound/treasures-unveiled/img4.webp',
+                name: 'Cuba ',
+                description: 'Step back in time to Havana, where colonial charm, vintage cars and a lively Caribbean vibe make it a unique tropical escape',
+                location: 'Cuba'
+            },
+            {
+                image: '/outbound/treasures-unveiled/img5.webp',
+                name: 'Sri Lanka ',
+                description: 'Known as the "Pearl of the Indian Ocean," Sri Lanka is a land of timeless charm and breathtaking beauty with lush tea plantations, incredible wildlife, golden beaches and rich cultural heritage, wrapped in warm hospitality. ',
+                location: 'Sri Lanka'
+            },
+            {
+                image: '/outbound/treasures-unveiled/img6.webp',
+                name: 'Seychelles',
+                description: 'A tropical paradise with stunning beaches, gorgeous landscapes, and abundant nature, Seychelles blends rich culture with lively nightlife, offering everything from serene nature to unforgettable beach parties.',
+                location: 'Seychelles'
+            },
+
+        ],
+        image: '/outbound/treasures-unveiled/main.webp',
+
+    },
+    {
+        fName: 'Sports',
+        lName: 'Unveiled',
+        description: 'Escape to idyllic tropical paradises where sun-kissed beaches, turquoise waters and lush greenery create the perfect setting for relaxation and rejuvenation. Whether it’s the Maldives, Sri Lanka or the Seychelles, indulge in luxury resorts, serene landscapes and unforgettable island vibes.',
+        stack: [
+            {
+                image: '/outbound/treasures-unveiled/img1.webp',
+                name: 'Maldives',
+                description: 'A tropical haven of crystal-clear waters, overwater bungalows and pristine white-sand beaches, the Maldives promises serene luxury and unparalleled beach stays.',
+                location: 'Maldives'
+            },
+            {
+                image: '/outbound/treasures-unveiled/img2.webp',
+                name: 'Hawaii',
+                description: 'A blend of lush rainforests, dramatic volcanic landscapes and golden beaches, Hawaii is a vibrant paradise offering aloha spirit and breathtaking sunsets.',
+                location: 'Hawaii'
+            },
+            {
+                image: '/outbound/treasures-unveiled/img3.webp',
+                name: 'Brazil',
+                description: 'From the iconic beaches of Rio to the vast Amazon rainforest, Brazil dazzles with its natural beauty, vibrant culture and infectious samba rhythms that would lure any soul to move.',
+                location: 'Brazil'
+            },
+            {
+                image: '/outbound/treasures-unveiled/img4.webp',
+                name: 'Cuba ',
+                description: 'Step back in time to Havana, where colonial charm, vintage cars and a lively Caribbean vibe make it a unique tropical escape',
+                location: 'Cuba'
+            },
+            {
+                image: '/outbound/treasures-unveiled/img5.webp',
+                name: 'Sri Lanka ',
+                description: 'Known as the "Pearl of the Indian Ocean," Sri Lanka is a land of timeless charm and breathtaking beauty with lush tea plantations, incredible wildlife, golden beaches and rich cultural heritage, wrapped in warm hospitality. ',
+                location: 'Sri Lanka'
+            },
+            {
+                image: '/outbound/treasures-unveiled/img6.webp',
+                name: 'Seychelles',
+                description: 'A tropical paradise with stunning beaches, gorgeous landscapes, and abundant nature, Seychelles blends rich culture with lively nightlife, offering everything from serene nature to unforgettable beach parties.',
+                location: 'Seychelles'
+            },
+
+        ],
+        image: '/outbound/treasures-unveiled/main.webp',
 
     },
 

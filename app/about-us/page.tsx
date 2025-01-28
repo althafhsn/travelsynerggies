@@ -33,8 +33,8 @@ const AboutUs: React.FC = () => {
                     <h1 className="max-w-2xl mx-auto text-4xl font-bold text-white mb-5 md:text-5xl md:leading-normal font-manrope">
                         WHO <span className="text-orange-500">WE</span> ARE ?
                     </h1>
-                    <p className=" mx-auto text-sm text-gray-100 mb-9">
-                        Travel synergies transform individual journeys into rich, collaborative experiences by connecting travelers, local communities, and innovative technologies.
+                    <p className=" mx-auto text-sm text-gray-100 mb-9 font-bold">
+                        Travel Synergies transforms individual journeys into rich collaborative experiences by connecting travelers, local communities, and innovative technologies.
                     </p>
                 </div>
             </section>
@@ -92,7 +92,7 @@ const AboutUs: React.FC = () => {
                         </div>
                         <div className="img-box">
                             <img
-                                src="about/about2.webp"
+                                src="about/about3.webp"
                                 alt="About Us tailwind page"
                                 className="hidden lg:block object-cover scale-95"
                             />
@@ -105,7 +105,7 @@ const AboutUs: React.FC = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
                         <div className="img-box">
                             <img
-                                src="about/about3.webp"
+                                src="about/about2.webp"
                                 alt="About Us tailwind page"
                                 className="hidden lg:block object-cover"
                             />

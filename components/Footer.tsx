@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
                 { text: "Partners", href: "/blogs#partners" },
                 { text: "Parters Login", href: "/" },
                 { text: "Why Choose Us", href: "/blogs#why-choose-us" },
-                { text: "Career", href: "/career" },
+                { text: "Careers", href: "/career" },
                 { text: "Contact Us", href: "/contact" }
             ]
         }
