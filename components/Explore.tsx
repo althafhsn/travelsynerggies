@@ -592,7 +592,7 @@ const Explore = () => {
                                     className="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-out"
                                 />
                                 {/* Gradient Overlay */}
-                                <div className="absolute bottom-0 left-0 right-0 w-full h-[40%] group-hover:bg-black/50 transition-all duration-500 ease-in-out group-hover:h-[50%]"></div>
+                                <div className="absolute bottom-0 left-0 right-0 w-full h-[40%] group-hover:bg-black/50 transition-all duration-500 ease-in-out group-hover:h-[60%]"></div>
                                 {/* Text Content */}
                                 <div className="z-10 relative px-4 flex flex-col h-full justify-end ">
                                     {/* Title (Name at the very bottom) */}

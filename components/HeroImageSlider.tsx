@@ -113,7 +113,7 @@ const ImageSlider: React.FC = () => {
                                         animate="animate"
                                         exit="exit"
                                         transition={{ duration: 1 }}
-                                        className="mt-4 text-sm md:text-xl font-bold ml-1"
+                                        className="mt-4 text-2xl md:text-4xl font-bold ml-1"
                                     >
                                         {slide.description}
                                     </motion.p>

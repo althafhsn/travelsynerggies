@@ -6,7 +6,7 @@ const page = () => {
             <div className="container mx-auto px-4 py-8">
                 <h1 className="text-3xl font-bold mb-4 text-orange-500 text-center mx-auto">Cookies and Privacy Policy</h1>
 
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     On our site, third parties may collect and store certain information about you through the use of cookies (including session and persistent), pixels/tags, SDKs, application program interfaces (APIs), and other technologies (collectively, "Cookies"). Functional cookies, like the ones that keep you logged in while you browse our site, are used for that purpose. Other cookies, such the ones that:
                 </p>
                 <li className="mb-2 text-gray-600 text-xs">
@@ -20,129 +20,129 @@ const page = () => {
                 </li>
                 <h2 className="text-lg font-bold mb-2 text-black ">UAE Website Users</h2>
 
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     For those who access the site from the UAE (sometimes referred to as "UAE Site Visitors"), we may use functional cookies. We don't use ineffective cookies on the website we offer in the UAE.
                 </p>
 
                 <h2 className="text-lg font-bold mb-2 text-black ">Non-UAE Website Users</h2>
 
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     For visitors from other nations (referred to as "Non-UAE Visitors"), we might utilize both functional and non-functional cookies on the site. For non-UAE site visitors, we've also provided information below regarding how we use inactive cookies on the site we provide outside of the UAE Interest Based Advertising
                 </p>
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     In order to collect information about your online activities on our website (such as the pages you visit and the searches you make), over time, and across any other websites you may visit, we may allow specified third parties to put non-functional cookies on it. This information is used to both deliver interest-based advertising from us (through email, on our site and other websites, and by third parties on other websites you may visit), also known as interest-based marketing, and to assess the effectiveness of such interest-based advertising. We may also share one-way hashed information with third party partners (like Facebook) in order to deliver personalized Travel Synergies adverts on other websites or mobile apps based on your prior visits to the site. Any websites or mobile apps that contain our adverts do not have the purposes, causes, or assertions of Travel Synergies link behind them.
                 </p>
 
                 <h2 className="text-lg font-bold mb-2 text-black">Cross-Device Analysis </h2>
 
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     We may also combine information obtained through non-functional cookies with specific usage data from a specific browser or mobile device with yet another computer or device that may be connected to you in order to enhance our services and deliver personalized Travel Synergies communications and advertisements to you. If you do not want the company to combine such information in order to communicate with you more effectively, please unsubscribe from Travel Synergies messages, such as the newsletter.
                 </p>
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     You may still view adverts if you choose to opt out of interest-based advertising, but the network will no longer provide ads that are relevant to your interests. You should also be aware that deactivating your user account does not necessarily mean you have decided to stop getting tailored adverts.
                 </p>
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     You might need to make these choices for each browser and device you use if you want to exercise your choice with regard to particular functional cookies and non-functional cookies. Last but not least, the site is not currently configured to honor "Do Not Track" signals from browsers, except when required by applicable legislation.
                 </p>
 
                 <h2 className="text-lg font-bold mb-2 text-black">Refusal to Engage in Our Marketing Communications</h2>
 
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     For the aforementioned reasons, your information can be stored outside of your country of residence in locations without the same level of data protection as your country of residence. We provide the essential cross-border protections in compliance with the requirements of the law for international data transfers, including information transferred to third parties. In relation to such transfers from the European Economic Area ("EEA") to the United States and other non-EEA jurisdictions, we may rely on the EU Model Clauses and/or the necessity of processing your information in order to provide the requested services (performance of a contract).
                 </p>
 
                 <h2 className="text-lg font-bold mb-2 text-black">Data from External Partners</h2>
 
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     Occasionally, we might get information from partners, related companies, or other third-party sources. As an example, if you access or log in to our site using social media, such as Facebook Connect, we may collect information about you, including your username and other details made available to us through those services. As another example, if your credit card is replaced, your credit card issuer may send us the new card's information via Visa or Mastercard.
                     We have teamed with Facebook to provide Facebook users on Travel Synergies with tailored content.
 
                 </p>
                 <h2 className="text-lg font-bold mb-2 text-black">Data Protection for You</h2>
 
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     We maintain appropriate physical, electronic, and organizational security measures to guard your information against accidental or unlawful destruction, loss, modification, unauthorized disclosure, or access. Secure Socket Layer technology encrypts credit card information as it is being transmitted. Additionally, you can save credit card details in your own account for easier future reservations and payments. You may always visit your personal account to add, change, or remove specific credit card information. Your credit card information is encrypted.
                 </p>
                 <h2 className="text-lg font-bold mb-2 text-black">Storage of data</h2>
 
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     For as long as it takes to maintain the functionality and security of our websites and services, to defend against legal claims, and to comply with legal and regulatory requirements, your information will be kept on file. Travel Synergies will take the necessary steps to appropriately anonymize your information so that it cannot be used to identify you when we no longer need it. Alternatively, we will remove it from our systems and records when we no longer require it. This is accurate except where we must maintain your information to comply with relevant legal or regulatory requirements or when the information is required to carry out corporate duties and run our business.
                 </p>
                 <h2 className="text-lg font-bold mb-2 text-black">What Data You Have and Modification Procedures</h2>
 
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     You can instantly alter your account name, the name of the person holding the reservation (subject to the cancellation policy connected with the reservation), and your contact details by signing into your account on the website. Alternately, please contact us at info@travelsynergies.com through our Customer Support page to exercise any of the following rights:
                 </p>
 
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     <span className="font-bold ">Access: </span>
                     You have the right to inquire about the personal information we have on file about you at any time, free of charge and in compliance with any applicable laws. In extreme cases, we may, if permitted by applicable legislation, demand payment before we deliver the information.
                 </p>
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     <span className="font-bold ">Correction: </span>
                     You have the right to ask us to update any incomplete or incorrect personal information we may have. You can request that we remove your account.
                 </p>
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     <span className="font-bold ">Process Limitations: </span>
                     You have the right to ask us to update any incomplete or incorrect personal information we may have. You can request that we remove your account.
                     Process Limitations: You can ask us to stop using your personal information if you object to the processing and there are still being evaluated whether there are any reasonable grounds for the action..
 
                 </p>
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     <span className="font-bold ">Objection: </span>
                     You always have the option to object to the use of your personal information for direct marketing.
                 </p>
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     <span className="font-bold ">Right to revoke consent:  </span>
                     Anytime, and doing so won't affect the legality of any processing we did with your consent up until the point it was withdrawn.
 
                 </p>
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     <span className="font-bold ">Data portability: </span>
                     : If appropriate, you may ask that we provide your personal information that we keep in a widely used and accepted format to you. This format will be determined by our users' content.
 
                 </p>
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     For the sake of your privacy and security, we shall verify your identification before replying to such a request. We will then act quickly to fulfill your request. We might not be able to grant you access to certain personal information, for example, if it is connected to the personal information of other people or if it is illegal. If so, we will explain why we are unable to provide you with this information. We may also reject your request for the deletion or rectification of your personal data due to legal obligations, particularly those relating to our accounting practices, the handling of claims, for fraud detection or prevention purposes, and mandatory data retention, which may preclude deletion or anonymization.
 
                 </p>
 
                 <h2 className="text-lg font-bold mb-2 text-black">Updates on Privacy Policies</h2>
 
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     This privacy statement may be updated from time to time by Travel Synergies to reflect changes in the legislation, our information collection and usage practices, website functionality, and technical advancement. If we make any changes that have an impact on how we collect or use your information, we'll include those changes in this privacy statement and update the effective date at the top. As a result, to stay up to date with our most recent rules and practices, you should frequently review this Privacy Policy. Travel Synergies will publicly post any significant changes before implementing them and, if needed by law, will also seek your consent.
 
 
                 </p>
                 <h2 className="text-lg font-bold mb-2 text-black">Other Website Links</h2>
 
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     We may provide links to websites owned or controlled by third parties (referred to as "Third Party Websites"). When you click on a link to access a Third-Party Website, whose privacy and security policies may differ from ours, you will be subject to those rules. You should familiarize yourself with the linked Third-Party Website's privacy policy, terms of use, and security measures before providing any information there.
                 </p>
                 <h2 className="text-lg font-bold mb-2 text-black">Language</h2>
 
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     It is initially written in English for this Privacy Statement. There are translations available in various languages for your convenience. When there is a material difference between the English language version and any translated versions, the English language version shall control.
                 </p>
                 <h2 className="text-lg font-bold mb-2 text-black">Contact</h2>
 
-                <p className="mb-4 text-gray-800 text-sm">
+                <p className="mb-4 text-gray-800 text-xs">
                     If you have any inquiries about this privacy statement or our privacy policies, you may send a formal letter to the following address. You can also send an email to privacy@travelsynergies.com to reach our Data Governance Officer.
                 </p>
 
 
                 <h1 className="text-3xl font-bold mb-4 text-orange-500 text-center mx-auto ">Terms and Conditions</h1>
-                <p className="text-sm text-gray-600">
+                <p className="text-xs text-gray-600">
                     Regarding Travelsynergies.com
                 </p>
-                <p className="text-sm text-gray-600 mb-5 ">
+                <p className="text-xs text-gray-600 mb-5 ">
                     Legal Terms & Conditions of Use
                 </p>
 
                 <h3 className="text-gray-800 font-bold text-[13px] mb-1">
                     Customer Conditions of Use
                 </h3>
-                <li className="text-sm text-gray-600 mb-5">
+                <li className="text-xs text-gray-600 mb-5">
                     Updated 11. May 2023
                 </li>
 
@@ -223,7 +223,7 @@ const page = () => {
 
                 <h2 className="text-lg font-bold mb-2 text-gray-800">A1. Definitions</h2>
 
-                <p className="mb-4 text-sm text-gray-600">
+                <p className="mb-4 text-xs text-gray-600">
                     Please refer to the "Travelsynergies.com dictionary" at the end of these Terms for specific definitions of key terms.
                 </p>
 
@@ -273,7 +273,7 @@ const page = () => {
 
                 <h2 className="text-lg font-bold mb-2 text-gray-800">A3. Details regarding Travelsynergies.com</h2>
 
-                <ol className="mb-4 text-sm  text-gray-600">
+                <ol className="mb-4 text-xs  text-gray-600">
                     <li>
                         1. When you purchase a hotel, airline, or attraction, Travelsynergies.com supplies the Platform and is in charge of it, but not the actual travel experience (see A4.4 below).
                     </li>
@@ -289,7 +289,7 @@ const page = () => {
 
                 <h2 className="text-lg font-bold mb-2 text-gray-800">A4. Our Platform</h2>
 
-                <ol className="mb-4 text-sm  text-gray-600">
+                <ol className="mb-4 text-xs  text-gray-600">
                     <li>
                         1. Although we use reasonable care to provide our Platform—we obtain the information from the Service Providers—we cannot guarantee that all of the content is correct. We will do everything we can to repair any errors, disruptions, or missing information as quickly as we can, but to the fullest degree allowed by law, we can't be held liable for them.
                     </li>
@@ -309,7 +309,7 @@ const page = () => {
                 </ol>
                 <h2 className="text-lg font-bold mb-2 text-gray-800">A5. Our Values</h2>
 
-                <ol className="mb-4 text-sm  text-gray-600">
+                <ol className="mb-4 text-xs  text-gray-600">
                     <li>
                         1. You’ll uphold our principles -
                         Use the Travel Experience and/or Platform for their intended purposes. - Comply with all applicable laws. - Cooperate with any anti-fraud/anti-money laundering checks we need to conduct. - Do not cause any disruption or damage. - Do not act inappropriately around the staff of the Service Provider (or anyone else, for that matter).
@@ -319,7 +319,7 @@ const page = () => {
 
                 <h2 className="text-lg font-bold mb-2 text-gray-800">A6. Prices</h2>
 
-                <ol className="mb-4 text-sm  text-gray-600">
+                <ol className="mb-4 text-xs  text-gray-600">
                     <li>
                         1. By making a Booking, you agree to pay the full price of the Travel Experience, including any applicable fees and taxes.
                     </li>
@@ -338,7 +338,7 @@ const page = () => {
 
                 <h2 className="text-lg font-bold mb-2 text-gray-800">A7. Payments</h2>
 
-                <ol className="mb-4 text-sm  text-gray-600">
+                <ol className="mb-4 text-xs  text-gray-600">
                     <li>
                         1. The Service Provider may need an upfront payment and/or a payment taken during your travel experience for certain goods and services.
                     </li>
@@ -368,7 +368,7 @@ const page = () => {
 
                 <h2 className="text-lg font-bold mb-2 text-gray-800">A8. Policies</h2>
 
-                <ol className="mb-4 text-sm  text-gray-600">
+                <ol className="mb-4 text-xs  text-gray-600">
                     <li>
                         1. We may: - Show prices in your own currency if the platform currency you choose is different from the service provider's currency.
                         - Give you the choice to pay with selected currencies.
@@ -395,7 +395,7 @@ const page = () => {
 
                 </ol>
 
-                <h2 className="text-2xl font-bold mb-2">Cookies</h2>
+                {/* <h2 className="text-2xl font-bold mb-2">Cookies</h2>
 
                 <p className="mb-4">
                     A cookie is a small file that asks permission to be placed on your computer's hard drive. Once you agree,
@@ -463,7 +463,7 @@ const page = () => {
 
                 <p className="mb-4">
                     This privacy policy is subject to change without notice.
-                </p>
+                </p> */}
             </div>
         </div>
     )
