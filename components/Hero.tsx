@@ -8,11 +8,11 @@ const Hero = () => {
                 {/* Hero Background - Changed from fixed to absolute */}
 
                 {/* About Section with proper background */}
-                <section className="relative py-16">
+                <section className="relative py-12">
                     <div className="absolute inset-0 bg-black/10"></div>
                     <div className="container mx-auto px-8 relative">
                         <div className="grid lg:grid-cols-2 gap-8 lg:text-start px-2">
-                            <div className="flex flex-col justify-center ps-10      ">
+                            <div className="flex flex-col justify-center ps-10">
                                 <h2 className="text-2xl md:text-5xl  font-bold py-2 ">Travel the World,</h2>
                                  <h2 className="text-orange-500 text-2xl md:text-5xl  font-bold  py-2 ">Live the Moment ! </h2>
                                 <p className="text-gray-400 mt-8 leading-relaxed md:text-[18px] text-lg">
@@ -22,11 +22,11 @@ const Hero = () => {
 
                             </div>
 
-                            <div className="relative hidden md:flex items-center justify-center">
+                            <div className="relative hidden md:flex justify-center pt-6">
                                 <img
                                     src="/outbound/about.webp"
                                     alt="Suspension bridge"
-                                    className="w-[400px] h-[450px] object-cover rounded-lg"
+                                    className="w-[400px] h-[500px] object-cover rounded-lg"
                                 />
                             </div>
                         </div>
