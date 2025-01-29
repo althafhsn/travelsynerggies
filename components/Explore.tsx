@@ -394,94 +394,94 @@ const projects: jurnels[] = [
     },
     {
         fName: 'Winter ',
-        lName: 'Exitnment',
-        description: 'Escape to idyllic tropical paradises where sun-kissed beaches, turquoise waters and lush greenery create the perfect setting for relaxation and rejuvenation. Whether it’s the Maldives, Sri Lanka or the Seychelles, indulge in luxury resorts, serene landscapes and unforgettable island vibes.',
+        lName: 'Magic',
+        description: 'Winter is a magical time to travel, filled with snow, lights, and festive cheer. Explore Germany’s Christmas markets with mulled wine and gingerbread or enjoy thrilling snowy adventures. Sip hot cocoa by the fire, glide down powdery slopes, or wander through twinkling holiday markets. These destinations promise unforgettable memories. Pack your scarf and embrace the magic of winter!',
         stack: [
             {
-                image: '/outbound/treasures-unveiled/img1.webp',
-                name: 'Maldives',
+                image: '/outbound/winter-magic/img1.webp',
+                name: 'Christmas Market',
                 description: 'A tropical haven of crystal-clear waters, overwater bungalows and pristine white-sand beaches, the Maldives promises serene luxury and unparalleled beach stays.',
                 location: 'Maldives'
             },
             {
-                image: '/outbound/treasures-unveiled/img2.webp',
-                name: 'Hawaii',
+                image: '/outbound/winter-magic/img2.webp',
+                name: 'Family Time',
                 description: 'A blend of lush rainforests, dramatic volcanic landscapes and golden beaches, Hawaii is a vibrant paradise offering aloha spirit and breathtaking sunsets.',
                 location: 'Hawaii'
             },
             {
-                image: '/outbound/treasures-unveiled/img3.webp',
-                name: 'Brazil',
+                image: '/outbound/winter-magic/img3.webp',
+                name: 'Northern Lights',
                 description: 'From the iconic beaches of Rio to the vast Amazon rainforest, Brazil dazzles with its natural beauty, vibrant culture and infectious samba rhythms that would lure any soul to move.',
                 location: 'Brazil'
             },
             {
-                image: '/outbound/treasures-unveiled/img4.webp',
-                name: 'Cuba ',
+                image: '/outbound/winter-magic/img4.webp',
+                name: 'Skiing',
                 description: 'Step back in time to Havana, where colonial charm, vintage cars and a lively Caribbean vibe make it a unique tropical escape',
                 location: 'Cuba'
             },
             {
-                image: '/outbound/treasures-unveiled/img5.webp',
-                name: 'Sri Lanka ',
+                image: '/outbound/winter-magic/img5.webp',
+                name: 'Sleding',
                 description: 'Known as the "Pearl of the Indian Ocean," Sri Lanka is a land of timeless charm and breathtaking beauty with lush tea plantations, incredible wildlife, golden beaches and rich cultural heritage, wrapped in warm hospitality. ',
                 location: 'Sri Lanka'
             },
             {
-                image: '/outbound/treasures-unveiled/img6.webp',
-                name: 'Seychelles',
+                image: '/outbound/winter-magic/img6.webp',
+                name: 'Snow Boarding',
                 description: 'A tropical paradise with stunning beaches, gorgeous landscapes, and abundant nature, Seychelles blends rich culture with lively nightlife, offering everything from serene nature to unforgettable beach parties.',
                 location: 'Seychelles'
             },
 
         ],
-        image: '/outbound/treasures-unveiled/main.webp',
+        image: '/outbound/winter-magic/main.webp',
 
     },
     {
-        fName: 'Sports',
-        lName: 'Unveiled',
-        description: 'Escape to idyllic tropical paradises where sun-kissed beaches, turquoise waters and lush greenery create the perfect setting for relaxation and rejuvenation. Whether it’s the Maldives, Sri Lanka or the Seychelles, indulge in luxury resorts, serene landscapes and unforgettable island vibes.',
+        fName: 'Game ',
+        lName: 'On',
+        description: 'Calling all sports enthusiasts! Imagine the roar of the crowd, the thrill of the game, and the electric atmosphere of being in the stadium as your favorite team battles it out. From iconic football matches in Europe’s legendary stadiums to the high-energy cricket showdowns in India, Australia, or the Caribbean, the world is your playground for unforgettable sports experiences. Whether you’re a die-hard fan or just love the adrenaline of live sports, our travel packages bring you closer to the action.',
         stack: [
             {
-                image: '/outbound/treasures-unveiled/img1.webp',
-                name: 'Maldives',
+                image: '/outbound/game-on/img1.webp',
+                name: 'Basketball',
                 description: 'A tropical haven of crystal-clear waters, overwater bungalows and pristine white-sand beaches, the Maldives promises serene luxury and unparalleled beach stays.',
                 location: 'Maldives'
             },
             {
-                image: '/outbound/treasures-unveiled/img2.webp',
-                name: 'Hawaii',
+                image: '/outbound/game-on/img2.webp',
+                name: 'Cricket',
                 description: 'A blend of lush rainforests, dramatic volcanic landscapes and golden beaches, Hawaii is a vibrant paradise offering aloha spirit and breathtaking sunsets.',
                 location: 'Hawaii'
             },
             {
-                image: '/outbound/treasures-unveiled/img3.webp',
-                name: 'Brazil',
+                image: '/outbound/game-on/img3.webp',
+                name: 'Foodball',
                 description: 'From the iconic beaches of Rio to the vast Amazon rainforest, Brazil dazzles with its natural beauty, vibrant culture and infectious samba rhythms that would lure any soul to move.',
                 location: 'Brazil'
             },
             {
-                image: '/outbound/treasures-unveiled/img4.webp',
-                name: 'Cuba ',
+                image: '/outbound/game-on/img4.webp',
+                name: 'Ice Hockey ',
                 description: 'Step back in time to Havana, where colonial charm, vintage cars and a lively Caribbean vibe make it a unique tropical escape',
                 location: 'Cuba'
             },
             {
-                image: '/outbound/treasures-unveiled/img5.webp',
-                name: 'Sri Lanka ',
+                image: '/outbound/game-on/img5.webp',
+                name: 'Tennis ',
                 description: 'Known as the "Pearl of the Indian Ocean," Sri Lanka is a land of timeless charm and breathtaking beauty with lush tea plantations, incredible wildlife, golden beaches and rich cultural heritage, wrapped in warm hospitality. ',
                 location: 'Sri Lanka'
             },
             {
-                image: '/outbound/treasures-unveiled/img6.webp',
-                name: 'Seychelles',
+                image: '/outbound/game-on/img6.webp',
+                name: 'Rugby',
                 description: 'A tropical paradise with stunning beaches, gorgeous landscapes, and abundant nature, Seychelles blends rich culture with lively nightlife, offering everything from serene nature to unforgettable beach parties.',
                 location: 'Seychelles'
             },
 
         ],
-        image: '/outbound/treasures-unveiled/main.webp',
+        image: '/outbound/game-on/main.webp',
 
     },
 
@@ -550,7 +550,7 @@ const Explore = () => {
 
                                             {/* Image Section */}
                                             <div className="xl:order-2">
-                                                <div className="relative h-[420px] md:h-[540px] xl:h-[600px] w-full rounded-lg overflow-hidden">
+                                                <div className="relative h-[420px] md:h-[540px] xl:h-[600px] w-full rounded-lg overflow-hidden pt-2">
                                                     <div className="absolute inset-0 bg-black/10 z-10" />
                                                     <Image
                                                         src={project.image}
@@ -581,40 +581,41 @@ const Explore = () => {
                         <div className="grid grid-cols-1 md:grid-cols-3  xl:mt-0">
                             {project.stack.map((item, index) => (
                                 <article
-                                key={index}
-                                className="group relative isolate flex flex-col justify-end overflow-hidden pb-6 pt-40 w-[260px] h-[360px] md:w-[230px] lg:h-[340px] xl:w-[260px] xl:h-[370px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
-                            >
-                                {/* Background Image */}
-                                <Image
-                                    src={item.image}
-                                    fill
-                                    alt={item.name}
-                                    className="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-out"
-                                />
-                                {/* Gradient Overlay */}
-                                <div className="absolute bottom-0 left-0 right-0 w-full h-[40%] group-hover:bg-black/50 transition-all duration-500 ease-in-out group-hover:h-[60%]"></div>
-                                {/* Text Content */}
-                                <div className="z-10 relative px-4 flex flex-col h-full justify-end ">
-                                    {/* Title (Name at the very bottom) */}
-                                    <div className="flex gap-[1px]">
-                                        <div className="text-lg font-extrabold text-orange-500 m-[3px]">
-                                            <CiLocationOn />
+                                    key={index}
+                                    className="group relative isolate flex flex-col justify-end overflow-hidden pb-6 pt-40 w-[260px] h-[360px] md:w-[230px] lg:h-[340px] xl:w-[260px] xl:h-[370px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+                                >
+                                    {/* Background Image */}
+                                    <Image
+                                        src={item.image}
+                                        fill
+                                        alt={item.name}
+                                        className="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-out"
+                                    />
+                                    {/* Gradient Overlay */}
+                                    <div className="absolute bottom-0 left-0 right-0 w-full h-[40%] group-hover:bg-black/50 transition-all duration-500 ease-in-out group-hover:h-[60%]"></div>
+                                    {/* Text Content */}
+                                    <div className="z-10 relative px-4 flex flex-col h-full justify-end ">
+                                        {/* Title (Name at the very bottom) */}
+                                        <div className="flex gap-[1px]">
+                                            {(project.fName !== 'Game ' && project.fName !== 'Winter ') && (
+                                                <div className="text-lg font-extrabold text-orange-500 m-[3px]">
+                                                    <CiLocationOn />
+                                                </div>
+                                            )}
+
+
+                                            <h3 className="text-[15px] font-extrabold text-orange-500 mb-2 transition-opacity duration-300 ease-in-out group-hover:opacity-90 opacity-90">
+                                                {item.name}
+                                            </h3>
                                         </div>
-                                        <h3 className="text-[15px] font-extrabold text-orange-500 mb-2 transition-opacity duration-300 ease-in-out group-hover:opacity-90 opacity-90">
-                                            {item.name}
-                                        </h3>
+                                        {/* Description (Hover animation only for description) */}
+                                        <p
+                                            className="text-xs leading-5 text-white opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[11em] group-hover:mt-2 transition-[opacity,max-height,margin-top] duration-500 ease-in-out"
+                                        >
+                                            {item.description}
+                                        </p>
                                     </div>
-                                    {/* Description (Hover animation only for description) */}
-                                    <p
-                                        className="text-xs leading-5 text-white opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[11em] group-hover:mt-2 transition-[opacity,max-height,margin-top] duration-500 ease-in-out"
-                                    >
-                                        {item.description}
-                                    </p>
-                                </div>
-                            </article>
-                            
-
-
+                                </article>
                             ))}
                         </div>
                     </div>

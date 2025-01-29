@@ -139,17 +139,15 @@ const page = () => {
                     Legal Terms & Conditions of Use
                 </p>
 
-                <h3 className="text-gray-800 font-bold text-[13px] mb-1">
+                <h3 className="text-gray-800 font-bold text-lg mb-1">
                     Customer Conditions of Use
                 </h3>
                 <li className="text-xs text-gray-600 mb-5">
                     Updated 11. May 2023
                 </li>
 
-
-
                 <ul className="list-disc list-inside mb-4">
-                    <p className="text-blue-700 font-bold ">Summary of Contents</p>
+                    <p className="text-gray-800 font-bold ">Summary of Contents</p>
                     <li className="text-xs text-gray-600">
                         A. All Travel Experiences
                     </li>
