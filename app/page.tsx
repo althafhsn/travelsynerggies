@@ -1,53 +1,88 @@
-'use client'
+'use client';
+
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import ContactSection from "@/components/ContactSection";
 import Explore from "@/components/Explore";
 import FeaturesSection from "@/components/FeatursSection";
 import Hero from "@/components/Hero";
 import ImageSlider from "@/components/HeroImageSlider";
+import CookiesPopup from "@/components/Common/Coockies";
 
-const CookiesPopup = () => {
-  const [showPopup, setShowPopup] = useState(false);
 
-  useEffect(() => {
-    const cookiesAccepted = localStorage.getItem("cookiesAccepted");
-    if (!cookiesAccepted) {
-      setShowPopup(true);
-    }
-  }, []);
-
-  const handleAccept = () => {
-    localStorage.setItem("cookiesAccepted", "true");
-    setShowPopup(false);
-  };
-
-  if (!showPopup) return null;
-
-  return (
-    <div className="fixed bottom-16 right-0 Md:right-4 bg-white p-4 rounded-2xl shadow-lg flex flex-col md:flex-row justify-between items-center gap-4 z-50 w-[40%]">
-      <p className="text-sm text-gray-700 w-full">
-        We use cookies to improve your experience. By using our site, you accept our
-        <a href="/privacy-policy" className="text-orange-600 underline ml-1">Privacy Policy</a>.
-      </p>
-      <button
-        onClick={handleAccept}
-        className="bg-orange-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-orange-700 transition"
-      >
-        Accept Cookies
-      </button>
-    </div>
-  );
-};
 
 export default function Home() {
+  const router = useRouter();
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Handle page reload on back navigation
+    const handleBackNavigation = () => {
+      window.location.reload();
+    };
+
+    // Add event listener for back/forward navigation
+    window.addEventListener('popstate', handleBackNavigation);
+
+    // Initial page load handling
+    const loadPage = () => {
+      setIsLoading(true);
+      
+      // Force a reload if coming from another page
+      const navigationEntry = performance?.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
+      if (navigationEntry?.type === 'back_forward') {
+        window.location.reload();
+        return;
+      }
+
+      // Regular page load
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 500);
+    };
+
+    loadPage();
+
+    // Cleanup
+    return () => {
+      window.removeEventListener('popstate', handleBackNavigation);
+    };
+  }, []);
+
+  // Add visibility change handling
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        window.location.reload();
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
+  // Loading spinner
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-orange-600"></div>
+      </div>
+    );
+  }
+
   return (
-    <div>
-      <ImageSlider />
-      <Hero />
-      <FeaturesSection />
-      <Explore />
-      <ContactSection />
+    <main className="relative min-h-screen">
+      <div className="flex flex-col">
+        <ImageSlider />
+        <Hero />
+        <FeaturesSection />
+        <Explore />
+        <ContactSection />
+      </div>
       <CookiesPopup />
-    </div>
+    </main>
   );
 }

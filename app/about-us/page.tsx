@@ -12,7 +12,7 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import { MdTravelExplore } from 'react-icons/md'
-import { FaLanguage } from 'react-icons/fa';
+
 import { FiUsers } from "react-icons/fi";
 
 
@@ -26,10 +26,10 @@ const AboutUs: React.FC = () => {
 
 
     return (
-        <div className="">
+        <div className="container mx-auto px-4 xl:px-0">
             {/* Hero Section */}
             <section className="py-2 relative z-0 ">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+                <div className=" px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="max-w-2xl mx-auto text-4xl font-bold text-white mb-5 md:text-5xl md:leading-normal font-manrope">
                         WHO <span className="text-orange-500">WE</span> ARE ?
                     </h1>
@@ -41,7 +41,7 @@ const AboutUs: React.FC = () => {
 
             {/* About Us Section */}
             <section className="py-2 lg:py-4">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
                         <div className="">
                             <img
@@ -75,7 +75,7 @@ const AboutUs: React.FC = () => {
 
             {/* Creative Since Section */}
             <section className="py-4 lg:py8">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="mx-auto  px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
                         <div className="lg:pr-24 flex ">
                             <div className="w-full">
@@ -101,7 +101,7 @@ const AboutUs: React.FC = () => {
                 </div>
             </section>
             <section className="py-6 lg:py8">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="mx-auto  px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
                         <div className="img-box">
                             <img
@@ -126,7 +126,7 @@ const AboutUs: React.FC = () => {
 
             {/* Results Section */}
             <section className="py-2">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="mx-auto  px-4 sm:px-6 lg:px-8">
                     <h2 className="text-lg md:text-2xl lg:text-4xl  text-center text-orange-500 font-bold mb-14 font-manrope">
                         Our Ambassadors
                     </h2>
@@ -150,8 +150,8 @@ const AboutUs: React.FC = () => {
             </section>
 
 
-            <section className="py-14 lg:py-24">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <section className="py-14 lg:py-24 mx-auto">
+                <div className="mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-2 text-center">
                         <h2 className="font-manrope text-lg md:text-2xl lg:text-4xl  font-bold text-orange-500 mb-6">Meet Our Team !</h2>
                         <p className="text-sm text-gray-50">
