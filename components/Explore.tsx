@@ -400,38 +400,32 @@ const projects: jurnels[] = [
             {
                 image: '/outbound/winter-magic/img1.webp',
                 name: 'Christmas Market',
-                description: 'A tropical haven of crystal-clear waters, overwater bungalows and pristine white-sand beaches, the Maldives promises serene luxury and unparalleled beach stays.',
-                location: 'Maldives'
+                description: 'Lose yourself in the charm of Germany’s iconic markets in Nuremberg, Dresden, or Cologne, where handmade treasures, festive treats, and twinkling lights create a storybook atmosphere.'
             },
             {
                 image: '/outbound/winter-magic/img2.webp',
-                name: 'Family Time',
-                description: 'A blend of lush rainforests, dramatic volcanic landscapes and golden beaches, Hawaii is a vibrant paradise offering aloha spirit and breathtaking sunsets.',
-                location: 'Hawaii'
+                name: 'Hit the Slope',
+                description: ' Carve through pristine powder in the majestic Alps of Austria, Switzerland, or France, where world-class skiing and snowboarding await adrenaline junkies.',
             },
             {
                 image: '/outbound/winter-magic/img3.webp',
-                name: 'Northern Lights',
-                description: 'From the iconic beaches of Rio to the vast Amazon rainforest, Brazil dazzles with its natural beauty, vibrant culture and infectious samba rhythms that would lure any soul to move.',
-                location: 'Brazil'
+                name: 'Chasing Northern Lights',
+                description: ' Witness nature’s most dazzling light show as the auroras dance across the skies in Iceland, Norway, or Finland—a bucket-list moment you’ll never forget.',
             },
             {
                 image: '/outbound/winter-magic/img4.webp',
-                name: 'Skiing',
-                description: 'Step back in time to Havana, where colonial charm, vintage cars and a lively Caribbean vibe make it a unique tropical escape',
-                location: 'Cuba'
+                name: 'Arctic Adventures',
+                description: 'Trek through snowy forests on snowshoes or dash across frozen landscapes on a thrilling husky sled ride in Lapland or Canada.',
             },
             {
                 image: '/outbound/winter-magic/img5.webp',
-                name: 'Sleding',
-                description: 'Known as the "Pearl of the Indian Ocean," Sri Lanka is a land of timeless charm and breathtaking beauty with lush tea plantations, incredible wildlife, golden beaches and rich cultural heritage, wrapped in warm hospitality. ',
-                location: 'Sri Lanka'
+                name: 'Icy Nights',
+                description: 'Sleep under the shimmering Northern Lights in glass igloos and embark on thrilling husky safaris or snowmobile adventures. This Finnish wonderland offers the ultimate blend of luxury, adventure, and natural beauty—making it a winter escape like no other.',
             },
             {
                 image: '/outbound/winter-magic/img6.webp',
-                name: 'Snow Boarding',
-                description: 'A tropical paradise with stunning beaches, gorgeous landscapes, and abundant nature, Seychelles blends rich culture with lively nightlife, offering everything from serene nature to unforgettable beach parties.',
-                location: 'Seychelles'
+                name: 'Family fun',
+                description: 'From snowy slopes and magical stays and thrilling snowball fights, winter is the perfect time to create unforgettable family bonding moments. Whether you’re sipping hot cocoa by the fire or building snowmen, these frosty destinations promise laughter and endless winter magic for everyone.',
             },
 
         ],
@@ -445,38 +439,33 @@ const projects: jurnels[] = [
         stack: [
             {
                 image: '/outbound/game-on/img1.webp',
-                name: 'Basketball',
-                description: 'A tropical haven of crystal-clear waters, overwater bungalows and pristine white-sand beaches, the Maldives promises serene luxury and unparalleled beach stays.',
-                location: 'Maldives'
+                name: 'More Than a Game',
+                description: 'Feel the adrenaline of a touchdown and the camaraderie of tailgate parties. It’s more than a game—it’s a cultural experience. Book your trip with us and dive into the heart of the action at iconic stadiums across the USA.',
             },
             {
                 image: '/outbound/game-on/img2.webp',
-                name: 'Cricket',
-                description: 'A blend of lush rainforests, dramatic volcanic landscapes and golden beaches, Hawaii is a vibrant paradise offering aloha spirit and breathtaking sunsets.',
-                location: 'Hawaii'
+                name: 'Feel the Roar, Live the Game',
+                description: 'Imagine the roar of the crowd, the pulse of the stadium, and the thrill of watching your favorite team score the winning goal. An unforgettable experience whether it be in Barcelona at Camp Nou or in Manchester at the Old Trafford.',
             },
             {
                 image: '/outbound/game-on/img3.webp',
-                name: 'Foodball',
-                description: 'From the iconic beaches of Rio to the vast Amazon rainforest, Brazil dazzles with its natural beauty, vibrant culture and infectious samba rhythms that would lure any soul to move.',
-                location: 'Brazil'
+                name: 'Master the Course',
+                description: 'Picture yourself on pristine fairways, surrounded by breathtaking landscapes, as you perfect your swing on world-class courses. Golf is a journey. Let us take you to the most legendary greens, where every shot is a memory in the making.',
             },
             {
                 image: '/outbound/game-on/img4.webp',
-                name: 'Ice Hockey ',
-                description: 'Step back in time to Havana, where colonial charm, vintage cars and a lively Caribbean vibe make it a unique tropical escape',
-                location: 'Cuba'
+                name: 'Serve, Volley, Win',
+                description: 'Step into the world of aces, volleys, and match points at the most prestigious tennis tournaments. From Wimbledon to the US Open, tennis is a game of passion and precision. Let us take you courtside to witness the legends in action.',
             },
             {
                 image: '/outbound/game-on/img5.webp',
-                name: 'Tennis ',
-                description: 'Known as the "Pearl of the Indian Ocean," Sri Lanka is a land of timeless charm and breathtaking beauty with lush tea plantations, incredible wildlife, golden beaches and rich cultural heritage, wrapped in warm hospitality. ',
-                location: 'Sri Lanka'
+                name: 'Slam Dunk',
+                description: 'Experience the high-flying action, buzzer-beaters, and electric atmosphere of live basketball. From the NBA Finals to college games, basketball is pure excitement. Book your trip with us and get courtside seats to the most thrilling games on the planet.',
             },
             {
                 image: '/outbound/game-on/img6.webp',
-                name: 'Rugby',
-                description: 'A tropical paradise with stunning beaches, gorgeous landscapes, and abundant nature, Seychelles blends rich culture with lively nightlife, offering everything from serene nature to unforgettable beach parties.',
+                name: 'Where Legends Are Made',
+                description: 'Feel the thrill of a six, the tension of a close match, and the roar of the crowd at iconic cricket stadiums. Cricket is where legends are made, and you can be there to witness it all. Live cricket in destinations like Sri Lanka, England, or Australia',
                 location: 'Seychelles'
             },
 
