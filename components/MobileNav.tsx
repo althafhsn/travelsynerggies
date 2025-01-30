@@ -1,12 +1,12 @@
 'use client'
 
+import { useState } from 'react';
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { CiMenuFries } from 'react-icons/ci'
 
 const links = [
- 
     {
         name: 'Inbound',
         path: '/services'
@@ -26,14 +26,15 @@ const links = [
     {
         name: 'About Us',
         path: '/about-us'
-    },
-        
+    },        
 ]
+
 const MobileNav = () => {
     const pathName = usePathname();
+    const [open, setOpen] = useState(false);
 
     return (
-        <Sheet>
+        <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger className='flex justify-center items-center'>
                 <CiMenuFries className='text-[32px] text-accent' />
             </SheetTrigger>
@@ -42,17 +43,22 @@ const MobileNav = () => {
                     <SheetTitle></SheetTitle>
                     <SheetDescription></SheetDescription>
                 </SheetHeader>
-                {/* logo  */}
-                <Link href='/'>
+                {/* logo */}
+                <Link href='/' onClick={() => setOpen(false)}>
                     <img src="/whitelogo.png" alt="logo" className="w-48 py-4" />
                 </Link>
                 {/* nav */}
                 <nav className='flex flex-col justify-center items-center gap-8'>
-                    {links.map((link, index) => {
-                        return <Link href={link.path}
+                    {links.map((link, index) => (
+                        <Link 
+                            href={link.path}
                             key={index}
-                            className={`${link.path === pathName && 'text-orange-500 border-b-2 border-orange-500'} text-xl capitalize hover:text-orange-500 transition-all`}>{link.name}</Link>
-                    })}
+                            onClick={() => setOpen(false)}
+                            className={`${link.path === pathName && 'text-orange-500 border-b-2 border-orange-500'} text-xl capitalize hover:text-orange-500 transition-all`}
+                        >
+                            {link.name}
+                        </Link>
+                    ))}
                 </nav>
             </SheetContent>
         </Sheet>

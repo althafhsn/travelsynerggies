@@ -66,25 +66,24 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                 <Image
                                     src={slide.image}
                                     alt={slide.name}
-                                    width={1920} // Set width (example)
-                                    height={1080} // Set height (example)
-                                    style={{ objectFit: "cover", width: "100%", height: "auto" }}
+                                    fill
+                                    // style={{ objectFit: "cover", }}
                                     priority={index === 0} // Load first image faster
                                     className="w-full h-full object-cover "
                                 />
 
                                 {/* 🛠 Fix Motion Reset on Slide Change */}
-                                <div
+                                <motion.div
                                     key={activeIndex} // ✅ Animation resets for each slide
-                                    className="absolute inset-0 flex items-center justify-start text-white px-24"
-                                    // initial={{ opacity: 0, y: 20 }}
-                                    // animate={{ opacity: 1, y: 0 }}
-                                    // transition={{ duration: 0.6, delay: 0.2 }}
-                                    // style={{ top: '50%', transform: 'translateY(-50%)' }} // Force the text to stay vertically centered
+                                    className="absolute top-1/2 flex items-center justify-start text-white px-12 md:px-24"
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, delay: 0.2 }}
+                                     // Force the text to stay vertically centered
                                 >
                                     <motion.div className="">
                                         <motion.h3
-                                            className="text-3xl lg:text-6xl font-bold uppercase text-orange-500 leading-none md:text-5xl"
+                                            className="text-xl lg:text-6xl font-bold uppercase text-orange-500 leading-none md:text-5xl"
                                             initial={{ x: -50, opacity: 0 }}
                                             animate={{ x: 0, opacity: 1 }}
                                             transition={{ duration: 0.5 }}
@@ -93,7 +92,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                         </motion.h3>
 
                                         <motion.p
-                                            className="mt-4 text-2xl md:text-4xl font-bold ml-1"
+                                            className="mt-4 text-lg md:text-4xl font-bold ml-1"
                                             initial={{ x: -50, opacity: 0 }}
                                             animate={{ x: 0, opacity: 1 }}
                                             transition={{ duration: 0.6, delay: 0.2 }}
@@ -101,7 +100,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                             {slide.description}
                                         </motion.p>
                                     </motion.div>
-                                </div>
+                                </motion.div>
 
 
                                 {showContactButton && (
@@ -129,7 +128,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                 <div className="absolute inset-0 z-10 flex justify-between items-center">
                     <button
                         onClick={() => swiperRef.current?.slidePrev()}
-                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute left-4 md:left-8 flex items-center justify-center`}
+                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute left-[2px] md:left-8 flex items-center justify-center`}
                         aria-label="Previous slide"
                     >
                         <MdKeyboardArrowLeft className="text-[3em]" />
@@ -137,7 +136,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
 
                     <button
                         onClick={() => swiperRef.current?.slideNext()}
-                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute right-4 md:right-8 flex items-center justify-center`}
+                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute right-[2px] md:right-8 flex items-center justify-center`}
                         aria-label="Next slide"
                     >
                         <MdKeyboardArrowRight className="text-[3em]" />
