@@ -109,7 +109,7 @@ const SustainableTourism: React.FC = () => {
             details: [
                 'Global Inventory: Access to 3 million hotels and partnerships with major airlines for competitive pricing.',
                 'Custom Preferences: Choices based on star rating, location, amenities and flight class.',
-                '•	Dynamic Packages: Bundled deals combining flights, stays and activities for cost savings.'
+                'Dynamic Packages: Bundled deals combining flights, stays and activities for cost savings.'
 
             ]
         },
@@ -119,14 +119,6 @@ const SustainableTourism: React.FC = () => {
                 'Round-the-Clock Assistance: Helplines available for travelers before, during and after their trip.',
                 'Comprehensive Solutions: Support for itinerary changes, emergency bookings, or travel disruptions.',
                 'Multilingual Support: Services in multiple languages for diverse customer needs.'
-
-            ]
-        },
-        {
-            title: 'Our Commitment to Excellence',
-            details: [
-                'At Travel Synergies, we are driven by a passion for creating exceptional travel experiences that inspire and satisfy. With a commitment to quality, innovation and personalized services, we strive to redefine the way you explore the world. ',
-                'With years of industry expertise and a proven track record, Travel Synergies is a trusted partner for all your travel needs. Our partnerships with leading providers and our focus on customer satisfaction ensure that every journey is safe, comfortable and memorable.'
 
             ]
         },
@@ -184,6 +176,21 @@ const SustainableTourism: React.FC = () => {
             <div className="container max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden p-4">
                 <div className="grid  gap-8 p-0 md:p-16">
                     <ServiceSpectrum services={serviceSpectrumDetails} />
+                    <div  className="mb-4">
+                        <h1 className="font-semibold text-orange-500">Our Commitment to Excellence</h1>
+                        <ul className="text-xs md:text-sm text-gray-600">
+                           
+                                <li  className="flex items-center">
+                                At Travel Synergies, we are driven by a passion for creating exceptional travel experiences that inspire and satisfy. With a commitment to quality, innovation and personalized services, we strive to redefine the way you explore the world.
+                                    <span></span>
+                                </li>
+                                <li  className="flex items-center">
+                                With years of industry expertise and a proven track record, Travel Synergies is a trusted partner for all your travel needs. Our partnerships with leading providers and our focus on customer satisfaction ensure that every journey is safe, comfortable and memorable.
+                                    <span></span>
+                                </li>
+                            
+                        </ul>
+                    </div>
                     <DestinationDetails destinations={destinationDetails} />
                 </div>
             </div>

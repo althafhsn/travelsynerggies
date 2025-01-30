@@ -32,7 +32,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
     autoplay = true,
     delay = 3000,
     navigation = true,
-    height = "h-[70vh] lg:h-[80vh]",
+    height = "h-[80vh] lg:h-[80vh]",
     buttonStyles = "bg-orange-500/60 hover:text-orange-500 hover:bg-white",
     showContactButton = true
 }) => {
@@ -57,6 +57,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                 onSwiper={(swiper) => { swiperRef.current = swiper; }}
                 onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                 className="h-full"
+                speed={1000}
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index} className="relative">
@@ -77,10 +78,10 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                 <div
                                     key={activeIndex} // ✅ Animation resets for each slide
                                     className="absolute inset-0 flex items-center justify-start text-white px-24"
-                                    // initial={{ opacity: 0, y: 20 }}
-                                    // animate={{ opacity: 1, y: 0 }}
-                                    // transition={{ duration: 0.6, delay: 0.2 }}
-                                    // style={{ top: '50%', transform: 'translateY(-50%)' }} // Force the text to stay vertically centered
+                                // initial={{ opacity: 0, y: 20 }}
+                                // animate={{ opacity: 1, y: 0 }}
+                                // transition={{ duration: 0.6, delay: 0.2 }}
+                                // style={{ top: '50%', transform: 'translateY(-50%)' }} // Force the text to stay vertically centered
                                 >
                                     <motion.div className="">
                                         <motion.h3
@@ -126,10 +127,10 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
 
             {/* Custom Navigation */}
             {navigation && (
-                <div className="absolute inset-0 z-10 flex justify-between items-center">
+                <div className="absolute inset-0 z-[100] flex justify-between items-center pointer-events-none">
                     <button
                         onClick={() => swiperRef.current?.slidePrev()}
-                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute left-4 md:left-8 flex items-center justify-center`}
+                        className={`w-10 h-10 md:w-12 md:h-12 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute left-4 md:left-8 flex items-center justify-center z-[100] pointer-events-auto`}
                         aria-label="Previous slide"
                     >
                         <MdKeyboardArrowLeft className="text-[3em]" />
@@ -137,13 +138,14 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
 
                     <button
                         onClick={() => swiperRef.current?.slideNext()}
-                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute right-4 md:right-8 flex items-center justify-center`}
+                        className={`w-10 h-10 md:w-12 md:h-12 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute right-4 md:right-8 flex items-center justify-center z-[100] pointer-events-auto`}
                         aria-label="Next slide"
                     >
                         <MdKeyboardArrowRight className="text-[3em]" />
                     </button>
                 </div>
             )}
+
         </div>
     );
 };

@@ -36,12 +36,13 @@ const HeroImageOutbound = () => {
 
 
     return (
-        <div className='-z-10'>
+        <div className=''>
             <ImageSlider slides={sliderData}
                 autoplay={true}
                 navigation={true}
                 buttonStyles="bg-orange-500/70 hover:text-orange-500 hover:bg-white"
-                showContactButton={true}  // Hides the button
+                showContactButton={true} 
+                 // Hides the button
                  />
         </div>
 

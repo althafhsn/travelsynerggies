@@ -52,19 +52,19 @@ const AboutUs: React.FC = () => {
                         </div>
                         <div className="pb-24 flex ">
                             <div className="w-full">
-                                <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-orange-500 mb- max-lg:text-center font-manrope">
+                                <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-orange-500 px-5  my-2 max-lg:text-center font-manrope">
                                     About Us
                                 </h2>
-                                <p className="text-sm text-gray-200 max-md:text-center py-2 max-w-2xl mx-auto">
+                                <p className="text-sm text-gray-200 text-justify py-2 max-w-2xl mx-auto ">
                                     For over 2 decades, we have been crafting journeys for travel enthusiasts, evolving alongside the dynamic demands of this rapidly growing industry and interest for immersive destinations. At Travel Synergies, we stand committed to excellence in Destination Management on a global scale. We take immense pride in our reputation, earned through unwavering dedication to providing unmatched services that redefine the art of travel and event planning, to create lasting memories and an experience of a lifetime.
                                 </p>
-                                <p className="text-sm text-gray-200 max-md:text-center max-w-2xl mx-auto py-2">
+                                <p className="text-sm text-gray-200 text-justify max-w-2xl mx-auto py-2">
                                     Embark on a transformative journey with our exceptional Travel Designers, who are not just experts, but also local connoisseurs with a global perspective. Trained internationally, they provide unparalleled insights, ensuring your experience transcends mere travel and becomes an immersion into the essence of each destination. Whether it's crafting leisurely individual trips or organizing group adventures, we take pride in delivering the finest holiday experiences. From intimate gatherings to grand-scale events, our expertise lies in seamlessly connecting you with top-tier hotels, event venues, tours, and meticulously coordinating the logistics required for flawless private and professional events, along with incentive programs.
                                 </p>
-                                <p className="text-sm text-gray-200 max-md:text-center max-w-2xl mx-auto py-2">
+                                <p className="text-sm text-gray-200 text-justify max-w-2xl mx-auto py-2">
                                     Dive into the extraordinary with our extensive network of independent suppliers and local guides, who inspire us with their creativity to curate fresh and innovative travel ideas. With an array of options including accommodation, transportation, and immersive tours, we craft bespoke masterpieces tailored to your desires.
                                 </p>
-                                <p className="text-sm text-gray-200 max-md:text-center max-w-2xl mx-auto py-2">
+                                <p className="text-sm text-gray-200 text-justify max-w-2xl mx-auto py-2">
                                     Count on us for insightful advice, off-the-beaten-track excursions, and authentic experiences that you wouldn't encounter on your own.
                                 </p>
                             </div>
@@ -74,17 +74,20 @@ const AboutUs: React.FC = () => {
             </section>
 
             {/* Creative Since Section */}
-            <section className="py-4 lg:py8">
+            <section className="py-4 lg:py-8">
                 <div className="mx-auto  px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
                         <div className="lg:pr-24 flex ">
-                            <div className="w-full">
+                            <div className="w-full flex flex-col justify-center">
 
                                 <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-orange-500 mb-9 max-lg:text-center font-manrope">
                                     Technology
                                 </h2>
-                                <p className="text-sm text-gray-200 max-md:text-center max-w-2xl mx-auto py-2">
-                                    Step into a world of innovation and convenience tailored for our valued trade partners, facilitated by our robust technology. Leveraging on our long connections to the entire hospitality segment over the decades, we've skilfully unearthed the essence of seamless modern travel. Our vision was to elevate the traditional manual processes of tour operations into a digital realm, all while preserving the authenticity and efficiency that characterizes the travel industry. Within our refined system, you'll discover comprehensive B2B booking solutions, which serves as a seamless gateway to an expansive array of services, alleviating both your team and your customers of unnecessary time constraints and stress. Experience travel solutions that exemplify both convenience and perfection.
+                                <p className="text-sm text-gray-200 text-justify max-w-2xl mx-auto py-2">
+                                    Step into a world of innovation and convenience tailored for our valued trade partners, facilitated by our robust technology. Leveraging on our long connections to the entire hospitality segment over the decades, we've skilfully unearthed the essence of seamless modern travel. Our vision was to elevate the traditional manual processes of tour operations into a digital realm, all while preserving the authenticity and efficiency that characterizes the travel industry. 
+                                    <br />
+                                    <br />
+                                    Within our refined system, you'll discover comprehensive B2B booking solutions, which serves as a seamless gateway to an expansive array of services, alleviating both your team and your customers of unnecessary time constraints and stress. Experience travel solutions that exemplify both convenience and perfection.
 
 
                                 </p>
@@ -110,9 +113,9 @@ const AboutUs: React.FC = () => {
                                 className="hidden lg:block object-cover"
                             />
                         </div>
-                        <div className="lg:pr-24 flex ">
-                            <div className="w-full flex items-center justify-center">
-                                <p className="text-sm text-gray-200 max-md:text-center max-w-2xl mx-auto py-2">
+                        <div className=" flex ">
+                            <div className="w-full flex items-center  justify-center">
+                                <p className="text-sm text-gray-200 text-justify max-w-2xl mx-auto py-2">
 
                                     With Evintry, our advanced travel platform, we revolutionize the event planning landscape by offering a one-stop platform for all your event needs. Our cutting-edge technology ensures real-time solutions for booking events, tickets, hotels, transportation and logistics, creating an unparalleled experience for both organizers and attendees.
 

@@ -101,7 +101,7 @@ const SafetyGuidelinesBlog: React.FC = () => {
                 Global Travel Safety Guidelines
             </h1>
     
-            <p className="text-sm text-black mb-4 text-center">
+            <p className="text-sm text-black mb-4 text-center font-bold ">
                 Your health and safety while on your trip is of the utmost importance to us...
             </p>
     
