@@ -1,15 +1,7 @@
 'use client';
-import React, { useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Swiper as SwiperType } from 'swiper';
-import { Autoplay, Navigation } from 'swiper/modules';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import ImageSlider from './Common/ImageSlider';
+import ImageSlider from "./Common/ImageSlider";
+
 
 export interface SlideImage {
     name: string;
@@ -44,10 +36,9 @@ const HeroImageOutbound = () => {
 
 
     return (
-        <div >
+        <div className='-z-10'>
             <ImageSlider slides={sliderData}
                 autoplay={true}
-                height="h-[80vh]"
                 navigation={true}
                 buttonStyles="bg-orange-500/70 hover:text-orange-500 hover:bg-white"
                 showContactButton={true}  // Hides the button

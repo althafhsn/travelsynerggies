@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
             title: "",
             links: [
                 { text: "Our Service Spectrum", href: "/blogs#our-service-spectrum" },
-                { text: "Blogs", href: "/" }
+                { text: "Blogs", href: "/blog" }
             ]
         },
         company: {
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
             links: [
                 { text: "About Us", href: "/about-us" },
                 { text: "Partners", href: "/blogs#partners" },
-                { text: "Parters Login", href: "/" },
+                { text: "Partners Login", href: "/" },
                 { text: "Why Choose Us", href: "/blogs#why-choose-us" },
                 { text: "Careers", href: "/career" },
                 { text: "Contact Us", href: "/contact" }
@@ -166,9 +166,9 @@ const Footer: React.FC = () => {
                     </div>
 
                     {/* Footer Bottom */}
-                    <hr className="my-8 border-white/20" />
-                    <p className="text-white/80 text-center text-sm md:text-base">
-                        © Travel Synergies {new Date().getFullYear()}. All rights reserved.
+                    <hr className="my-4 border-white/20" />
+                    <p className="text-white/80 text-center text-xs md:text-xs">
+                        © Travel Synergies 2023. All rights reserved.
                     </p>
                 </div>
             </footer>
