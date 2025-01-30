@@ -119,7 +119,7 @@ const Careers: React.FC = () => {
   return (
     <div className="min-h-screen">
       <div className="flex flex-col items-start justify-center text-white bg-bg-career min-h-[70vh] bg-cover">
-        <div className="container max-w-7xl mx-auto flex flex-col  items-center md:items-start">
+        <div className="container  mx-auto flex flex-col  items-center md:items-start">
           <motion.h1
             className="text-lg md:text-xl font-bold font-sans mb-4 text-orange-500"
             initial={{ opacity: 0, y: -50 }}
@@ -145,7 +145,7 @@ const Careers: React.FC = () => {
           </Link>
         </div>
       </div>
-      <div className="my-4 container max-w-7xl mx-auto">
+      <div className="my-4 container mx-auto">
         <h2 className="text-sm md:text-lg text-green-800 py-4 text-center">
           Are you passionate about travel and eager to explore the world? Do you thrive in a dynamic, fast-paced environment where every day brings new adventures? If so, Travel Synergies invites you to join our team and be part of an exciting journey!
         </h2>
@@ -170,7 +170,7 @@ const Careers: React.FC = () => {
       </div>
 
       <div className=" py-12 ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-xl md:text-2xl font-bold mb-8 mx-auto text-center">Career Opportunities</h2>
           <div className="grid  gap-6">
             {opportunities.map((opportunity, index) => (
@@ -179,7 +179,7 @@ const Careers: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="container mx-auto px-8">
 
         <div className=" bg-gradient-to-b from-orange-300 to-black rounded-md  ">
           <form className="md:col-span-8 p-10">

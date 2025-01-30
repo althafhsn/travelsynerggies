@@ -173,7 +173,7 @@ const AboutUs: React.FC = () => {
                             769: { slidesPerView: 2, slidesPerGroup: 1 },
                             0: { slidesPerView: 1, slidesPerGroup: 1 },
                         }}
-                        className="teamswiper pb-10"
+                        className="teamswiper py-10 "
                         onSwiper={(swiper) => (thumbsSwiper = swiper)}
                     >
 
@@ -206,7 +206,7 @@ const AboutUs: React.FC = () => {
 
                         ].map((member, index) => (
                             <SwiperSlide key={index}>
-                                <div className="group w-full flex-wrap flex items-center gap-8 transition-all duration-500 p-8 lg:flex-nowrap cursor-grab">
+                                <div className="group w-full flex-wrap flex items-center  gap-8 transition-all duration-500 p-8 lg:flex-nowrap cursor-grab">
                                     <div className="w-full lg:w-48 h-64">
                                         <img src={member.image} alt={`${member.name} image`} className="rounded-2xl h-full object-cover mx-auto lg:mx-0 lg:w-full" />
                                     </div>
@@ -228,13 +228,16 @@ const AboutUs: React.FC = () => {
                         ))}
                         {/* Custom Navigation Buttons */}
                         <button
-                            className="swiper-button-prev p-2.5 group flex justify-center items-center text-orange-900 w-12 h-12 transition-all duration-500 rounded-full hover:text-orange-600"
+                            className="swiper-button-prev p-2.5 group flex justify-center items-center text-orange-900 w-12 h-12 transition-all duration-500 rounded-full hover:text-orange-600 pt-4"
                         />
                         <button
-                            className="swiper-button-next p-2.5 group flex justify-center items-center text-orange-900 w-12 h-12 transition-all duration-500 rounded-full hover:text-orange-600"
+                            className="swiper-button-next p-2.5 group flex justify-center items-center text-orange-900 w-12 h-12 transition-all duration-500 rounded-full hover:text-orange-600 pt-4"
                         />
-                        <div className="swiper-pagination"></div>
-                        <div className="swiper-scrollbar"></div>
+                        <div className=" flex justify-center items-center">
+                            <div className="swiper-pagination "></div>
+                            <div className="swiper-scrollbar"></div>
+                        </div>
+
                     </Swiper>
                 </div>
             </section>
