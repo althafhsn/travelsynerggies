@@ -73,7 +73,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <div className="w-full md:py-10 relative group">
+    <div className="w-full md:py-10 relative group px-5">
       <Swiper
         ref={swiperRef}
         modules={[Autoplay, Navigation]}
