@@ -525,11 +525,11 @@ const Explore = () => {
                             {projects.map((project, index) => (
                                 <SwiperSlide key={`slide-${index}`}>
                                     <div className="sticky top-0 xl:relative">
-                                        <div className="grid grid-cols-1 gap-1 items-center">
+                                        <div className="grid grid-cols-1 items-center">
                                             {/* Title and Description Section */}
                                             <div className="space-y-6 xl:order-1">
                                                 <div className="text-start flex flex-col ">
-                                                    <h1 className="text-2xl md:text-3xl font-bold mb-4 text-white pt-9 ">
+                                                    <h1 className="text-2xl md:text-3xl font-bold mb-4 text-white pt-9 px-2 ">
                                                         {project.fName}{' '}
                                                         <span className="text-orange-500 ">{project.lName}</span>
                                                     </h1>
@@ -562,8 +562,8 @@ const Explore = () => {
 
                             {/* Slider Navigation */}
                             <WorkSliderButton
-                                containerStyle="flex  absolute right-0 md:top-10 bottom-[calc(35%_-_22px)] z-20 w-full justify-end gap-2 "
-                                btnStyle="bg-orange-500 md:bg-orange-500/20 hover:bg-orange-500/90 text-orange-500 text-[40px] w-[40px] flex justify-center item-center transition-all rounded-full"
+                                containerStyle="flex absolute right-1 md:top-10 bottom-[calc(35%_-_22px)] z-20 w-full justify-end gap-2 "
+                                btnStyle="bg-orange-500 md:bg-orange-500/20 hover:bg-orange-500/90 text-orange-500 text-[30px] w-[30px] flex justify-center item-center transition-all rounded-full"
                                 iconsStyle="w-6 h-6 md:w-8 md:h-8 text-white"
                             />
                             {/* bottom-[calc(35%_-_22px)] md:bottom-[calc(35%_-_22px)] */}
