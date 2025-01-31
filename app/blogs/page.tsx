@@ -11,6 +11,7 @@ import SafetyGuidelinesBlog from '@/components/Footer/SaftyTravel';
 import BucketListPage from '@/components/Footer/BucketList';
 import Partners from '@/components/Footer/Parnters';
 import WhyChooseUs from '@/components/Footer/WhyChoosUs';
+import EnvironmentPolicy from '@/components/Footer/EnvironmentPolicy';
 
 const BlogContent: React.FC = () => {
   const searchParams = useSearchParams();
@@ -25,7 +26,8 @@ const BlogContent: React.FC = () => {
     { title: 'Outbound Holidays', href: 'outbound-holidays' },
     { title: 'Safety Guidelines', href: 'safety-guidelines' },
     { title: 'Partners', href: 'partners' },
-    { title: 'Why Choose Us', href: 'why-choose-us' }
+    { title: 'Why Choose Us', href: 'why-choose-us' },
+    { title: 'Environment Policy', href: 'environment-policy' },
   ];
 
   // Scroll to section when clicking a button
@@ -75,11 +77,10 @@ const BlogContent: React.FC = () => {
             <button
               key={link.href}
               onClick={() => handleScrollToSection(link.href)}
-              className={`px-4 py-2 rounded-md text-sm font-semibold transition-all ${
-                activeSection === link.href
+              className={`px-4 py-2 rounded-md text-sm font-semibold transition-all ${activeSection === link.href
                   ? 'bg-orange-500 text-white'
                   : 'bg-white text-orange-500 border border-orange-500 hover:bg-orange-100'
-              }`}
+                }`}
             >
               {link.title}
             </button>
@@ -106,11 +107,10 @@ const BlogContent: React.FC = () => {
               <button
                 key={link.href}
                 onClick={() => handleScrollToSection(link.href)}
-                className={`block w-full text-left px-4 py-2 rounded-md text-sm font-semibold transition-all ${
-                  activeSection === link.href
+                className={`block w-full text-left px-4 py-2 rounded-md text-sm font-semibold transition-all ${activeSection === link.href
                     ? 'bg-orange-500 text-white'
                     : 'bg-white text-orange-500 border border-orange-500 hover:bg-orange-100'
-                }`}
+                  }`}
               >
                 {link.title}
               </button>
@@ -144,6 +144,9 @@ const BlogContent: React.FC = () => {
         </div>
         <div id="why-choose-us" className="scroll-mt-24">
           <WhyChooseUs />
+        </div>
+        <div id="environment-policy" className="scroll-mt-24">
+          <EnvironmentPolicy />
         </div>
       </div>
     </div>

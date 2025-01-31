@@ -1,7 +1,5 @@
 'use client';
 
-import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import ContactSection from "@/components/ContactSection";
 import Explore from "@/components/Explore";
 import FeaturesSection from "@/components/FeatursSection";
