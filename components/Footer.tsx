@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
         <div>
             <footer className="font-sans">
                 <hr className="border-orange-500 md:mt-1 h-2" />
-                <div className="container px-6  mx-auto">
+                <div className="container px-8  mx-auto mt-2">
                     {/* Logo and Social Media Section */}
                     <div className="flex items-center justify-between">
                         {/* Logo Section */}
@@ -140,7 +140,7 @@ const Footer: React.FC = () => {
 
                         {/* Subscription Section - Takes 2 columns on large screens */}
                         <div className="lg:col-span-2">
-                            <div className="bg-gray-800/20 p-6 rounded-lg">
+                            <div className="bg-gray-800/20 p-6 rounded-lg  text-justify">
                                 <h1 className="text-xl font-semibold tracking-tight text-orange-500 mb-4">
                                     Subscribe to our newsletter to get updates
                                 </h1>

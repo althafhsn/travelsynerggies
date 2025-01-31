@@ -73,7 +73,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <div className="w-full md:py-10 relative group px-10 ">
+    <div className="w-full  relative group px-10 ">
       <div className=''>
         <Swiper
           ref={swiperRef}

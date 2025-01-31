@@ -10,11 +10,10 @@ const Hero = () => {
 
     return (
         <div>
-            <main className=" relative">
-                {/* Hero Background - Changed from fixed to absolute */}
+
 
                 {/* About Section with proper background */}
-                <section className="relative py-12">
+                <section className="relative pt-8">
                     <div className="absolute inset-0 bg-black/10"></div>
                     <div className="container mx-auto px-8 relative">
                         <div className="grid lg:grid-cols-2 gap-8 lg:text-start px-2">
@@ -54,7 +53,6 @@ const Hero = () => {
                         </div>
                     </div>
                 </section>
-            </main>
         </div>
     )
 }

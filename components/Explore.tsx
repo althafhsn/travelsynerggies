@@ -504,7 +504,7 @@ const Explore = () => {
                     ease: 'easeIn'
                 }
             }}
-            className="min-h-[80vh] w-full  md:py-12 px-4 "
+            className="w-full md:pb-8 px-4 "
         >
             <div className="container mx-auto px-4 xl:px-0">
                 <div className="flex flex-col xl:flex-row xl:gap-6">
@@ -563,7 +563,7 @@ const Explore = () => {
                             {/* Slider Navigation */}
                             <WorkSliderButton
                                 containerStyle="flex absolute right-1 top-10  z-20 w-full justify-end gap-2 "
-                                btnStyle="bg-orange-500 md:bg-orange-500/20 hover:bg-orange-500/90 text-orange-500 text-[30px] w-[30px] flex justify-center item-center transition-all rounded-full"
+                                btnStyle="bg-orange-500 md:bg-orange-500/20 hover:bg-orange-500/90 text-orange-500 text-[30px] w-[40px] flex justify-center item-center transition-all rounded-full"
                                 iconsStyle="w-6 h-6 md:w-8 md:h-8 text-white"
                             />
                             {/* bottom-[calc(35%_-_22px)] md:bottom-[calc(35%_-_22px)] */}

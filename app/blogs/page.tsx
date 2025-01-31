@@ -71,15 +71,15 @@ const BlogContent: React.FC = () => {
   return (
     <div className="min-h-screen bg-white relative">
       {/* Desktop Navigation */}
-      <div className="sticky top-20 bg-white shadow-md z-50 hidden md:block">
+      <div className="sticky top-0 bg-white shadow-md z-50 hidden md:block">
         <div className="container mx-auto px-4 py-2 flex flex-wrap gap-2 items-center justify-center">
           {navigationLinks.map((link) => (
             <button
               key={link.href}
               onClick={() => handleScrollToSection(link.href)}
               className={`px-4 py-2  text-[11px] font-semibold transition-all ${activeSection === link.href
-                  ? 'text-orange-500  border-b border-orange-500'
-                  : 'bg-white text-black  hover:border-orange-500 hover:border-b hover:text-orange-500'
+                ?  'bg-orange-500  border-b text-white rounded-lg'
+                : 'bg-white text-black  border border-orange-500 rounded-lg '
                 }`}
             >
               {link.title}
@@ -89,7 +89,7 @@ const BlogContent: React.FC = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="sticky top-16 bg-white shadow-md z-50 md:hidden">
+      <div className="sticky top-0 bg-white shadow-md z-50 md:hidden">
         <div className="container mx-auto px-4 py-2 flex justify-end">
           {/* Three dots button */}
           <button
@@ -102,14 +102,14 @@ const BlogContent: React.FC = () => {
 
         {/* Dropdown Menu */}
         {isMobileMenuOpen && (
-          <div className="absolute top-12 right-4 bg-white shadow-lg rounded-md w-56 p-2 z-50">
+          <div className="absolute top-12 right-4 bg-white shadow-lg  rounded-md w-56 p-2 z-50">
             {navigationLinks.map((link) => (
               <button
                 key={link.href}
                 onClick={() => handleScrollToSection(link.href)}
                 className={`block w-full text-left px-4 py-2  text-[11px] font-semibold transition-all ${activeSection === link.href
-                    ?  'text-orange-500  border-b border-orange-500'
-                    : 'bg-white text-black  hover:border-orange-500 hover:border-b hover:text-orange-500'
+                    ?  'bg-orange-500  border-b text-white rounded-lg'
+                    : 'bg-white text-black  border border-orange-500 rounded-lg'
                   }`}
               >
                 {link.title}
