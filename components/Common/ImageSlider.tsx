@@ -112,7 +112,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
 
             {/* Custom Navigation */}
             {navigation && (
-                <div className="absolute bottom-5 right-16 z-30 flex flex-col items-center gap-4 ">
+                <div className="absolute bottom-5 right-16 z-30 flex flex-col items-center gap-2 ">
                     <button
                         onClick={() => swiperRef.current?.slidePrev()}
                         className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500  flex items-center justify-center pointer-events-auto`}
