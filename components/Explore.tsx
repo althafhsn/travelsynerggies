@@ -535,7 +535,7 @@ const Explore = () => {
                                                     </h1>
                                                     {/* Fixed Height Container for Description */}
                                                     <div className="h-[100px] md:h-[100px] lg:h-[130px] overflow-hidden ">
-                                                        <p className="text-gray-400 max-w-2xl xl:max-w-none mx-auto xl:mx-0 text-xs lg:text-[16px]">
+                                                        <p className="text-gray-400 max-w-2xl xl:max-w-none mx-auto xl:mx-0 text-xs lg:text-[16px] text-justify px-2 font-thin">
                                                             {project.description}
                                                         </p>
                                                     </div>
@@ -577,7 +577,7 @@ const Explore = () => {
                             {project.stack.map((item, index) => (
                                 <article
                                     key={index}
-                                    className="group relative isolate flex flex-col justify-end overflow-hidden pb-6 pt-40 w-[260px] h-[330px] md:w-[230px] lg:h-[300px] xl:w-[300px] xl:h-[380px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+                                    className="group relative isolate flex flex-col justify-end overflow-hidden pb-6 pt-40 w-[260px] h-[330px] md:w-[230px] lg:h-[300px] xl:w-[260px] xl:h-[380px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
                                 >
                                     {/* Background Image */}
                                     <Image

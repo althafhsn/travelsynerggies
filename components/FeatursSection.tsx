@@ -19,7 +19,7 @@ interface FeatureProps {
 }
 
 const Feature = ({ icon, title, description }: FeatureProps) => (
-  <div className="border-2 border-white rounded-2xl my-12 p-8 flex flex-col items-center text-center space-y-6 w-[250px] md:w-[350px] h-[280px] md:h-[330px] shadow-lg transition-all duration-500 ease-in-out hover:scale-105 cursor-grabbing ">
+  <div className="border-2 border-white rounded-2xl my-12 p-8 flex flex-col items-center text-center space-y-6 w-[250px] md:w-[320px] h-[280px] md:h-[350px] shadow-lg transition-all duration-500 ease-in-out hover:scale-105 cursor-grabbing ">
     <div className="p-2 md:p-4 bg-gray-50 rounded-lg text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300 ease-in-out transform hover:scale-110 cursor-pointer">
       {icon}
     </div>
@@ -73,7 +73,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <div className="w-full md:py-10 relative group px-5">
+    <div className="w-full md:py-10 relative group px-10">
       <Swiper
         ref={swiperRef}
         modules={[Autoplay, Navigation]}

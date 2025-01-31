@@ -31,7 +31,7 @@ const Hero = () => {
                                     <p className={` mt-2 leading-relaxed ${dancingScript.className} md:text-2xl text-lg   text-start text-white pb-4`}>
                                         Yours Sincerely
                                     </p>
-                                    <p className='font-sans text-lg md:ps-20 font-bold text-orange-500'>
+                                    <p className='font-sans text-lg md:ps-20 font-bold text-orange-500 font-serif'>
                                         Your Travel Designer
                                     </p>
                                 </div>
