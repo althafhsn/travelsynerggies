@@ -77,7 +77,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                 {/* 🛠 Fix Motion Reset on Slide Change */}
                                 <motion.div
                                     key={activeIndex} // ✅ Animation resets for each slide
-                                    className="absolute top-1/3 flex items-center justify-start text-white px-12 md:px-24"
+                                    className="absolute top-1/3 flex items-center justify-start text-white px-16"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6, delay: 0.2 }}
@@ -112,7 +112,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
 
             {/* Custom Navigation */}
             {navigation && (
-                <div className="absolute bottom-5 right-16 z-30 flex flex-col items-center ">
+                <div className="absolute bottom-5 right-16 z-30 flex flex-col items-center gap-4 ">
                     <button
                         onClick={() => swiperRef.current?.slidePrev()}
                         className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500  flex items-center justify-center pointer-events-auto`}
@@ -134,12 +134,12 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
             {/* Contact Us Button - Fixed Position (Now Clickable) */}
             {showContactButton && (
                 <motion.div
-                    className="absolute bottom-4 left-[100px] md:bottom-8 md:right-8 z-50 pointer-events-auto"
+                    className="absolute bottom-4 left-20 md:bottom-8 md:right-8 z-50 pointer-events-auto"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                    <button className="bg-orange-500 px-4 py-2 rounded-sm text-sm text-white hover:scale-110 transition-all duration-300 ease-in-out hover:bg-orange-600 shadow-md font-bold">
+                    <button className="bg-orange-500 px-4 py-2 rounded-sm text-white hover:scale-110 transition-all duration-300 ease-in-out hover:bg-orange-600 shadow-md font-bold">
                         Contact Us
                     </button>
                 </motion.div>
