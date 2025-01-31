@@ -96,10 +96,10 @@ const Footer: React.FC = () => {
     return (
         <div>
             <footer className="font-sans">
-                <hr className="border-orange-500 md:mt-8 h-2" />
-                <div className="container px-6 py-6 mx-auto">
+                <hr className="border-orange-500 md:mt-1 h-2" />
+                <div className="container px-6  mx-auto">
                     {/* Logo and Social Media Section */}
-                    <div className="flex items-center justify-between pb-8">
+                    <div className="flex items-center justify-between">
                         {/* Logo Section */}
                         <Link href='/'>
 
@@ -165,13 +165,24 @@ const Footer: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Footer Bottom */}
-                    <hr className="my-4 border-white/20" />
-                    <p className="text-white/80 text-center text-xs md:text-xs">
-                        © Travel Synergies 2023. All rights reserved.
-                    </p>
+
                 </div>
             </footer>
+            {/* Footer Bottom */}
+            <hr className="my-4 border-white/20" />
+            <div className='flex justify-around'>
+                <p className="text-white/80 text-center text-xs md:text-xs">
+                    © Travel Synergies 2023. All rights reserved.
+                </p>
+                <div className='flex justify-center'>
+                    <p className="text-white/80 text-center text-xs md:text-xs">
+                        Designed and Developed By
+                    </p>
+                    <img src="/Partners/img1.png" alt="" className='w-20' />
+                </div>
+
+            </div>
+
         </div>
     );
 };
