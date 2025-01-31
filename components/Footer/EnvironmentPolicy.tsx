@@ -36,7 +36,7 @@ const EnvironmentPolicy = () => {
                 <div className="max-w-7xl mx-auto py-2">
                     {/* Our Commitment Section */}
                     <section className="mb-8">
-                        <div className="flex items-center mb-6 px-2">
+                        <div className="flex items-center mb-6 px-2 justify-center md:justify-start">
                             <Leaf className="text-orange-500 w-8 h-8 mr-3" />
                             <h2 className="text-lg md:text-xl  font-bold text-black">Our Commitment</h2>
                         </div>
@@ -57,7 +57,7 @@ const EnvironmentPolicy = () => {
 
                     {/* Environmental Initiatives Section */}
                     <section className="mb-8 px-2">
-                        <div className="flex items-center mb-6">
+                        <div className="flex items-center mb-6 justify-center md:justify-start">
                             <Battery className="text-orange-500 w-8 h-8 mr-3" />
                             <h2 className="text-lg md:text-xl font-bold text-black">Environmental Initiatives</h2>
                         </div>
@@ -75,7 +75,7 @@ const EnvironmentPolicy = () => {
 
                     {/* Community Engagement Section */}
                     <section className="mb-8 px-2">
-                        <div className="flex items-center mb-6">
+                        <div className="flex items-center mb-6 justify-center md:justify-start">
                             <Users className="text-orange-500 w-8 h-8 mr-3" />
                             <h2 className="text-lg md:text-xl font-bold text-black">Community Engagement</h2>
                         </div>
@@ -102,7 +102,7 @@ const EnvironmentPolicy = () => {
 
                     {/* Customer Engagement Section */}
                     <section>
-                        <div className="flex items-center mb-6 px-2">
+                        <div className="flex items-center mb-6 px-2 text-center justify-center md:justify-start">
                             <UserCheck className="text-orange-500 w-8 h-8 mr-3" />
                             <h2 className="text-lg md:text-xl font-bold text-black">Customer Engagement</h2>
                         </div>

@@ -114,25 +114,26 @@ const SustainableTourismBlog = () => {
                                 {initiatives.map((initiative, index) => (
                                     <div
                                         key={index}
-                                        className="bg-gray-100 p-4 rounded-lg shadow-md grid grid-cols-7 gap-4 items-center min-h-[120px]"
+                                        className="bg-gray-100 p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-[auto,1fr] gap-4 items-center min-h-[120px] text-center sm:text-left"
                                     >
                                         {/* Icon Section */}
-                                        <div className="col-span-1 hidden md:flex items-center justify-center">
-                                            <div className="h-[20px] w-[20px] flex-shrink-0">
+                                        <div className="flex justify-center sm:justify-start">
+                                            <div className="h-10 w-10 flex items-center justify-center">
                                                 {initiative.icon}
                                             </div>
                                         </div>
 
                                         {/* Text Content Section */}
-                                        <div className="col-span-6 flex flex-col justify-center">
-                                            <h3 className="text-sm md:text-lg font-bold text-black text-left">
+                                        <div>
+                                            <h3 className="text-sm md:text-lg font-bold text-black">
                                                 {initiative.title}
                                             </h3>
-                                            <p className="text-xs md:text-sm text-gray-600 text-left">
+                                            <p className="text-xs md:text-sm text-gray-600">
                                                 {initiative.description}
                                             </p>
                                         </div>
                                     </div>
+
 
 
                                 ))}
@@ -145,21 +146,21 @@ const SustainableTourismBlog = () => {
                                 {BenifitsOfSustainableToursm.map((initiative, index) => (
                                     <div
                                         key={index}
-                                        className="bg-gray-100 p-4 rounded-lg shadow-md grid grid-cols-7 gap-4 items-center min-h-[120px]"
+                                        className="bg-gray-100 p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-[auto,1fr] gap-4 items-center min-h-[120px] text-center sm:text-left"
                                     >
                                         {/* Icon Section */}
-                                        <div className="col-span-1 hidden md:flex items-center justify-center">
-                                            <div className="h-[20px] w-[20px] flex-shrink-0">
+                                        <div className="flex justify-center sm:justify-start">
+                                            <div className="h-10 w-10 flex items-center justify-center">
                                                 {initiative.icon}
                                             </div>
                                         </div>
 
                                         {/* Text Content Section */}
-                                        <div className="col-span-6 flex flex-col justify-center">
-                                            <h3 className="text-sm md:text-lg font-bold text-black text-left">
+                                        <div>
+                                            <h3 className="text-sm md:text-lg font-bold text-black">
                                                 {initiative.title}
                                             </h3>
-                                            <p className="text-xs md:text-sm text-gray-600 text-left">
+                                            <p className="text-xs md:text-sm text-gray-600">
                                                 {initiative.description}
                                             </p>
                                         </div>

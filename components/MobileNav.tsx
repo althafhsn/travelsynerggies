@@ -44,9 +44,12 @@ const MobileNav = () => {
                     <SheetDescription></SheetDescription>
                 </SheetHeader>
                 {/* logo */}
+                <div className='flex items-center justify-center'>
+
                 <Link href='/' onClick={() => setOpen(false)}>
                     <img src="/whitelogo.png" alt="logo" className="w-48 py-4" />
                 </Link>
+                </div>
                 {/* nav */}
                 <nav className='flex flex-col justify-center items-center gap-8'>
                     {links.map((link, index) => (
