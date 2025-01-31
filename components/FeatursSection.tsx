@@ -99,9 +99,10 @@ const FeaturesSection = () => {
           768: {
             slidesPerView: 3,
           },
-          1144: {
+          1980: {
             slidesPerView: 5,
-          }
+          },
+
         }}
         className="features-swiper"
       >
