@@ -78,7 +78,7 @@ const FeaturesSection = () => {
         ref={swiperRef}
         modules={[Autoplay, Navigation]}
         spaceBetween={20}
-        slidesPerView={3}
+        slidesPerView={5}
         centeredSlides={true}
         loop={true}
         speed={3000}
@@ -97,6 +97,9 @@ const FeaturesSection = () => {
             slidesPerView: 1,
           },
           768: {
+            slidesPerView: 3,
+          },
+          1144: {
             slidesPerView: 5,
           }
         }}
