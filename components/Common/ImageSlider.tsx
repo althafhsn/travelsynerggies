@@ -77,7 +77,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                 {/* 🛠 Fix Motion Reset on Slide Change */}
                                 <motion.div
                                     key={activeIndex} // ✅ Animation resets for each slide
-                                    className="absolute top-1/2 flex items-center justify-start text-white px-12 md:px-24"
+                                    className="absolute top-1/3 flex items-center justify-start text-white px-12 md:px-24"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6, delay: 0.2 }}
@@ -115,7 +115,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                 <div className="absolute inset-0 z-30 flex flex-row items-center ">
                     <button
                         onClick={() => swiperRef.current?.slidePrev()}
-                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute left-[2px] md:right-8 flex items-center justify-center pointer-events-auto`}
+                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute left-[2px] md:left-4 flex items-center justify-center pointer-events-auto`}
                         aria-label="Previous slide"
                     >
                         <IoMdArrowBack className="" />
@@ -123,7 +123,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
 
                     <button
                         onClick={() => swiperRef.current?.slideNext()}
-                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute right-[2px] md:right-8 flex items-center justify-center pointer-events-auto`}
+                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute right-[2px] md:right-4 flex items-center justify-center pointer-events-auto`}
                         aria-label="Next slide"
                     >
                         <IoMdArrowForward  className="" />
