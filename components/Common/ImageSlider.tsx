@@ -88,6 +88,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                             initial={{ x: -50, opacity: 0 }}
                                             animate={{ x: 0, opacity: 1 }}
                                             transition={{ duration: 0.5 }}
+                                            style={{ textShadow: "2px 2px 4px white" }}
                                         >
                                             {slide.name}
                                         </motion.h3>
