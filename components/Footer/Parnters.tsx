@@ -94,7 +94,7 @@ const Partners: React.FC = () => {
                     <section className="my-6">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-4 md:mt-6">
                             {partners.map((partner, index) => (
-                                <div key={index} className="bg-gray-300 shadow-md rounded-xl p-4 md:p-6 flex flex-col items-center text-center">
+                                <div key={index} className="bg-gray-300 shadow-md rounded-xl p-4 md:p-4 flex flex-col items-center text-center">
                                     {/* Logo */}
                                     <img
                                         src={partner.img} // Partner logo URL
