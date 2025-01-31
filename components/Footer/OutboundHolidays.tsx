@@ -54,7 +54,7 @@ const OutboundTravelBlog = () => {
                     </p>
 
 
-                    <main className="container mx-auto px-4 py-8">
+                    <main className="container mx-auto md:px-4 py-8">
                         {trendData.map((trend, index) => (
                             <section key={index} className={`mb-12 ${index % 2 === 0 ? 'bg-gray-100 p-6 rounded-lg' : ''}`}>
                                 <div className="flex items-center mb-4">
