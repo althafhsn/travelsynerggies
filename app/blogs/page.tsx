@@ -15,6 +15,7 @@ import WhyChooseUs from '@/components/Footer/WhyChoosUs';
 const BlogContent: React.FC = () => {
   const searchParams = useSearchParams();
   const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navigationLinks: FooterLink[] = [
     { title: 'Our Service Spectrum', href: 'our-service-spectrum' },
@@ -33,6 +34,7 @@ const BlogContent: React.FC = () => {
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth' });
     }
+    setIsMobileMenuOpen(false); // Close menu after clicking
   };
 
   // Detect which section is in viewport
@@ -66,7 +68,7 @@ const BlogContent: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white relative">
-      {/* Navigation Buttons */}
+      {/* Desktop Navigation */}
       <div className="sticky top-20 bg-white shadow-md z-50 hidden md:block">
         <div className="container mx-auto px-4 py-2 flex flex-wrap gap-2 items-center justify-center">
           {navigationLinks.map((link) => (
@@ -83,6 +85,38 @@ const BlogContent: React.FC = () => {
             </button>
           ))}
         </div>
+      </div>
+
+      {/* Mobile Navigation */}
+      <div className="sticky top-20 bg-white shadow-md z-50 md:hidden">
+        <div className="container mx-auto px-4 py-2 flex justify-end">
+          {/* Three dots button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="text-orange-500 text-3xl focus:outline-none"
+          >
+            ⋮
+          </button>
+        </div>
+
+        {/* Dropdown Menu */}
+        {isMobileMenuOpen && (
+          <div className="absolute top-14 right-4 bg-white shadow-lg rounded-md w-56 p-2 z-50">
+            {navigationLinks.map((link) => (
+              <button
+                key={link.href}
+                onClick={() => handleScrollToSection(link.href)}
+                className={`block w-full text-left px-4 py-2 rounded-md text-sm font-semibold transition-all ${
+                  activeSection === link.href
+                    ? 'bg-orange-500 text-white'
+                    : 'bg-white text-orange-500 border border-orange-500 hover:bg-orange-100'
+                }`}
+              >
+                {link.title}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Content Sections */}
