@@ -528,10 +528,10 @@ const Explore = () => {
                                         <div className="grid grid-cols-1 gap-1 items-center">
                                             {/* Title and Description Section */}
                                             <div className="space-y-6 xl:order-1">
-                                                <div className="text-center xl:text-start flex flex-col  justify-center items-center ">
-                                                    <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white pt-9 text-center">
+                                                <div className="text-center xl:text-start flex flex-col  justify-center items-center  ">
+                                                    <h1 className="text-2xl md:text-3xl font-bold mb-4 text-white pt-9 text-center ">
                                                         {project.fName}{' '}
-                                                        <span className="text-orange-500">{project.lName}</span>
+                                                        <span className="text-orange-500 ">{project.lName}</span>
                                                     </h1>
                                                     {/* Fixed Height Container for Description */}
                                                     <div className="h-[100px] md:h-[100px] lg:h-[130px] overflow-hidden ">

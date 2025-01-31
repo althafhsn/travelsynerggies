@@ -47,7 +47,7 @@ const FeaturesSection = () => {
     },
     {
       icon: <FaHotel size={32} />,
-      title: "Choice of Accommodations",
+      title: "Hotels & Resorts",
       description: "We partner with global hotels, resorts, and boutique properties to ensure your stay is both comfortable and memorable."
     },
     {
@@ -73,55 +73,57 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <div className="w-full md:py-10 relative group px-10">
-      <Swiper
-        ref={swiperRef}
-        modules={[Autoplay, Navigation]}
-        spaceBetween={20}
-        centeredSlides={false}
-        loop={true}
-        speed={3000}
-        navigation={{
-          enabled: true,
-          prevEl: '.custom-prev-button',
-          nextEl: '.custom-next-button'
-        }}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
-        breakpoints={{
-          320: {
-            slidesPerView: 1,
-          },
-          480: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 4,
-          },
-          1980: {
-            slidesPerView: 6,
-          }
+    <div className="w-full md:py-10 relative group px-10 ">
+      <div className=''>
+        <Swiper
+          ref={swiperRef}
+          modules={[Autoplay, Navigation]}
+          spaceBetween={20}
+          centeredSlides={false}
+          loop={true}
+          speed={3000}
+          navigation={{
+            enabled: true,
+            prevEl: '.custom-prev-button',
+            nextEl: '.custom-next-button'
+          }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+            },
+            480: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 4,
+            },
+            1980: {
+              slidesPerView: 6,
+            }
 
 
-        }}
-        className="features-swiper"
-      >
-        {features.map((feature, index) => (
-          <SwiperSlide key={index} className="!flex justify-center">
-            <Feature
-              icon={feature.icon}
-              title={feature.title}
-              description={feature.description}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+          }}
+          className="features-swiper "
+        >
+          {features.map((feature, index) => (
+            <SwiperSlide key={index} className="!flex justify-center">
+              <Feature
+                icon={feature.icon}
+                title={feature.title}
+                description={feature.description}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
 
       {/* Custom Navigation Buttons */}
       <div className=''>
