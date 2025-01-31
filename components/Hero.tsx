@@ -12,7 +12,7 @@ const Hero = () => {
                     <div className="absolute inset-0 bg-black/10"></div>
                     <div className="container mx-auto px-8 relative">
                         <div className="grid lg:grid-cols-2 gap-8 lg:text-start px-2">
-                            <div className="flex flex-col justify-center text-center md:text-start">
+                            <div className="flex flex-col pt-4 text-center md:text-start">
                                 <h2 className="text-3xl md:text-5xl font-bold py-2 ">Travel the World,</h2>
                                  <h2 className="text-orange-500 text-3xl md:text-5xl  font-bold  py-2 ">Live the Moment ! </h2>
                                 <p className="text-gray-400 mt-8 leading-relaxed md:text-[18px] text-lg">
