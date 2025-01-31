@@ -12,31 +12,31 @@ const partners = [
     },
     {
         name: "Traminno",
-        img: '/partners/traminno.jpg',
+        img: '/partners/traminno.png',
         description:
             "With Traminno, we offer access to over 3 million accommodation options worldwide. Their comprehensive marketplace provides exceptional hotel stays and ancillary services to enhance travel experiences.",
     },
     {
         name: "SeatonTrips",
-        img: '/partners/SeatonTrips.jpg',
+        img: '/partners/SeatonTrips.png',
         description:
             "SeatonTrips is our partner in providing affordable and convenient travel solutions. With a focus on budget-friendly travel, SeatonTrips offers a wide range of tours and activities that cater to all budgets and interests.",
     },
     {
         name: "RidesNmore",
-        img: '/partners/RidesNmore.jpg',
+        img: '/partners/RidesNmore.png',
         description:
             "Experience global connectivity with RidesnMore, a transportation giant and our trusted partner for transportation solutions. Whether it’s a private car or a 50-seater coach, RidesnMore ensures reliable point-to-point transfers across the globe.",
     },
     {
         name: "Tix2Gigs",
-        img: '/partners/Tix2Gigs.jpg',
+        img: '/partners/Tix2Gigs.png',
         description:
             "Looking for the hottest tickets in town? Look no further than Tix2Gigs, our partner in providing access to the most sought-after events. From concerts to sports games, Tix2Gigs offers a wide range of tickets to the most popular events.",
     },
     {
         name: "Evintry",
-        img: '/partners/evinty.jpg',
+        img: '/partners/evinty.png',
         description:
             "Evintry is a platform that revolutionizes the event planning landscape by offering a one-stop platform for all event needs with its cutting-edge technology that ensures real-time solutions, creating an unparalleled experience for both organizers and attendees.",
     },
@@ -60,13 +60,13 @@ const partners = [
     },
     {
         name: "ToursnTrips",
-        img: '/partners/toursntrips.jpg',
+        img: '/partners/toursntrips.png',
         description:
             "ToursnTrips is our trusted partner for global excursions and sightseeing, offering diverse travel experiences that cater to every interest and destination.",
     },
     {
         name: "RateOcto",
-        img: '/partners/rateocto.jpg',
+        img: '/partners/rateocto.png',
         description:
             "Rate Octo offers an unmatched online booking solution for travel industry and hospitality experts, providing cutting-edge technology to manage rates efficiently and maximize revenue opportunities.",
     },
