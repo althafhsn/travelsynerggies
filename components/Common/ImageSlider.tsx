@@ -134,7 +134,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
             {/* Contact Us Button - Fixed Position (Now Clickable) */}
             {showContactButton && (
                 <motion.div
-                    className="absolute bottom-4 right-4 md:bottom-8 md:right-8 z-50 pointer-events-auto"
+                    className="absolute bottom-4 left-[100px] md:bottom-8 md:right-8 z-50 pointer-events-auto"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
