@@ -33,7 +33,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
     autoplay = true,
     delay = 3000,
     navigation = true,
-    height = "h-[80vh] lg:h-[80vh]",
+    height = "h-[80vh] lg:h-[90vh]",
     buttonStyles = "bg-orange-500/60 hover:text-orange-500 hover:bg-white",
     showContactButton = true
 }) => {
@@ -112,10 +112,10 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
 
             {/* Custom Navigation */}
             {navigation && (
-                <div className="absolute inset-0 z-30 flex flex-row items-center ">
+                <div className="absolute bottom-5 right-16 z-30 flex flex-col items-center ">
                     <button
                         onClick={() => swiperRef.current?.slidePrev()}
-                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute left-[2px] md:left-4 flex items-center justify-center pointer-events-auto`}
+                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500  flex items-center justify-center pointer-events-auto`}
                         aria-label="Previous slide"
                     >
                         <IoMdArrowBack className="" />
@@ -123,7 +123,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
 
                     <button
                         onClick={() => swiperRef.current?.slideNext()}
-                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute right-[2px] md:right-4 flex items-center justify-center pointer-events-auto`}
+                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500  flex items-center justify-center pointer-events-auto`}
                         aria-label="Next slide"
                     >
                         <IoMdArrowForward  className="" />
@@ -139,7 +139,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                    <button className="bg-orange-500 px-4 py-2 rounded-sm text-lg text-white hover:scale-110 transition-all duration-300 ease-in-out hover:bg-orange-600 shadow-md">
+                    <button className="bg-orange-500 px-4 py-2 rounded-sm text-sm text-white hover:scale-110 transition-all duration-300 ease-in-out hover:bg-orange-600 shadow-md font-bold">
                         Contact Us
                     </button>
                 </motion.div>

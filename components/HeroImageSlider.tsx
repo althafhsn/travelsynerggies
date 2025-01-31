@@ -13,17 +13,17 @@ const sliderData: SlideImage[] = [
     {
         name: "Vietnam",
         image: "/outbound/hero/img4.webp",
-        description: "Uncover the vibrant culture and landscapes of Vietnam."
+        description: "UNCOVER THE VIBRANT CULTURE AND LANDSCAPES"
     },
     {
         name: "Santorini",
         image: "/outbound/hero/img2.webp",
-        description: "Experience the captivating views of Santorini"
+        description: "EXPLORE WHITE CLIFFS ABOVE ENDLESS BLUES"
     },
     {
         name: "Italy",
         image: "/outbound/hero/img3.webp",
-        description: "A journey through art, history and flavors of Italy"
+        description: "A JOURNEY THROUGH ART, HISTORY AND FLAVORS"
     },
     {
         name: "Bahamas",
