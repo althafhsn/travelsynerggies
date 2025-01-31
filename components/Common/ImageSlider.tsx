@@ -98,6 +98,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                             initial={{ x: -50, opacity: 0 }}
                                             animate={{ x: 0, opacity: 1 }}
                                             transition={{ duration: 0.6, delay: 0.2 }}
+                                            style={{ textShadow: "2px 2px 4px white" }}
                                         >
                                             {slide.description}
                                         </motion.p>
@@ -114,7 +115,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                 <div className="absolute inset-0 z-30 flex flex-row items-center ">
                     <button
                         onClick={() => swiperRef.current?.slidePrev()}
-                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute right-[2px] md:left-8 flex items-center justify-center pointer-events-auto`}
+                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute left-[2px] md:right-8 flex items-center justify-center pointer-events-auto`}
                         aria-label="Previous slide"
                     >
                         <IoMdArrowBack className="" />
