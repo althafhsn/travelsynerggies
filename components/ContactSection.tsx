@@ -1,105 +1,74 @@
-// ContactButton.tsx
 'use client'
+import { MessageCircle, Phone } from 'lucide-react';
 import React from 'react';
-import { FiPhone, FiMail } from "react-icons/fi";
 
-interface ContactButtonProps {
-    icon: 'phone' | 'mail';
-    title: string;
-    phoneNumber?: string;
-    isOnline?: boolean;
-    email?: string;
-}
-
-const ContactButton: React.FC<ContactButtonProps> = ({ icon, title, phoneNumber, isOnline, email }) => {
-    const handleClick = () => {
-        if (phoneNumber) {
-            window.location.href = `tel:${phoneNumber}`;
-        }
-    };
-
-    return (
-        <button
-            onClick={handleClick}
-            className=" "
-        >
-            <div className="relative md:w-40 md:h-40 w-32 h-32 lg:w-52 lg:h-52 xl:w-64 xl:h-64 mx-auto">
-                <div className='group'>
-                    <div className="absolute inset-0 rounded-full border border-white/20 hover:border-orange-500 hover:bg-orange-500 flex group-hover:scale-110 flex-col items-center justify-center gap-2 lg:gap-4 xl:gap-6 bg-gray-900 transform transition-transform duration-300 ease-in-out overflow-hidden">
-                        {icon === 'phone' ? (
-                            <FiPhone className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 text-white group-hover:text-gray-900" />
-                        ) : (
-                            <FiMail className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 text-white group-hover:text-gray-900" />
-                        )}
-                        <div className="text-center px-2">
-                            <h2 className="text-white text-[11px] md:text-lg lg:text-2xl group-hover:text-gray-900 font-bold mb-2">
-                                {title}
-                            </h2>
-                            {phoneNumber && (
-                                <p className="text-white group-hover:text-gray-800 text-[9px] md:text-sm mb-1 truncate">
-                                    {phoneNumber}
-                                </p>
-                            )}
-                            {email && (
-                                <p className="text-white group-hover:text-gray-800 text-[9px] md:text-sm mb-1 truncate">
-                                    {email}
-                                </p>
-                            )}
-
-                            {isOnline && (
-                                <p className="text-orange-400 group-hover:text-gray-700 text-[9px] md:text-sm">
-                                    We are online now
-                                </p>
-                            )}
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-        </button>
-
-
-
-    );
-};
-
-// ContactSection.tsx
 export default function ContactSection() {
     return (
-        <div className="px-4 md:px-8 py-16 md:py-20 mx-auto">
-            <div className="container mx-auto px-4 xl:px-0">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 lg:gap-16">
-                    {/* Left Section */}
-                    <div className="text-orange-500 flex flex-col items-center justify-center md:items-start text-center md:text-start md:col-span-1">
-                        <h1 className="leading-[2] font-bold mb-6 text-2xl md:text-5xl font-serif">
-                            Contact Your  <br />
+        <div className="px-4 md:px-8 py-8 md:py-16 mx-auto">
+            <div className="mx-auto px-4 xl:px-0">
+                {/* Main grid - 2 columns on lg screens */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    
+                    {/* Left Section - Heading */}
+                    <div className="text-orange-500 flex flex-col items-center lg:items-start text-center lg:text-left">
+                        <h1 className="leading-tight font-bold mb-6 text-2xl md:text-4xl lg:text-5xl font-serif">
+                            Contact Your  
+                            <br />
                             <span className="text-white">Travel Designer</span>
                         </h1>
                     </div>
 
-                    {/* Right Section */}
-                    <div className="grid grid-cols-2 justify-between items-center md:col-span-2 -gap-3">
-                        {/* Call Us Button */}
-                        <ContactButton
-                            icon="phone"
-                            title="Call Us"
-                            phoneNumber="+971 544552595"
-                            isOnline={true}
-                        />
+                    {/* Right Section - Cards Container */}
+                    <div className="w-full">
+                        {/* Cards wrapper with flex layout */}
+                        <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start items-center md:items-stretch">
+                            
+                            {/* Sales Card */}
+                            <div className="bg-gray-300 rounded-lg p-6 md:p-8 text-center flex flex-col items-center shadow-md w-full md:w-[350px]">
+                                <Phone className="w-12 h-12 mb-1 text-orange-500" />
+                                <h2 className="text-lg lg:text-2xl font-bold text-gray-800 mb-2">
+                                    Talk to Sales
+                                </h2>
+                                <p className="text-gray-600 mb-1 text-[13px] md:text-sm">
+                                    Interested in our software? Just pick up the phone
+                                    to chat with a member of our sales team.
+                                </p>
+                                <a
+                                    href="tel:+97154452595"
+                                    className="text-orange-500 text-sm lg:text-xl font-semibold hover:text-orange-700 mb-1"
+                                >
+                                    +971 544552595
+                                </a>
+                                <button
+                                    className="text-orange-500 hover:text-orange-700 text-sm lg:text-lg flex items-center"
+                                >
+                                    We're online Now
+                                </button>
+                            </div>
 
-                        {/* Enquiry Button */}
-                        <ContactButton
-                            icon="mail"
-                            title="Send an Enquiry"
-                            email="info@travelsynergies.com"
-                        />
+                            {/* Customer Support Card */}
+                            <div className="bg-gray-300 rounded-lg p-6 md:p-8 text-center flex flex-col items-center shadow-md w-full md:w-[350px]">
+                                <MessageCircle className="w-12 h-12 text-orange-500 mb-4" />
+                                <h2 className="text-lg lg:text-2xl font-bold text-gray-800 mb-2">
+                                    Customer Support
+                                </h2>
+                                <p className="text-gray-600 mb-1 md:mb-4 text-[13px] md:text-sm">
+                                    Sometimes you need a little help from a
+                                    support rep. Don't worry... we're here for you.
+                                </p>
+                                <button
+                                    className="bg-orange-500 hover:bg-orange-600 text-white text-xs font-semibold py-2 md:py-3 px-8 rounded-md transition duration-300"
+                                    onClick={() => {/* Handle contact support click */}}
+                                >
+                                    Contact
+                                </button>
+                            </div>
+
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
-
-
     );
 }

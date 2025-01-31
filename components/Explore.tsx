@@ -504,7 +504,7 @@ const Explore = () => {
                     ease: 'easeIn'
                 }
             }}
-            className="min-h-[80vh] w-full py-12"
+            className="min-h-[80vh] w-full  md:py-12 px-4 "
         >
             <div className="container mx-auto px-4 xl:px-0">
                 <div className="flex flex-col xl:flex-row xl:gap-6">
@@ -529,13 +529,13 @@ const Explore = () => {
                                             {/* Title and Description Section */}
                                             <div className="space-y-6 xl:order-1">
                                                 <div className="text-center xl:text-start flex flex-col  justify-center items-center ">
-                                                    <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white pt-9 text-center">
+                                                    <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white pt-9 text-center">
                                                         {project.fName}{' '}
                                                         <span className="text-orange-500">{project.lName}</span>
                                                     </h1>
                                                     {/* Fixed Height Container for Description */}
-                                                    <div className="h-[100px] overflow-hidden">
-                                                        <p className="text-gray-400 max-w-2xl xl:max-w-none mx-auto xl:mx-0 text-sm">
+                                                    <div className="h-[130] md:h-[100px] lg:h-[130px] overflow-hidden ">
+                                                        <p className="text-gray-400 max-w-2xl xl:max-w-none mx-auto xl:mx-0 text-sm lg:text-[16px]">
                                                             {project.description}
                                                         </p>
                                                     </div>
@@ -544,7 +544,7 @@ const Explore = () => {
 
                                             {/* Image Section */}
                                             <div className="xl:order-2">
-                                                <div className="relative h-[420px] md:h-[540px] xl:h-[560px] w-full rounded-lg overflow-hidden pt-2">
+                                                <div className="relative h-[420px] md:h-[540px] lg:h-[630px] w-full rounded-lg overflow-hidden pt-2">
                                                     <div className="absolute inset-0 bg-black/10 z-10" />
                                                     <Image
                                                         src={project.image}
@@ -562,9 +562,9 @@ const Explore = () => {
 
                             {/* Slider Navigation */}
                             <WorkSliderButton
-                                containerStyle="flex  absolute right-0 top-10 z-20 w-full justify-between "
-                                btnStyle="bg-orange-500/20 hover:bg-orange-500/90 text-orange-500 text-[40px] w-[40px] flex justify-center item-center transition-all rounded-full"
-                                iconsStyle="w-6 h-6 text-orange-500"
+                                containerStyle="flex  absolute right-0 md:top-10 bottom-[calc(35%_-_22px)] z-20 w-full justify-between "
+                                btnStyle="bg-orange-500 md:bg-orange-500/20 hover:bg-orange-500/90 text-orange-500 text-[40px] w-[40px] flex justify-center item-center transition-all rounded-full"
+                                iconsStyle="w-6 h-6 md:w-8 md:h-8 text-white"
                             />
                             {/* bottom-[calc(35%_-_22px)] md:bottom-[calc(35%_-_22px)] */}
                         </Swiper>
@@ -573,11 +573,11 @@ const Explore = () => {
 
                     {/* Right Column - Stack Cards */}
                     <div className="w-full xl:w-2/3">
-                        <div className="grid grid-cols-1 md:grid-cols-3 -gap-3 xl:mt-0">
+                        <div className="grid grid-cols-1 md:grid-cols-3 xl:mt-0">
                             {project.stack.map((item, index) => (
                                 <article
                                     key={index}
-                                    className="group relative isolate flex flex-col justify-end overflow-hidden pb-6 pt-40 w-[260px] h-[330px] md:w-[230px] lg:h-[300px] xl:w-[260px] xl:h-[330px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+                                    className="group relative isolate flex flex-col justify-end overflow-hidden pb-6 pt-40 w-[260px] h-[330px] md:w-[230px] lg:h-[300px] xl:w-[300px] xl:h-[380px] mx-auto mt-12 rounded-sm hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
                                 >
                                     {/* Background Image */}
                                     <Image

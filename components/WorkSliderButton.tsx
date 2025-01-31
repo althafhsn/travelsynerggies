@@ -1,8 +1,8 @@
 'use client'
 
 import { useSwiper } from "swiper/react"
-import { PiCaretLeftBold, PiCaretRightBold } from 'react-icons/pi'
 import { Button } from '@/components/ui/button'
+import { IoMdArrowForward , IoMdArrowBack  } from "react-icons/io";
 
 
 interface WorkSliderButtonProps {
@@ -17,10 +17,10 @@ const WorkSliderButton = ({ containerStyle, btnStyle, iconsStyle }: WorkSliderBu
     return (
         <div className={containerStyle}>
             <Button className={btnStyle} onClick={() => swiper.slidePrev()}>
-                <PiCaretLeftBold className={iconsStyle} />
+                <IoMdArrowBack  className={iconsStyle} />
             </Button>
             <Button className={btnStyle} onClick={() => swiper.slideNext()}>
-                <PiCaretRightBold className={iconsStyle} />
+                <IoMdArrowForward  className={iconsStyle} />
             </Button>
         </div>
     )

@@ -144,22 +144,17 @@ const Footer: React.FC = () => {
                                 <h1 className="text-xl font-semibold tracking-tight text-orange-500 mb-4">
                                     Subscribe to our newsletter to get updates
                                 </h1>
-                                <div className="max-w-md mx-auto lg:bg-transparent lg:border border-gray-300 rounded-3xl max-lg:py-3 lg:rounded-full lg:h-12 lg:p-1.5 flex flex-col sm:flex-row items-center gap-3 sm:gap-6 lg:gap-0">
+                                <div className="max-w-md mx-auto relative">
                                     <input
-                                        type="text"
-                                        name="email"
-                                        className="py-2 px-6 bg-transparent rounded-full max-lg:border border-gray-300 text-gray-100 placeholder:text-gray-100 focus:outline-none flex-1 lg:py-2 lg:px-6"
+                                        type="email"
                                         placeholder="Enter your email.."
+                                        className="w-full bg-transparent border border-gray-600 rounded-full py-2.5 px-4 pr-28 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-orange-500"
                                     />
-                                    <div className="sm:w-full sm:items-center flex sm:justify-center items-end justify-end">
-                                        <button
-                                            type="submit"
-                                            className="py-2 px-2 w-full text-sm bg-orange-500 rounded-full text-white font-semibold hover:bg-orange-700 transition-all"
-                                        >
-                                            Subscribe
-                                        </button>
-                                    </div>
-
+                                    <button
+                                        className="absolute right-1 top-1/2 -translate-y-1/2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-1.5 rounded-full text-sm transition-colors"
+                                    >
+                                        Subscribe
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -169,8 +164,8 @@ const Footer: React.FC = () => {
                 </div>
             </footer>
             {/* Footer Bottom */}
-            <hr className="my-4 border-white/20" />
-            <div className='flex justify-around'>
+            <hr className=" border-white/20 mt-2" />
+            <div className='flex justify-around py-2  items-end'>
                 <p className="text-white/80 text-center text-xs md:text-xs">
                     © Travel Synergies 2023. All rights reserved.
                 </p>

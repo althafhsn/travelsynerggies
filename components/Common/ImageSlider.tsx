@@ -10,6 +10,7 @@ import Image from 'next/image';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { IoMdArrowBack, IoMdArrowForward } from 'react-icons/io';
 
 interface ImageSliderProps {
     slides: SlideImage[];
@@ -47,6 +48,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
 
     return (
         <div className={`relative w-full ${height} overflow-hidden`}>
+            {/* Swiper Component */}
             <Swiper
                 key={swiperKey} // ✅ Forces Swiper re-render when navigating back
                 modules={[Autoplay, Navigation]}
@@ -62,15 +64,14 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index} className="relative">
                         <div className="absolute inset-0 w-full h-full">
-                            <div className="relative w-full h-full ">
+                            <div className="relative w-full h-full">
                                 {/* 🛠 Fix Image Not Showing After Navigation */}
                                 <Image
                                     src={slide.image}
                                     alt={slide.name}
                                     fill
-                                    // style={{ objectFit: "cover", }}
                                     priority={index === 0} // Load first image faster
-                                    className="w-full h-full object-cover "
+                                    className="w-full h-full object-cover"
                                 />
 
                                 {/* 🛠 Fix Motion Reset on Slide Change */}
@@ -80,9 +81,8 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6, delay: 0.2 }}
-                                     // Force the text to stay vertically centered
                                 >
-                                    <motion.div className="">
+                                    <motion.div>
                                         <motion.h3
                                             className="text-xl lg:text-6xl font-bold uppercase text-orange-500 leading-none md:text-5xl"
                                             initial={{ x: -50, opacity: 0 }}
@@ -103,49 +103,46 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                         </motion.p>
                                     </motion.div>
                                 </motion.div>
-
-
-                                {showContactButton && (
-                                    <motion.div
-                                        key={`button-${activeIndex}`} // ✅ Button animation resets
-                                        className="absolute bottom-4 right-4 md:bottom-8 md:right-8"
-                                        initial={{ opacity: 0, scale: 0.8 }}
-                                        animate={{ opacity: 1, scale: 1 }}
-                                        transition={{ duration: 0.5, delay: 0.3 }}
-                                    >
-                                        <button className="bg-orange-500 px-4 py-2 rounded-sm text-lg text-white hover:scale-110 transition-all duration-300 ease-in-out hover:bg-orange-600 shadow-md">
-                                            Contact Us
-                                        </button>
-                                    </motion.div>
-                                )}
                             </div>
                         </div>
-
                     </SwiperSlide>
                 ))}
             </Swiper>
 
             {/* Custom Navigation */}
             {navigation && (
-                <div className="absolute inset-0 z-[100] flex justify-between items-center pointer-events-none">
+                <div className="absolute inset-0 z-30 flex flex-row items-center ">
                     <button
                         onClick={() => swiperRef.current?.slidePrev()}
-                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute left-[2px] md:left-8 flex items-center justify-center`}
+                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute right-[2px] md:left-8 flex items-center justify-center pointer-events-auto`}
                         aria-label="Previous slide"
                     >
-                        <MdKeyboardArrowLeft className="text-[3em]" />
+                        <IoMdArrowBack className="" />
                     </button>
 
                     <button
                         onClick={() => swiperRef.current?.slideNext()}
-                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute right-[2px] md:right-8 flex items-center justify-center`}
+                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute right-[2px] md:right-8 flex items-center justify-center pointer-events-auto`}
                         aria-label="Next slide"
                     >
-                        <MdKeyboardArrowRight className="text-[3em]" />
+                        <IoMdArrowForward  className="" />
                     </button>
                 </div>
             )}
 
+            {/* Contact Us Button - Fixed Position (Now Clickable) */}
+            {showContactButton && (
+                <motion.div
+                    className="absolute bottom-4 right-4 md:bottom-8 md:right-8 z-50 pointer-events-auto"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                >
+                    <button className="bg-orange-500 px-4 py-2 rounded-sm text-lg text-white hover:scale-110 transition-all duration-300 ease-in-out hover:bg-orange-600 shadow-md">
+                        Contact Us
+                    </button>
+                </motion.div>
+            )}
         </div>
     );
 };

@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 import 'swiper/css';
-import "./AboutUs.css";
+// import "./AboutUs.css";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -28,7 +28,7 @@ const AboutUs: React.FC = () => {
     return (
         <div className="container mx-auto px-4 xl:px-0">
             {/* Hero Section */}
-            <section className="py-2 relative z-0 ">
+            <section className="py-2 relative  ">
                 <div className=" px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="max-w-2xl mx-auto text-4xl font-bold text-white mb-5 md:text-5xl md:leading-normal font-manrope">
                         WHO <span className="text-orange-500">WE</span> ARE ?
@@ -47,10 +47,10 @@ const AboutUs: React.FC = () => {
                             <img
                                 src="/about/about1.webp"
                                 alt=""
-                                className="object-cover xl:h-[500px]  w-[500px]"
+                                className="object-cover h-[300px] xl:h-[500px]  w-[500px]"
                             />
                         </div>
-                        <div className="pb-24 flex ">
+                        <div className="pb-4 flex ">
                             <div className="w-full">
                                 <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-orange-500 px-5  my-2 max-lg:text-center font-manrope">
                                     About Us
@@ -74,13 +74,13 @@ const AboutUs: React.FC = () => {
             </section>
 
             {/* Creative Since Section */}
-            <section className="py-4 lg:py-8">
+            <section className="py-2 lg:py-8">
                 <div className="mx-auto  px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
-                        <div className="lg:pr-24  flex items-center  justify-center">
-                            <div className="w-full flex flex-col justify-center">
+                        <div className="lg:pr-24  flex items-center  justify-center order-2">
+                            <div className="w-full flex flex-col justify-center ">
 
-                                <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-orange-500 mb-9 max-lg:text-center font-manrope">
+                                <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-orange-500 mb-2 max-lg:text-center font-manrope">
                                     Technology
                                 </h2>
                                 <p className="text-sm text-gray-200 text-justify  mx-auto py-2">
@@ -93,11 +93,11 @@ const AboutUs: React.FC = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="img-box flex items-center justify-center">
+                        <div className=" flex items-center justify-center order-1">
                             <img
                                 src="about/about3.webp"
                                 alt="About Us tailwind page"
-                                className="hidden lg:block object-cover"
+                                className=" lg:block object-cover"
                             />
                         </div>
                     </div>
@@ -106,11 +106,11 @@ const AboutUs: React.FC = () => {
             <section className="py-6 lg:py8">
                 <div className="mx-auto  px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
-                        <div className="img-box flex items-center justify-center">
+                        <div className="img-box flex items-center justify-center ">
                             <img
                                 src="about/about2.webp"
                                 alt="About Us tailwind page"
-                                className="hidden lg:block object-cover"
+                                className="lg:block object-cover"
                             />
                         </div>
                         <div className=" flex ">
@@ -158,7 +158,7 @@ const AboutUs: React.FC = () => {
             </section>
 
 
-            <section className="py-14 lg:py-24 mx-auto">
+            <section className="py-12 lg:py-24 mx-auto">
                 <div className="mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-2 text-center">
                         <h2 className="font-manrope text-lg md:text-2xl lg:text-4xl  font-bold text-orange-500 mb-6">Meet Our Team !</h2>
@@ -235,13 +235,16 @@ const AboutUs: React.FC = () => {
                             </SwiperSlide>
                         ))}
                         {/* Custom Navigation Buttons */}
-                        <button
-                            className="swiper-button-prev p-2.5 group flex justify-center items-center text-orange-900 w-12 h-12 transition-all duration-500 rounded-full hover:text-orange-600 pt-4"
-                        />
-                        <button
-                            className="swiper-button-next p-2.5 group flex justify-center items-center text-orange-900 w-12 h-12 transition-all duration-500 rounded-full hover:text-orange-600 pt-4"
-                        />
-                        <div className=" flex justify-center items-center">
+                        <div className="absolute flex justify-center">
+                            <button
+                                className="  after:text-orange-500  hover:text-orange-600 "
+                            />
+                            <button
+                                className=" after:text-orange-500  hover:text-orange-600 "
+                            />
+                        </div>
+                    
+                        <div className=" flex justify-center items-center pb-10">
                             <div className="swiper-pagination "></div>
                             <div className="swiper-scrollbar"></div>
                         </div>

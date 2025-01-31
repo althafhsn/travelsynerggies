@@ -117,9 +117,9 @@ const Careers: React.FC = () => {
     },
   ];
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen mb-4">
       <div className="flex flex-col items-start justify-center text-white bg-bg-career min-h-[70vh] bg-cover">
-        <div className="container  mx-auto flex flex-col  items-center md:items-start">
+        <div className="container mx-auto flex flex-col  items-center md:items-start">
           <motion.h1
             className="text-lg md:text-xl font-bold font-sans mb-4 text-orange-500"
             initial={{ opacity: 0, y: -50 }}
@@ -150,7 +150,7 @@ const Careers: React.FC = () => {
           Are you passionate about travel and eager to explore the world? Do you thrive in a dynamic, fast-paced environment where every day brings new adventures? If so, Travel Synergies invites you to join our team and be part of an exciting journey!
         </h2>
 
-        <p className="text-xs md:text-sm text-gray-100 px-2">
+        <p className="text-xs md:text-sm text-gray-100 px-2 text-center md:text-start">
           At Travel Synergies, we believe that travel has the power to transform lives, broaden horizons, and create unforgettable memories. As a leading player in the travel industry, we specialize in curating unique and immersive experiences for our customers, ensuring that every journey is as extraordinary as the destinations themselves.
         </p>
       </div>
@@ -179,10 +179,12 @@ const Careers: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-8">
+      <div className="container mx-auto px-4 md:p-x-8">
 
         <div className=" bg-gradient-to-b bg-gray-900/60 rounded-lg ">
-          <form className="md:col-span-8 p-10">
+
+
+          <form className="md:col-span-8 px-1  md:p-5">
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label className="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2"
@@ -224,7 +226,7 @@ const Careers: React.FC = () => {
               </div>
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0 mx-auto">
+              <div className="w-full md:w-1/2 px-3 mb-3 md:mb-0 mx-auto">
                 <label className="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2"
                 >
                   Job
@@ -235,7 +237,7 @@ const Careers: React.FC = () => {
               </div>
             </div>
 
-            <div className="w-full py-9 bg-gray-50 rounded border border-gray-300 gap-3 grid ">
+            <div className="w-full py-3 bg-gray-50 rounded border border-gray-300 gap-3 grid ">
               <div className="grid gap-1">
                 <svg className="mx-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g id="File">
