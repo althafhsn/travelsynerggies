@@ -1,7 +1,6 @@
 'use client'
 import React from "react";
 import 'swiper/css';
-// import "./AboutUs.css";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from "swiper/react";
