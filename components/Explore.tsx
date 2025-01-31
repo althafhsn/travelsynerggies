@@ -122,19 +122,20 @@ const projects: jurnels[] = [
                 description: 'A dynamic blend of modernity and tradition, Singapore offers stunning skyscrapers, lush gardens, world-class shopping and diverse cuisine in a vibrant cityscape.'
             },
             {
-                image: '/outbound/city-breaks/img2.webp',
-                name: 'Toronto',
-                description: 'Canada’s cultural hub, Toronto boasts a mix of iconic landmarks like the CN Tower, bustling neighborhoods and a thriving arts and food scene.'
+                image: '/outbound/city-breaks/img4.webp',
+                name: 'New York',
+                description: 'The city that never sleeps, New York dazzles with its towering skyline, popular attractions, diverse neighborhoods and vibrant atmosphere.'
             },
+
             {
                 image: '/outbound/city-breaks/img3.webp',
                 name: 'London',
                 description: 'London is a historic yet contemporary city, featuring iconic landmarks like Big Ben and the Tower of London, along with vibrant theaters, museums and diverse global cuisine. '
             },
             {
-                image: '/outbound/city-breaks/img4.webp',
-                name: 'New York',
-                description: 'The city that never sleeps, New York dazzles with its towering skyline, popular attractions, diverse neighborhoods and vibrant atmosphere.'
+                image: '/outbound/city-breaks/img2.webp',
+                name: 'Toronto',
+                description: 'Canada’s cultural hub, Toronto boasts a mix of iconic landmarks like the CN Tower, bustling neighborhoods and a thriving arts and food scene.'
             },
             {
                 image: '/outbound/city-breaks/img5.webp',
@@ -167,24 +168,25 @@ const projects: jurnels[] = [
                 description: 'Experience Mexico’s colorful culture through its lively mariachi music, historic ruins, spirited fiestas, and mouthwatering cuisine.'
             },
             {
+                image: '/outbound/cultural-immersions/img4.webp',
+                name: 'India',
+                description: 'Immerse yourself in the abundance of culture in India, from bustling bazaars and majestic palaces to sacred rituals and timeless traditions.'
+            },
+
+            {
+                image: '/outbound/cultural-immersions/img6.webp',
+                name: 'Japan',
+                description: 'Discover Japan’s harmonious blend of tradition and modernity, from tranquil tea ceremonies and ancient temples to neon-lit cities and innovative art.'
+            },
+            {
                 image: '/outbound/cultural-immersions/img3.webp',
                 name: 'Sevilla',
                 description: 'Feel the soul of Spain in Sevilla, where flamenco dancing, Moorish architecture, and passionate traditions bring Andalusian culture to life.'
             },
             {
-                image: '/outbound/cultural-immersions/img4.webp',
-                name: 'India',
-                description: 'Immerse yourself in the abundance of culture in India, from bustling bazaars and majestic palaces to sacred rituals and timeless traditions.'
-            },
-            {
                 image: '/outbound/cultural-immersions/img5.webp',
                 name: 'Morocco',
                 description: 'Step into Morocco’s vibrant culture with its bustling souks, intricate craftsmanship, aromatic spices, and mesmerizing blend of Berber, Arab, and European influences.'
-            },
-            {
-                image: '/outbound/cultural-immersions/img6.webp',
-                name: 'Japan',
-                description: 'Discover Japan’s harmonious blend of tradition and modernity, from tranquil tea ceremonies and ancient temples to neon-lit cities and innovative art.'
             },
 
         ],
@@ -217,14 +219,15 @@ const projects: jurnels[] = [
                 description: 'A symbol of eternal love, the Taj Mahal is a stunning white marble mausoleum renowned for its fine craftmanship, breathtaking artistry and timeless beauty.'
             },
             {
-                image: '/outbound/architectural-wonders/img5.webp',
-                name: 'Barcelona, Spain ',
-                description: 'Barcelona captivates with its architectural wonders, including Gaudí’s masterpieces like the Sagrada Família and the whimsical Park Güell.'
-            },
-            {
                 image: '/outbound/architectural-wonders/img6.webp',
                 name: 'Machu Picchu, Peru',
                 description: 'Perched high in the Andes, Machu Picchu is a mystical Incan city known for its remarkable stone structures and breathtaking mountain views.'
+            },
+
+            {
+                image: '/outbound/architectural-wonders/img5.webp',
+                name: 'Barcelona, Spain ',
+                description: 'Barcelona captivates with its architectural wonders, including Gaudí’s masterpieces like the Sagrada Família and the whimsical Park Güell.'
             },
 
         ],
@@ -277,9 +280,9 @@ const projects: jurnels[] = [
         description: 'Savor the world’s finest cuisines with tours designed for food enthusiasts. Taste authentic dishes, explore bustling markets and learn from master chefs to experience the flavors that define each destination.',
         stack: [
             {
-                image: '/outbound/culinary-journeys/img1.webp',
-                name: 'Pasta – Italy',
-                description: 'Dive into the heart of Italian cuisine with pasta, where each region offers unique shapes and sauces. From creamy carbonara in Rome to hearty Bolognese in Emilia-Romagna, every bite celebrates tradition and local flavors.'
+                image: '/outbound/culinary-journeys/img4.webp',
+                name: 'Sushi – Japan',
+                description: 'Immerse yourself in the elegance of Japanese sushi, where precision and artistry transform the freshest fish, vinegared rice and seaweed into a symphony of taste and texture that’s as pleasing to the eye as it is to the palate.'
             },
             {
                 image: '/outbound/culinary-journeys/img2.webp',
@@ -291,10 +294,11 @@ const projects: jurnels[] = [
                 name: 'Pol Roti – Sri Lanka',
                 description: 'Discover the simplicity and charm of Sri Lanka’s pol roti, a coconut-infused flatbread that pairs perfectly with fiery sambols, fragrant curries, or just a smear of butter for a truly authentic experience.'
             },
+
             {
-                image: '/outbound/culinary-journeys/img4.webp',
-                name: 'Sushi – Japan',
-                description: 'Immerse yourself in the elegance of Japanese sushi, where precision and artistry transform the freshest fish, vinegared rice and seaweed into a symphony of taste and texture that’s as pleasing to the eye as it is to the palate.'
+                image: '/outbound/culinary-journeys/img1.webp',
+                name: 'Pasta – Italy',
+                description: 'Dive into the heart of Italian cuisine with pasta, where each region offers unique shapes and sauces. From creamy carbonara in Rome to hearty Bolognese in Emilia-Romagna, every bite celebrates tradition and local flavors.'
             },
             {
                 image: '/outbound/culinary-journeys/img5.webp',
@@ -317,10 +321,11 @@ const projects: jurnels[] = [
         description: 'Craft unforgettable moments with tailor-made romantic escapes. Whether it’s a candlelit dinner on a private beach or a hot air balloon ride over rolling vineyards, these trips are perfect for couples seeking connection and intimacy.',
         stack: [
             {
-                image: '/outbound/romantic-escapes/img1.webp',
-                name: 'Paris – France',
-                description: 'The City of Love enchants couples with its charming streets, iconic landmarks like the Eiffel Tower and intimate candlelit bistros perfect for a romantic escape.'
+                image: '/outbound/romantic-escapes/img4.webp',
+                name: 'Bali – Indonesia ',
+                description: 'The Island waeves romance into its lush jungles, golden beaches and luxurious romantic retreats, which features infinity pools, tropical gardens and open-air designs, create an intimate haven for couples.'
             },
+
             {
                 image: '/outbound/romantic-escapes/img2.webp',
                 name: 'Santorini – Greece',
@@ -332,19 +337,20 @@ const projects: jurnels[] = [
                 description: 'This tropical paradise offers golden beaches, turquoise waters, and luxurious resorts where couples can relax, explore, and revel in the magic of island life.'
             },
             {
-                image: '/outbound/romantic-escapes/img4.webp',
-                name: 'Bali – Indonesia ',
-                description: 'The Island waeves romance into its lush jungles, golden beaches and luxurious romantic retreats, which features infinity pools, tropical gardens and open-air designs, create an intimate haven for couples.'
+                image: '/outbound/romantic-escapes/img6.webp',
+                name: 'Bentota – Sri Lanka ',
+                description: 'Nestled along Sri Lanka’s golden coastline, Bentota is a serene escape offering tranquil beaches, romantic river cruises and enchanting sunsets.'
             },
             {
                 image: '/outbound/romantic-escapes/img5.webp',
                 name: 'Venice – Italy ',
                 description: 'Lose yourself in the timeless romance of Venice, where gondola rides through enchanting canals and charming piazzas evoke a fairy tale-like experience'
             },
+
             {
-                image: '/outbound/romantic-escapes/img6.webp',
-                name: 'Bentota – Sri Lanka ',
-                description: 'Nestled along Sri Lanka’s golden coastline, Bentota is a serene escape offering tranquil beaches, romantic river cruises and enchanting sunsets.'
+                image: '/outbound/romantic-escapes/img1.webp',
+                name: 'Paris – France',
+                description: 'The City of Love enchants couples with its charming streets, iconic landmarks like the Eiffel Tower and intimate candlelit bistros perfect for a romantic escape.'
             },
 
         ],
@@ -362,15 +368,14 @@ const projects: jurnels[] = [
                 description: 'The heart of Catholicism, Vatican City inspires with St. Peter’s Basilica, the Sistine Chapel, and a profound sense of faith and history.'
             },
             {
+                image: '/outbound/spiritual-awakenings/img6.webp',
+                name: 'Blue Mosque, Turkey',
+                description: 'An architectural marvel in Istanbul, the Blue Mosque mesmerizes with its grand domes, intricate tilework and the serene call to prayer echoing through its courtyards.'
+            },
+            {
                 image: '/outbound/spiritual-awakenings/img4.webp',
                 name: 'Wat Chaiwatthanaram, Thailand',
                 description: 'This stunning temple in Ayutthaya, Thailand, is a serene reminder of Buddhist teachings, with its intricate architecture and tranquil riverside setting.'
-            },
-
-            {
-                image: '/outbound/spiritual-awakenings/img3.webp',
-                name: 'Jerusalem, Israel',
-                description: 'A spiritual crossroads for Islam, Christianity and Judaism, Jerusalem captivates with its sacred sites like the Western Wall, Church of the Holy Sepulchre and Dome of the Rock.'
             },
             {
                 image: '/outbound/spiritual-awakenings/img2.webp',
@@ -383,9 +388,9 @@ const projects: jurnels[] = [
                 description: 'Nestled on Bali’s Lake Beratan, this water temple radiates peace and harmony, offering spiritual solace amid misty mountain backdrops.'
             },
             {
-                image: '/outbound/spiritual-awakenings/img6.webp',
-                name: 'Blue Mosque, Turkey',
-                description: 'An architectural marvel in Istanbul, the Blue Mosque mesmerizes with its grand domes, intricate tilework and the serene call to prayer echoing through its courtyards.'
+                image: '/outbound/spiritual-awakenings/img3.webp',
+                name: 'Jerusalem, Israel',
+                description: 'A spiritual crossroads for Islam, Christianity and Judaism, Jerusalem captivates with its sacred sites like the Western Wall, Church of the Holy Sepulchre and Dome of the Rock.'
             },
 
         ],
@@ -395,7 +400,7 @@ const projects: jurnels[] = [
     {
         fName: 'Winter ',
         lName: 'Magic',
-        description: 'Winter is a magical time to travel, filled with snow, lights, and festive cheer. Explore Germany’s Christmas markets with mulled wine and gingerbread or enjoy thrilling snowy adventures. Sip hot cocoa by the fire, glide down powdery slopes, or wander through twinkling holiday markets. These destinations promise unforgettable memories. Pack your scarf and embrace the magic of winter!',
+        description: 'Winter is a magical time to travel, and there’s no better way to embrace the season than by exploring enchanting destinations that come alive with snow, lights, and festive cheer. Pack your warmest scarf and get ready to discover the magic of winter!',
         stack: [
             {
                 image: '/outbound/winter-magic/img1.webp',
@@ -435,7 +440,7 @@ const projects: jurnels[] = [
     {
         fName: 'Game ',
         lName: 'On',
-        description: 'Calling all sports enthusiasts! Imagine the roar of the crowd, the thrill of the game, and the electric atmosphere of being in the stadium as your favorite team battles it out. From iconic football matches in Europe’s legendary stadiums to the high-energy cricket showdowns in India, Australia, or the Caribbean, the world is your playground for unforgettable sports experiences. Whether you’re a die-hard fan or just love the adrenaline of live sports, our travel packages bring you closer to the action.',
+        description: 'Calling all sports enthusiasts! Imagine the roar of the crowd, the thrill of the game and the electric atmosphere of being in the stadium as your favorite team battles it out. Whether you’re a die-hard fan or just love the adrenaline of live sports, our travel packages bring you closer to the action.',
         stack: [
             {
                 image: '/outbound/game-on/img1.webp',

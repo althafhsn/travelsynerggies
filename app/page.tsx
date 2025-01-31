@@ -14,21 +14,6 @@ import CookiesPopup from "@/components/Common/Coockies";
 export default function Home() {
  
 
-  // Add visibility change handling
-  useEffect(() => {
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'visible') {
-        window.location.reload();
-      }
-    };
-
-    document.addEventListener('visibilitychange', handleVisibilityChange);
-
-    return () => {
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-    };
-  }, []);
-
 
 
   return (
