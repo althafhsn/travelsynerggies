@@ -63,7 +63,7 @@ const FeaturesSection = () => {
     {
       icon: <MdLightbulb size={32} />,
       title: "Expert Insights",
-      description: "Our team of experts bring a wealth of knowledge and expertise to discover hidden gems, navigate cultural nuances, and enjoy personalized travel recommendations for an exceptional journey."
+      description: "We bring a wealth of knowledge and expertise to discover hidden gems, navigate cultural nuances, and enjoy personalized travel recommendations for an exceptional journey."
     },
     {
       icon: <FaHeadset size={32} />,
