@@ -124,17 +124,19 @@ const FeaturesSection = () => {
       </Swiper>
 
       {/* Custom Navigation Buttons */}
-      <div
-        className="custom-prev-button absolute top-1/2 left-0 z-50 transform -translate-y-1/2 cursor-pointer p-2 bg-orange-500/20 rounded-full hover:bg-orange-500"
-        onClick={() => swiperRef.current?.swiper.slidePrev()}
-      >
-        <IoMdArrowBack />
-      </div>
-      <div
-        className="custom-next-button absolute top-1/2 right-0 z-50 transform -translate-y-1/2 cursor-pointer p-2 bg-orange-500/20 rounded-full hover:bg-orange-500"
-        onClick={() => swiperRef.current?.swiper.slideNext()}
-      >
-        <IoMdArrowForward />
+      <div className=''>
+        <div
+          className="custom-prev-button absolute top-1/2 left-3 z-50 transform -translate-y-1/2 cursor-pointer p-2 bg-orange-500/20 rounded-full hover:bg-orange-500"
+          onClick={() => swiperRef.current?.swiper.slidePrev()}
+        >
+          <IoMdArrowBack />
+        </div>
+        <div
+          className="custom-next-button absolute top-1/2 right-3 z-50 transform -translate-y-1/2 cursor-pointer p-2 bg-orange-500/20 rounded-full hover:bg-orange-500"
+          onClick={() => swiperRef.current?.swiper.slideNext()}
+        >
+          <IoMdArrowForward />
+        </div>
       </div>
     </div>
   );
