@@ -81,7 +81,7 @@ const Partners: React.FC = () => {
             >
                 <div className="p-6 md:px-10">
                     <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">Partners</h1>
-                    <p className="text-sm  text-gray-600 p-2 text-center">
+                    <p className="text-sm  text-gray-600 p-2 text-center font-bold ">
                         At Travel Synergies, we believe that partnerships are key to delivering
                         exceptional travel experiences. That’s why we collaborate with top
                         industry leaders to offer you an extensive selection of premium

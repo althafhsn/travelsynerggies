@@ -32,7 +32,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
     autoplay = true,
     delay = 3000,
     navigation = true,
-    height = "h-[70vh] lg:h-[80vh]",
+    height = "h-[80vh] lg:h-[80vh]",
     buttonStyles = "bg-orange-500/60 hover:text-orange-500 hover:bg-white",
     showContactButton = true
 }) => {
@@ -57,6 +57,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                 onSwiper={(swiper) => { swiperRef.current = swiper; }}
                 onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                 className="h-full"
+                speed={1000}
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index} className="relative">
@@ -125,7 +126,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
 
             {/* Custom Navigation */}
             {navigation && (
-                <div className="absolute inset-0 z-10 flex justify-between items-center">
+                <div className="absolute inset-0 z-[100] flex justify-between items-center pointer-events-none">
                     <button
                         onClick={() => swiperRef.current?.slidePrev()}
                         className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500 absolute left-[2px] md:left-8 flex items-center justify-center`}
@@ -143,6 +144,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                     </button>
                 </div>
             )}
+
         </div>
     );
 };

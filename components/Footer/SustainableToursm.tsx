@@ -86,7 +86,7 @@ const SustainableTourismBlog = () => {
             <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden ">
                 <div className="p-6 md:p-10">
                     <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">Sustainable Tourism</h1>
-                    <p className="text-sm text-gray-600  text-start">
+                    <p className="text-sm text-gray-600  text-center font-bold ">
                         At Travel Synergies, we value the efforts of sustainable tourism in the UAE and are committed to promoting environmentally friendly practices that uplifts the local community and preserve the region's natural beauty.
                     </p>
 

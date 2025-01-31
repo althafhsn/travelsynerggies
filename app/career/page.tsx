@@ -135,7 +135,7 @@ const Careers: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             Embark on a journey with <br />
-            <span className="font-bold ">Travel Synergies</span>.
+            <span >Travel Synergies</span>
           </motion.h2>
           <Link href='#career-application'>
 
@@ -146,7 +146,7 @@ const Careers: React.FC = () => {
         </div>
       </div>
       <div className="my-4 container mx-auto">
-        <h2 className="text-sm md:text-lg text-green-800 py-4 text-center">
+        <h2 className="text-sm md:text-lg text-orange-500 py-4 text-center font-bold">
           Are you passionate about travel and eager to explore the world? Do you thrive in a dynamic, fast-paced environment where every day brings new adventures? If so, Travel Synergies invites you to join our team and be part of an exciting journey!
         </h2>
 
@@ -249,7 +249,7 @@ const Careers: React.FC = () => {
                 <div className="flex items-center justify-center">
                   <label>
                     <input type="file" hidden />
-                    <div className="flex w-28 h-9 px-2 flex-col bg-orange-500 hover:bg-orange-600 rounded-full shadow text-white text-xs font-semibold leading-4 items-center justify-center cursor-pointer focus:outline-none">Choose File</div>
+                    <div className="flex w-28 h-9 px-2 flex-col bg-orange-500 hover:bg-orange-600 rounded-lg shadow text-white text-xs font-semibold leading-4 items-center justify-center cursor-pointer focus:outline-none">Choose File</div>
                   </label>
                 </div>
               </div>
@@ -275,7 +275,7 @@ const Careers: React.FC = () => {
                   </label>
                 </div>
                 <button
-                  className="shadow bg-orange-500 rounded-full hover:bg-orange-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 text-[9px] md:text-sm"
+                  className="shadow bg-orange-500 rounded-lg  hover:bg-orange-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 text-[9px] md:text-sm"
                   type="submit">
                   Send Message
                 </button>

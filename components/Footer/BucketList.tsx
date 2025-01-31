@@ -126,7 +126,7 @@ const BucketListPage: React.FC = () => {
                     Bucket List
                 </h1>
 
-                <p className="text-sm  text-gray-700  mx-auto mb-12">
+                <p className="text-sm  text-gray-700 font-bold text-center mx-auto mb-12">
                     At Travel Synergies, we're passionate about turning your travel dreams into unforgettable adventures. From marveling at iconic landmarks like the Eiffel Tower or the Great Wall of China to soaking in the natural wonders of the Amazon Rainforest or the Northern Lights, our curated bucket list showcases the best experiences the world has to offer.
                 </p>
 
