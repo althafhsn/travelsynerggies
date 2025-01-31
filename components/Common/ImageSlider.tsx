@@ -94,7 +94,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                         </motion.h3>
 
                                         <motion.p
-                                            className="mt-4 text-lg md:text-4xl font-bold ml-1"
+                                            className="mt-4 text-lg md:text-4xl font-bold ml-1 uppercase max-w-4xl"
                                             initial={{ x: -50, opacity: 0 }}
                                             animate={{ x: 0, opacity: 1 }}
                                             transition={{ duration: 0.6, delay: 0.2 }}
