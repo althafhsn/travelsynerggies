@@ -78,8 +78,7 @@ const FeaturesSection = () => {
         ref={swiperRef}
         modules={[Autoplay, Navigation]}
         spaceBetween={20}
-        slidesPerView={5}
-        centeredSlides={true}
+        centeredSlides={false}
         loop={true}
         speed={3000}
         navigation={{
@@ -93,15 +92,22 @@ const FeaturesSection = () => {
           pauseOnMouseEnter: true,
         }}
         breakpoints={{
-          0: {
+          320: {
             slidesPerView: 1,
+          },
+          480: {
+            slidesPerView: 2,
           },
           768: {
             slidesPerView: 3,
           },
-          1980: {
-            slidesPerView: 5,
+          1024: {
+            slidesPerView: 4,
           },
+          1980: {
+            slidesPerView: 6,
+          }
+
 
         }}
         className="features-swiper"

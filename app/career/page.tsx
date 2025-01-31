@@ -3,6 +3,7 @@ import React from "react";
 import { FaUsers, FaGlobe, FaBalanceScale, FaLightbulb, FaChartLine } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { FaAward } from "react-icons/fa6";
 
 
 interface CareerOpportunityProps {
@@ -86,6 +87,11 @@ const careerOpportunities = [
     icon: <FaChartLine className="text-4xl mx-auto mb-4" />,
     title: "Professional Growth",
     description: "Access training, development programs, and opportunities to reach your full potential.",
+  },
+  {
+    icon: <FaAward className="text-4xl mx-auto mb-4" />,
+    title: "Recognition & Rewards",
+    description: "Employees are valued for their contribution and rewarded through incentives, bonuses and recognition.",
   },
 ];
 
