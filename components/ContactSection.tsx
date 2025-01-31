@@ -5,13 +5,13 @@ import React from 'react';
 export default function ContactSection() {
     return (
         <div className="px-4 md:px-8 py-8 md:py-16 mx-auto">
-            <div className="container mx-auto px-4 xl:px-0">
+            <div className="container mx-auto px-4 xl:px-2">
                 {/* Main grid - 2 columns on lg screens */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                     
                     {/* Left Section - Heading */}
                     <div className="text-orange-500 flex flex-col items-center lg:items-start text-center lg:text-left">
-                        <h1 className="leading-tight font-bold mb-6 text-2xl md:text-4xl lg:text-5xl font-serif">
+                        <h1 className="leading-tight font-bold mb-6 text-2xl md:text-4xl lg:text-5xl ">
                             Contact Your  
                             <br />
                             <span className="text-white">Travel Designer</span>
