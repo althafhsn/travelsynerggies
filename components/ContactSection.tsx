@@ -5,7 +5,7 @@ import React from 'react';
 export default function ContactSection() {
     return (
         <div className="px-4 md:px-8 py-8 md:py-16 mx-auto">
-            <div className="mx-auto px-4 xl:px-0">
+            <div className="container mx-auto px-4 xl:px-0">
                 {/* Main grid - 2 columns on lg screens */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                     

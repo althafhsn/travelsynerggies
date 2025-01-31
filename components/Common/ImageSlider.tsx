@@ -77,7 +77,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                 {/* 🛠 Fix Motion Reset on Slide Change */}
                                 <motion.div
                                     key={activeIndex} // ✅ Animation resets for each slide
-                                    className="absolute top-1/3 flex items-center justify-start text-white px-16"
+                                    className="absolute top-1/3 flex items-center justify-start text-white px-6 md:px-16"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6, delay: 0.2 }}
@@ -112,7 +112,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
 
             {/* Custom Navigation */}
             {navigation && (
-                <div className="absolute bottom-8 right-20 z-30 flex flex-col items-center gap-2 ">
+                <div className="absolute bottom-4 md:bottom-8 right-8 md:right-20 z-30 flex flex-col items-center gap-2 ">
                     <button
                         onClick={() => swiperRef.current?.slidePrev()}
                         className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500  flex items-center justify-center pointer-events-auto`}
@@ -134,7 +134,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
             {/* Contact Us Button - Fixed Position (Now Clickable) */}
             {showContactButton && (
                 <motion.div
-                    className="absolute bottom-4 left-20 md:bottom-8 md:right-8 z-20 pointer-events-auto"
+                    className="absolute bottom-4 left-8 md:left-20 md:bottom-8 md:right-8 z-20 pointer-events-auto"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
