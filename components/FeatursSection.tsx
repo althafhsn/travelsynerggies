@@ -78,7 +78,7 @@ const FeaturesSection = () => {
         <Swiper
           ref={swiperRef}
           modules={[Autoplay, Navigation]}
-          spaceBetween={10}
+          spaceBetween={8}
           centeredSlides={false}
           loop={true}
           speed={3000}

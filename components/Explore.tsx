@@ -544,7 +544,7 @@ const Explore = () => {
 
                                             {/* Image Section */}
                                             <div className="xl:order-2">
-                                                <div className="relative h-[420px] md:h-[540px] lg:h-[630px] w-full rounded-lg overflow-hidden pt-2">
+                                                <div className="relative h-[420px] md:h-[540px] lg:h-[630px] w-full rounded-lg overflow-hidden pt-2 ">
                                                     <div className="absolute inset-0 bg-black/10 z-10" />
                                                     <Image
                                                         src={project.image}
@@ -562,9 +562,9 @@ const Explore = () => {
 
                             {/* Slider Navigation */}
                             <WorkSliderButton
-                                containerStyle="flex absolute right-1 top-10  z-20 w-full justify-end gap-2 "
-                                btnStyle="bg-orange-500 md:bg-orange-500/20 hover:bg-orange-500/90 text-orange-500 text-[30px] w-[40px] flex justify-center item-center transition-all rounded-full"
-                                iconsStyle="w-6 h-6 md:w-8 md:h-8 text-white"
+                                containerStyle="flex absolute right-1 top-10 z-20 w-full justify-end md:gap-2 "
+                                btnStyle="bg-orange-500/20 hover:bg-orange-500/90 text-orange-500 text-[30px] w-[30px] scale-[80%] md:scale-100 md:w-[40px] flex justify-center item-center transition-all rounded-full"
+                                iconsStyle="w-4 h-4 md:w-8 md:h-8 text-white  "
                             />
                             {/* bottom-[calc(35%_-_22px)] md:bottom-[calc(35%_-_22px)] */}
                         </Swiper>
