@@ -73,12 +73,12 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <div className="w-full  relative group x-10 ">
+    <div className="w-full  relative group px-16 ">
       <div className=''>
         <Swiper
           ref={swiperRef}
           modules={[Autoplay, Navigation]}
-          spaceBetween={8}
+          spaceBetween={10}
           centeredSlides={false}
           loop={true}
           speed={3000}

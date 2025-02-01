@@ -45,7 +45,7 @@ const OutboundTravelBlog = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gray-100  px-4 sm:px-6 lg:px-8 pt-8">
+        <div className="min-h-screen bg-gray-100  px-4 sm:px-6 lg:px-8 pt-8 ">
             <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
                 <div className="p-6 md:p-10">
                     <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">Outbound Travel Market</h1>

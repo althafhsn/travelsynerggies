@@ -57,6 +57,7 @@ export default {
 				'image-pattern': "url('/landing/egypt-honeymoon.jpg')",
 				'bg-career': "url('/career/career.png')",
 				'bg-blog': "url('/blog/blog6.webp')",
+				'bg-blogmain': "url('/blog/blogmain.webp')",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

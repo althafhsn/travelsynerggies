@@ -82,7 +82,7 @@ const SustainableTourismBlog = () => {
     ]
 
     return (
-        <div className="pt-12 bg-gray-100  px-4 sm:px-6 lg:px-8">
+        <div className="pt-12 bg-gray-100  px-4 sm:px-6 lg:px-8 min-h-screen">
             <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden ">
                 <div className="p-6 md:p-10">
                     <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">Sustainable Tourism</h1>

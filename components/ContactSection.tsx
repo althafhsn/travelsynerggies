@@ -37,7 +37,7 @@ export default function ContactSection() {
                                     href="tel:+97154452595"
                                     className="text-orange-500 text-[17px] font-semibold hover:text-orange-700 mb-1"
                                 >
-                                    +971 544552595
+                                    +971 54 455 2595
                                 </a>
                             </div>
 

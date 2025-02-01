@@ -94,7 +94,7 @@ const SafetyGuidelinesBlog: React.FC = () => {
     const activeContent = sections.find((s) => s.id === activeSection);
 
     return (
-        <div className=" bg-gray-100 text-gray-800 p-4 sm:p-8">
+        <div className=" bg-gray-100 text-gray-800 p-4 sm:p-8 min-h-screen">
         <div className="container mx-auto bg-white shadow-xl rounded-lg overflow-hidden p-6 sm:p-8">
             {/* Title */}
             <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">

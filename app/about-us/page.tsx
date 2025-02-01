@@ -32,7 +32,7 @@ const AboutUs: React.FC = () => {
                     <h1 className="max-w-2xl mx-auto text-4xl font-bold text-white mb-5 md:text-5xl md:leading-normal font-manrope">
                         WHO <span className="text-orange-500">WE</span> ARE ?
                     </h1>
-                    <p className=" mx-auto text-sm text-gray-100 mb-9 font-bold">
+                    <p className=" mx-auto text-sm md:text-lg text-gray-100 mb-9 font-bold">
                         Travel Synergies transforms individual journeys into rich collaborative experiences by connecting travelers, local communities, and innovative technologies.
                     </p>
                 </div>
@@ -46,12 +46,12 @@ const AboutUs: React.FC = () => {
                             <img
                                 src="/about/about1.webp"
                                 alt=""
-                                className="object-cover h-[300px] xl:h-[500px]  w-[500px]"
+                                className="object-cover h-[300px] xl:h-[530px] w-500px xl:w-[550px]"
                             />
                         </div>
                         <div className="pb-4 flex ">
                             <div className="w-full">
-                                <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-orange-500 px-5  my-2 max-lg:text-center font-manrope">
+                                <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-orange-500   my-2 max-lg:text-center font-manrope">
                                     About Us
                                 </h2>
                                 <p className="text-sm text-gray-200 text-justify py-2  mx-auto ">
@@ -76,7 +76,7 @@ const AboutUs: React.FC = () => {
             <section className="py-2 lg:py-8">
                 <div className="mx-auto  px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
-                        <div className="lg:pr-24  flex items-center  justify-center order-2">
+                        <div className="lg:pr-24  flex items-center  justify-center order-2 md:order-none">
                             <div className="w-full flex flex-col justify-center ">
 
                                 <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-orange-500 mb-2 max-lg:text-center font-manrope">
@@ -92,7 +92,7 @@ const AboutUs: React.FC = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className=" flex items-center justify-center order-1">
+                        <div className=" flex items-center justify-center order-1 md:order-none">
                             <img
                                 src="about/about3.webp"
                                 alt="About Us tailwind page"
