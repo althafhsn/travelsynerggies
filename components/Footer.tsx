@@ -97,13 +97,13 @@ const Footer: React.FC = () => {
         <div>
             <footer className="font-sans">
                 <hr className="border-orange-500 md:mt-1 h-2" />
-                <div className="container px-8  mx-auto mt-2">
+                <div className="container mx-auto mt-2 ">
                     {/* Logo and Social Media Section */}
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between lg:-ms-6 lg:-me-4">
                         {/* Logo Section */}
                         <Link href='/'>
 
-                            <div className="flex flex-1 gap-4 items-center hover:cursor-pointer pb-5 md:pb-0">
+                            <div className="flex flex-1  items-center hover:cursor-pointer pb-5 md:pb-0">
                                 <img
                                     src="/whitelogo.png"
                                     alt="Logo"

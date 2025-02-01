@@ -24,25 +24,25 @@ export default function ContactSection() {
                         <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start items-center md:items-stretch">
                             
                             {/* Sales Card */}
-                            <div className="bg-gray-300 rounded-lg p-6 md:p-8 text-center flex flex-col items-center shadow-md w-full md:w-[350px]">
+                            <div className="bg-gray-300 rounded-lg p-6 md:p-8 text-center flex flex-col items-center shadow-md w-full md:w-[350px] md:min-w-[300px] ">
                                 <Phone className="w-12 h-12 mb-1 text-orange-500" />
                                 <h2 className="text-lg lg:text-2xl font-bold text-gray-800 mb-2">
                                 Talk to Us
 
                                 </h2>
-                                <p className="text-gray-600 mb-2 text-[13px] md:text-sm">
+                                <p className="text-gray-600  mb-1 md:mb-4  text-[13px] md:text-sm">
                                 We are one call away from making your dream destination a reality
                                 </p>
                                 <a
                                     href="tel:+97154452595"
-                                    className="text-orange-500 text-sm font-semibold hover:text-orange-700 mb-1"
+                                    className="text-orange-500 text-[17px] font-semibold hover:text-orange-700 mb-1"
                                 >
                                     +971 544552595
                                 </a>
                             </div>
 
                             {/* Customer Support Card */}
-                            <div className="bg-gray-300 rounded-lg p-6 md:p-8 text-center flex flex-col items-center shadow-md w-full md:w-[350px]">
+                            <div className="bg-gray-300 rounded-lg p-6 md:p-8 text-center flex flex-col items-center shadow-md w-full md:w-[350px] md:min-w-[300px] ">
                                 <MessageCircle className="w-12 h-12 text-orange-500 mb-4" />
                                 <h2 className="text-lg lg:text-2xl font-bold text-gray-800 mb-2">
                                 Write to Us
@@ -53,7 +53,7 @@ export default function ContactSection() {
 
                                 </p>
                                 <button
-                                    className=" text-orange-500 text-sm font-semibold py-2 md:py-3 px-8 rounded-md transition duration-300"
+                                    className=" text-orange-500 text-[17px] font-semibold py-2 md:py-3 rounded-md transition duration-300"
                                     onClick={() => {/* Handle contact support click */}}
                                 >
                                     info@travelsynergies.com 
