@@ -28,8 +28,8 @@ const WhyChooseUs = () => {
   ]
 
   return (
-    <div className=" bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden py-12 px-4">
+    <div className=" bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 ">
+      <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden py-12 px-4 min-h-screen items-center justify-center">
         <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">Why Choose Travel Synergies?</h1>
         <p className="text-sm  text-center font-bold mt-2 md:mt-4 text-gray-800">
           At Travel Synergies, we are dedicated to crafting exceptional travel experiences that go beyond expectations.

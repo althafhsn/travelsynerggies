@@ -3,10 +3,91 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { HiLocationMarker } from "react-icons/hi";
 
+interface BlogCardProps {
+  title: string;
+  description: string;
+  imageUrl: string;
+  date: string;
+  category: string;
+}
+
+const blogs: BlogCardProps[] = [
+  {
+    title: "Sustainable Travel",
+    description:
+      "The UAE is committed to reducing its environmental footprint while maintaining its reputation for luxury. Initiatives like Dubai’s Sustainable City and Abu Dhabi’s Eco-Resorts are leading the way in eco-friendly travel. The UAE aims to become a global leader in sustainable tourism, offering travelers guilt-free luxury experiences.     ",
+    imageUrl: "/images/sustainable-travel.jpg",
+    date: "Published on 18 Jan 2025",
+    category: "Eco Travel",
+  },
+  {
+    title: "Bleisure Travel",
+    description:
+      "The line between business and leisure travel is blurring. ‘Bleisure’ travelers are extending work trips...",
+    imageUrl: "/images/bleisure-travel.jpg",
+    date: "Published on 17 Jan 2025",
+    category: "Business & Leisure",
+  },
+  {
+    title: "Hyper-Personalization",
+    description:
+      "Advances in AI and data analytics are enabling hyper-personalized travel experiences...",
+    imageUrl: "/images/hyper-personalization.jpg",
+    date: "Published on 16 Jan 2025",
+    category: "Tech & Travel",
+  },
+  {
+    title: "Rise of Niche Tourism",
+    description:
+      "From wellness retreats to culinary tours, niche tourism is booming. Travelers are seeking specialized experiences...",
+    imageUrl: "/images/niche-tourism.jpg",
+    date: "Published on 15 Jan 2025",
+    category: "Specialty Travel",
+  },
+  {
+    title: "VR & AR in Travel",
+    description:
+      "VR and AR are set to revolutionize the way we explore destinations. Imagine taking a virtual tour before booking...",
+    imageUrl: "/images/vr-ar-travel.jpg",
+    date: "Published on 14 Jan 2025",
+    category: "Future Travel",
+  },
+  {
+    title: "Space Tourism",
+    description:
+      "While still in its infancy, space tourism is no longer science fiction. Companies like SpaceX are paving the way...",
+    imageUrl: "/blog/blog2.webp",
+    date: "Published on 13 Jan 2025",
+    category: "Next Frontier",
+  },
+];
+
+const BlogCard: React.FC<BlogCardProps> = ({ title, description, imageUrl, date, category }) => {
+  return (
+    <div className="bg-gray-300 rounded-lg shadow-lg overflow-hidden w-full sm:w-[48%] lg:w-[30%] relative">
+      <img src={imageUrl} alt={title} className="w-full h-80 object-cover" />
+      <div className="top-[56%] absolute bg-black/30 w-full ">
+        <p className="text-sm text-orange-500 px-5 py-2 font-bold">{date}</p>
+
+      </div>
+      <div className="p-5">
+        <h3 className="text-xl font-semibold text-gray-900 mt-2">{title}</h3>
+        <p className="text-gray-900 text-sm mt-1">{description}</p>
+        <p className="text-gray-800 font-medium mt-2">{category}</p>
+        <a href="#" className="text-orange-600 font-semibold mt-3 inline-block">Learn More →</a>
+      </div>
+    </div>
+
+  );
+};
+
+
+
+
 const UAETravelHistory = () => {
   return (
     <div className="min-h-screen mb-4">
-      <div className="flex flex-col items-start justify-center text-white bg-bg-blog min-h-[80vh] bg-cover">
+      <div className="flex flex-col items-start justify-center text-white bg-bg-blog min-h-[70vh] bg-cover">
         <div className="container mx-auto flex flex-col  items-center md:items-start">
           {/* <motion.h1
             className="text-lg md:text-xl font-bold font-sans mb-4 text-orange-500"
@@ -35,10 +116,10 @@ const UAETravelHistory = () => {
       </div>
       <div className="container mx-auto">
         <div className="text-center my-5">
-          <h1 className="max-w-5xl mx-auto text-4xl font-bold text-orange-500 mb-5 md:text-5xl md:leading-normal font-manrope">
+          <h1 className="max-w-5xl mx-auto text-3xl font-bold text-orange-500 mb-5 md:text-5xl md:leading-normal font-manrope">
             The Fascinating Travel History of the  UAE
           </h1>
-          <p className="text-lg md:text-2xl lg:text-4xl mt-4 text-gray-300 font-bold">
+          <p className="text-lg md:text-xl lg:text-4xl mt-4 text-gray-300 font-bold">
             From Desert Trails to a Global Marvel
           </p>
 
@@ -57,7 +138,7 @@ const UAETravelHistory = () => {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <img src="/blog/blog1.webp" alt="Pearl Diving" className="rounded-lg shadow-lg  " />
           <div>
-            <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-orange-500 px-5  my-2 max-lg:text-center font-manrope">
+            <h2 className="text-lg md:text-xl lg:text-4xl font-bold text-orange-500 px-5  my-2 max-lg:text-center font-manrope">
               From Pearls to Skyscrapers
             </h2>
             <p className="text-sm md:text-base text-gray-200 text-justify py-2  mx-auto px-5">
@@ -71,11 +152,25 @@ const UAETravelHistory = () => {
         {/* Section: The Rise of Modern Tourism */}
         <div className="grid md:grid-cols-2 gap-10 items-center mt-10">
           <div>
-            <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-orange-500 px-5  my-2 max-lg:text-center font-manrope">The Rise of Modern Tourism</h2>
+            <h2 className="text-lg md:text-xl lg:text-4xl font-bold text-orange-500 px-5  my-2 max-lg:text-center font-manrope">The Dawn of Tourism (1970s-2020s)</h2>
             <p className=" text-gray-200 text-justify py-2 px-5 mx-auto text-sm md:text-base ">
-              The UAE’s transformation into a tourism hotspot began in the 1970s and 1980s, with the development of
-              infrastructure and the establishment of Emirates Airlines in 1985. Dubai became a central hub for
-              international travel, giving rise to iconic landmarks like the Burj Al Arab and Palm Jumeirah.
+              The UAE’s transformation into a tourism hotspot began in the 1970s and 1980s, with the development of infrastructure and the establishment of Emirates Airlines in 1985. Dubai became a central hub for international travel, giving rise to iconic landmarks like the Burj Al Arab and Palm Jumeirah.
+              Milestones in the UAE’s history.
+              <br />
+              <br />
+              1985  - Emirates Airlines' establishment revolutionized air travel, connecting the UAE to the world with unparalleled luxury and service, whilst continuous upgrades to Dubai International Airport (DXB) and the opening of Al Maktoum International Airport (DWC) have cemented the UAE's position as a global aviation hub.
+              1999 - Burj Al Arab, The 7-star hotel opens. It redefined luxury, putting Dubai on the global tourism map.
+              <br />
+              <br />
+
+              2001 – The Palm Jumeirah is unveiled to the world. An engineering marvel, offering bespoke experiences and breathtaking views.
+              <br />
+              <br />
+
+              2010 - Burj Khalifa, The world’s tallest building, attracting millions with its observation decks and surrounding Downtown Dubai is placed on the world map.
+              <br />
+              <br />
+              2020 – The Expo 2020 happens. A global event that showcased the UAE’s capacity for innovation, sustainability, and cultural exchange, leaving a lasting legacy in District 2020
             </p>
           </div>
           <img src="/blog/blog5.webp" alt="Dubai Skyline" className="rounded-lg shadow-lg w-full h-[600px] object-cover" />
@@ -83,7 +178,7 @@ const UAETravelHistory = () => {
 
         {/* Section: The UAE Today */}
         <div className="text-center mt-16">
-          <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-orange-500 px-5  my-2 max-lg:text-center font-manrope">The UAE Today <span className="text-gray-50 font-manrope">
+          <h2 className="text-lg md:text-xl lg:text-4xl font-bold text-orange-500 px-5  my-2 max-lg:text-center font-manrope">The UAE Today <span className="text-gray-50 font-manrope">
             A Global Tourism Leader
           </span></h2>
           <p className=" text-gray-200 text-center py-2  px-5 mx-auto text-sm md:text-base ">
@@ -97,7 +192,7 @@ const UAETravelHistory = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 relative">
           {[
             { title: "Burj Khalifa", img: "/blog/burj-khalifa.webp" },
-            { title: "Louvre Abu Dhabi", img: "/blog/blog5.webp" },
+            { title: "Louvre Abu Dhabi", img: "/blog/louvre.webp" },
             { title: "Desert Safari", img: "/blog/safari.webp" },
             { title: "Dubai Mall", img: "/blog/dubai-mal.webp" },
           ].map((item, index) => (
@@ -112,15 +207,12 @@ const UAETravelHistory = () => {
         </div>
 
         {/* Section: Sustainable Tourism */}
-        <div className="grid md:grid-cols-2 gap-10 items-center my-10">
-          <img src="/blog/blog1.webp" alt="Sustainability" className="rounded-lg shadow-lg" />
-          <div>
-            <h2 className="text-3xl font-bold text-orange-500 mb-4">Sustainable Tourism and the Future</h2>
-            <p className="text-gray-300">
-              The UAE is focusing on sustainability, with eco-resorts, green tourism initiatives, and even plans for space
-              tourism. This forward-thinking approach ensures that the UAE remains a leader in global tourism for decades
-              to come.
-            </p>
+        <div className="container mx-auto px-4 py-10">
+          {/* <h2 className="text-3xl font-bold text-gray-900 text-center mb-6">Latest Travel Trends</h2> */}
+          <div className="flex flex-wrap justify-center gap-6">
+            {blogs.map((blog, index) => (
+              <BlogCard key={index} {...blog} />
+            ))}
           </div>
         </div>
 
