@@ -11,6 +11,7 @@ const UAETravelHistory = () => {
         <p className="text-lg mt-4 text-gray-300 font-bold">
           From Desert Trails to Global Marvel
         </p>
+        
       </div>
 
       {/* Section: Introduction */}
@@ -73,9 +74,9 @@ const UAETravelHistory = () => {
           <div key={index} className="bg-gray-800/10 rounded-lg text-center">
             <img src={item.img} alt={item.title} className="w-full min-h-[300px] h-[400px]  object-cover rounded-md mb-4" />
             <div className=" absolute bottom-5 ps-5 text-lg  text-gray-50 flex gap-2 items-center">
-              <HiLocationMarker   className="w-[25px] text-white font-extrabold" />
+              <HiLocationMarker className="w-[25px] text-white font-extrabold" />
               <h3> {item.title}</h3>
-              </div>
+            </div>
           </div>
         ))}
       </div>
