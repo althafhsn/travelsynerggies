@@ -1,51 +1,28 @@
 'use client';
 
-import ImageSlider from "./Common/ImageSlider";
-
-
-export interface SlideImage {
-    name: string;
-    image: string;
-    description: string;
-}
-
-const sliderData: SlideImage[] = [
-    {
-        name: "Vietnam",
-        image: "/outbound/hero/img4.webp",
-        description: "UNCOVER THE VIBRANT CULTURE AND LANDSCAPES"
-    },
-    {
-        name: "Santorini",
-        image: "/outbound/hero/img2.webp",
-        description: "EXPLORE WHITE CLIFFS ABOVE ENDLESS BLUES"
-    },
-    {
-        name: "Italy",
-        image: "/outbound/hero/img3.webp",
-        description: "A JOURNEY THROUGH ART, HISTORY AND FLAVORS"
-    },
-    {
-        name: "Bahamas",
-        image: "/outbound/hero/img1.webp",
-        description: "Where turquoise waters meet golden sands"
-    },
-];
-
 const HeroImageOutbound = () => {
 
-
     return (
-        <div className=''>
-            <ImageSlider slides={sliderData}
-                autoplay={true}
-                navigation={true}
-                buttonStyles="bg-orange-500/70 hover:text-orange-500 hover:bg-white"
-                showContactButton={true} 
-                 // Hides the button
-                 />
+        <div className='relative'>
+            <video 
+                autoPlay 
+                loop 
+                muted 
+                className='w-full h-full object-cover'>
+                <source src="/outbound/hero/travel-synergies-outbound.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            {/* <div className="absolute bottom-0 left-0 p-8 text-white">
+                <h1 className="text-4xl font-bold">Discover Your Next Adventure</h1>
+                <p className="mt-2 text-xl">Explore the world like never before</p>
+            </div> */}
+            <div className="absolute bottom-4 left-4">
+                <button 
+                    className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-all">
+                    Contact Us
+                </button>
+            </div>
         </div>
-
     );
 };
 

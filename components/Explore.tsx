@@ -573,40 +573,40 @@ const Explore = () => {
 
                     {/* Right Column - Stack Cards */}
                     <div className="w-full xl:w-2/3">
-                        <div className="grid grid-cols-1 md:grid-cols-3 xl:mt-0">
+                        <div className="flex flex-wrap justify-center  xl:mt-0">
                             {project.stack.map((item, index) => (
                                 <article
-                                key={index}
-                                className="group relative isolate flex flex-col justify-end overflow-hidden rounded-sm hover:scale-105 transition-all duration-500 pb-6 pt-40 w-[260px] h-[330px] md:w-[230px] lg:h-[300px] xl:w-[260px] xl:h-[380px] 2xl:w-[280px] 22xl:h-[380px] mx-auto mt-12 cursor-pointer"
-                            >
-                                <Image
-                                    src={item.image}
-                                    fill
-                                    alt={item.name}
-                                    className="absolute inset-0 h-full w-full object-cover transition-all duration-700"
-                                />
-                            
-                                {/* Dark overlay - always visible for name */}
-                                <div className="absolute bottom-0 left-0 right-0 h-[60px] bg-black/60 transition-all duration-500 group-hover:h-[55%]" />
-                            
-                                <div className="z-10 relative px-4">
-                                    <div className="flex items-center gap-1 mt-8"> {/* Added margin-top to move the name down */}
-                                        {(project.fName !== 'Game ' && project.fName !== 'Winter ') && (
-                                            <CiLocationOn className="text-lg text-orange-500" />
-                                        )}
-                                        <h3 className="text-[15px] font-extrabold text-orange-500">
-                                            {item.name}
-                                        </h3>
+                                    key={index}
+                                    className="group relative isolate flex flex-col justify-end overflow-hidden rounded-sm hover:scale-105 transition-all duration-500 pb-6  w-[260px] h-[330px] md:w-[230px] lg:h-[300px] xl:w-[260px] xl:h-[380px] 2xl:w-[280px] 22xl:h-[380px] mx-auto mt-12 cursor-pointer"
+                                >
+                                    <Image
+                                        src={item.image}
+                                        fill
+                                        alt={item.name}
+                                        className="absolute inset-0 h-full w-full object-cover transition-all duration-700"
+                                    />
+
+                                    {/* Dark overlay - always visible for name */}
+                                    <div className="absolute bottom-0 left-0 right-0 h-[40px] bg-black/60 transition-all duration-500 group-hover:h-[55%]" />
+
+                                    <div className="z-10 relative px-4">
+                                        <div className="flex items-center gap-1 -mb-4 group-hover:mb-0">
+                                            {(project.fName !== 'Game ' && project.fName !== 'Winter ') && (
+                                                <CiLocationOn className="text-lg text-orange-500" />
+                                            )}
+                                            <h3 className="text-[15px] font-extrabold text-orange-500 ">
+                                                {item.name}
+                                            </h3>
+                                        </div>
+
+                                        <p className="text-xs leading-5 text-white mt-0 opacity-0 max-h-0 transition-all duration-500 group-hover:opacity-100 group-hover:max-h-[11em] group-hover:mt-2">
+                                            {item.description}
+                                        </p>
                                     </div>
-                            
-                                    <p className="text-xs leading-5 text-white mt-0 opacity-0 max-h-0 transition-all duration-500 group-hover:opacity-100 group-hover:max-h-[11em] group-hover:mt-2">
-                                        {item.description}
-                                    </p>
-                                </div>
-                            </article>
-                            
+                                </article>
                             ))}
                         </div>
+
                     </div>
                 </div>
             </div>
