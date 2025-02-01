@@ -105,6 +105,9 @@ const FeaturesSection = () => {
             1024: {
               slidesPerView: 4,
             },
+            1528: {
+              slidesPerView: 5,
+            },
             1980: {
               slidesPerView: 6,
             }
