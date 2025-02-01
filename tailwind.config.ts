@@ -55,7 +55,8 @@ export default {
 				pattern: "url('/pattern.png')",
 				'pattern-2': "url('/pattern-bg.png')",
 				'image-pattern': "url('/landing/egypt-honeymoon.jpg')",
-				'bg-career': "url('/career/career.png')"
+				'bg-career': "url('/career/career.png')",
+				'bg-blog': "url('/blog/blog6.webp')",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
