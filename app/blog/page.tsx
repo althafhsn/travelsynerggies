@@ -3,7 +3,7 @@ import { HiLocationMarker } from "react-icons/hi";
 
 const UAETravelHistory = () => {
   return (
-    <div className="mx-auto px-4 xl:px-0 container">
+    <div className="mx-auto px-4 xl:px-0 container mb-10">
       <div className="text-center mb-2">
         <h1 className="max-w-4xl mx-auto text-4xl font-bold text-orange-500 mb-5 md:text-5xl md:leading-normal font-manrope">
           The Fascinating Travel History of the  <span className="text-white">UAE</span>
@@ -38,7 +38,7 @@ const UAETravelHistory = () => {
       </div>
 
       {/* Section: The Rise of Modern Tourism */}
-      <div className="grid md:grid-cols-2 gap-10 items-center mt-16">
+      <div className="grid md:grid-cols-2 gap-10 items-center mt-10">
         <div>
           <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-orange-500 px-5  my-2 max-lg:text-center font-manrope">The Rise of Modern Tourism</h2>
           <p className="text-sm text-gray-200 text-justify py-2  mx-auto ">
@@ -81,7 +81,7 @@ const UAETravelHistory = () => {
       </div>
 
       {/* Section: Sustainable Tourism */}
-      <div className="grid md:grid-cols-2 gap-10 items-center mt-16">
+      <div className="grid md:grid-cols-2 gap-10 items-center my-10">
         <img src="/blog/blog1.webp" alt="Sustainability" className="rounded-lg shadow-lg" />
         <div>
           <h2 className="text-3xl font-bold text-orange-500 mb-4">Sustainable Tourism and the Future</h2>
