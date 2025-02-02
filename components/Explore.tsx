@@ -595,7 +595,7 @@ const Explore = () => {
                                                 <CiLocationOn className="text-lg text-orange-500" />
                                             )}
                                             <h3 className="text-[15px] font-extrabold text-orange-500">
-                                                {item.name}orange-500
+                                                {item.name}
                                             </h3>
                                         </div>
 

@@ -84,7 +84,7 @@ const page = () => {
 
         {/* Section: From Pearls to Skyscrapers */}
         <div className="grid md:grid-cols-2 gap-10 items-center ">
-          <img src="/blog/blog1.webp" alt="Pearl Diving" className="rounded-lg shadow-lg  " />
+          <img src="/blog/blog11.webp" alt="Pearl Diving" className="rounded-lg shadow-lg  " />
           <div>
             <h2 className="text-3xl md:text-3xl font-bold text-orange-500 px-5  mb-2 max-lg:text-center font-manrope">
               The UAE’s Tourism Evolution
@@ -99,33 +99,26 @@ const page = () => {
           </div>
         </div>
 
-        <div className=" text-white mt-10 px-6">
+        <div className="text-white mt-10 px-6">
           <div className="container mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-3xl font-bold text-orange-500 px-5  mb-2 max-lg:text-center font-manrope">UAE Travel Trends</h2>
-            <p className="text-sm md:text-lg  mt-4 text-gray-300 font-bold mb-2 px-5">
+            <h2 className="text-3xl md:text-3xl font-bold text-orange-500 px-5 mb-2 max-lg:text-center font-manrope">
+              UAE Travel Trends
+            </h2>
+            <p className="text-sm md:text-lg mt-4 text-gray-300 font-bold mb-2 px-5">
               Explore the future of travel in the UAE with these emerging trends.
             </p>
           </div>
 
-          <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mx-auto">
+          <div className="space-y-6 ">
             {trends.map((trend, index) => (
-              <div
-                key={index}
-                className="bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition duration-500 hover:scale-105"
-              >
-                <img
-                  src={trend.image}
-                  alt={trend.title}
-                  className="w-full h-56 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold">{trend.title}</h3>
-                  <p className="text-gray-300 mt-2">{trend.description}</p>
-                </div>
+              <div key={index} className="text-lg  text-gray-200">
+                <h3 className="text-xl font-bold text-orange-400 text-center">{trend.title}</h3>
+                <p className="mt-2 text-gray-300">{trend.description}</p>
               </div>
             ))}
           </div>
         </div>
+
         {/* Section: The Rise of Modern Tourism */}
         <div className="grid md:grid-cols-2 gap-10 items-center mt-10">
           <div>
@@ -148,7 +141,7 @@ const page = () => {
 
             </p>
           </div>
-          <img src="/blog/blog5.webp" alt="Dubai Skyline" className="rounded-lg shadow-lg w-full h-[600px] object-cover" />
+          <img src="/blog/blog12.webp" alt="Dubai Skyline" className="rounded-lg shadow-lg w-full h-[600px] object-cover" />
         </div>
 
 
