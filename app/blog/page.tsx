@@ -44,7 +44,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, description, imageUrl, date,
       <div className="p-5 ">
         <div className="min-h-44">
 
-          <h3 className="text-xl font-semibold text-gray-900 mt-6">{title}</h3>
+          <h3 className="text-xl font-semibold text-orange-500 mt-6">{title}</h3>
           <p className="text-gray-900 text-sm mt-1 text-justify">{description}</p>
           <p className="text-gray-800 font-medium mt-2">{category}</p>
         </div>
