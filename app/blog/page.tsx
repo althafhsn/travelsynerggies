@@ -37,10 +37,13 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, description, imageUrl, date,
   return (
     <Link href={href} className="bg-gray-300 rounded-lg shadow-lg overflow-hidden w-full sm:w-[48%] lg:w-[30%] relative" >
       <img src={imageUrl} alt={title} className="w-full h-80 object-cover hover:scale-110 transition-all duration-300 ease-in-out" />
+      <div className="top-[49%] absolute bg-black/30 w-full ">
+        <p className="text-sm text-orange-500 px-5 py-2 font-bold">{date}</p>
 
-      <div className="p-5">
+      </div>
+      <div className="p-5 ">
         <div className="min-h-40">
-          <p className="text-sm text-orange-500 font-bold">{date}</p>
+
           <h3 className="text-xl font-semibold text-gray-900 mt-6">{title}</h3>
           <p className="text-gray-900 text-sm mt-1">{description}</p>
           <p className="text-gray-800 font-medium mt-2">{category}</p>
