@@ -22,7 +22,7 @@ const page = () => {
 
                 {/* Section: Introduction */}
                 <div className="max-w-4xl mx-auto text-center ">
-                    <p className="mx-auto text-sm md:text-base text-gray-100 mb-9 ">
+                    <p className="mx-auto text-sm md:text-base text-gray-100 ">
                         The United Arab Emirates (UAE) is a land of contrasts, where ancient traditions meet futuristic innovation.
                         Its travel history is a captivating journey from humble beginnings as a desert trading hub to becoming one of
                         the world’s most sought-after tourist destinations.
@@ -48,7 +48,7 @@ const page = () => {
                     </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-10 items-center pt-10">
-                    <img src="/blog/blog1.webp" alt="Pearl Diving" className="rounded-lg shadow-lg  order-2" />
+                    <img src="/blog/blog7.webp" alt="Pearl Diving" className="rounded-lg shadow-lg  order-2" />
                     <div>
                         <p className="text-sm md:text-base text-gray-200 text-justify py-2  mx-auto px-5 order-1">
                             The Era of Pearling (Pre-1930s)
@@ -73,16 +73,17 @@ const page = () => {
                             <br />
                             <br />
                             1985  - Emirates Airlines' establishment revolutionized air travel, connecting the UAE to the world with unparalleled luxury and service, whilst continuous upgrades to Dubai International Airport (DXB) and the opening of Al Maktoum International Airport (DWC) have cemented the UAE's position as a global aviation hub.
-                            1999 - Burj Al Arab, The 7-star hotel opens. It redefined luxury, putting Dubai on the global tourism map.
-                
+
+
                         </p>
                     </div>
-                    <img src="/blog/blog5.webp" alt="Dubai Skyline" className="rounded-lg shadow-lg w-full h-[600px] object-cover order-1" />
+                    <img src="/blog/blog9.webp" alt="Dubai Skyline" className="rounded-lg shadow-lg w-full h-[400px]  object-cover order-1" />
                 </div>
                 <div className="grid md:grid-cols-2 gap-10 items-center mt-10">
                     <div className='order'>
                         <p className=" text-gray-200 text-justify py-2 px-5 mx-auto text-sm md:text-base ">
-                          
+                            1999 - Burj Al Arab, The 7-star hotel opens. It redefined luxury, putting Dubai on the global tourism map.
+                            <br /><br />
                             2001 – The Palm Jumeirah is unveiled to the world. An engineering marvel, offering bespoke experiences and breathtaking views.
                             <br />
                             <br />
@@ -93,18 +94,24 @@ const page = () => {
                             2020 – The Expo 2020 happens. A global event that showcased the UAE’s capacity for innovation, sustainability, and cultural exchange, leaving a lasting legacy in District 2020
                         </p>
                     </div>
-                    <img src="/blog/blog5.webp" alt="Dubai Skyline" className="rounded-lg shadow-lg w-full h-[600px] object-cover " />
+                    <img src="/blog/blog8.webp" alt="Dubai Skyline" className="rounded-lg shadow-lg w-full object-cover " />
                 </div>
 
                 {/* Section: The UAE Today */}
                 <div className="text-center mt-16">
-                    <h2 className="text-lg md:text-xl lg:text-4xl font-bold text-orange-500   my-2 max-lg:text-center font-manrope">The UAE Today <span className="text-gray-50 font-manrope">
-                        A Global Tourism Leader
-                    </span></h2>
+                    <h2 className="text-lg md:text-xl lg:text-4xl font-bold text-orange-500   my-2 max-lg:text-center font-manrope">The UAE Today 
+              
+                    </h2>
+                    <h2 className="text-lg md:text-xl lg:text-4xl font-bold text-white  my-3 max-lg:text-center font-manrope">
+                        A Global Tourism Leader Redefining Travel Experiences
+
+                    </h2>
                     <p className=" text-gray-200 text-center py-2  px-5 mx-auto text-sm md:text-base ">
-                        Today, the UAE is a magnet for travelers worldwide, offering a blend of luxury, adventure, and culture. Dubai
-                        and Abu Dhabi are the crown jewels, but other emirates like Ras Al Khaimah, Fujairah, and Ajman are gaining
-                        traction for their natural beauty and unique experiences.
+                        Today, the UAE is a magnet for travelers worldwide, offering a blend of luxury, opulent hotels, world-class shopping, and fine dining experiences.
+                        <br />
+                        <br />
+                        Dune bashing,
+                        Helicopter rides over the stunning arabian sea and witnessing the Palm Jumeirah, an architectual wonder from the air are simply must do experiences and must be on your bucket list. You will experience the rich culture and heritage sites, vibrant festivals, and a melting pot of international influences.
                     </p>
                 </div>
 
