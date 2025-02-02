@@ -1,3 +1,4 @@
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
 import React from 'react'
 import { HiLocationMarker } from 'react-icons/hi'
 
@@ -41,7 +42,24 @@ const page = () => {
         <div className="container mx-auto flex flex-col items-center md:items-start">
         </div>
       </div>
-
+      <div className=" container mx-auto relative    mt-5">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Outbound</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/blog">Blog</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/the-UAE-future-in-the-travel-sphere">The UAE’s Future in the Travel Sphere</BreadcrumbLink>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+        <div className="w-full h-[1px] bg-gray-200 my-2"></div>
+      </div>
       <div className="container mx-auto">
         <div className="text-center my-5">
           <h1 className="max-w-5xl mx-auto text-3xl font-bold text-orange-500 mb-5 md:text-5xl md:leading-normal font-manrope">
@@ -134,40 +152,40 @@ const page = () => {
         </div>
 
 
-          {/* Section: The UAE Today */}
-          <div className="text-center max-w-3xl mx-auto mt-10">
-            <h2 className="text-lg md:text-xl lg:text-4xl font-bold text-orange-500 my-2 font-manrope">
-              The UAE’s Vision for 2030 and Beyond
-            </h2>
-            <p className="text-gray-300 py-2 text-sm md:text-base leading-relaxed">
-              With a bold ambition to attract <span className="font-semibold">40 million visitors annually by 2030</span>,
-              the UAE is revolutionizing the travel industry. From <span className="font-semibold">space tourism</span> to
-              <span className="font-semibold"> AI-driven experiences</span> and <span className="font-semibold">eco-friendly luxury resorts</span>,
-              the UAE is shaping the future of global travel.
-            </p>
-          </div>
+        {/* Section: The UAE Today */}
+        <div className="text-center max-w-3xl mx-auto mt-10">
+          <h2 className="text-lg md:text-xl lg:text-4xl font-bold text-orange-500 my-2 font-manrope">
+            The UAE’s Vision for 2030 and Beyond
+          </h2>
+          <p className="text-gray-300 py-2 text-sm md:text-base leading-relaxed">
+            With a bold ambition to attract <span className="font-semibold">40 million visitors annually by 2030</span>,
+            the UAE is revolutionizing the travel industry. From <span className="font-semibold">space tourism</span> to
+            <span className="font-semibold"> AI-driven experiences</span> and <span className="font-semibold">eco-friendly luxury resorts</span>,
+            the UAE is shaping the future of global travel.
+          </p>
+        </div>
 
-          {/* Decorative Divider */}
-          <div className="w-24 h-[1px] bg-orange-500 mx-auto my-8"></div>
+        {/* Decorative Divider */}
+        <div className="w-24 h-[1px] bg-orange-500 mx-auto my-8"></div>
 
-          {/* Conclusion */}
-          <div className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="text-3xl font-bold text-orange-500">The UAE</h2>
-            <p className="text-sm md:text-lg mt-4 text-gray-300 font-bold">A Destination of the Future</p>
-            <p className="text-gray-300 mt-4 leading-relaxed">
-              <span className="font-semibold">Innovation, sustainability, and luxury</span>—these are the defining aspects of the UAE’s future.
-              Whether you dream of <span className="font-semibold">exploring space</span>, unwinding in
-              <span className="font-semibold"> eco-friendly resorts</span>, or immersing yourself in rich traditions, the UAE offers it all.
-            </p>
+        {/* Conclusion */}
+        <div className="text-center max-w-3xl mx-auto mb-10">
+          <h2 className="text-3xl font-bold text-orange-500">The UAE</h2>
+          <p className="text-sm md:text-lg mt-4 text-gray-300 font-bold">A Destination of the Future</p>
+          <p className="text-gray-300 mt-4 leading-relaxed">
+            <span className="font-semibold">Innovation, sustainability, and luxury</span>—these are the defining aspects of the UAE’s future.
+            Whether you dream of <span className="font-semibold">exploring space</span>, unwinding in
+            <span className="font-semibold"> eco-friendly resorts</span>, or immersing yourself in rich traditions, the UAE offers it all.
+          </p>
 
-            {/* Call to Action */}
-            <button className="mt-6 px-6 py-3 text-sm md:text-base font-semibold bg-orange-500 hover:bg-orange-600 
+          {/* Call to Action */}
+          <button className="mt-6 px-6 py-3 text-sm md:text-base font-semibold bg-orange-500 hover:bg-orange-600 
           text-white rounded-lg transition duration-300">
-              Book Your Trip Today
-            </button>
-          </div>
+            Book Your Trip Today
+          </button>
         </div>
       </div>
+    </div>
   )
 }
 

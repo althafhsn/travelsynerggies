@@ -95,9 +95,9 @@ const Footer: React.FC = () => {
 
     return (
         <div>
-            <footer className="font-sans">
+            <footer className="font-sans ">
                 <hr className="border-orange-500 md:mt-1 h-2" />
-                <div className="container mx-auto mt-2 ">
+                <div className="container mx-auto mt-2 px-2 ">
                     {/* Logo and Social Media Section */}
                     <div className="flex items-center justify-between lg:-ms-6 lg:-me-4">
                         {/* Logo Section */}
@@ -140,7 +140,7 @@ const Footer: React.FC = () => {
 
                         {/* Subscription Section - Takes 2 columns on large screens */}
                         <div className="lg:col-span-2">
-                            <div className="bg-gray-800/20 p-6 rounded-lg  text-justify">
+                            <div className="bg-gray-800/20 p-6 rounded-lg text-center">
                                 <h1 className="text-xl font-semibold tracking-tight text-orange-500 mb-4">
                                     Subscribe to our newsletter to get updates
                                 </h1>
@@ -166,15 +166,16 @@ const Footer: React.FC = () => {
             {/* Footer Bottom */}
             <hr className=" border-white/20 mt-2" />
             <div className='flex justify-around py-2  items-end'>
-                <p className="text-white/80 text-center text-xs md:text-xs">
+                <p className="text-white/80 text-center text-[5px] md:text-xs">
                     © Travel Synergies 2023. All rights reserved.
                 </p>
-                <div className='flex justify-center'>
-                    <p className="text-white/80 text-center text-xs md:text-xs">
+                <div className="flex  md:flex-row justify-center items-center gap-2">
+                    <p className="text-white/80 text-center text-[5px] md:text-xs">
                         Designed and Developed By
                     </p>
-                    <img src="/Partners/img1.png" alt="" className='w-20' />
+                    <img src="/Partners/img1.png" alt="squlltec" className="w-[40px] md:w-20" />
                 </div>
+
 
             </div>
 

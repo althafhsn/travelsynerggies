@@ -2,7 +2,15 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { HiLocationMarker } from "react-icons/hi";
-
+import {
+  Breadcrumb,
+  BreadcrumbEllipsis,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 interface BlogCardProps {
   title: string;
   href: string;
@@ -38,17 +46,16 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, description, imageUrl, date,
     <Link href={href} className="bg-gray-300 rounded-lg shadow-lg overflow-hidden w-full sm:w-[48%] lg:w-[30%] relative" >
       <img src={imageUrl} alt={title} className="w-full h-80 object-cover hover:scale-110 transition-all duration-300 ease-in-out" />
       <div className="top-[49%] absolute bg-black/30 w-full ">
-        <p className="text-sm text-orange-500 px-5 py-2 font-bold">{date}</p>
-
+        <p className="text-sm text-orange-500 font-extrabold px-5 py-2">{date}</p>
       </div>
       <div className="p-5 ">
-        <div className="min-h-52">
+        <div className="min-h-[234px]">
 
           <h3 className="text-xl font-semibold text-orange-500 mt-6">{title}</h3>
           <p className="text-gray-900 text-sm mt-1 text-justify">{description}</p>
           <p className="text-gray-800 font-medium mt-2">{category}</p>
         </div>
-        <div className="text-orange-600 font-semibold mt-3 inline-block">Learn More →</div>
+        <div className="text-orange-600 font-semibold mt-1 inline-block">Learn More →</div>
       </div>
     </Link>
 
@@ -84,8 +91,23 @@ const UAETravelHistory = () => {
             </div>
           </div>
         </div>
-
       </div>
+      <div className=" container mx-auto relative    mt-5">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Outbound</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/blog">Blog</BreadcrumbLink>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+        <div className="w-full h-[1px] bg-gray-200 my-2"></div>
+      </div>
+      
+
       {/* Section: Sustainable Tourism */}
       <div className="w-full flex flex-col items-center justify-center text-center px-4 pt-10">
         {/* Top Tag */}
