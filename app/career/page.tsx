@@ -135,7 +135,7 @@ const Careers: React.FC = () => {
             Join Our Team
           </motion.h1>
           <motion.h2
-            className="text-xl md:text-3xl lg:text-4xl xl:text-5xl mb-8"
+            className="text-xl md:text-3xl lg:text-4xl xl:text-5xl mb-8 text-center md:text-start"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -151,8 +151,8 @@ const Careers: React.FC = () => {
           </Link>
         </div>
       </div>
-      <div className="my-4 container mx-auto">
-        <h2 className="text-sm md:text-lg text-orange-500 py-4 text-center font-bold">
+      <div className="my-4 container mx-auto ">
+        <h2 className="text-sm px-2 md:text-lg text-orange-500 py-4 text-center font-bold">
           Are you passionate about travel and eager to explore the world? Do you thrive in a dynamic, fast-paced environment where every day brings new adventures? If so, Travel Synergies invites you to join our team and be part of an exciting journey!
         </h2>
 
@@ -273,24 +273,23 @@ const Careers: React.FC = () => {
                 <textarea
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
               </div>
-              <div className="flex justify-between w-full px-3">
-                <div className="md:flex md:items-center">
-                  <label className="block text-gray-500 font-bold">
-                    <input className="mr-2 leading-tight" type="checkbox" />
-                    <span className=" text-[7px] md:text-sm text-white">
-                      Send me your newsletter!
-                    </span>
-                  </label>
-                </div>
+              <div className="flex items-center justify-between w-full px-3">
+                {/* Checkbox Section */}
+                <label className="flex items-center gap-2 text-gray-500 font-bold">
+                  <input className="leading-tight" type="checkbox" />
+                  <span className="text-[10px] md:text-sm text-white">
+                    Send me your newsletter!
+                  </span>
+                </label>
+
+                {/* Button Section */}
                 <button
-                  className="shadow bg-orange-500 rounded-lg  hover:bg-orange-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 text-[9px] md:text-sm"
+                  className="shadow bg-orange-500 rounded-lg hover:bg-orange-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 text-[10px] md:text-sm"
                   type="submit">
                   Send Message
                 </button>
               </div>
-
             </div>
-
           </form>
         </div>
       </div>

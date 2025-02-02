@@ -8,7 +8,7 @@ const page = () => {
         <div className="min-h-screen mb-4">
             <div className="flex flex-col items-start justify-center text-white bg-bg-blog min-h-[70vh] bg-cover bg-no-repeat bg-center ">
             </div>
-            <div className='px-2 md:px-0'>
+            <div className='px-2 container mx-auto pt-5'>
                 <Breadcrumb>
                     <BreadcrumbList>
                         <BreadcrumbItem>
@@ -133,22 +133,28 @@ const page = () => {
                     </div>
 
                     {/* Attractions Grid */}
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 relative">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
                         {[
                             { title: "Burj Khalifa", img: "/blog/burj-khalifa.webp" },
                             { title: "Louvre Abu Dhabi", img: "/blog/louvre.webp" },
                             { title: "Desert Safari", img: "/blog/safari.webp" },
                             { title: "Dubai Mall", img: "/blog/dubai-mal.webp" },
                         ].map((item, index) => (
-                            <div key={index} className="bg-gray-800/10 rounded-lg text-center">
-                                <img src={item.img} alt={item.title} className="w-full min-h-[300px] h-[400px]  object-cover rounded-md mb-4" />
-                                <div className=" absolute bottom-4 ps-5 text-lg  text-orange-500 flex gap-2 items-center bg-black/50 w-full py-1">
+                            <div key={index} className="bg-gray-800/10 rounded-lg text-center relative overflow-hidden">
+                                {/* Image */}
+                                <img src={item.img} alt={item.title}
+                                    className="w-full min-h-[300px] h-[400px] object-cover rounded-md mb-4"
+                                />
+
+                                {/* Overlay Text */}
+                                <div className="absolute bottom-2 left-0 text-lg text-orange-500 flex gap-2 items-center bg-black/50 w-full py-2 px-4">
                                     <HiLocationMarker className="w-[25px] text-orange-500 font-extrabold" />
-                                    <h3> {item.title}</h3>
+                                    <h3>{item.title}</h3>
                                 </div>
                             </div>
                         ))}
                     </div>
+
 
 
 

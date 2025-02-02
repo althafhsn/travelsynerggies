@@ -535,7 +535,7 @@ const Explore = () => {
                                                     </h1>
                                                     {/* Fixed Height Container for Description */}
                                                     <div className="h-[100px] md:h-[100px] lg:h-[130px] overflow-hidden ">
-                                                        <p className="text-gray-400 max-w-2xl xl:max-w-none mx-auto xl:mx-0 text-xs lg:text-[16px] text-justify px-2 font-thin">
+                                                        <p className="text-gray-400 max-w-2xl xl:max-w-none mx-auto xl:mx-0 text-xs lg:text-[16px] text-justify px-2 ">
                                                             {project.description}
                                                         </p>
                                                     </div>

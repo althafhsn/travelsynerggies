@@ -24,6 +24,10 @@ const links = [
         path: '/social'
     },
     {
+        name: 'blogs',
+        path: '/blog'
+    },
+    {
         name: 'About Us',
         path: '/about-us'
     },        
