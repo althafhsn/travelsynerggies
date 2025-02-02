@@ -8,31 +8,31 @@ const page = () => {
       title: "Sustainable Tourism",
       description:
         "The UAE is committed to reducing its environmental footprint while maintaining its reputation for luxury. Initiatives like Dubai’s Sustainable City and Abu Dhabi’s Eco-Resorts are leading the way in eco-friendly travel. The UAE aims to become a global leader in sustainable tourism, offering travelers guilt-free luxury experiences.",
-      image: "/images/sustainable.jpg",
+      image: "/blog/blog13.webp",
     },
     {
       title: "Space Tourism",
       description:
         "The UAE is boldly venturing into the final frontier with plans for space tourism. The Mohammed bin Rashid Space Centre is working on projects like the Space Hotel and commercial space flights, making the UAE a pioneer in this futuristic travel niche.",
-      image: "/images/space.jpg",
+      image: "/blog/blog14.webp",
     },
     {
       title: "Smart Cities and Technology",
       description:
         "The UAE is embracing smart city technology to enhance the traveler experience. From AI-powered customer service to blockchain-based travel solutions, the UAE is leveraging technology to make travel seamless and personalized.",
-      image: "/images/smart-city.jpg",
+      image: "/blog/blog15.webp",
     },
     {
       title: "Cultural and Heritage Tourism",
       description:
         "While the UAE is known for its modernity, it’s also investing in preserving its rich heritage. Projects like the Al Marmoom Heritage Village and the Qasr Al Hosn Cultural Site in Abu Dhabi offer travelers a glimpse into the UAE’s history and traditions.",
-      image: "/images/cultural.jpg",
+      image: "/blog/blog16.webp",
     },
     {
       title: "Luxury Redefined",
       description:
         "The UAE continues to push the boundaries of luxury travel. From underwater hotels like Deep Dive Dubai to private island resorts, the UAE is creating unparalleled experiences for discerning travelers.",
-      image: "/images/luxury.jpg",
+      image: "/blog/blog17.webp",
     },
   ];
 
@@ -109,15 +109,23 @@ const page = () => {
             </p>
           </div>
 
-          <div className="space-y-6 ">
+          <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center mx-auto">
             {trends.map((trend, index) => (
-              <div key={index} className="text-lg  text-gray-200">
-                <h3 className="text-xl font-bold text-orange-400 text-center">{trend.title}</h3>
-                <p className="mt-2 text-gray-300">{trend.description}</p>
+              <div key={index} className="flex flex-col md:flex-row items-center gap-6">
+                <img
+                  src={trend.image}
+                  alt={trend.title}
+                  className="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-lg transition-transform duration-500 hover:scale-105"
+                />
+                <div className="md:w-1/2 text-center md:text-left">
+                  <h3 className="text-xl font-bold text-orange-400">{trend.title}</h3>
+                  <p className="mt-2 text-gray-300">{trend.description}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
+
 
         {/* Section: The Rise of Modern Tourism */}
         <div className="grid md:grid-cols-2 gap-10 items-center mt-10">
