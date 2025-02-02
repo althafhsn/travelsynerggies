@@ -577,7 +577,7 @@ const Explore = () => {
                             {project.stack.map((item, index) => (
                                 <article
                                     key={index}
-                                    className="group relative isolate flex flex-col justify-end overflow-hidden rounded-sm hover:scale-105 transition-all duration-500 pb-6  w-[260px] h-[330px] md:w-[230px] lg:h-[300px] xl:w-[260px] xl:h-[380px] 2xl:w-[280px] 22xl:h-[380px] mx-auto mt-12 cursor-pointer"
+                                    className="group relative isolate flex flex-col justify-end overflow-hidden rounded-sm hover:scale-105 transition-all duration-500 pb-6  w-[260px] h-[330px] md:w-[230px] lg:h-[300px] xl:w-[260px] xl:h-[380px] 2xl:w-[280px] 2xl:h-[380px] mx-auto mt-12 cursor-pointer"
                                 >
                                     <Image
                                         src={item.image}
@@ -587,10 +587,10 @@ const Explore = () => {
                                     />
 
                                     {/* Dark overlay - always visible for name */}
-                                    <div className="absolute bottom-0 left-0 right-0 h-[40px] bg-black/60 transition-all duration-500 group-hover:h-[55%]" />
+                                    <div className="absolute bottom-0 left-0 right-0 h-[40px] bg-black/60 transition-all duration-500 group-hover:h-[100%]" />
 
                                     <div className="z-10 relative px-4">
-                                        <div className="flex items-center gap-1 -mb-4 group-hover:mb-0">
+                                        <div className="flex items-center gap-1 transition-all duration-500 group-hover:translate-y-[-10px] -mb-4 group-hover:mb-0">
                                             {(project.fName !== 'Game ' && project.fName !== 'Winter ') && (
                                                 <CiLocationOn className="text-lg text-orange-500" />
                                             )}
@@ -599,7 +599,7 @@ const Explore = () => {
                                             </h3>
                                         </div>
 
-                                        <p className="text-xs leading-5 text-white mt-0 opacity-0 max-h-0 transition-all duration-500 group-hover:opacity-100 group-hover:max-h-[11em] group-hover:mt-2">
+                                        <p className="text-xs leading-5 text-white mt-0 opacity-0 max-h-0 transition-all duration-500 group-hover:opacity-100 group-hover:max-h-[100%] group-hover:mt-2">
                                             {item.description}
                                         </p>
                                     </div>

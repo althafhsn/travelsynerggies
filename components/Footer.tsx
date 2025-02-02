@@ -174,7 +174,7 @@ const Footer: React.FC = () => {
                     <p className="text-white/80 text-center text-[5px] md:text-xs">
                         Designed and Developed By
                     </p>
-                    <Image src="/Partners/squalltec.png" alt="squlltec" className="w-[40px] md:w-20" width={100} height={100} />
+                    <img src="https://www.squalltec.com/newsqualltec/sq-01%201.png" alt="squlltec" className="w-[40px] md:w-20" width={100} height={100} />
                 </div>
 
 
