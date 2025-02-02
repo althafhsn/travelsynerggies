@@ -1,11 +1,11 @@
-'use client'
+'use client';
 
 
 
 const partners = [
     {
         name: "Squalltec Technology",
-        img: '/partners/img1.png',
+        img: '/partners/squalltec.png',
         description:
             "Squalltec is a leader in innovative travel technology solutions. Their state-of-the-art software helps us to optimize our operations and deliver a seamless travel experience to our customers.",
     },
