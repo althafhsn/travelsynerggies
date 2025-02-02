@@ -1,12 +1,5 @@
 'use client'
-import React from "react";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, Keyboard, Thumbs } from "swiper/modules";
-import SwiperCore from "swiper";
-import { Swiper as SwiperClass } from "swiper/types";
+import React, { useRef } from "react";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
@@ -14,14 +7,49 @@ import { MdTravelExplore } from 'react-icons/md'
 
 import { FiUsers } from "react-icons/fi";
 
-
-SwiperCore.use([Navigation, Pagination, Scrollbar, Keyboard, Thumbs]);
+import { Swiper, SwiperSlide, SwiperRef } from 'swiper/react';
+import { Swiper as SwiperClass } from "swiper/types";
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { IoMdArrowForward, IoMdArrowBack } from 'react-icons/io';
 
 
 
 
 const AboutUs: React.FC = () => {
+    const swiperRef = useRef<SwiperRef>(null);
     let thumbsSwiper: SwiperClass | null = null;
+    const members = [
+        {
+            name: "Jhon",
+            title: "Co-Founder & CEO",
+            description: "Manages and handles the daily business operations of the company",
+            image: "https://pagedone.io/asset/uploads/1702034785.png",
+        },
+        {
+            name: "Smith",
+            title: "Lead Designer",
+            description: "Emphasis on long-term goals, growth, profit, and return on investments.",
+            image: "https://pagedone.io/asset/uploads/1702034785.png",
+        },
+        {
+            name: "Jhon",
+            title: "Co-Founder & CEO",
+            description: "Manages and handles the daily business operations of the company",
+            image: "https://pagedone.io/asset/uploads/1702034785.png",
+        },
+        {
+            name: "Smith",
+            title: "Lead Designer",
+            description: "Emphasis on long-term goals, growth, profit, and return on investments.",
+            image: "https://pagedone.io/asset/uploads/1702034785.png",
+        },
+
+
+    ]
 
 
     return (
@@ -158,7 +186,7 @@ const AboutUs: React.FC = () => {
             </section>
 
 
-            <section className="py-12 lg:py-24 mx-auto">
+            <section className="py-12 lg:py-24 mx-auto ">
                 <div className="mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-2 text-center">
                         <h2 className="font-manrope text-lg md:text-2xl lg:text-4xl  font-bold text-orange-500 mb-6">Meet Our Team !</h2>
@@ -167,7 +195,90 @@ const AboutUs: React.FC = () => {
                         </p>
                     </div>
                     {/* Slider Wrapper */}
-                    <Swiper
+                    <div className="">
+                        <Swiper
+                            ref={swiperRef}
+                            effect={'coverflow'}
+                            grabCursor={true}
+                            modules={[Autoplay, Navigation, Pagination, EffectCoverflow]}
+                            spaceBetween={10}
+
+                            centeredSlides={true}
+                            loop={true}
+                            coverflowEffect={{
+                                rotate: 0,
+                                stretch: 0,
+                                depth: 100,
+                                modifier: 2.5,
+                            }}
+                            pagination={{ el: ".swiper-pagination", type: "fraction" }}
+                            navigation={{
+                                enabled: true,
+                                prevEl: '.custom-prev-button',
+                                nextEl: '.custom-next-button'
+                            }}
+                            autoplay={{
+                                delay: 2000,
+                                disableOnInteraction: false,
+                                pauseOnMouseEnter: true,
+                            }}
+                            breakpoints={{
+                                769: { slidesPerView: 2, slidesPerGroup: 1 },
+                                0: { slidesPerView: 1, slidesPerGroup: 1 },
+                            }}
+                            className="teamswiper pb-10 relative"
+                            onSwiper={(swiper) => (thumbsSwiper = swiper)}
+
+
+                        >
+                            {
+                                members.map((member, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className="group w-full flex-wrap flex items-center  gap-8 transition-all duration-500 p-8 lg:flex-nowrap cursor-grab">
+                                            <div className="w-full lg:w-48 h-64">
+                                                <img src={member.image} alt={`${member.name} image`} className="rounded-2xl h-full object-cover mx-auto lg:mx-0 lg:w-full" />
+                                            </div>
+                                            <div className="text-center lg:text-left lg:max-w-xs flex-1">
+                                                <div className="mb-5 pb-5 border-b border-solid border-gray-300">
+                                                    <h6 className="text-lg text-orange-500 font-semibold mb-1 ">{member.name}</h6>
+                                                    <span className="text-sm text-gray-300 group-hover:text-orange-300">{member.title}</span>
+                                                </div>
+                                                <p className="text-gray-300 leading-6 mb-7">{member.description}</p>
+                                                <div className="flex items-center gap-4 justify-center lg:justify-start">
+                                                    {/* Social Icons */}
+                                                    <div className="cursor-pointer text-gray-900 hover:text-white group w-12 h-12 rounded-full flex justify-center items-center bg-gray-100 transition-all duration-500 hover:bg-orange-400"><Link href={""}><FaXTwitter /></Link></div>
+                                                    <div className="cursor-pointer text-gray-900 hover:text-white group w-12 h-12 rounded-full flex justify-center items-center bg-gray-100 transition-all duration-500 hover:bg-orange-400"><Link href={""}><FaInstagram /></Link></div>
+                                                    <div className="cursor-pointer text-gray-900 hover:text-white group w-12 h-12 rounded-full flex justify-center items-center bg-gray-100 transition-all duration-500 hover:bg-orange-400"><Link href={""}><FaLinkedin /></Link></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                ))
+                            }
+
+                            <div className="relative flex justify-between">
+                                <div
+                                    className="custom-prev-button absolute left-0  md:left-96  -bottom-[50px] transform -translate-y-1/2 cursor-pointer p-2 bg-orange-500/20 rounded-full hover:bg-orange-500 z-30"
+                                    onClick={() => swiperRef.current?.swiper.slidePrev()}
+                                >
+                                    <IoMdArrowBack />
+                                </div>
+                                <div
+                                    className="custom-next-button absolute right-0  md:right-96 -bottom-[46px]  transform -translate-y-1/2 cursor-pointer p-2 bg-orange-500/20 rounded-full hover:bg-orange-500 z-30"
+                                    onClick={() => swiperRef.current?.swiper.slideNext()}
+                                >
+                                    <IoMdArrowForward />
+                                </div>
+                            </div>
+                            <div className=" flex justify-center items-center pb-10">
+                                <div className="swiper-pagination"></div>
+                                <div className="swiper-scrollbar"></div>
+                            </div>
+                        </Swiper>
+
+
+                    </div>
+                    {/* <Swiper
                         modules={[Navigation, Pagination, Scrollbar, Keyboard]}
                         navigation={{
                             nextEl: ".swiper-button-next",
@@ -185,75 +296,16 @@ const AboutUs: React.FC = () => {
                         onSwiper={(swiper) => (thumbsSwiper = swiper)}
                     >
 
-                        {[
-                            {
-                                name: "Jhon",
-                                title: "Co-Founder & CEO",
-                                description: "Manages and handles the daily business operations of the company",
-                                image: "https://pagedone.io/asset/uploads/1702034785.png",
-                            },
-                            {
-                                name: "Smith",
-                                title: "Lead Designer",
-                                description: "Emphasis on long-term goals, growth, profit, and return on investments.",
-                                image: "https://pagedone.io/asset/uploads/1702034785.png",
-                            },
-                            {
-                                name: "Jhon",
-                                title: "Co-Founder & CEO",
-                                description: "Manages and handles the daily business operations of the company",
-                                image: "https://pagedone.io/asset/uploads/1702034785.png",
-                            },
-                            {
-                                name: "Smith",
-                                title: "Lead Designer",
-                                description: "Emphasis on long-term goals, growth, profit, and return on investments.",
-                                image: "https://pagedone.io/asset/uploads/1702034785.png",
-                            },
-
-
-                        ].map((member, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="group w-full flex-wrap flex items-center  gap-8 transition-all duration-500 p-8 lg:flex-nowrap cursor-grab">
-                                    <div className="w-full lg:w-48 h-64">
-                                        <img src={member.image} alt={`${member.name} image`} className="rounded-2xl h-full object-cover mx-auto lg:mx-0 lg:w-full" />
-                                    </div>
-                                    <div className="text-center lg:text-left lg:max-w-xs flex-1">
-                                        <div className="mb-5 pb-5 border-b border-solid border-gray-300">
-                                            <h6 className="text-lg text-orange-500 font-semibold mb-1 ">{member.name}</h6>
-                                            <span className="text-sm text-gray-300 group-hover:text-orange-300">{member.title}</span>
-                                        </div>
-                                        <p className="text-gray-300 leading-6 mb-7">{member.description}</p>
-                                        <div className="flex items-center gap-4 justify-center lg:justify-start">
-                                            {/* Social Icons */}
-                                            <div className="cursor-pointer text-gray-900 hover:text-white group w-12 h-12 rounded-full flex justify-center items-center bg-gray-100 transition-all duration-500 hover:bg-orange-400"><Link href={""}><FaXTwitter /></Link></div>
-                                            <div className="cursor-pointer text-gray-900 hover:text-white group w-12 h-12 rounded-full flex justify-center items-center bg-gray-100 transition-all duration-500 hover:bg-orange-400"><Link href={""}><FaInstagram /></Link></div>
-                                            <div className="cursor-pointer text-gray-900 hover:text-white group w-12 h-12 rounded-full flex justify-center items-center bg-gray-100 transition-all duration-500 hover:bg-orange-400"><Link href={""}><FaLinkedin /></Link></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                        {/* Custom Navigation Buttons */}
-                        <div className="absolute flex justify-center">
-                            <button
-                                className="  after:text-orange-500  hover:text-orange-600 "
-                            />
-                            <button
-                                className=" after:text-orange-500  hover:text-orange-600 "
-                            />
-                        </div>
 
                         <div className=" flex justify-center items-center pb-10">
                             <div className="swiper-pagination "></div>
                             <div className="swiper-scrollbar"></div>
                         </div>
-
-                    </Swiper>
+                    </Swiper> */}
                 </div>
-            </section>
+            </section >
 
-        </div>
+        </div >
     )
 }
 

@@ -529,7 +529,7 @@ const Explore = () => {
                                             {/* Title and Description Section */}
                                             <div className="space-y-6 xl:order-1">
                                                 <div className="text-start flex flex-col ">
-                                                    <h1 className="text-2xl md:text-3xl font-bold mb-4 text-white pt-9 px-2 ">
+                                                    <h1 className="text-xl md:text-3xl font-bold mb-4 text-white pt-10 px-2 ">
                                                         {project.fName}{' '}
                                                         <span className="text-orange-500 ">{project.lName}</span>
                                                     </h1>
@@ -562,9 +562,9 @@ const Explore = () => {
 
                             {/* Slider Navigation */}
                             <WorkSliderButton
-                                containerStyle="flex absolute right-1 top-10 z-20 w-full justify-end md:gap-2 "
-                                btnStyle="bg-orange-500/20 hover:bg-orange-500/90 text-orange-500 text-[30px] w-[30px] scale-[80%] md:scale-100 md:w-[40px] flex justify-center item-center transition-all rounded-full"
-                                iconsStyle="w-4 h-4 md:w-8 md:h-8 text-white  "
+                                containerStyle="flex absolute right-1 top-10 z-20 w-full justify-end md:gap-1 bottom-3 "
+                                btnStyle="bg-orange-500/20 hover:bg-orange-500/90 text-orange-500 text-[30px] w-[28px] scale-[80%] md:scale-[90%] md:w-[40px] flex justify-center item-center transition-all rounded-full"
+                                iconsStyle="w-4 h-4 md:w-6 md:h-6 text-white  "
                             />
                             {/* bottom-[calc(35%_-_22px)] md:bottom-[calc(35%_-_22px)] */}
                         </Swiper>
