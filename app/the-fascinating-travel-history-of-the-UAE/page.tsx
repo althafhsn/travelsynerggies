@@ -136,7 +136,7 @@ const page = () => {
 
 
                 {/* Conclusion */}
-                <div className="text-center mt-16">
+                <div className="text-center my-16">
                     <h2 className="text-3xl font-bold text-orange-500">Why Visit the UAE?</h2>
                     <p className="text-gray-300 mt-4 max-w-4xl mx-auto">
                         Whether you’re exploring the souks of Deira, marveling at the futuristic skyline of Dubai, or relaxing on the
