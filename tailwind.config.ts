@@ -58,6 +58,7 @@ export default {
 				'bg-career': "url('/career/career.png')",
 				'bg-blog': "url('/blog/blog6.webp')",
 				'bg-blogmain': "url('/blog/blogmain.webp')",
+				'bg-blog10': "url('/blog/blog10.webp')",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

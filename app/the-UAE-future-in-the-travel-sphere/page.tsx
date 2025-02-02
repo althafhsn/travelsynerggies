@@ -37,7 +37,7 @@ const page = () => {
 
   return (
     <div className="min-h-screen mb-4">
-      <div className="flex flex-col items-start justify-center text-white bg-bg-blog min-h-[70vh] bg-cover bg-no-repeat bg-center">
+      <div className="flex flex-col items-start justify-center text-white bg-bg-blog10 min-h-[70vh] bg-cover bg-no-repeat bg-center">
         <div className="container mx-auto flex flex-col items-center md:items-start">
         </div>
       </div>
