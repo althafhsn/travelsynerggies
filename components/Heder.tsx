@@ -10,7 +10,7 @@ const Header = () => {
             <div className="  mx-auto flex justify-between items-center px-6 md:px-12 ">
                 {/* logo */}
                 <Link href='/'>
-                    <img src="/whitelogo.png" alt="logo" className="w-48"/>
+                    <img src="/whitelogo.png" alt="logo" className="w-48 h-[34px]"/>
                 </Link>
                 {/* desktop nav {& hire me button} */}
                 <div className="hidden xl:flex items-center gap-8">

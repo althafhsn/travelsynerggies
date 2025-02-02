@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
                                 <img
                                     src="/whitelogo.png"
                                     alt="Logo"
-                                    className="md:w-48 w-36 transition-transform duration-300 hover:scale-105"
+                                    className="md:w-48 w-36 md:h-[34px] h-[28px] transition-transform duration-300 hover:scale-105"
                                 />
                             </div>
                         </Link>
