@@ -1,9 +1,9 @@
+'use client';
 import React from 'react';
 import { LuTreePine } from "react-icons/lu";
-import { CiGlobe, CiCalculator1, CiPlane } from "react-icons/ci";
+import { CiGlobe } from "react-icons/ci";
 import { IoLeafOutline } from "react-icons/io5";
 import { FaUsers } from "react-icons/fa6";
-import { FaCarAlt, FaPlane, FaRecycle } from "react-icons/fa";
 import { GiElectric, GiWaterRecycling } from 'react-icons/gi';
 import { GoDotFill } from 'react-icons/go';
 
@@ -29,11 +29,6 @@ const SustainableTourismBlog = () => {
             title: "Carbon Footprint",
             description: "Reducing our carbon footprint through offsetting and carbon reduction programs."
         },
-        {
-            icon: <CiPlane className="w-10 h-10 text-orange-600" />,
-            title: "Carbon Footprint",
-            description: "Reducing our carbon footprint through offsetting and carbon reduction programs."
-        }
     ];
 
     const BenifitsOfSustainableToursm = [

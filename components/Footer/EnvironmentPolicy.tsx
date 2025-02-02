@@ -36,11 +36,12 @@ const EnvironmentPolicy = () => {
                 <div className="max-w-7xl mx-auto py-2">
                     {/* Our Commitment Section */}
                     <section className="mb-8">
-                        <div className="flex items-center mb-6 px-2 justify-center md:justify-start">
-                            <Leaf className="text-orange-500 w-8 h-8 mr-3" />
-                            <h2 className="text-lg md:text-xl  font-bold text-black">Our Commitment</h2>
-                        </div>
+
                         <div className="bg-gray-100 rounded-lg p-6 text-gray-600 mx-2">
+                            <div className="flex items-center mb-6 px-2 justify-center md:justify-start">
+                                <Leaf className="text-orange-500 w-8 h-8 mr-3" />
+                                <h2 className="text-lg md:text-xl  font-bold text-black">Our Commitment</h2>
+                            </div>
                             <p className="mb-6">
                                 We are committed to minimizing our environmental footprint and promoting sustainable tourism practices throughout our operations, as well as with our partners in their destinations.
                             </p>
@@ -57,11 +58,12 @@ const EnvironmentPolicy = () => {
 
                     {/* Environmental Initiatives Section */}
                     <section className="mb-8 px-2">
-                        <div className="flex items-center mb-6 justify-center md:justify-start">
-                            <Battery className="text-orange-500 w-8 h-8 mr-3" />
-                            <h2 className="text-lg md:text-xl font-bold text-black">Environmental Initiatives</h2>
-                        </div>
+
                         <div className="bg-gray-100 rounded-lg p-6">
+                            <div className="flex items-center mb-6 justify-center md:justify-start">
+                                <Battery className="text-orange-500 w-8 h-8 mr-3" />
+                                <h2 className="text-lg md:text-xl font-bold text-black">Environmental Initiatives</h2>
+                            </div>
                             <ul className="grid md:grid-cols-2 gap-4 text-gray-600">
                                 {initiatives.map((initiative, index) => (
                                     <li key={index} className="flex items-start">
@@ -75,11 +77,12 @@ const EnvironmentPolicy = () => {
 
                     {/* Community Engagement Section */}
                     <section className="mb-8 px-2">
-                        <div className="flex items-center mb-6 justify-center md:justify-start">
-                            <Users className="text-orange-500 w-8 h-8 mr-3" />
-                            <h2 className="text-lg md:text-xl font-bold text-black">Community Engagement</h2>
-                        </div>
+
                         <div className="bg-gray-100 rounded-lg p-6 text-gray-600">
+                            <div className="flex items-center mb-6 justify-center md:justify-start">
+                                <Users className="text-orange-500 w-8 h-8 mr-3" />
+                                <h2 className="text-lg md:text-xl font-bold text-black">Community Engagement</h2>
+                            </div>
                             <p className="mb-4">
                                 We believe that community involvement is essential in fostering environmental sustainability and supporting local conservation efforts.
                             </p>
@@ -102,11 +105,12 @@ const EnvironmentPolicy = () => {
 
                     {/* Customer Engagement Section */}
                     <section className="mb-8 px-2">
-                        <div className="flex items-center mb-6 px-2 text-center justify-center md:justify-start">
-                            <UserCheck className="text-orange-500 w-8 h-8 mr-3" />
-                            <h2 className="text-lg md:text-xl font-bold text-black">Customer Engagement</h2>
-                        </div>
+
                         <div className="bg-gray-100 rounded-lg p-6 text-gray-600">
+                            <div className="flex items-center mb-6 px-2 text-center justify-center md:justify-start">
+                                <UserCheck className="text-orange-500 w-8 h-8 mr-3" />
+                                <h2 className="text-lg md:text-xl font-bold text-black">Customer Engagement</h2>
+                            </div>
                             <p>
                                 We encourage our customers to join us in our efforts to promote environmental sustainability and reduce our impact on the environment. By providing resources and guidance on sustainable tourism practices and responsible travel behaviors we empower travelers to adopt responsible travel habits and share their own environmental efforts and experiences with us.
                             </p>
