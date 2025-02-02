@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -173,7 +174,7 @@ const Footer: React.FC = () => {
                     <p className="text-white/80 text-center text-[5px] md:text-xs">
                         Designed and Developed By
                     </p>
-                    <img src="/Partners/squalltec.png" alt="squlltec" className="w-[40px] md:w-20" />
+                    <Image src="/Partners/squalltec.png" alt="squlltec" className="w-[40px] md:w-20" width={100} height={100} />
                 </div>
 
 

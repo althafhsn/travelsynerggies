@@ -43,21 +43,28 @@ const blogs: BlogCardProps[] = [
 
 const BlogCard: React.FC<BlogCardProps> = ({ title, description, imageUrl, date, category, href }) => {
   return (
-    <Link href={href} className="bg-gray-300 rounded-lg shadow-lg overflow-hidden w-full sm:w-[48%] lg:w-[30%] relative" >
-      <img src={imageUrl} alt={title} className="w-full h-80 object-cover hover:scale-110 transition-all duration-300 ease-in-out" />
-      <div className="top-[49%] absolute bg-black/30 w-full ">
-        <p className="text-sm text-orange-500 font-extrabold px-5 py-2">{date}</p>
-      </div>
-      <div className="p-5 ">
-        <div className="min-h-[234px]">
+    <Link href={href} className="bg-gray-300 rounded-lg shadow-lg overflow-hidden w-full sm:w-[48%] lg:w-[30%]">
+      {/* Make this relative so absolute children stay inside */}
+      <div className="relative w-full h-80 overflow-hidden">
+        <img src={imageUrl} alt={title} className="w-full h-full object-cover hover:scale-110 transition-all duration-300 ease-in-out" />
 
+        {/* Absolute Date Overlay inside the relative container */}
+        <div className="absolute bottom-0 left-0 w-full bg-black/30">
+          <p className="text-sm text-orange-500 font-extrabold px-5 py-2">{date}</p>
+        </div>
+      </div>
+
+      {/* Content Section */}
+      <div className="px-5">
+        <div className="min-h-[234px]">
           <h3 className="text-xl font-semibold text-orange-500 mt-6">{title}</h3>
           <p className="text-gray-900 text-sm mt-1 text-justify">{description}</p>
           <p className="text-gray-800 font-medium mt-2">{category}</p>
         </div>
-        <div className="text-orange-600 font-semibold mt-1 inline-block">Learn More →</div>
+        <div className="text-orange-600 font-semibold my-2 inline-block">Learn More →</div>
       </div>
     </Link>
+
 
   );
 };
@@ -93,7 +100,7 @@ const UAETravelHistory = () => {
         </Breadcrumb>
         <div className="w-full h-[1px] bg-gray-200 my-2"></div>
       </div>
-      
+
 
       {/* Section: Sustainable Tourism */}
       <div className="w-full flex flex-col items-center justify-center text-center px-4 pt-10">

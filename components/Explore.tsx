@@ -592,9 +592,9 @@ const Explore = () => {
                                     <div className="z-10 relative px-4">
                                         <div className="flex items-center gap-1 -mb-4 group-hover:mb-0">
                                             {(project.fName !== 'Game ' && project.fName !== 'Winter ') && (
-                                                <CiLocationOn className="text-lg text-orange-500" />
+                                                <CiLocationOn className="text-lg text-white" />
                                             )}
-                                            <h3 className="text-[15px] font-extrabold text-orange-500 ">
+                                            <h3 className="text-[15px] font-extrabold text-white">
                                                 {item.name}
                                             </h3>
                                         </div>
