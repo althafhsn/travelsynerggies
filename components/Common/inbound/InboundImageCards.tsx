@@ -9,7 +9,7 @@ interface InboundImageCardsProps {
     title: string;
     designedBy?: string;
     openedIn?: string;
-    description: string;
+    description: string[];
     facilitiesOnSiteArea?: string[];
 
 }
@@ -25,7 +25,7 @@ const InboundImageCards = ({
     return (
         <article
             key={index}
-            className="group relative isolate flex flex-col justify-end overflow-hidden rounded-sm transition-all duration-500 hover:scale-105 pb-6 w-[300px] h-[450px] md:w-[280px] lg:h-[320px] xl:w-[300px] xl:h-[450px]  mx-auto mt-12 cursor-pointer"
+            className="group relative isolate flex flex-col justify-end overflow-hidden rounded-sm transition-all duration-500 hover:scale-105 pb-6 w-[300px] h-[450px] md:w-[280px] lg:h-[350px] xl:w-[340px] xl:h-[480px]  mx-auto mt-12 cursor-pointer"
         >
             {/* Background Image */}
             <Image
@@ -52,7 +52,16 @@ const InboundImageCards = ({
                 <div className="opacity-0 max-h-0 overflow-hidden transition-all duration-500 group-hover:opacity-100 group-hover:max-h-[100%] group-hover:mt-2">
                     {designedBy && <p className="text-xs leading-5 text-white mb-2">Designed by: {designedBy}</p>}
                     {openedIn && <p className="text-xs leading-5 text-white mb-2">Opened in: {openedIn}</p>}
-                    {description && <p className="text-xs leading-5 text-white mb-2">{description}</p>}
+                    {description && description.length > 0 && (
+                        <div className="mt-2">
+                            <ul className=" list-inside text-xs leading-5 text-white">
+                                {description.map((des, idx) => (
+                                    <li key={idx}>{des}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+
 
                     {/* Facilities Section */}
                     {facilitiesOnSiteArea && facilitiesOnSiteArea.length > 0 && (
@@ -67,12 +76,7 @@ const InboundImageCards = ({
                     )}
                 </div>
             </div>
-        </article>
-
-
-
-
-
+        </article >
     )
 }
 

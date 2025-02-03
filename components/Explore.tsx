@@ -260,8 +260,8 @@ const projects: jurnels[] = [
 
             {
                 image: '/outbound/enthralling-adventures/img5.webp',
-                name: 'Canoeing in Canada',
-                description: 'Paddle through Canada’s pristine wilderness, navigating serene lakes and winding rivers surrounded by towering pines and abundant wildlife.'
+                name: 'Exploring Kazakhstan',
+                description: 'Where endless golden steppes meet the sky ! Home to roaming wild horses, soaring eagles, and ancient nomadic tales, this is nature at its purest. Lose yourself in vast, untouched landscapes, chase breathtaking sunsets, and feel the freedom of wide-open spaces.'
             },
             {
                 image: '/outbound/enthralling-adventures/img4.webp',
