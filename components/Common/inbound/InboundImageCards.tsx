@@ -25,7 +25,7 @@ const InboundImageCards = ({
     return (
         <article
             key={index}
-            className="group relative isolate flex flex-col justify-end overflow-hidden rounded-sm transition-all duration-500 hover:scale-105 pb-6 w-[280px] h-[380px] md:w-[230px] lg:h-[300px] xl:w-[260px] xl:h-[320px] 2xl:w-[300px] 2xl:h-[450px] mx-auto mt-12 cursor-pointer"
+            className="group relative isolate flex flex-col justify-end overflow-hidden rounded-sm transition-all duration-500 hover:scale-105 pb-6 w-[300px] h-[450px] md:w-[280px] lg:h-[320px] xl:w-[300px] xl:h-[450px]  mx-auto mt-12 cursor-pointer"
         >
             {/* Background Image */}
             <Image
@@ -49,10 +49,10 @@ const InboundImageCards = ({
                 </div>
 
                 {/* Information Section */}
-                <div className="opacity-0 max-h-0 overflow-hidden transition-all duration-500 group-hover:opacity-100 group-hover:max-h-[300px] group-hover:mt-2">
-                    {designedBy && <p className="text-xs leading-5 text-white">Designed by: {designedBy}</p>}
-                    {openedIn && <p className="text-xs leading-5 text-white">Opened in: {openedIn}</p>}
-                    {description && <p className="text-xs leading-5 text-white">{description}</p>}
+                <div className="opacity-0 max-h-0 overflow-hidden transition-all duration-500 group-hover:opacity-100 group-hover:max-h-[100%] group-hover:mt-2">
+                    {designedBy && <p className="text-xs leading-5 text-white mb-2">Designed by: {designedBy}</p>}
+                    {openedIn && <p className="text-xs leading-5 text-white mb-2">Opened in: {openedIn}</p>}
+                    {description && <p className="text-xs leading-5 text-white mb-2">{description}</p>}
 
                     {/* Facilities Section */}
                     {facilitiesOnSiteArea && facilitiesOnSiteArea.length > 0 && (

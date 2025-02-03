@@ -8,19 +8,19 @@ const page = () => {
       title: "Sustainable Tourism",
       description:
         "The UAE is committed to reducing its environmental footprint while maintaining its reputation for luxury. Initiatives like Dubai’s Sustainable City and Abu Dhabi’s Eco-Resorts are leading the way in eco-friendly travel. The UAE aims to become a global leader in sustainable tourism, offering travelers guilt-free luxury experiences.",
-      image: "/blog/blog13.webp",
+      image: "/blog/blog12.webp",
     },
     {
       title: "Space Tourism",
       description:
         "The UAE is boldly venturing into the final frontier with plans for space tourism. The Mohammed bin Rashid Space Centre is working on projects like the Space Hotel and commercial space flights, making the UAE a pioneer in this futuristic travel niche.",
-      image: "/blog/blog14.webp",
+      image: "/blog/blog15.webp",
     },
     {
       title: "Smart Cities and Technology",
       description:
         "The UAE is embracing smart city technology to enhance the traveler experience. From AI-powered customer service to blockchain-based travel solutions, the UAE is leveraging technology to make travel seamless and personalized.",
-      image: "/blog/blog15.webp",
+      image: "/blog/blog11.webp",
     },
     {
       title: "Cultural and Heritage Tourism",
@@ -84,7 +84,7 @@ const page = () => {
 
         {/* Section: From Pearls to Skyscrapers */}
         <div className="grid md:grid-cols-2 gap-10 items-center ">
-          <img src="/blog/blog11.webp" alt="Pearl Diving" className="rounded-lg shadow-lg  " />
+          <img src="/blog/blog17.webp" alt="Pearl Diving" className="rounded-lg shadow-lg  " />
           <div>
             <h2 className="text-3xl md:text-3xl font-bold text-orange-500 px-5  mb-2 max-lg:text-center font-manrope">
               The UAE’s Tourism Evolution
@@ -119,7 +119,7 @@ const page = () => {
                 />
                 <div className="md:w-1/2 text-center md:text-left">
                   <h3 className="text-xl font-bold text-orange-400">{trend.title}</h3>
-                  <p className="mt-2 text-gray-300">{trend.description}</p>
+                  <p className="mt-2 text-gray-300 text-justify">{trend.description}</p>
                 </div>
               </div>
             ))}
@@ -149,7 +149,7 @@ const page = () => {
 
             </p>
           </div>
-          <img src="/blog/blog12.webp" alt="Dubai Skyline" className="rounded-lg shadow-lg w-full h-[600px] object-cover" />
+          <img src="/blog/blog13.webp" alt="Dubai Skyline" className="rounded-lg shadow-lg w-full h-[600px] object-cover" />
         </div>
 
 

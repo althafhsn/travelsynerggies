@@ -31,11 +31,12 @@ const projects: jurnels[] = [
         description: 'Escape to idyllic tropical paradises where sun-kissed beaches, turquoise waters and lush greenery create the perfect setting for relaxation and rejuvenation. Whether it’s the Maldives, Sri Lanka or the Seychelles, indulge in luxury resorts, serene landscapes and unforgettable island vibes.',
         stack: [
             {
-                image: '/outbound/treasures-unveiled/img1.webp',
-                name: 'Maldives',
-                description: 'A tropical haven of crystal-clear waters, overwater bungalows and pristine white-sand beaches, the Maldives promises serene luxury and unparalleled beach stays.',
-                location: 'Maldives'
+                image: '/outbound/treasures-unveiled/img5.webp',
+                name: 'Sri Lanka ',
+                description: 'Known as the "Pearl of the Indian Ocean," Sri Lanka is a land of timeless charm and breathtaking beauty with lush tea plantations, incredible wildlife, golden beaches and rich cultural heritage, wrapped in warm hospitality. ',
+                location: 'Sri Lanka'
             },
+
             {
                 image: '/outbound/treasures-unveiled/img2.webp',
                 name: 'Hawaii',
@@ -55,10 +56,10 @@ const projects: jurnels[] = [
                 location: 'Cuba'
             },
             {
-                image: '/outbound/treasures-unveiled/img5.webp',
-                name: 'Sri Lanka ',
-                description: 'Known as the "Pearl of the Indian Ocean," Sri Lanka is a land of timeless charm and breathtaking beauty with lush tea plantations, incredible wildlife, golden beaches and rich cultural heritage, wrapped in warm hospitality. ',
-                location: 'Sri Lanka'
+                image: '/outbound/treasures-unveiled/img1.webp',
+                name: 'Maldives',
+                description: 'A tropical haven of crystal-clear waters, overwater bungalows and pristine white-sand beaches, the Maldives promises serene luxury and unparalleled beach stays.',
+                location: 'Maldives'
             },
             {
                 image: '/outbound/treasures-unveiled/img6.webp',
@@ -97,15 +98,16 @@ const projects: jurnels[] = [
                 description: 'Liwonde National Park is a hidden gem in Malawi, known for its tranquil river safaris along the Shire River. It’s a sanctuary for elephants, hippos and an increasing number of rhinos and cheetahs.',
             },
             {
-                image: '/outbound/wildlife-safaris/img5.webp',
-                name: 'Tanjung Putting, Borneo',
-                description: "Tanjung Puting is a tropical haven for orangutans in Borneo. Accessible via river cruises, it features dense rainforests, exotic wildlife, and conservation efforts focused on preserving these primates' natural habitat.",
-            },
-            {
                 image: '/outbound/wildlife-safaris/img6.webp',
                 name: 'Cabo San Lucas, Mexico',
                 description: 'Cabo San Lucas is known for whale watching opportunities. From December to April, visitors can witness majestic humpback and gray whales migrating through its crystal clear waters, making it a paradise for marine wildlife enthusiasts.',
             },
+            {
+                image: '/outbound/wildlife-safaris/img5.webp',
+                name: 'Tanjung Putting, Borneo',
+                description: "Tanjung Puting is a tropical haven for orangutans in Borneo. Accessible via river cruises, it features dense rainforests, exotic wildlife, and conservation efforts focused on preserving these primates' natural habitat.",
+            },
+
 
         ],
         image: '/outbound/wildlife-safaris/main.webp',
@@ -117,16 +119,15 @@ const projects: jurnels[] = [
         description: 'Discover the charm of vibrant cities worldwide with quick getaways tailored to your preferences. Immerse yourself in cultural landmarks, buzzing nightlife and world-class dining, whether it’s New York, Paris, or Tokyo. Perfect for those seeking excitement and exploration.',
         stack: [
             {
-                image: '/outbound/city-breaks/img1.webp',
-                name: 'Singapore',
-                description: 'A dynamic blend of modernity and tradition, Singapore offers stunning skyscrapers, lush gardens, world-class shopping and diverse cuisine in a vibrant cityscape.'
-            },
-            {
                 image: '/outbound/city-breaks/img4.webp',
                 name: 'New York',
                 description: 'The city that never sleeps, New York dazzles with its towering skyline, popular attractions, diverse neighborhoods and vibrant atmosphere.'
             },
-
+            {
+                image: '/outbound/city-breaks/img1.webp',
+                name: 'Singapore',
+                description: 'A dynamic blend of modernity and tradition, Singapore offers stunning skyscrapers, lush gardens, world-class shopping and diverse cuisine in a vibrant cityscape.'
+            },
             {
                 image: '/outbound/city-breaks/img3.webp',
                 name: 'London',
@@ -178,15 +179,16 @@ const projects: jurnels[] = [
                 name: 'Japan',
                 description: 'Discover Japan’s harmonious blend of tradition and modernity, from tranquil tea ceremonies and ancient temples to neon-lit cities and innovative art.'
             },
-            {
-                image: '/outbound/cultural-immersions/img3.webp',
-                name: 'Sevilla',
-                description: 'Feel the soul of Spain in Sevilla, where flamenco dancing, Moorish architecture, and passionate traditions bring Andalusian culture to life.'
-            },
+
             {
                 image: '/outbound/cultural-immersions/img5.webp',
                 name: 'Morocco',
                 description: 'Step into Morocco’s vibrant culture with its bustling souks, intricate craftsmanship, aromatic spices, and mesmerizing blend of Berber, Arab, and European influences.'
+            },
+            {
+                image: '/outbound/cultural-immersions/img3.webp',
+                name: 'Spain',
+                description: 'Feel the soul of Spain in Sevilla, where flamenco dancing, Moorish architecture, and passionate traditions bring Andalusian culture to life.'
             },
 
         ],
@@ -214,15 +216,16 @@ const projects: jurnels[] = [
                 description: 'Known as the Rose City, Petra features stunning architecture and ancient ruins, carved into sandstone cliffs that is a marvel in the desert landscape.'
             },
             {
-                image: '/outbound/architectural-wonders/img4.webp',
-                name: 'Taj Mahal, India  ',
-                description: 'A symbol of eternal love, the Taj Mahal is a stunning white marble mausoleum renowned for its fine craftmanship, breathtaking artistry and timeless beauty.'
-            },
-            {
                 image: '/outbound/architectural-wonders/img6.webp',
                 name: 'Machu Picchu, Peru',
                 description: 'Perched high in the Andes, Machu Picchu is a mystical Incan city known for its remarkable stone structures and breathtaking mountain views.'
             },
+            {
+                image: '/outbound/architectural-wonders/img4.webp',
+                name: 'Taj Mahal, India  ',
+                description: 'A symbol of eternal love, the Taj Mahal is a stunning white marble mausoleum renowned for its fine craftmanship, breathtaking artistry and timeless beauty.'
+            },
+
 
             {
                 image: '/outbound/architectural-wonders/img5.webp',
@@ -254,15 +257,16 @@ const projects: jurnels[] = [
                 name: 'Grand Canyons in USA ',
                 description: 'Experience the breathtaking wonder of the Grand Canyon, where vast, rugged landscapes and crimson-hued cliffs inspire adventure at every turn.'
             },
-            {
-                image: '/outbound/enthralling-adventures/img4.webp',
-                name: 'Paragliding in Swizerland',
-                description: 'Soar over the Swiss Alps, gliding above lush valleys, pristine lakes, and snow-capped peaks for an unforgettable adrenaline rush and mesmerizing views.'
-            },
+
             {
                 image: '/outbound/enthralling-adventures/img5.webp',
                 name: 'Canoeing in Canada',
                 description: 'Paddle through Canada’s pristine wilderness, navigating serene lakes and winding rivers surrounded by towering pines and abundant wildlife.'
+            },
+            {
+                image: '/outbound/enthralling-adventures/img4.webp',
+                name: 'Paragliding in Swizerland',
+                description: 'Soar over the Swiss Alps, gliding above lush valleys, pristine lakes, and snow-capped peaks for an unforgettable adrenaline rush and mesmerizing views.'
             },
             {
                 image: '/outbound/enthralling-adventures/img6.webp',
@@ -337,21 +341,23 @@ const projects: jurnels[] = [
                 description: 'This tropical paradise offers golden beaches, turquoise waters, and luxurious resorts where couples can relax, explore, and revel in the magic of island life.'
             },
             {
-                image: '/outbound/romantic-escapes/img6.webp',
-                name: 'Bentota – Sri Lanka ',
-                description: 'Nestled along Sri Lanka’s golden coastline, Bentota is a serene escape offering tranquil beaches, romantic river cruises and enchanting sunsets.'
+                image: '/outbound/romantic-escapes/img1.webp',
+                name: 'Paris – France',
+                description: 'The City of Love enchants couples with its charming streets, iconic landmarks like the Eiffel Tower and intimate candlelit bistros perfect for a romantic escape.'
             },
+
             {
                 image: '/outbound/romantic-escapes/img5.webp',
                 name: 'Venice – Italy ',
                 description: 'Lose yourself in the timeless romance of Venice, where gondola rides through enchanting canals and charming piazzas evoke a fairy tale-like experience'
             },
-
             {
-                image: '/outbound/romantic-escapes/img1.webp',
-                name: 'Paris – France',
-                description: 'The City of Love enchants couples with its charming streets, iconic landmarks like the Eiffel Tower and intimate candlelit bistros perfect for a romantic escape.'
+                image: '/outbound/romantic-escapes/img6.webp',
+                name: 'Bentota – Sri Lanka ',
+                description: 'Nestled along Sri Lanka’s golden coastline, Bentota is a serene escape offering tranquil beaches, romantic river cruises and enchanting sunsets.'
             },
+
+
 
         ],
         image: '/outbound/romantic-escapes/main.webp',
@@ -378,15 +384,16 @@ const projects: jurnels[] = [
                 description: 'This stunning temple in Ayutthaya, Thailand, is a serene reminder of Buddhist teachings, with its intricate architecture and tranquil riverside setting.'
             },
             {
-                image: '/outbound/spiritual-awakenings/img2.webp',
-                name: 'Erechtheion, Greece',
-                description: 'This ancient temple on the Acropolis of Athens exudes sacred beauty, blending mythology and history in its iconic Caryatid porch.'
-            },
-            {
                 image: '/outbound/spiritual-awakenings/img5.webp',
                 name: 'Ulun Danu Beratan, Indonesia',
                 description: 'Nestled on Bali’s Lake Beratan, this water temple radiates peace and harmony, offering spiritual solace amid misty mountain backdrops.'
             },
+            {
+                image: '/outbound/spiritual-awakenings/img2.webp',
+                name: 'Erechtheion, Greece',
+                description: 'This ancient temple on the Acropolis of Athens exudes sacred beauty, blending mythology and history in its iconic Caryatid porch.'
+            },
+
             {
                 image: '/outbound/spiritual-awakenings/img3.webp',
                 name: 'Jerusalem, Israel',
@@ -403,19 +410,20 @@ const projects: jurnels[] = [
         description: 'Winter is a magical time to travel, and there’s no better way to embrace the season than by exploring enchanting destinations that come alive with snow, lights, and festive cheer. Pack your warmest scarf and get ready to discover the magic of winter!',
         stack: [
             {
-                image: '/outbound/winter-magic/img1.webp',
-                name: 'Christmas Market',
-                description: 'Lose yourself in the charm of Germany’s iconic markets in Nuremberg, Dresden, or Cologne, where handmade treasures, festive treats, and twinkling lights create a storybook atmosphere.'
+                image: '/outbound/winter-magic/img3.webp',
+                name: 'Chasing Northern Lights',
+                description: ' Witness nature’s most dazzling light show as the auroras dance across the skies in Iceland, Norway, or Finland—a bucket-list moment you’ll never forget.',
             },
             {
                 image: '/outbound/winter-magic/img2.webp',
                 name: 'Hit the Slope',
                 description: ' Carve through pristine powder in the majestic Alps of Austria, Switzerland, or France, where world-class skiing and snowboarding await adrenaline junkies.',
             },
+
             {
-                image: '/outbound/winter-magic/img3.webp',
-                name: 'Chasing Northern Lights',
-                description: ' Witness nature’s most dazzling light show as the auroras dance across the skies in Iceland, Norway, or Finland—a bucket-list moment you’ll never forget.',
+                image: '/outbound/winter-magic/img1.webp',
+                name: 'Christmas Market',
+                description: 'Lose yourself in the charm of Germany’s iconic markets in Nuremberg, Dresden, or Cologne, where handmade treasures, festive treats, and twinkling lights create a storybook atmosphere.'
             },
             {
                 image: '/outbound/winter-magic/img4.webp',
