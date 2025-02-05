@@ -524,14 +524,11 @@ const Explore = () => {
                             className="mb-8 xl:mb-0"
                             onSlideChange={handleSlideChange}
                             loop={true}
-                            autoplay={{
-                                delay: 6000,  // 6 seconds delay
-                                disableOnInteraction: false,  // Allow autoplay to continue after user interaction
-                            }}
+
 
                         >
                             {projects.map((project, index) => (
-                                <SwiperSlide key={`slide-${index}`}>
+                                <SwiperSlide key={`slide-${index}`}   >
                                     <div className="sticky top-0 xl:relative">
                                         <div className="grid grid-cols-1 items-center">
                                             {/* Title and Description Section */}
@@ -552,15 +549,18 @@ const Explore = () => {
 
                                             {/* Image Section */}
                                             <div className="xl:order-2">
-                                                <div className="relative h-[420px] md:h-[540px] lg:h-[630px] w-full rounded-lg overflow-hidden pt-2 ">
-                                                    <div className="absolute inset-0 bg-black/10 z-10" />
-                                                    <Image
-                                                        src={project.image}
-                                                        fill
-                                                        className="object-fill"
-                                                        alt={`${project.fName} ${project.lName}`}
-                                                        priority
-                                                    />
+                                                <div className="relative h-[420px] md:h-[580px] lg:h-[580px] w-full rounded-lg overflow-hidden cursor-grab pt-2 ">
+
+                                                    <div className="pointer-events-auto">
+
+                                                        <Image
+                                                            src={project.image}
+                                                            fill
+                                                            className="object-fill cursor-grab"
+                                                            alt={`${project.fName} ${project.lName}`}
+                                                            priority
+                                                        />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -570,10 +570,11 @@ const Explore = () => {
 
                             {/* Slider Navigation */}
                             <WorkSliderButton
-                                containerStyle="flex absolute right-1 top-10 z-20 w-full justify-end md:gap-1 bottom-3 "
-                                btnStyle="bg-orange-500/20 hover:bg-orange-500/90 text-orange-500 text-[30px] w-[28px] scale-[80%] md:scale-[90%] md:w-[40px] flex justify-center item-center transition-all rounded-full"
-                                iconsStyle="w-4 h-4 md:w-6 md:h-6 text-white  "
+                                containerStyle="flex absolute right-1 top-10 z-10 w-full justify-end md:gap-1"
+                                btnStyle="bg-orange-500/20 hover:bg-orange-500/90 text-orange-500 text-[30px] w-[28px] scale-[80%] md:scale-[90%] md:w-[40px] flex justify-center items-center transition-all rounded-full"
+                                iconsStyle="w-4 h-4 md:w-6 md:h-6 text-white"
                             />
+
                             {/* bottom-[calc(35%_-_22px)] md:bottom-[calc(35%_-_22px)] */}
                         </Swiper>
                     </div>
@@ -581,11 +582,11 @@ const Explore = () => {
 
                     {/* Right Column - Stack Cards */}
                     <div className="w-full xl:w-2/3">
-                        <div className="flex flex-wrap justify-center  xl:mt-0">
+                        <div className="grid  grid-cols-1 md:grid-cols-3 justify-center  items-center xl:mt-0">
                             {project.stack.map((item, index) => (
                                 <article
                                     key={index}
-                                    className="group relative isolate flex flex-col justify-end overflow-hidden rounded-sm hover:scale-105 transition-all duration-500 pb-6  w-[260px] h-[330px] md:w-[230px] lg:h-[300px] xl:w-[260px] xl:h-[380px] 2xl:w-[280px] 2xl:h-[380px] mx-auto mt-12 cursor-pointer"
+                                    className="group relative isolate flex flex-col justify-end overflow-hidden rounded-sm hover:scale-105 transition-all duration-500 pb-6  w-[95%]  h-[400px]  lg:h-[290px]  xl:h-[380px]  2xl:h-[380px] mx-auto mt-6 cursor-pointer px-2"
                                 >
                                     <Image
                                         src={item.image}

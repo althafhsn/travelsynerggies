@@ -9,7 +9,7 @@ import { CiMenuFries } from 'react-icons/ci'
 const links = [
     {
         name: 'Inbound',
-        path: '/services'
+        path: '/inbound'
     },
     {
         name: 'Outbound',

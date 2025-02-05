@@ -10,7 +10,7 @@ const Nav = () => {
 
         {
             name: 'Inbound',
-            path: '/services'
+            path: '/inbound'
         },
         {
             name: 'Outbound',
