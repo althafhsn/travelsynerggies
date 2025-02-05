@@ -8,7 +8,7 @@ import {
 
 interface TabItem {
     value: string;
-    tabsTrigger: string;
+    tabsTrigger?: string;
     tabsContent: any;
     tabsHeading?: string;
     tabsDescription?: string;

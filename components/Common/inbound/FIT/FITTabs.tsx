@@ -1,7 +1,6 @@
 import TabsComponent from "../common/Tabs";
 import GolfInTheUAETabs from "./golf-in-the-uae/GolfInTheUAETab";
 import FamilyPursuits from "./your-uae-bucket-list/FamilyPursuits";
-import Golfing from "./your-uae-bucket-list/Golfing";
 import HorseRiding from "./your-uae-bucket-list/HorseRiding";
 import OurTopSellers from "./your-uae-bucket-list/OurTopSellers";
 import Wellness from "./your-uae-bucket-list/Wellness";

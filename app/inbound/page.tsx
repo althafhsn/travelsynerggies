@@ -1,20 +1,27 @@
 import FIT from '@/components/Common/inbound/FIT/FIT'
-import Abudabi from '@/components/Common/inbound/FIT/golf-in-the-uae/Abudabi'
-import ImageSwiper from '@/components/Common/inbound/common/ImageSwiper'
-import InboundImageCards from '@/components/Common/inbound/common/InboundImageCards'
-import React from 'react'
+import Groups from '@/components/Common/inbound/Groups/Groups'
+import TabsComponent from '@/components/Common/inbound/common/Tabs'
+
 
 
 
 const page = () => {
+  const TabsComponents = [
+    {
+      tabsTrigger: "FIT's",
+      tabsContent: <FIT />,
+      value: "fit",
+    },
+    {
+      tabsTrigger: "Groups",
+      tabsContent: <Groups />,
+      value: "groups",
+    },
+  ]
 
   return (
-    <div className='container mx-auto my-10  '>
-      {/* <Abudabi/> */}
-
-      <FIT />
-
-
+    <div className='container mx-auto mt-10  '>
+      <TabsComponent tabsData={TabsComponents} />
     </div>
   )
 }

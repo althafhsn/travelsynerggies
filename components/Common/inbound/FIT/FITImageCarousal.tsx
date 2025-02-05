@@ -20,8 +20,6 @@ const FITImageCarousal = () => {
             image: '/inbound/FIT/carousel/professional-guides.webp'
         },
         
-        
-
     ]
     return (
         <div>
