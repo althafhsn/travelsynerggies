@@ -28,7 +28,7 @@ const ImageSwiper = ({ images }: ImageSwiperProps) => {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4">
+    <div className="md:w-full max-w-7xl mx-auto px-4 w-[50%]">
       {/* Swiper Carousel */}
       <Swiper
         modules={[EffectCoverflow, Navigation, Pagination]}

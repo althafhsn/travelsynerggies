@@ -1,6 +1,7 @@
 import Herobanner from "../common/Herobanner"
 import CongressesImageCarousal from "./CongressesImageCarousel"
 import CongressesInstagram from "./CongressesInstragram"
+import IndustryEvents from "./IndustryEvents"
 import ClientLogosShowcase from "./LogoCarousel"
 
 
@@ -38,6 +39,9 @@ const Congresses = () => {
             </div>
             <hr className="w-full my-2 border-t-2 border-orange-500" />
 
+            <div className='grid gap-2 py-5'>
+                <IndustryEvents />
+            </div>
             <div className=' pt-10 '>
                 <h1 className='text-2xl md:text-5xl pb-5 text-center font-bold  text-orange-500'>Enhancing your MICE Event</h1>
 

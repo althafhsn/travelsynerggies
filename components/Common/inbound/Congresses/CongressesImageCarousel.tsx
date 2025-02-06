@@ -37,7 +37,7 @@ const CongressesImageCarousal = () => {
         
     ]
     return (
-        <div>
+        <div className='w-full px-4 sm:px-6 lg:px-8'>
             <ImageSwiper images={carousal} />
         </div>
     )
