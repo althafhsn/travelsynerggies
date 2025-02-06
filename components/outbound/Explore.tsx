@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 import Image from 'next/image';
-import WorkSliderButton from '@/components/WorkSliderButton';
+import WorkSliderButton from '@/components/Common/WorkSliderButton';
 import { CiLocationOn } from 'react-icons/ci';
 
 type jurnels = {

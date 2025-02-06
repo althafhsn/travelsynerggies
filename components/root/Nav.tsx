@@ -7,14 +7,17 @@ import { usePathname } from "next/navigation"
 const Nav = () => {
     const pathname = usePathname();
     const links = [
-
+        {
+            name: 'Home',
+            path: '/'
+        },
         {
             name: 'Inbound',
             path: '/inbound'
         },
         {
             name: 'Outbound',
-            path: '/'
+            path: '/outbound'
         },
         {
             name: 'careers',

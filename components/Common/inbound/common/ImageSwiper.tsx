@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 import Image from 'next/image';
-import WorkSliderButton from '@/components/WorkSliderButton';
+import WorkSliderButton from '@/components/Common/WorkSliderButton';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';

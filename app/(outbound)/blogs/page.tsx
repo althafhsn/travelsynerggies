@@ -3,15 +3,15 @@
 import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { FooterLink } from '@/constants';
-import ServiceBlog from '@/components/Footer/OurServiceSpectrum';
-import TermsAndConditions from '@/components/Footer/TermsAndCondition';
-import SustainableTourismBlog from '@/components/Footer/SustainableToursm';
-import OutboundTravelBlog from '@/components/Footer/OutboundHolidays';
-import SafetyGuidelinesBlog from '@/components/Footer/SaftyTravel';
-import BucketListPage from '@/components/Footer/BucketList';
-import Partners from '@/components/Footer/Parnters';
-import WhyChooseUs from '@/components/Footer/WhyChoosUs';
-import EnvironmentPolicy from '@/components/Footer/EnvironmentPolicy';
+import ServiceBlog from '@/components/outbound/Footer/OurServiceSpectrum';
+import TermsAndConditions from '@/components/outbound/Footer/TermsAndCondition';
+import SustainableTourismBlog from '@/components/outbound/Footer/SustainableToursm';
+import OutboundTravelBlog from '@/components/outbound/Footer/OutboundHolidays';
+import SafetyGuidelinesBlog from '@/components/outbound/Footer/SaftyTravel';
+import BucketListPage from '@/components/outbound/Footer/BucketList';
+import Partners from '@/components/outbound/Footer/Parnters';
+import WhyChooseUs from '@/components/outbound/Footer/WhyChoosUs';
+import EnvironmentPolicy from '@/components/outbound/Footer/EnvironmentPolicy';
 
 const BlogContent: React.FC = () => {
   const searchParams = useSearchParams();

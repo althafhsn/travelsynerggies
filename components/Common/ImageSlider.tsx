@@ -23,9 +23,9 @@ interface ImageSliderProps {
 }
 
 export interface SlideImage {
-    name: string;
+    name?: string;
     image: string;
-    description: string;
+    description?: string;
 }
 
 const ImageSlider: React.FC<ImageSliderProps> = ({
@@ -68,7 +68,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                 {/* 🛠 Fix Image Not Showing After Navigation */}
                                 <Image
                                     src={slide.image}
-                                    alt={slide.name}
+                                    alt={''}
                                     fill
                                     priority={index === 0} // Load first image faster
                                     className="w-full h-full object-cover"
