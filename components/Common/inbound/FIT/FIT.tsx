@@ -36,14 +36,12 @@ const FIT = () => {
                     Our dedicated team is passionate about travel and brings a deep understanding of the UAE and its unique offerings.
                 </p>
             </div>
-            <hr className="w-full my-2 border-t-2 border-orange-500" />
 
 
             <div className='grid gap-2 py-5'>
                 <h1 className=' text-5xl   text-center font-bold  text-orange-500'>Our Service Portfolio</h1>
                 <FITImageCarousal />
             </div>
-            <hr className="w-full my-2 border-t-2 border-orange-500" />
 
 
             <div className=' pt-10 '>

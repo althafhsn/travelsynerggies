@@ -7,7 +7,7 @@ import MICEInstagram from "./MICEInstagram"
 const MICE = () => {
     const MICEHeroProps = {
         mainTitle: 'MICE',
-        imageurl: '/inbound/Groups/main.webp',
+        imageurl: '/inbound/MICE/main.webp',
         title: 'Making M.I.C.E Experiences More Exciting',
         description: [
             "Whether it's an intimate gathering or a grand-scale event, we excel in crafting unforgettable experiences. Our forte lies in efficiently linking you to suitable hotels, event venues, tours, and expertly orchestrating the intricate logistics essential for flawlessly hosting both private and professional occasions, along with incentive programs. Our extensive portfolio encompasses the intricate logistics of diplomatic events, concerts, sporting spectacles, and large-scale corporate MICE gatherings, all facilitated by our cutting-edge in-house technology"
@@ -32,11 +32,9 @@ const MICE = () => {
                     At Travel Synergies, we specialize in delivering comprehensive M.I.C.E. services, dedicated to delivering exceptional and seamless event experiences with extensive expertise, our team excels in organizing events of all scales from small, intimate gatherings to large, international events.
                 </p>
             </div>
-            <hr className="w-full my-2 border-t-2 border-orange-500" />
             <MICEImageCarousal />
             <div className='grid gap-2 py-5'>
             </div>
-            <hr className="w-full my-2 border-t-2 border-orange-500" />
 
             <div className=' pt-10 '>
                 <h1 className='text-2xl md:text-5xl pb-5 text-center font-bold  text-orange-500'>Enhancing your MICE Event</h1>

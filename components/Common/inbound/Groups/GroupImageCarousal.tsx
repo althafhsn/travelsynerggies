@@ -5,39 +5,49 @@ import ImageSwiper from '../common/ImageSwiper'
 const GroupImageCarousal = () => {
     const carousal = [
         {
-            title: 'Tailored Itineraries for Every Taste',
-            description: 'We understand that each group is unique, with diverse interests and preferences. We offer tailer-made itineraries meticulously crafted to cater to the specific desires of your group. Whether it’s exploring the cosmopolitan charm of Dubai, delving into the cultural heritage of Abu Dhabi, or seeking adventure amidst the desert dunes, our expertly curated tours ensure that every moment is perfectly tailored to your group’s needs.',
-            image: '/inbound/FIT/carousel/professional-guides.webp'
-        },
-        { 
-            title: 'Luxurious Accommodations and Transportation',
-            description: 'We believe that comfort and convenience are essential for an exceptional travel experience. We partner with top-tier accommodations and provide luxurious transportation options to ensure that your group travels in style and relaxation. Whether it’s a lavish hotel overlooking the Arabian Gulf or a private chartered vehicle for seamless exploration, we spare no effort in ensuring that every aspect of your journey exceeds expectations.',
-            image: '/inbound/FIT/carousel/professional-guides.webp'
+            title: ' Myriad of Accommodation Options',
+            description: 'We believe that comfort and convenience are essential for an exceptional travel experience. We work with a wide range of accommodation partners to match your budget and preferences, whether it’s a luxurious hotel with stunning Arabian Gulf views or a centrally located city stay. ',
+            image: '/inbound/Groups/carousel/A_Myriad_of.webp'
         },
         {
-            title: 'Experienced Guides with Local Insight            ',
-            description: 'Our team of experienced guides possesses an intimate knowledge of the UAE’s rich history, culture, and landmarks. With their expert guidance, you’ll gain invaluable insights into the hidden gems and lesser-known treasures that define the essence of the Emirates. From navigating bustling souks to uncovering ancient archaeological sites, our guides are dedicated to providing an immersive and unforgettable experience for every member of your group.',
-            image: '/inbound/FIT/carousel/professional-guides.webp'
+            title: 'Group Tours',
+            description: 'We design and execute a wide range of group tours, from cultural and historical excursions to adventure activities as well sophisticated study tours, with engaging elements within the tour that provides a memorable experience for all our guests.',
+            image: '/inbound/Groups/carousel/Group_Tours.webp'
         },
         {
-            title: 'Exclusive Access and VIP Treatment            ',
+            title: 'Corporate Retreats',
+            description: 'We provide a wide array of services designed to make your group travel experience effortless and enjoyable.',
+            image: '/inbound/Groups/carousel/Corporate_Retreats.webp'
+        },
+        {
+            title: 'Comprehensive Services for Leisure Groups',
             description: 'We understand the value of exclusive experiences that create lasting memories. From private tours of iconic landmarks to VIP access to renowned attractions, we offer unparalleled opportunities for your group to indulge in luxury and exclusivity. Whether it’s savoring a gourmet meal atop the Burj Khalifa or enjoying a private desert safari under the starlit sky, we ensure that your group receives the VIP treatment they deserve.',
-            image: '/inbound/FIT/carousel/professional-guides.webp'
+            image: '/inbound/Groups/carousel/Comprehensive_services.webp'
         },
         {
-            title: 'Seamless Planning and Support          ',
-            description: 'Planning a group trip can be daunting, but with our dedicated team by your side, it becomes a seamless and stress-free process. From the initial consultation to the final farewell, we provide comprehensive support every step of the way. Our team handles all the logistics, reservations, and arrangements, allowing you to relax and focus on creating unforgettable memories with your group.',
-            image: '/inbound/FIT/carousel/professional-guides.webp'
+            title: 'Reunions & Family Get Togethers',
+            description: 'Bring friends and families together with our thoughtfully planned reunions and family get-togethers, creating joyful moments, engaging activities, and cherished memories.            ',
+            image: '/inbound/Groups/carousel/reunions.webp'
         },
         {
-            title: 'Seamless Planning and Support          ',
-            description: 'Planning a group trip can be daunting, but with our dedicated team by your side, it becomes a seamless and stress-free process. From the initial consultation to the final farewell, we provide comprehensive support every step of the way. Our team handles all the logistics, reservations, and arrangements, allowing you to relax and focus on creating unforgettable memories with your group.',
-            image: '/inbound/FIT/carousel/professional-guides.webp'
+            title: 'Itinerary Design  ',
+            description: 'Customized itineraries tailored to your group’s interests and preferences, including the best destinations and thoughtfully planned activities',
+            image: '/inbound/Groups/carousel/iternerary_Design.webp'
         },
-        
+        {
+            title: 'Logistics and Planning  ',
+            description: 'We handle all logistical details, including transportation, accommodation and sightseeing, ensuring a smooth and stress-free experience',
+            image: '/inbound/Groups/carousel/Logistics_and_Planning.webp'
+        },
+        {
+            title: 'Activity Coordination',
+            description: 'We organize a seamless range of activities, from guided tours and cultural experiences to adventure sports and relaxation activities, ensuring a thoroughly covered tour of the destination',
+            image: '/inbound/Groups/carousel/Activity_Cordination.webp'
+        },
+
     ]
     return (
-        <div>
+        <div className=''>
             <ImageSwiper images={carousal} />
         </div>
     )

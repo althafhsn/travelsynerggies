@@ -4,10 +4,10 @@ import CruisesImageCarousal from "./CruisesImageCarousel"
 import CruisesInstagram from "./CruisesInstagram"
 
 
-const MICE = () => {
-    const MICEHeroProps = {
+const Cruises = () => {
+    const CruisesHeroProps = {
         mainTitle: 'Cruises',
-        imageurl: '/inbound/Groups/main.webp',
+        imageurl: '/inbound/Cruises/main.webp',
         title: 'Raising the Bar for Your Cruise Experience',
         description: [
             "We are your DMC go-to resource for designing extraordinary and unforgettable cruises. Travel Synergies offers a variety of services that improve your cruise experience and guarantee that every second of your journey is filled with delight, relaxation, and discovery thanks to our in-depth knowledge of locations, attention to detail, and dedication to customized service."
@@ -18,10 +18,10 @@ const MICE = () => {
         <div className="container mx-auto px-2">
             <div className="pb-2">
                 <Herobanner
-                    mainTitle={MICEHeroProps.mainTitle}
-                    imageUrl={MICEHeroProps.imageurl}
-                    title={MICEHeroProps.title}
-                    description={MICEHeroProps.description}
+                    mainTitle={CruisesHeroProps.mainTitle}
+                    imageUrl={CruisesHeroProps.imageurl}
+                    title={CruisesHeroProps.title}
+                    description={CruisesHeroProps.description}
                     letTalkButton={true}
                 />
 
@@ -32,11 +32,10 @@ const MICE = () => {
                     At Travel Synergies, we craft unforgettable cruise experiences that redefine travel. Whether you're seeking the tranquility of a secluded beach, the excitement of bustling port cities, or the adventure of exploring remote destinations, we have the perfect cruise for you. From pre- and post-cruise tours to comprehensive event management, every detail is handled with precision and excellence.
                 </p>
             </div>
-            <hr className="w-full my-2 border-t-2 border-orange-500" />
+            
             <div className='grid gap-2 py-5'>
                 <CruisesImageCarousal />
             </div>
-            <hr className="w-full my-2 border-t-2 border-orange-500" />
 
 
             <div className="pt-10">
@@ -51,4 +50,4 @@ const MICE = () => {
     )
 }
 
-export default MICE
+export default Cruises

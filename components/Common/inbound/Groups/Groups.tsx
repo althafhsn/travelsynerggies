@@ -31,12 +31,10 @@ const Groups = () => {
                     Our dedicated team brings a wealth of knowledge with hands-on experience to deliver tailored solutions, catering to specific requests and value additions that exceed expectations.
                 </p>
             </div>
-            <hr className="w-full my-2 border-t-2 border-orange-500" />
 
             <div className='grid gap-2 py-5'>
                 <GroupImageCarousal />
             </div>
-            <hr className="w-full my-2 border-t-2 border-orange-500" />
 
             <div className=' pt-10 '>
                 <h1 className='text-2xl md:text-5xl pb-5 text-center font-bold  text-orange-500'>The Ultimate Experience</h1>

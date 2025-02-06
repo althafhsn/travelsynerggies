@@ -1,4 +1,4 @@
-import React from 'react'
+'use client'
 import InboundImageCards from '../../common/InboundImageCards'
 
 
@@ -143,7 +143,7 @@ const Dubai = () => {
             description: [
                 "OIt’s a 18-holes, Par 72 course and measures 7283 yards. It’s has been nominated as best. Carved out of sandy desert, it is designed for all level of golfers. It is set against the striking Downtown Dubai skyline giving the golf courses a stunning backdrop of Burj Khalifa."
             ],
-            imageUrl: '/inbound/FIT/bucket-list/golfing/dubai/dubai -creek-golf-club.webp',
+            imageUrl: '/inbound/FIT/bucket-list/golfing/dubai/dubai-hills.webp',
             facilitiesOnSiteArea: [
                 'Practice Facility',
                 '09 hole Par 3 course',
@@ -157,7 +157,7 @@ const Dubai = () => {
             description: [
                 "It’s a , the 9-hole, Par 35 and is spread over 50 acers of land. Each hole is uniquely landscaped with exotic trees, shrubs and original desert flora and the course also features a saltwater lake which comes into play on five holes. The wooden gazebos, views of the Arabian Gulf and peacocks which freely roam the fairways have added a special charm to this course that is a fair and exciting challenge for golfers of all abilities."
             ],
-            imageUrl: '/inbound/FIT/bucket-list/golfing/dubai/dubai -creek-golf-club.webp',
+            imageUrl: '/inbound/FIT/bucket-list/golfing/dubai/jebel-ali.webp',
             facilitiesOnSiteArea: [
                 'PGA Professional Instructors in the Golf Academy',
                 'Restaurants',
@@ -171,7 +171,7 @@ const Dubai = () => {
             description: [
                 "It’s a , the 9-hole, Par 36 and measures 3600 yards in total with 05 tee options. It’s 02nd Best Golf course in Dubai. All 09 holes are floodlit. Night Golf is available until 23:00 hrs. Peter Harradine strategically placed each hole allowing the six natural lakes on the course to come into play on several approaches."
             ],
-            imageUrl: '/inbound/FIT/bucket-list/golfing/dubai/dubai -creek-golf-club.webp',
+            imageUrl: '/inbound/FIT/bucket-list/golfing/dubai/the-track-meydan.webp',
             facilitiesOnSiteArea: [
                 'Golf Academy',
                 'Restaurants',

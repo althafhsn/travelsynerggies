@@ -8,7 +8,7 @@ import ClientLogosShowcase from "./LogoCarousel"
 const Congresses = () => {
     const CongressesHeroProps = {
         mainTitle: 'Congresses',
-        imageurl: '/inbound/Groups/main.webp',
+        imageurl: '/inbound/Congress/main.webp',
         title: 'Making Congresses Experiences More Exciting',
         description: [
             "At Travel Synergies, we are a leading Professional Congress Organizer (PCO) with a proven history of managing and delivering world-class congresses and events. Our portfolio includes prestigious global events, such as those organized by the United Nations for the Federal Government of the UAE, showcasing our expertise and commitment to excellence."
@@ -33,11 +33,9 @@ const Congresses = () => {
                     With a team of seasoned professionals, we bring deep industry knowledge and precision to every project. We have successfully managed congresses of all scales, from small intimate gatherings to large international events. Our expertise spans diverse industries and event types, including:
                 </p>
             </div>
-            <hr className="w-full my-2 border-t-2 border-orange-500" />
             <div className='grid gap-2 py-5'>
                 <CongressesImageCarousal />
             </div>
-            <hr className="w-full my-2 border-t-2 border-orange-500" />
 
             <div className='grid gap-2 py-5'>
                 <IndustryEvents />
