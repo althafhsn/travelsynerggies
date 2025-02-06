@@ -5,16 +5,16 @@ const HeroBanner = () => {
     const heroImage = [
         {
 
-            image: '/inbound/Inbound/Slider/Dubai-creek.webp',
+            image: '/inbound/Inbound/Slider/Dubai-creek.jpg',
 
         },
         {
 
-            image: '/inbound/Inbound/Slider/Falcon-hunting.webp',
+            image: '/inbound/Inbound/Slider/Falcon-hunting.jpg',
 
         },
         {
-            image: '/inbound/Inbound/Slider/Serene-desert.webp'
+            image: '/inbound/Inbound/Slider/Serene-desert.jpg'
         }
 
     ]
