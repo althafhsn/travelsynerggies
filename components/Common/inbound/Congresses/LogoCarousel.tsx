@@ -36,10 +36,10 @@ const ClientLogosShowcase = () => {
                 <Card className="w-full shadow-lg bg-black">
                     <CardContent className="p-6">
                         <div className="space-y-4">
-                            <h2 className="text-2xl md:text-5xl pb-5 text-center font-bold text-orange-500">
+                            <h2 className="text-2xl md:text-3xl pb-5 text-center font-bold text-orange-500">
                                 Prestigious Events Managed by Our Team
                             </h2>
-                            <p className="text-gray-300 text-sm md:text-lg pb-5">Our experience includes some of the most prestigious global events, such as:</p>
+                            <p className="text-gray-300 text-sm md:text-lg text-center pb-5">Our experience includes some of the most prestigious global events, such as:</p>
 
                             <div className="relative overflow-hidden">
                                 <div className="flex space-x-8 py-8 animate-scroll">
@@ -79,8 +79,8 @@ const ClientLogosShowcase = () => {
                     </CardContent>
                 </Card>
                 <div className="text-center mt-8">
-                    <h3 className="text-xl md:text-2xl font-semibold text-white">Ready to Partner with Travel Synergies?</h3>
-                    <p className="text-gray-400 mt-2">Whether you're planning a solo adventure, a romantic getaway, or a family vacation, our expertise and resources ensure a memorable journey.</p>
+                    <h3 className="text-2xl md:text-3xl font-semibold text-white">Ready to Partner with Travel Synergies?</h3>
+                    <p className="text-gray-400 text-sm md:text-base mt-2">Whether you're planning a solo adventure, a romantic getaway, or a family vacation, our expertise and resources ensure a memorable journey.</p>
                     <button className="mt-4 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl">
                         Contact Us
                     </button>

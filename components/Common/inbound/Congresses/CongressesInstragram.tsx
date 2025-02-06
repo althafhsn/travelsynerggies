@@ -18,7 +18,7 @@ const CongressesInstagram = () => {
       
             ],
             booknowDescription: 'So what are you waiting for? Book your amazing tour now and get ready for an unforgettable experience',
-            imageUrl:"/inbound/Congress/Instagram/cocktail.jpg"
+            imageUrl:"/inbound/Congress/Instagram/cocktail.webp"
           },
           {
             title: 'Event Handling',

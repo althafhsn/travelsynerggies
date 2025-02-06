@@ -24,7 +24,7 @@ const testimonials = [
 const TestimonialCarousel = () => {
     return (
         <div className="bg-black py-16">
-            <h2 className="text-orange-500 text-3xl md:text-4xl font-bold text-center mb-8">Testimonials</h2>
+            <h2 className="text-orange-500 text-2xl md:text-3xl font-bold text-center mb-8">Testimonials</h2>
             <div className="container mx-auto px-4">
                 <Swiper
                     modules={[Autoplay, Pagination]}
@@ -52,8 +52,8 @@ const TestimonialCarousel = () => {
                             <div className="bg-gray-900 rounded-lg p-8 h-full flex flex-col justify-between min-h-[400px]">
                                 <div className="flex-1">
                                     <FaQuoteLeft className="text-orange-500 text-2xl mb-4" />
-                                    <div className="overflow-y-auto max-h-48 pr-2">
-                                        <p className="text-gray-300 text-lg leading-relaxed">
+                                    <div className="overflow-y-auto max-h-36 pr-2">
+                                        <p className="text-gray-300 text-sm md:text-base leading-relaxed">
                                             {testimonial.text}
                                         </p>
                                     </div>
@@ -69,8 +69,8 @@ const TestimonialCarousel = () => {
                     ))}
                 </Swiper>
                 <div className="text-center mt-8">
-                    <h3 className="text-xl md:text-2xl font-semibold">Ready to Partner with Travel Synergies?</h3>
-                    <p className="text-gray-400 mt-2">Whether you're planning a solo adventure, a romantic getaway, or a family vacation, our expertise and resources ensure a memorable journey.</p>
+                    <h3 className="text-2xl md:text-3xl font-semibold">Ready to Partner with Travel Synergies?</h3>
+                    <p className="text-gray-400 mt-2 text-sm md:text-base">Whether you're planning a solo adventure, a romantic getaway, or a family vacation, our expertise and resources ensure a memorable journey.</p>
                     <button className="mt-4 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl">
                         Sign Up
                     </button>

@@ -60,8 +60,8 @@ const CruisesInstagram = () => {
     ]
     return (
         <div className="w-full">
-            <h2 className="text-orange-500 text-3xl md:text-4xl font-bold mb-4 text-center">Experience, Connect and Indulge</h2>
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+            <h2 className="text-orange-500 text-2xl md:text-3xl font-bold mb-4 text-center">Experience, Connect and Indulge</h2>
+            <p className="text-sm md:text-base text-gray-300 max-w-3xl mx-auto pb-10">
                 Enhance your cruise journey with a variety of unforgettable experiences. From cultural immersions featuring traditional Emirati meals and performances like Ayala and Tanura dances to curated walks, bike tours and city explorations, every moment is designed to inspire and connect. Relax with luxurious spa treatments and pampered retreats, creating cherished memories both on and off the cruise.
 
             </p>

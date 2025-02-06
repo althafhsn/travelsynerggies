@@ -9,7 +9,7 @@ const CommitmentSection = () => {
       <div className="max-w-5xl mx-auto text-center">
         {/* Title */}
         <motion.h2 
-          className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
+          className="text-2xl md:text-3xl  font-bold mb-6 text-orange-500"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -19,7 +19,7 @@ const CommitmentSection = () => {
 
         {/* Description */}
         <motion.p 
-          className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl mx-auto"
+          className="text-sm md:text-base text-gray-200 leading-relaxed max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -35,7 +35,7 @@ const CommitmentSection = () => {
 
         {/* Call to Action Section */}
         <motion.h3 
-          className="text-2xl md:text-3xl font-semibold mb-4"
+          className="text-2xl md:text-3xl font-semibold text-orange-500 mb-4"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
@@ -44,7 +44,7 @@ const CommitmentSection = () => {
         </motion.h3>
 
         <motion.p 
-          className="text-lg text-gray-200 mb-6"
+          className="text-sm md:text-base text-gray-200 mb-6"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}

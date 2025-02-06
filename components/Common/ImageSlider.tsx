@@ -71,7 +71,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                     alt={''}
                                     fill
                                     priority={index === 0} // Load first image faster
-                                    className="w-full h-full object-cover"
+                                    className=" object-fill "
                                 />
 
                                 {/* 🛠 Fix Motion Reset on Slide Change */}

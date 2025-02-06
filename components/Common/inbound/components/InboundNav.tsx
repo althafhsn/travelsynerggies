@@ -19,26 +19,9 @@ const InboundNav = () => {
             name: 'Inbound',
             path: '/inbound'
         },
-       
         {
-            name: "FIT's",
-            path: '/FITs'
-        },
-        {
-            name: 'Groups',
-            path: '/groups'
-        },
-        {
-            name: 'MICE',
-            path: '/MICE'
-        },
-        {
-            name: 'Cruises',
-            path: '/cruises'
-        },
-        {
-            name: 'Congresses',
-            path: '/congresses'
+            name: 'blogs',
+            path: '/blog'
         },
         {
             name: 'About Us',

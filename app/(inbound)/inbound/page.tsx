@@ -4,6 +4,7 @@ import InboundHero from "@/components/Common/inbound/InboundHero";
 import InboundInstagram from "@/components/Common/inbound/InboundInstagram";
 import QuoteBanner from "@/components/Common/inbound/TheWorldIsABook";
 import TravelTech from "@/components/Common/inbound/TravelTech";
+import EventButton from "@/components/Common/inbound/components/FitButtons";
 import HeroBanner from "@/components/root/HeroBanner";
 
 
@@ -21,6 +22,7 @@ export default function Home() {
         <HeroBanner />
         <InboundHero />
         <QuoteBanner />
+        <EventButton />
         <InboundInstagram />
         <TravelTech />
       </div>

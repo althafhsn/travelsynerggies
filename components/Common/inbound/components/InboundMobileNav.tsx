@@ -19,26 +19,13 @@ const links = [
         name: 'Inbound',
         path: '/inbound'
     },
-
     {
-        name: "FIT's",
-        path: '/FITs'
+        name: 'blogs',
+        path: '/blog'
     },
     {
-        name: 'Groups',
-        path: '/groups'
-    },
-    {
-        name: 'MICE',
-        path: '/MICE'
-    },
-    {
-        name: 'Cruises',
-        path: '/cruises'
-    },
-    {
-        name: 'Congresses',
-        path: '/congresses'
+        name: 'About Us',
+        path: '/about-us'
     },
 ]
 

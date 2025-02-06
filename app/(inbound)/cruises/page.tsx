@@ -1,7 +1,9 @@
+'use client'
 import CommitmentSection from "@/components/Common/inbound/Cruises/CommitmentSection"
 import CruisesImageCarousal from "@/components/Common/inbound/Cruises/CruisesImageCarousel"
 import CruisesInstagram from "@/components/Common/inbound/Cruises/CruisesInstagram"
 import Herobanner from "@/components/Common/inbound/common/Herobanner"
+import OtherNavigation from "@/components/Common/inbound/common/OtherNavigation"
 
 
 
@@ -17,6 +19,9 @@ const Cruises = () => {
     }
     return (
         <div className="container mx-auto px-2">
+             <div className="sticky top-5 right-0 z-50 flex justify-center w-full pr-4">
+                <OtherNavigation />
+            </div>
             <div className="pb-2">
                 <Herobanner
                     mainTitle={CruisesHeroProps.mainTitle}
@@ -28,8 +33,8 @@ const Cruises = () => {
 
             </div>
             <div className="bg-black text-white py-10 px-4 md:px-8 lg:px-16 text-center">
-                <h2 className="text-orange-500 text-3xl md:text-4xl font-bold mb-4">Discover the Ultimate Getaway Experience with Travel Synergies</h2>
-                <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+                <h2 className="text-orange-500 text-2xl md:text-3xl font-bold mb-4">Discover the Ultimate Getaway Experience with Travel Synergies</h2>
+                <p className="text-sm md:text-base text-gray-300 max-w-3xl mx-auto">
                     At Travel Synergies, we craft unforgettable cruise experiences that redefine travel. Whether you're seeking the tranquility of a secluded beach, the excitement of bustling port cities, or the adventure of exploring remote destinations, we have the perfect cruise for you. From pre- and post-cruise tours to comprehensive event management, every detail is handled with precision and excellence.
                 </p>
             </div>
@@ -39,7 +44,7 @@ const Cruises = () => {
             </div>
 
 
-            <div className="pt-10">
+            <div className="pt-10 w-[80%] mx-auto">
 
                 <CruisesInstagram />
             </div>

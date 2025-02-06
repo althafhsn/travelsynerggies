@@ -12,7 +12,7 @@ const MICEImageCarousal = () => {
         { 
             title: 'Technology Integration',
             description: 'we specialize in integrating cutting-edge technology to transform event planning and execution. From streamlined registrations to real-time updates and interactive platforms. Our solutions enhance engagement and create memorable experiences. Our team is committed to delivering impactful events by staying at the forefront of technology.',
-            image: '/inbound/MICE/carousel/Evintry Events System.webp'
+            image: '/inbound/MICE/carousel/Evintry-Events-System.webp'
         },
         {
             title: 'Branding',

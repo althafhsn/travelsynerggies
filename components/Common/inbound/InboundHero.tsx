@@ -5,7 +5,7 @@ const InboundHeader = () => {
     return (
         <div className=" container mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div className="container        mx-auto text-center">
-                <h2 className="text-xl sm:text-2xl font-semibold text-gray-400 mb-4">
+                <h2 className="text-lg md:text-xl font-semibold text-gray-400 mb-4">
                     Redefining the art of Travel
                 </h2>
                 <div className="flex justify-center flex-col items-center mb-4 gap-4">

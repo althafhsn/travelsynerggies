@@ -28,12 +28,12 @@ const Herobanner = ({
                             <h2 className="text-lg md:text-3xl lg:text-6xl font-bold text-orange-500 my-2 max-lg:text-center font-manrope">
                                 {mainTitle}
                             </h2>
-                            <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-white my-2 max-lg:text-center font-manrope">
+                            <h2 className="text-2xl md:text-3xl font-bold text-white my-2 max-lg:text-center font-manrope">
                                 {title}
                             </h2>
                             <ul>
                                 {description.map((desc, index) => (
-                                    <li key={index} className="text-lg text-gray-200 text-justify py-2 mx-auto">
+                                    <li key={index} className="text-sm md:text-base text-gray-200 text-justify py-2 mx-auto">
                                         {desc}
                                     </li>
                                 ))}
