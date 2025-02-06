@@ -17,7 +17,7 @@ const eventCategories = [
 const IndustryEvents = () => {
   return (
     <section className=" text-white px-6 md:px-12 lg:px-20">
-      <div className="max-w-6xl mx-auto text-cente">
+      <div className="max-w-6xl mx-auto text-center">
         {/* Section Title */}
         <motion.h2 
           className="text-2xl md:text-3xl  font-bold mb-6 text-orange-500"
