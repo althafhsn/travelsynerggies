@@ -46,7 +46,10 @@ const FITTabs = () => {
 
     return (
         <div className="">
-            <TabsComponent tabsData={FITMainTabs} />
+            <TabsComponent tabsData={FITMainTabs}
+                tabsListClassName="w-[80%] items-center text-center bg-gray-900 py-0 mx-auto my-10"
+                tabsTrigerClassName="hover:bg-orange-500 grid grid-cols-5 text-center gap-4 items-center justify-center rounded-md bg-gray-900 data-[state=active]:bg-orange-500 data-[state=active]:text-white md:w-full flex items-center justify-center"
+            />
         </div>
     );
 };

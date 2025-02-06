@@ -1,3 +1,5 @@
+
+'use client'
 import Congresses from '@/components/Common/inbound/Congresses/Congresses'
 import Cruises from '@/components/Common/inbound/Cruises/Cruises'
 import FIT from '@/components/Common/inbound/FIT/FIT'
@@ -38,9 +40,10 @@ const page = () => {
   ]
 
   return (
-    <div className='container mx-auto mt-10  '>
-      <TabsComponent tabsData={TabsComponents} />
+    <div className="relative h-screen overflow-auto">
+      <TabsComponent tabsData={TabsComponents} tabsListClassName="sticky top-10 z-10 shadow-md" />
     </div>
+
   )
 }
 

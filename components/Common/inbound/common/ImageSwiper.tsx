@@ -51,9 +51,9 @@ const ImageSwiper = ({ images }: ImageSwiperProps) => {
         onSlideChange={handleSlideChange}
       >
         {images.map((image, index) => (
-          <SwiperSlide key={`slide-${index}`}>
+          <SwiperSlide key={`slide-${index}`} className='pt-5'>
             <div className="flex justify-center">
-              <div className="relative w-[500px] h-[350px] md:w-[600px] md:h-[450px] lg:w-[700px] lg:h-[500px] xl:w-[800px] xl:h-[580px] rounded-lg overflow-hidden cursor-grab">
+              <div className="relative w-[350] h-[250px] md:w-[550px] md:h-[380px] lg:w-[700px] lg:h-[400px] xl:w-[800px] xl:h-[450px] rounded-lg overflow-hidden cursor-grab">
                 <Image
                   src={image.image}
                   fill
