@@ -10,7 +10,7 @@ const QuoteBanner = () => {
     }, []);
 
     return (
-        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center text-white py-10">
+        <div className=" container mx-auto relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center text-white py-10">
             {/* Background Image */}
             <img
                 src="/inbound/Inbound/the-worldis-a-book.webp"

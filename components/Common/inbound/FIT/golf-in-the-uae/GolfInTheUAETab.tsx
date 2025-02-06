@@ -37,7 +37,7 @@ const GolfInTheUAETabs = () => {
     return (
         <div className="">
             <TabsComponent  tabsData={GolfInTheUAEContent} 
-            tabsListClassName="flex flex-col md:flex-row w-full max-w-[380px] mx-auto xl:mx-0 gap-2 w-[66%]"
+            tabsListClassName="flex flex-col md:flex-row w-full max-w-[380px] mx-auto xl:mx-0 gap-2 w-[66%] mb-10"
             tabsTrigerClassName="hover:bg-orange-500 grid grid-cols-4 text-center gap-4 items-center justify-center rounded-md bg-gray-900 mx-2 data-[state=active]:bg-orange-500 data-[state=active]:text-white md:w-full flex items-center justify-center"
  />
         </div>

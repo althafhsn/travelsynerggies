@@ -3,7 +3,7 @@ import React from 'react';
 
 const InboundHeader = () => {
     return (
-        <div className=" py-12 px-4 sm:px-6 lg:px-8">
+        <div className=" container mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div className="container        mx-auto text-center">
                 <h2 className="text-xl sm:text-2xl font-semibold text-gray-400 mb-4">
                     Redefining the art of Travel
@@ -13,12 +13,9 @@ const InboundHeader = () => {
                         <img
                             src="/logo.png"
                             alt="Travel Synergies Logo"
-                            className="w-16 md:w-48 mr-3 object-contain"
+                            className="w-36 md:w-64 mr-3 object-contain"
                         />
                     </Link>
-                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-orange-500">
-                        Travel Synergies
-                    </h1>
                 </div>
 
 

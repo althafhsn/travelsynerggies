@@ -19,12 +19,12 @@ const Herobanner = ({
 }: HerobannerProps
 ) => {
     return (
-        <section className="py-2 lg:py-4">
+        <section className="py-2 lg:py-4 ">
             <div className="mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
 
-                    <div className="pb-4 flex">
-                        <div className="w-full">
+                    <div className=" flex justify-center items-center">
+                        <div className="w-full ">
                             <h2 className="text-lg md:text-3xl lg:text-6xl font-bold text-orange-500 my-2 max-lg:text-center font-manrope">
                                 {mainTitle}
                             </h2>
