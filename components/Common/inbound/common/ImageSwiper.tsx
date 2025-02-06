@@ -28,7 +28,7 @@ const ImageSwiper = ({ images }: ImageSwiperProps) => {
   };
 
   return (
-    <div className="md:w-full max-w-7xl mx-auto px-4 w-[50%] ">
+    <div className="w-full max-w-7xl mx-auto px-4">
       {/* Swiper Carousel */}
       <Swiper
         modules={[EffectCoverflow, Navigation, Pagination]}
@@ -40,20 +40,20 @@ const ImageSwiper = ({ images }: ImageSwiperProps) => {
           stretch: 0,
           depth: 300,
           modifier: 3,
-          slideShadows: true
+          slideShadows: true,
         }}
         breakpoints={{
-          320: { slidesPerView: 1 },
-          640: { slidesPerView: 1.5 },
-
+          320: { slidesPerView: 0.3 },
+          480: { slidesPerView: 1.2 },
+       
         }}
         className="w-full mx-auto"
         onSlideChange={handleSlideChange}
       >
         {images.map((image, index) => (
-          <SwiperSlide key={`slide-${index}`} className='pt-5'>
+          <SwiperSlide key={`slide-${index}`} className="pt-5">
             <div className="flex justify-center">
-              <div className="relative w-[350] h-[250px] md:w-[550px] md:h-[380px] lg:w-[700px] lg:h-[400px] xl:w-[800px] xl:h-[450px] rounded-lg overflow-hidden cursor-grab">
+              <div className="relative w-[90%] max-w-[350px] md:max-w-[550px] lg:max-w-[700px] xl:max-w-[800px] h-[250px] md:h-[380px] lg:h-[400px] xl:h-[450px] rounded-lg overflow-hidden cursor-grab">
                 <Image
                   src={image.image}
                   fill
@@ -74,10 +74,10 @@ const ImageSwiper = ({ images }: ImageSwiperProps) => {
 
       {/* Active Image Details */}
       <div className="mt-6 text-center">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-500 py-2">
+        <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-orange-500 py-2">
           {activeImage.title}
         </h1>
-        <p className="text-base sm:text-lg text-gray-300 max-w-4xl mx-auto px-2">
+        <p className="text-sm sm:text-base text-gray-300 max-w-4xl mx-auto px-2">
           {activeImage.description}
         </p>
       </div>

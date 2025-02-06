@@ -47,8 +47,11 @@ const FITTabs = () => {
     return (
         <div className="">
             <TabsComponent tabsData={FITMainTabs}
-                tabsListClassName="w-[80%] items-center text-center bg-gray-900 py-0 mx-auto my-10"
-                tabsTrigerClassName="hover:bg-orange-500 grid grid-cols-5 text-center gap-4 items-center justify-center rounded-md bg-gray-900 data-[state=active]:bg-orange-500 data-[state=active]:text-white md:w-full flex items-center justify-center"
+               tabsListClassName="flex flex-col md:flex-row w-full max-w-[380px] mx-auto xl:mx-0 gap-2"
+
+               tabsTrigerClassName="hover:bg-orange-500 text-center gap-4 items-center justify-center rounded-md bg-gray-900 data-[state=active]:bg-orange-500 data-[state=active]:text-white md:w-full text-base flex-1"
+               
+
             />
         </div>
     );
