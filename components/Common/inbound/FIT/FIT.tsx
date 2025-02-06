@@ -19,7 +19,7 @@ const FIT = () => {
     }
 
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto px-2'>
             <div className='pb-2'>
 
                 <Herobanner
@@ -45,14 +45,14 @@ const FIT = () => {
             </div>
             <hr className="w-full my-2 border-t-2 border-orange-500" />
 
-            <div className='pt-10'>
-                <TestimonialCarousel />
-            </div>
 
             <div className=' pt-10 '>
                 <h1 className=' text-5xl pb-5 text-center font-bold  text-orange-500'>Your UAE Bucket List</h1>
 
                 <FITTabs />
+            </div>
+            <div className='py-10'>
+                <TestimonialCarousel />
             </div>
         </div>
     )
