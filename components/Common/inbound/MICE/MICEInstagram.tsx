@@ -9,7 +9,7 @@ const MICEInstagram = () => {
       
             ],
             booknowDescription: 'So what are you waiting for? Book your amazing tour now and get ready for an unforgettable experience',
-            imageUrl:"/inbound/MICE/Instagram/regatta.webp"
+            imageUrl:"/inbound/MICE/Instagram/regatta1.webp"
           },
           {
             title: 'Belly Dancing classes',
@@ -27,7 +27,7 @@ const MICEInstagram = () => {
       
             ],
             booknowDescription: 'So what are you waiting for? Book your amazing tour now and get ready for an unforgettable experience',
-            imageUrl:"/inbound/MICE/Instagram/polo.webp"
+            imageUrl:"/inbound/MICE/Instagram/polo1.webp"
           },
           {
             title: 'Racing at Yas Marina',
@@ -45,7 +45,7 @@ const MICEInstagram = () => {
       
             ],
             booknowDescription: 'So what are you waiting for? Book your amazing tour now and get ready for an unforgettable experience',
-            imageUrl:"/inbound/MICE/Instagram/entertainment.webp"
+            imageUrl:"/inbound/MICE/Instagram/entertainments.webp"
           },
           {
             title: 'VIP Access',
