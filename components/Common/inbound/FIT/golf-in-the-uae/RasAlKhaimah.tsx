@@ -29,7 +29,8 @@ const RasAlKhaimah = () => {
                 'Restaurant, Pool bar & Café lounge',
                 'Golf Academy',
                 'Golf Shop'
-            ]
+            ],
+            bookNow: true
 
         },
 
@@ -42,7 +43,8 @@ const RasAlKhaimah = () => {
             imageUrl: '/inbound/FIT/bucket-list/golfing/ras-al-khaimah/golf.webp',
             facilitiesOnSiteArea: [
 
-            ]
+            ],
+            bookNow: false
 
         },
         {
@@ -58,7 +60,8 @@ const RasAlKhaimah = () => {
                 'Golf Academy',
                 'Golf Shop',
                 'Spa'
-            ]
+            ],
+            bookNow: true
 
         },
     ]
@@ -76,7 +79,7 @@ const RasAlKhaimah = () => {
                         designedBy={card.designedBy}
                         facilitiesOnSiteArea={card.facilitiesOnSiteArea}
                         index={index}
-                        bookNow={true}
+                        bookNow={card.bookNow}
                     />
                 ))}
             </div>

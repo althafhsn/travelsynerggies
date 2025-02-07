@@ -6,7 +6,7 @@ import { CiLocationOn } from 'react-icons/ci';
 interface InboundImageCardsProps {
     index: any;
     imageUrl: string;
-    title: string;
+    title?: string;
     designedBy?: string;
     openedIn?: string;
     description: string[];
@@ -36,7 +36,7 @@ const InboundImageCards = ({
             <Image
                 src={imageUrl}
                 fill
-                alt={title}
+                alt={title!}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700"
             />
 
@@ -46,12 +46,16 @@ const InboundImageCards = ({
             {/* Content */}
             <div className="relative z-10 px-4 transition-all duration-500">
                 {/* Title with Location Icon */}
-                <div className="flex items-center gap-1 transition-all duration-500 group-hover:translate-y-[-10px] -mb-4 group-hover:mb-0">
-                    <CiLocationOn className="text-lg text-orange-500" />
-                    <h3 className="text-[12px] lg:text-[15px] font-extrabold text-orange-500">
-                        {title}
-                    </h3>
-                </div>
+                {title && (
+                    <div className="flex items-center gap-1 transition-all duration-500 group-hover:translate-y-[-10px] -mb-4 group-hover:mb-0">
+                        <CiLocationOn className="text-lg text-orange-500" />
+                        <h3 className="text-[12px] lg:text-[15px] font-extrabold text-orange-500">
+                            {title}
+                        </h3>
+                    </div>
+
+                )}
+
 
                 {/* Information Section */}
                 <div className="opacity-0 max-h-0 overflow-hidden transition-all duration-500 group-hover:opacity-100 group-hover:max-h-[100%] group-hover:mt-2">
