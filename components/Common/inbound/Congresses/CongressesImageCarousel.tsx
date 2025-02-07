@@ -27,7 +27,7 @@ const CongressesImageCarousal = () => {
         {
             title: 'Congress Management',
             description: 'Our congress management ensures seamless coordination, covering everything from audio-visual production and speaker coordination to travel, transportation, registration, event design, food & beverage and VIP services, with post-event analysis for continuous improvement. ',
-            image: '/inbound/Congress/Congress_Management.jpg'
+            image: '/inbound/Congress/Congress-Management.jpg'
         },
         
     ]
