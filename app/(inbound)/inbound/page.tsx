@@ -21,10 +21,11 @@ export default function Home() {
       <div className="flex flex-col">
         <HeroBanner />
         <InboundHero />
-        <QuoteBanner />
         <EventButton />
         <InboundInstagram />
         <TravelTech />
+        <QuoteBanner />
+
       </div>
     </main>
   );

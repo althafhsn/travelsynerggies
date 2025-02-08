@@ -36,10 +36,10 @@ const ClientLogosShowcase = () => {
                 <Card className="w-full shadow-lg bg-black">
                     <CardContent className="p-6">
                         <div className="space-y-4">
-                            <h2 className="text-2xl md:text-3xl pb-5 text-center font-bold text-orange-500">
-                                Prestigious Events Managed by Our Team
+                            <h2 className="text-1xl md:text-2xl pb-2  font-bold text-orange-500">
+                                Prestigious Events managed by Our Team
                             </h2>
-                            <p className="text-gray-300 text-sm md:text-lg text-center pb-5">Our experience includes some of the most prestigious global events, such as:</p>
+                            <p className="text-gray-300 text-sm md:text-lg pb-2">Our experience includes some of the most prestigious global events, such as:</p>
 
                             <div className="relative overflow-hidden">
                                 <div className="flex space-x-8 py-8 animate-scroll">

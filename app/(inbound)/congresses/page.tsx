@@ -34,7 +34,7 @@ const Congresses = () => {
                 />
 
             </div>
-            <div className="bg-black text-white py-10 px-4 md:px-8 lg:px-16 text-center">
+            <div className="bg-black text-white pt-5 px-4 md:px-8 lg:px-16 text-center">
                 <h2 className="text-orange-500 text-2xl md:text-3xl font-bold mb-4">Our Expertise in Congress Organization</h2>
                 <p className="text-sm md:text-base text-gray-300 max-w-3xl mx-auto">
                     With a team of seasoned professionals, we bring deep industry knowledge and precision to every project. We have successfully managed congresses of all scales, from small intimate gatherings to large international events. Our expertise spans diverse industries and event types, including:
@@ -44,12 +44,9 @@ const Congresses = () => {
                 <CongressesImageCarousal />
             </div>
             <div className="grid gap-2 py-5">
-                <EventCarousel />   
+                <EventCarousel />
             </div>
 
-            <div className='grid gap-2 py-5'>
-                <IndustryEvents />
-            </div>
             <div className=' pt-10 max-w-6xl mx-auto'>
                 <h1 className='text-2xl md:text-3xl pb-5 text-center font-bold  text-orange-500'>Enhancing your MICE Event</h1>
 
@@ -61,6 +58,10 @@ const Congresses = () => {
 
             <div className="pt-10 w-[80%] mx-auto">
                 <CongressesInstagram />
+            </div>
+
+            <div className='grid gap-2 py-5'>
+                <IndustryEvents />
             </div>
             <div className="py-10">
                 <ClientLogosShowcase />

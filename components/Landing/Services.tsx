@@ -36,7 +36,7 @@ const Services = () => {
       <div className="absolute inset-0 bg-black bg-opacity-70 z-10"></div>
 
       <div className="container mx-auto px-4 z-20">
-        <h2 className="text-2xl lg:text-4xl font-bold text-center mb-4 lg:mb-36 font-sans text-gray-100">Our Services</h2>
+        <h2 className="text-2xl lg:text-4xl font-bold text-center mb-10 font-sans text-orange-500">Our Services</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-auto">
           <ServicesCard
             backgroundImage="bg-bg-inbound"

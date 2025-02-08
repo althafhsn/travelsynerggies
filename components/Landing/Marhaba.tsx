@@ -19,7 +19,7 @@ const Marhaba = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2">
                         <div className="flex justify-start items-center">
                             <img
-                                src="/landing/about.jpg"
+                                src="/inbound/Inbound/Instagram/culture-and-heritage.webp"
                                 alt=""
                                 className="object-cover h-[300px] xl:h-[530px] w-full max-w-[550px] rounded-lg"
                             />

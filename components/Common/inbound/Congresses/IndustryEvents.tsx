@@ -40,11 +40,11 @@ const IndustryEvents = () => {
         </motion.p>
 
         {/* Grid of Events */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 ">
           {eventCategories.map((event, index) => (
             <motion.div 
               key={index} 
-              className="p-6 bg-gray-800 rounded-lg shadow-md group hover:bg-orange-500 transition-all duration-300 flex flex-col items-center text-center cursor-pointer"
+              className="p-6 bg-gray-800 rounded-lg shadow-md group hover:bg-orange-500 transition-all duration-300 flex flex-col items-center text-center cursor-pointer min-h-[200px] justify-center"
               whileHover={{ scale: 1.05 }}
             >
                 <div className='group-hover:text-white'>

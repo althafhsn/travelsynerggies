@@ -10,7 +10,7 @@ const QuoteBanner = () => {
     }, []);
 
     return (
-        <div className=" container mx-auto relative w-full h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center text-white py-10">
+        <div className=" container mx-auto relative w-full h-[200px] md:h-[300px] lg:h-[300px] flex items-center justify-center text-white py-10 mb-10">
             {/* Background Image */}
             <img
                 src="/inbound/Inbound/the-worldis-a-book.webp"
@@ -20,10 +20,10 @@ const QuoteBanner = () => {
 
             {/* Quote Content */}
             <div className="relative text-center px-4">
-                <p className="text-lg md:text-3xl lg:text-5xl font-medium italic">
+                <p className="text-lg md:text-2xl lg:text-4xl font-medium italic">
                     “The world is a book and those who do not travel read only one page.”
                 </p>
-                <p className="text-sm md:text-lg lg:text-xl mt-2 text-end px-10" style={{ fontFamily: "'Dancing Script', cursive" }}>
+                <p className="text-sm md:text-lg lg:text-xl mt-2 text-end" style={{ fontFamily: "'Dancing Script', cursive" }}>
                     -Saint Augustine
                 </p>
             </div>
