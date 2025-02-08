@@ -12,6 +12,8 @@ import BucketListPage from '@/components/outbound/Footer/BucketList';
 import Partners from '@/components/outbound/Footer/Parnters';
 import WhyChooseUs from '@/components/outbound/Footer/WhyChoosUs';
 import EnvironmentPolicy from '@/components/outbound/Footer/EnvironmentPolicy';
+import SaftyTravelInbound from '@/components/outbound/Footer/SaftyTravelInbound';
+import UAEBucketList from '@/components/outbound/Footer/UAEBucketList';
 
 const BlogContent: React.FC = () => {
   const searchParams = useSearchParams();
@@ -23,11 +25,14 @@ const BlogContent: React.FC = () => {
     { title: 'Terms & Conditions', href: 'terms-conditions' },
     { title: 'Sustainable Tourism', href: 'sustainable-tourism' },
     { title: 'Bucket List', href: 'bucket-list' },
+    { title: 'UAE Bucket List', href: 'uae-bucket-list' },
     { title: 'Outbound Holidays', href: 'outbound-holidays' },
     { title: 'Safety Guidelines', href: 'safety-guidelines' },
+    { title: 'Inbound Safety', href: 'inbound-safty-policy' },
     { title: 'Partners', href: 'partners' },
     { title: 'Why Choose Us', href: 'why-choose-us' },
     { title: 'Environment Policy', href: 'environment-policy' },
+
   ];
 
   // Scroll to section when clicking a button
@@ -78,7 +83,7 @@ const BlogContent: React.FC = () => {
               key={link.href}
               onClick={() => handleScrollToSection(link.href)}
               className={`px-4 py-2  text-[11px] font-semibold transition-all ${activeSection === link.href
-                ?  'bg-orange-500  border-b text-white rounded-lg'
+                ? 'bg-orange-500  border-b text-white rounded-lg'
                 : 'bg-white text-black  border border-orange-500 rounded-lg '
                 }`}
             >
@@ -108,8 +113,8 @@ const BlogContent: React.FC = () => {
                 key={link.href}
                 onClick={() => handleScrollToSection(link.href)}
                 className={`block w-full text-left px-4 py-2  text-[11px] font-semibold transition-all ${activeSection === link.href
-                    ?  'bg-orange-500  border-b text-white rounded-lg'
-                    : 'bg-white text-black  border border-orange-500 rounded-lg'
+                  ? 'bg-orange-500  border-b text-white rounded-lg'
+                  : 'bg-white text-black  border border-orange-500 rounded-lg'
                   }`}
               >
                 {link.title}
@@ -133,11 +138,17 @@ const BlogContent: React.FC = () => {
         <div id="bucket-list" className="scroll-mt-24">
           <BucketListPage />
         </div>
+        <div id="uae-bucket-list" className="scroll-mt-24">
+          <UAEBucketList />
+        </div>
         <div id="outbound-holidays" className="scroll-mt-24">
           <OutboundTravelBlog />
         </div>
         <div id="safety-guidelines" className="scroll-mt-24">
           <SafetyGuidelinesBlog />
+        </div>
+        <div id="inbound-safty-policy" className="scroll-mt-24">
+          <SaftyTravelInbound />
         </div>
         <div id="partners" className="scroll-mt-24">
           <Partners />
@@ -148,6 +159,7 @@ const BlogContent: React.FC = () => {
         <div id="environment-policy" className="scroll-mt-24">
           <EnvironmentPolicy />
         </div>
+
       </div>
     </div>
   );

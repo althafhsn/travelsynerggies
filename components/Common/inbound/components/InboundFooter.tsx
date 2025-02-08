@@ -39,7 +39,7 @@ const InboundFooter: React.FC = () => {
             title: "",
             links: [
                 { text: "Our Service Spectrum", href: "/blogs#our-service-spectrum" },
-                { text: "Blogs", href: "/blog" }
+                { text: "Blogs", href: "/inbound-blog" }
             ]
         },
         company: {
@@ -54,7 +54,7 @@ const InboundFooter: React.FC = () => {
         information: {
             title: "",
             links: [
-                { text: "Safety Guidelines", href: "/blogs#safety-guidelines" },
+                { text: "Safety Guidelines", href: "/blogs#inbound-safty-policy" },
                 { text: "Environment Policy", href: "/blogs#environment-policy" },
 
             ]
