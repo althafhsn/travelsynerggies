@@ -1,12 +1,27 @@
 'use client'
+
+import { useEffect } from "react";
+
 const Marhaba = () => {
+    useEffect(() => {
+        const link = document.createElement("link");
+        link.href = "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap";
+        link.rel = "stylesheet";
+        document.head.appendChild(link);
+    }, []);
     return (
         <div className="container mx-auto text-white min-h-screen px-6 md:px-12 lg:px-20 py-6">
 
             {/* Heading */}
-            <h1 className="text-2xl lg:text-4xl font-bold text-center mb-10 font-sans text-orange-500">
+            <h1 className="text-2xl lg:text-4xl font-bold text-center mb-5 font-sans text-orange-500">
                 Marhaba!
             </h1>
+            <p>
+               
+            </p>
+            <p className="text-sm md:text-lg lg:text-xl  text-center" style={{ fontFamily: "'Dancing Script', cursive" }}>
+            – Your Premier DMC Partner. from Travel Synergie
+            </p>
 
             {/* Content */}
             <section className="py-2 lg:py-4">
