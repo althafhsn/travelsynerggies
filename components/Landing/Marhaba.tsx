@@ -17,10 +17,11 @@ const Marhaba = () => {
                 Marhaba!
             </h1>
             <p>
-               
+
             </p>
-            <p className="text-sm md:text-lg lg:text-xl  text-center" style={{ fontFamily: "'Dancing Script', cursive" }}>
-            – Your Premier DMC Partner. from Travel Synergie
+            <p className="text-sm md:text-lg lg:text-xl  text-center" >
+                {/* style={{ fontFamily: "'Dancing Script', cursive" }} */}
+                Greetings from Travel Synergies – Your Premier DMC Partner.
             </p>
 
             {/* Content */}
