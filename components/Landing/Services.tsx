@@ -32,7 +32,7 @@ const ServicesCard = ({
 
 const Services = () => {
   return (
-    <section className="bg-bg-services relative flex flex-col  bg-cover min-h-[80vh] items-center justify-center">
+    <section className=" relative flex flex-col  bg-cover">
       <div className="absolute inset-0 bg-black bg-opacity-70 z-10"></div>
 
       <div className="container mx-auto px-4 z-20">
