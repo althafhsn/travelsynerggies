@@ -16,7 +16,7 @@ const eventCategories = [
 
 const EventButton = () => {
     return (
-        <section className=" text-white pt-12 px-6 md:px-12 lg:px-20">
+        <section className=" text-white pt-5 px-6 md:px-12 lg:px-20">
             <div className="max-w-6xl mx-auto text-center">
             
                 {/* Grid of Events */}

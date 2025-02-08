@@ -35,7 +35,7 @@ const OtherNavigation = () => {
             {links.map((link, index) => {
                 return <Link href={link.path}
                     key={index}
-                    className={`${link.path === pathname && "text-white  bg-orange-500"} capitalize font-bold text-sm hover:bg-orange-500 hover:text-white transition-all px-1 md:px-3 py-1 rounded-md`}
+                    className={`${link.path === pathname && "text-white  bg-orange-500"} capitalize font-bold text-sm md:text-lg hover:bg-orange-500 hover:text-white transition-all px-1 md:px-3 py-1 rounded-md`}
                 >{link.name}</Link>
             })}
         </nav>

@@ -27,7 +27,7 @@ const Marhaba = () => {
             <section className="py-2 lg:py-4">
                 <div className="mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        <div className="flex justify-center lg:justify-start items-center">
+                        <div className="flex justify-center lg:justify-start md:-ms-6">
                             <img
                                 src="/landing/about1.webp"
                                 alt=""
@@ -64,7 +64,7 @@ const Marhaba = () => {
                         </div>
                         <div className="flex items-center justify-center order-1 md:order-none">
                             <img
-                                src="/landing/about.webp"
+                                src="/landing/about.jpg"
                                 alt="About Us"
                                 className="lg:block object-cover h-[300px] xl:h-[530px] w-full max-w-[550px] rounded-lg"
                             />
