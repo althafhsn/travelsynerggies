@@ -31,11 +31,11 @@ const OtherNavigation = () => {
        
     ]
     return (
-        <nav className="grid grid-cols-5 text-center gap-2  bg-black/20 rounded-lg">
+        <nav className="flex justify-between text-center gap-1  bg-black/20 rounded-lg">
             {links.map((link, index) => {
                 return <Link href={link.path}
                     key={index}
-                    className={`${link.path === pathname && "text-white  bg-orange-500"} capitalize font-bold  hover:bg-orange-500 hover:text-white transition-all px-3 py-1 rounded-md`}
+                    className={`${link.path === pathname && "text-white  bg-orange-500"} capitalize font-bold text-sm hover:bg-orange-500 hover:text-white transition-all px-1 md:px-3 py-1 rounded-md`}
                 >{link.name}</Link>
             })}
         </nav>

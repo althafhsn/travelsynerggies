@@ -8,7 +8,7 @@ import OutboundMobileNav from "./OutboundMobileNav";
 const OutboundHeder = () => {
     return (
         <div className="py-2 xl:py-3 text-white">
-            <div className="  mx-auto flex justify-between items-center px-6 md:px-12 ">
+            <div className="  mx-auto flex justify-between items-center px-3 md:px-12 ">
                 {/* logo */}
                 <Link href='/'>
                     <img src="/logo.png" alt="logo" className="w-56 " />

@@ -8,8 +8,8 @@ import { CiMenuFries } from 'react-icons/ci'
 
 const links = [
     {
-        name:'Home',
-        path:'/'
+        name: 'Home',
+        path: '/'
     },
     {
         name: 'Inbound',
@@ -27,14 +27,11 @@ const links = [
         name: 'Social Responsibility',
         path: '/social'
     },
-    {
-        name: 'blogs',
-        path: '/blog'
-    },
+  
     {
         name: 'About Us',
         path: '/about-us'
-    },        
+    },       
 ]
 
 const OutboundMobileNav = () => {

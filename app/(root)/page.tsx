@@ -5,6 +5,7 @@ import VideoSection from "@/components/Landing/HeroVideoSection";
 import Marhaba from "@/components/Landing/Marhaba";
 import Services from "@/components/Landing/Services";
 import TravelReasons from "@/components/Landing/TravelReasons";
+import Footer from "@/components/outbound/Footer";
 
 
 
@@ -20,9 +21,10 @@ export default function Home() {
         <Marhaba />
 
         <Services />
-        {/* <TravelReasons image1={""} image2={""} /> */}
+        <TravelReasons />
       </div>
       <CookiesPopup />
+
     </main>
   );
 }

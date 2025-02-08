@@ -27,10 +27,7 @@ const OutboundNav = () => {
             name: 'Social Responsibility',
             path: '/social'
         },
-        {
-            name: 'blogs',
-            path: '/blog'
-        },
+      
         {
             name: 'About Us',
             path: '/about-us'

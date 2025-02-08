@@ -1,6 +1,9 @@
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 
-import InboundHeader from "@/components/Common/inbound/components/InboundHeader";
-import InboundFooter from "@/components/Common/inbound/components/InboundFooter";
+import Footer from "@/components/outbound/Footer";
+import OutboundHeader from "@/components/outbound/OutboundHeder";
+import OutboundHeder from "@/components/outbound/OutboundHeder";
 
 
 
@@ -13,13 +16,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-
             >
-                <div className=" bg-black/50 z-50">
-                    <InboundHeader />
-                </div>
+                <OutboundHeder />
                 {children}
-                <InboundFooter />
+                <Footer />
 
             </body>
         </html>

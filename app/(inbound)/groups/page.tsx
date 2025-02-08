@@ -18,7 +18,7 @@ const Groups = () => {
     }
     return (
         <div className="container mx-auto px-2">
-             <div className="sticky top-5 z-50 flex justify-center w-full pr-4">
+             <div className="sticky top-0 z-50 flex justify-center w-full  bg-black/50">
                 <OtherNavigation />
             </div>
             <div className="pb-2">
@@ -38,9 +38,9 @@ const Groups = () => {
                 </p>
             </div>
 
-            <div className='grid gap-2 py-5'>
+
                 <GroupImageCarousal />
-            </div>
+           
 
             <div className=' pt-10 w-[80%] mx-auto' >
                 <h1 className='text-2xl md:text-3xl pb-5 text-center font-bold  text-orange-500'>The Ultimate Experience</h1>

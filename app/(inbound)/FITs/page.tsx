@@ -45,10 +45,10 @@ const FIT = () => {
             </div>
 
 
-            <div className='grid gap-2 py-5'>
+
                 <h1 className='   text-2xl md:text-3xl text-center font-bold  text-orange-500'>Our Service Portfolio</h1>
                 <FITImageCarousal />
-            </div>
+           
 
 
             <div className=' pt-10 '>

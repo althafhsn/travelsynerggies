@@ -39,9 +39,8 @@ const Cruises = () => {
                 </p>
             </div>
             
-            <div className='grid gap-2 py-5'>
                 <CruisesImageCarousal />
-            </div>
+     
 
 
             <div className="pt-10 w-[80%] mx-auto">

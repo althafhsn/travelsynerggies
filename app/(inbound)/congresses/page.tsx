@@ -40,12 +40,11 @@ const Congresses = () => {
                     With a team of seasoned professionals, we bring deep industry knowledge and precision to every project. We have successfully managed congresses of all scales, from small intimate gatherings to large international events. Our expertise spans diverse industries and event types, including:
                 </p>
             </div>
-            <div className='grid gap-2 py-5'>
-                <CongressesImageCarousal />
-            </div>
-            <div className="grid gap-2 py-5">
-                <EventCarousel />
-            </div>
+
+            <CongressesImageCarousal />
+
+            <EventCarousel />
+
 
             <div className=' pt-10 max-w-6xl mx-auto'>
                 <h1 className='text-2xl md:text-3xl pb-5 text-center font-bold  text-orange-500'>Enhancing your MICE Event</h1>
