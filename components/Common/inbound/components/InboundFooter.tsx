@@ -48,7 +48,7 @@ const InboundFooter: React.FC = () => {
                 { text: "Terms and Conditions", href: "/blogs#terms-conditions" },
                 { text: "Privacy Cookies", href: "/privacy-policy" },
                 { text: "Sustainable Tourism", href: "/blogs#sustainable-tourism" },
-                { text: "Bucket List", href: "/blogs#bucket-list" },
+                { text: "Bucket List", href: "/blogs#uae-bucket-list" },
             ]
         },
         information: {

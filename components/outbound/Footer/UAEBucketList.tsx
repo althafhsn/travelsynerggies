@@ -1,4 +1,4 @@
-const UAEBucketList=()=> {
+const UAEBucketList = () => {
     const sections = [
         {
             title: "Desert Adventures",
@@ -90,24 +90,46 @@ const UAEBucketList=()=> {
     ];
 
     return (
-        <section className="bg-gray-100 text-gray-800 p-4 sm:p-8 min-h-screen">
-            <div className="container mx-auto bg-white shadow-xl rounded-lg overflow-hidden p-6 sm:p-8">
-                <h2 className="text-orange-500 text-xl md:text-3xl font-bold mb-6">Inbound Bucket List </h2>
-                <p className="text-gray-400 mb-12">We've curated a bucket list of extraordinary experiences and tours that will make your trip to the UAE truly unforgettable.</p>
+        <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden py-12 px-4">
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">
+                    UAE Bucket List
+                </h1>
+
+                <p className="text-sm  text-gray-700 font-bold text-center mx-auto mb-12">
+                    At Travel Synergies, we’re dedicated to crafting extraordinary experiences that showcase the best of the UAE. Whether you’re exploring majestic sand dunes of the desert, discovering vibrant streets of Dubai or immersing yourself in the unique culture, we've curated a bucket list of experiences and tours that will make your trip to the UAE truly unforgettable.
+                </p>z
+
+
+
+
+                <div className="grid md:grid-cols-3 gap-6">
+                    {sections.map((section, index) => (
+                        <div
+                            key={index}
+                            className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow"
+                        >
+                            <h3 className="text-lg font-semibold text-orange-500 mb-1">
+                                {section.title}
+                            </h3>
+
+                            <ul className="text-gray-600 text-xs md:text-sm list-disc list-inside">
+                                {section.items.map((item, idx) => (
+                                    <li key={idx} className="mb-2">{item}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+                </div>
+
+                <div className="text-center mt-12">
+                    <p className="text-xl text-gray-700 mb-6 font-bold">
+                        Let's make your global travel bucket list a reality!
+                    </p>
+                </div>
             </div>
-            <div className="max-w-6xl mx-auto space-y-12">
-                {sections.map((section, index) => (
-                    <div key={index}>
-                        <h3 className="text-orange-500 text-lg md:text-xl font-semibold mb-4">{section.title}</h3>
-                        <ul className="text-gray-400 text-sm md:text-lg list-disc list-inside">
-                            {section.items.map((item, idx) => (
-                                <li key={idx} className="mb-2">{item}</li>
-                            ))}
-                        </ul>
-                    </div>
-                ))}
-            </div>
-        </section>
+
+        </div>
     );
 }
 export default UAEBucketList;

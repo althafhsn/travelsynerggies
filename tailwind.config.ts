@@ -58,7 +58,9 @@ export default {
 				'bg-career': "url('/career/career.png')",
 				'bg-blog': "url('/blog/blog6.webp')",
 				'bg-blogmain': "url('/blog/blogmain.webp')",
+				'bg-inboundBlogMain': "url('/top-emerging-travel-destinations/postacrds-from-paradise.webp')",
 				'bg-blog10': "url('/blog/blog10.webp')",
+				'bg-top-emerging-travel-destinations': "url('/top-emerging-travel-destinations/main.webp')",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

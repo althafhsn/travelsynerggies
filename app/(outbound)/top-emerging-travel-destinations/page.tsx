@@ -78,7 +78,7 @@ const page = () => {
 
     return (
         <div className="min-h-screen mb-4">
-            <div className="flex flex-col items-start justify-center text-white bg-bg-blog10 min-h-[70vh] bg-cover bg-no-repeat bg-center">
+            <div className="flex flex-col items-start justify-center text-white bg-bg-top-emerging-travel-destinations webp min-h-[70vh] bg-cover bg-no-repeat bg-center">
                 <div className="container mx-auto flex flex-col items-center md:items-start">
                 </div>
             </div>
@@ -157,6 +157,19 @@ const page = () => {
                     </div>
                 </section>
                 {/* Conclusion */}
+                <div className="text-center max-w-6xl mx-auto mb-5">
+                    <p className="text-sm md:text-base my-4 text-gray-300 font-bold">
+                        Welcome to Travel Synergies, where we craft unforgettable journeys. Dive into our handpicked travel guides, tips, and stories that uncover hidden gems and epic adventures. From secluded beaches to off-the-beaten-path wonders, we’re here to fuel your passion for exploration.
+
+
+                    </p>
+                    <div className='w-full lg:w-1/2 relative'>
+                        <img src="/top-emerging-travel-destinations/bottom.jpg" alt=""  className='object-contain'/>
+                    </div>
+
+
+                </div>
+
                 <div className="text-center max-w-6xl mx-auto mb-10">
                     <h2 className="text-3xl font-bold text-orange-500">How We Can Help You Explore These Destinations
 

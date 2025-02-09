@@ -75,7 +75,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, description, imageUrl, date,
 const UAETravelHistory = () => {
   return (
     <div className="min-h-screen mb-4">
-      <div className="flex flex-col items-start justify-center text-white bg-bg-blogmain min-h-[90vh] bg-cover bg-no-repeat bg-center">
+      <div className="flex flex-col items-start justify-center text-white bg-bg-inboundBlogMain min-h-[90vh] bg-cover bg-no-repeat bg-center">
         <div className="container mx-auto flex flex-col items-center ">
           <h1 className="text-2xl md:text-7xl font-bold text-center font-serif pb-4">
             Explores the worlds best kept secrets

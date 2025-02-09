@@ -14,6 +14,7 @@ import WhyChooseUs from '@/components/outbound/Footer/WhyChoosUs';
 import EnvironmentPolicy from '@/components/outbound/Footer/EnvironmentPolicy';
 import SaftyTravelInbound from '@/components/outbound/Footer/SaftyTravelInbound';
 import UAEBucketList from '@/components/outbound/Footer/UAEBucketList';
+import InboundServiceSpectrum from '@/components/outbound/Footer/InboundServiceSpectrum';
 
 const BlogContent: React.FC = () => {
   const searchParams = useSearchParams();
@@ -128,6 +129,9 @@ const BlogContent: React.FC = () => {
       <div className="container mx-auto md:px-4 mt-10">
         <div id="our-service-spectrum" className="scroll-mt-24">
           <ServiceBlog />
+        </div>
+        <div id="our-service-spectrum" className="scroll-mt-24">
+          <InboundServiceSpectrum />
         </div>
         <div id="terms-conditions" className="scroll-mt-24">
           <TermsAndConditions />
