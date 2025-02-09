@@ -6,70 +6,70 @@ const page = () => {
     const destinations = [
         {
             title: "Georgia (The Country)",
-            image: "/images/georgia.jpg",
+            image: "/top-emerging-travel-destinations/georgia.webp",
             description:
                 "Nestled between Europe and Asia, Georgia is a hidden gem known for its stunning Caucasus Mountains, ancient monasteries, and world-class wine. Explore Tbilisi, hike in Kazbegi, or indulge in traditional Georgian cuisine.",
             whyGo: "Georgia is still relatively undiscovered, making it the perfect destination for travelers seeking authenticity and adventure."
         },
         {
             title: "Albania",
-            image: "/images/albania.jpg",
+            image: "/top-emerging-travel-destinations/albania.webp",
             description:
                 "With its pristine beaches, rugged mountains, and rich history, Albania is Europe’s best-kept secret. A mix of Ottoman, Roman, and Byzantine influences awaits travelers at an affordable price.",
             whyGo: "Albania is rapidly developing its tourism infrastructure while retaining its charm and authenticity. Visit before it becomes the next Croatia!"
         },
         {
             title: "Rwanda",
-            image: "/images/rwanda.jpg",
+            image: "/top-emerging-travel-destinations/rwanda.webp",
             description:
                 "Known as the ‘Land of a Thousand Hills,’ Rwanda offers breathtaking landscapes, gorilla trekking in Volcanoes National Park, and a vibrant capital city, Kigali.",
             whyGo: "Rwanda is leading the way in sustainable tourism and conservation efforts, making it an ideal destination for eco-conscious travelers."
         },
         {
             title: "Uzbekistan",
-            image: "/images/uzbekistan.jpg",
+            image: "/top-emerging-travel-destinations/uzbekistan.webp",
             description:
                 "Step back in time with the Silk Road cities of Uzbekistan. Marvel at stunning Islamic architecture, bustling bazaars, and ancient sites like the Registan in Samarkand.",
             whyGo: "Uzbekistan has recently eased visa restrictions and invested in tourism infrastructure, making it more accessible than ever."
         },
         {
             title: "Colombia",
-            image: "/images/colombia.jpg",
+            image: "/top-emerging-travel-destinations/colombia.webp",
             description:
                 "From Cartagena’s vibrant streets to the lush coffee regions and the Amazon rainforest, Colombia offers incredible diversity and a rich cultural experience.",
             whyGo: "Colombia is experiencing a tourism boom, but there’s still plenty of room to explore off-the-beaten-path destinations."
         },
         {
             title: "Bhutan",
-            image: "/images/bhutan.jpg",
+            image: "/top-emerging-travel-destinations/bhutan.webp",
             description:
                 "The mystical kingdom of Bhutan offers breathtaking mountain views, ancient monasteries, and a unique focus on Gross National Happiness.",
             whyGo: "Bhutan’s commitment to sustainable tourism ensures that it remains unspoiled and exclusive."
         },
         {
             title: "Madagascar",
-            image: "/images/madagascar.jpg",
+            image: "/top-emerging-travel-destinations/madagascar.webp",
             description:
                 "Home to unique wildlife like lemurs and chameleons, Madagascar offers diverse landscapes, from rainforests and deserts to pristine beaches.",
             whyGo: "Madagascar remains off the radar for most travelers, providing a truly remote and adventurous experience."
         },
         {
             title: "Slovenia",
-            image: "/images/slovenia.jpg",
+            image: "/top-emerging-travel-destinations/slovenia.webp",
             description:
                 "From Lake Bled’s fairy-tale charm to the stunning Julian Alps, Slovenia is a paradise for outdoor enthusiasts and culture lovers.",
             whyGo: "Slovenia is gaining recognition as a sustainable tourism destination, making it a great choice for eco-conscious travelers."
         },
         {
             title: "Kazakhstan",
-            image: "/images/kazakhstan.jpg",
+            image: "/top-emerging-travel-destinations/postacrds-from-paradise.webp",
             description:
                 "Kazakhstan, the world’s largest landlocked country, boasts modern cities like Nur-Sultan and breathtaking natural wonders like Charyn Canyon.",
             whyGo: "Kazakhstan is investing heavily in tourism infrastructure and easing visa requirements, making it an exciting new destination."
         },
         {
             title: "Faroe Islands",
-            image: "/images/faroe-islands.jpg",
+            image: "/top-emerging-travel-destinations/farore.webp",
             description:
                 "A paradise for nature lovers, the Faroe Islands offer dramatic cliffs, waterfalls, and charming villages for an unforgettable adventure.",
             whyGo: "Still relatively undiscovered, the Faroe Islands provide a peaceful and immersive travel experience."
@@ -123,7 +123,7 @@ const page = () => {
 
                 {/* Section: From Pearls to Skyscrapers */}
                 <div className="grid md:grid-cols-2 gap-10 items-center ">
-                    <img src="/blog/blog17.webp" alt="Pearl Diving" className="rounded-lg shadow-lg  " />
+                    <img src="/top-emerging-travel-destinations/why-explore-emerging.webp" alt="Pearl Diving" className="rounded-lg shadow-lg  " />
                     <div>
                         <h2 className="text-3xl md:text-3xl font-bold text-orange-500 px-5  mb-2 max-lg:text-center font-manrope">
                             Why Explore Emerging Destinations?
@@ -144,7 +144,7 @@ const page = () => {
                     <div className="space-y-16 max-w-6xl mx-auto">
                         {destinations.map((destination, index) => (
                             <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-8`}>
-                                <div className="w-full lg:w-1/2 h-64 relative">
+                                <div className="w-full lg:w-1/2 h-80 relative">
                                     <Image src={destination.image} alt={destination.title} layout="fill" objectFit="cover" className="rounded-lg shadow-lg" />
                                 </div>
                                 <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -161,7 +161,8 @@ const page = () => {
                     <h2 className="text-3xl font-bold text-orange-500">How We Can Help You Explore These Destinations
 
                     </h2>
-                    <p className="text-sm md:text-base mt-4 text-gray-300 font-bold">At Travel Synergies we specialize in creating unforgettable travel experiences tailored to your preferences. Whether you’re looking for a luxury getaway, an adventurous trek, or a cultural immersion, our team of experts is here to make it happen. We’ll handle all the details, from flights and accommodations to guided tours and unique experiences, so you can focus on enjoying your journey.
+                    <p className="text-sm md:text-base mt-4 text-gray-300 font-bold">
+                        At Travel Synergies we specialize in creating unforgettable travel experiences tailored to your preferences. Whether you’re looking for a luxury getaway, an adventurous trek, or a cultural immersion, our team of experts is here to make it happen. We’ll handle all the details, from flights and accommodations to guided tours and unique experiences, so you can focus on enjoying your journey.
                         <br />
                         <br />
                         Ready to explore one of these emerging destinations? Contact us today to start planning your 2025 adventure. Let’s make next year the year you discover something new and unforgettable!
@@ -170,6 +171,8 @@ const page = () => {
 
 
                     {/* Call to Action */}
+
+
                     <button className="mt-6 px-6 py-3 text-sm md:text-base font-semibold bg-orange-500 hover:bg-orange-600 
           text-white rounded-lg transition duration-300">
                         Book Your Trip Today

@@ -26,7 +26,7 @@ const blogs: BlogCardProps[] = [
     href: "/top-emerging-travel-destinations",
     description:
       "In our previous blog post, we explored the evolution of travel—from its golden age to the present day and beyond. Today, we’re diving into the exciting world of emerging travel destinations. As an outbound holidays tourism company based in the UAE    ",
-    imageUrl: "/blog/blog1.jpg",
+    imageUrl: "/top-emerging-travel-destinations/blog-post-1.webp",
     date: "Published on 18 Jan 2025",
     category: "Eco Travel",
   },
@@ -78,7 +78,7 @@ const UAETravelHistory = () => {
       <div className="flex flex-col items-start justify-center text-white bg-bg-blogmain min-h-[90vh] bg-cover bg-no-repeat bg-center">
         <div className="container mx-auto flex flex-col items-center ">
           <h1 className="text-2xl md:text-7xl font-bold text-center font-serif pb-4">
-            Your Passport to Wonders
+            Explores the worlds best kept secrets
           </h1>
           <p className="text-center text-xl md:text-3xl mt-2 font-serif pb-4">
             Tales of Travel Enchantment
@@ -114,7 +114,7 @@ const UAETravelHistory = () => {
 
         {/* Main Title */}
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif  mb-6 text-orange-500">
-          Travel Insights, Tips and Stories
+        Explores the worlds best kept secrets
         </h1>
 
         {/* Subtitle */}
@@ -125,10 +125,7 @@ const UAETravelHistory = () => {
         {/* Description */}
         <div className="container mx-auto">
           <p className="text-gray-200 text-base md:text-lg leading-relaxed">
-            Welcome to Travel synergies , where wanderlust meets unparalleled experiences.
-            Immerse yourself in our curated collection of travel insights, tips and captivating stories.
-            From hidden gems to island adventures, our blog is your passport to a world of discovery.
-            Join us as we redefine the art of travel and inspire your next adventure.
+          Welcome to Travel Synergies, where we craft unforgettable journeys. Dive into our handpicked travel guides, tips, and stories that uncover hidden gems and epic adventures. From secluded beaches to off-the-beaten-path wonders, we’re here to fuel your passion for exploration.
           </p>
         </div>
       </div>
