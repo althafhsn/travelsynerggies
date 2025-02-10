@@ -63,7 +63,7 @@ const SaftyTravelInbound: React.FC = () => {
                 </p>
 
                 {/* Grid Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-6 min-h-72">
                     {/* Sidebar Navigation */}
                     <div className="space-y-2 md:space-y-4" role="tablist">
                         {sections.map((section) => (
