@@ -1,6 +1,4 @@
-import { m } from 'framer-motion';
 import React, { useState } from 'react';
-import { GoDotFill } from 'react-icons/go';
 
 const SaftyTravelInbound: React.FC = () => {
     const [activeSection, setActiveSection] = useState<string>('general-safety-tips');

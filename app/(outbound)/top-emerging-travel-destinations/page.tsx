@@ -62,7 +62,7 @@ const page = () => {
         },
         {
             title: "Kazakhstan",
-            image: "/top-emerging-travel-destinations/postacrds-from-paradise.webp",
+            image: "/top-emerging-travel-destinations/kazakhastan.webp",
             description:
                 "Kazakhstan, the world’s largest landlocked country, boasts modern cities like Nur-Sultan and breathtaking natural wonders like Charyn Canyon.",
             whyGo: "Kazakhstan is investing heavily in tourism infrastructure and easing visa requirements, making it an exciting new destination."
@@ -163,7 +163,7 @@ const page = () => {
 
 
                     </p>
-                    <div className='w-full lg:w-1/2 relative'>
+                    <div className='w-full  relative'>
                         <img src="/top-emerging-travel-destinations/bottom.jpg" alt=""  className='object-contain'/>
                     </div>
 

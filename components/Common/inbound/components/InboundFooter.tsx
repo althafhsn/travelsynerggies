@@ -38,7 +38,7 @@ const InboundFooter: React.FC = () => {
         register: {
             title: "",
             links: [
-                { text: "Our Service Spectrum", href: "/blogs#our-service-spectrum" },
+                { text: "Our Service Spectrum", href: "/blogs#inbound-service-spectrum" },
                 { text: "Blogs", href: "/inbound-blog" }
             ]
         },

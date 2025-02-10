@@ -23,6 +23,7 @@ const BlogContent: React.FC = () => {
 
   const navigationLinks: FooterLink[] = [
     { title: 'Our Service Spectrum', href: 'our-service-spectrum' },
+    { title: 'Inbound Service', href: 'inbound-service-spectrum' },
     { title: 'Terms & Conditions', href: 'terms-conditions' },
     { title: 'Sustainable Tourism', href: 'sustainable-tourism' },
     { title: 'Bucket List', href: 'bucket-list' },
@@ -129,6 +130,9 @@ const BlogContent: React.FC = () => {
       <div className="container mx-auto md:px-4 mt-10">
         <div id="our-service-spectrum" className="scroll-mt-24">
           <ServiceBlog />
+        </div>
+        <div id="inbound-service-spectrum" className="scroll-mt-24">
+          <InboundServiceSpectrum />
         </div>
         <div id="our-service-spectrum" className="scroll-mt-24">
           <InboundServiceSpectrum />
