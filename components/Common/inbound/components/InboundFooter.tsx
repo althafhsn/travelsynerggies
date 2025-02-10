@@ -107,9 +107,9 @@ const InboundFooter: React.FC = () => {
 
                             <div className="flex flex-1  items-center hover:cursor-pointer pb-5 md:pb-0">
                                 <img
-                                    src="/whitelogo.png"
+                                    src="/logo.png"
                                     alt="Logo"
-                                    className="md:w-48 w-36 md:h-[34px] h-[28px] transition-transform duration-300 hover:scale-105"
+                                    className="md:w-48 w-36 md:h-[48px] h-[36px] transition-transform duration-300 hover:scale-105"
                                 />
                             </div>
                         </Link>

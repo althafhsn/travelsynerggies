@@ -25,7 +25,7 @@ const links = [
     },
     {
         name: 'Social Responsibility',
-        path: '/social'
+        path: '/social-responsibility'
     },
   
     {
