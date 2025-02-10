@@ -56,6 +56,7 @@ const InboundFooter: React.FC = () => {
             links: [
                 { text: "Safety Guidelines", href: "/blogs#inbound-safty-policy" },
                 { text: "Environment Policy", href: "/blogs#environment-policy" },
+                { text: "Dinning Experiences", href: "/blogs#dinning" },
 
             ]
         },
