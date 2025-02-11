@@ -4,13 +4,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { motion } from 'framer-motion';
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
+import { IoMdArrowBack, IoMdArrowForward } from 'react-icons/io';
 import Image from 'next/image';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { IoMdArrowBack, IoMdArrowForward } from 'react-icons/io';
 
 interface ImageSliderProps {
     slides: SlideImage[];
@@ -33,7 +32,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
     autoplay = true,
     delay = 3000,
     navigation = true,
-    height = "h-[80vh] lg:h-[90vh]",
+    height = "h-[60vh] md:h-[90vh]", // Adjusted for mobile
     buttonStyles = "bg-orange-500/60 hover:text-orange-500 hover:bg-white",
     showContactButton = true
 }) => {
@@ -41,7 +40,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
     const [activeIndex, setActiveIndex] = useState(0);
     const [swiperKey, setSwiperKey] = useState(0); // Forces re-render
 
-    // 🛠 Force Swiper Re-render When Navigating Back
+    // Force Swiper Re-render When Navigating Back
     useEffect(() => {
         setSwiperKey((prev) => prev + 1);
     }, []);
@@ -50,9 +49,9 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
         <div className={`relative w-full ${height} overflow-hidden`}>
             {/* Swiper Component */}
             <Swiper
-                key={swiperKey} // ✅ Forces Swiper re-render when navigating back
+                key={swiperKey} // Forces Swiper re-render when navigating back
                 modules={[Autoplay, Navigation]}
-                spaceBetween={32}
+                spaceBetween={16} // Reduced space for better fit
                 slidesPerView={1}
                 autoplay={autoplay ? { delay, disableOnInteraction: false } : false}
                 loop={true}
@@ -65,26 +64,26 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                     <SwiperSlide key={index} className="relative">
                         <div className="absolute inset-0 w-full h-full">
                             <div className="relative w-full h-full">
-                                {/* 🛠 Fix Image Not Showing After Navigation */}
+                                {/* Fix Image Not Showing After Navigation */}
                                 <Image
                                     src={slide.image}
                                     alt={''}
                                     fill
                                     priority={index === 0} // Load first image faster
-                                    className=" object-fill "
+                                    className="object-fill" // Changed from "object-fill" for better fit
                                 />
 
-                                {/* 🛠 Fix Motion Reset on Slide Change */}
+                                {/* Fix Motion Reset on Slide Change */}
                                 <motion.div
-                                    key={activeIndex} // ✅ Animation resets for each slide
-                                    className="absolute top-1/3 flex items-center justify-start text-white px-6 md:px-16"
+                                    key={activeIndex} // Animation resets for each slide
+                                    className="absolute top-1/4 sm:top-1/3 flex items-center justify-start text-white px-4 sm:px-6 md:px-16"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6, delay: 0.2 }}
                                 >
                                     <motion.div>
                                         <motion.h3
-                                            className="text-xl lg:text-6xl font-bold uppercase text-orange-500 leading-none md:text-5xl"
+                                            className="text-lg sm:text-xl md:text-3xl lg:text-5xl font-bold uppercase text-orange-500 leading-none"
                                             initial={{ x: -50, opacity: 0 }}
                                             animate={{ x: 0, opacity: 1 }}
                                             transition={{ duration: 0.5 }}
@@ -94,7 +93,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
                                         </motion.h3>
 
                                         <motion.p
-                                            className="mt-4 text-lg md:text-4xl font-bold ml-1 uppercase max-w-4xl"
+                                            className="mt-2 text-sm sm:text-base md:text-2xl lg:text-4xl font-bold ml-1 uppercase max-w-lg sm:max-w-4xl"
                                             initial={{ x: -50, opacity: 0 }}
                                             animate={{ x: 0, opacity: 1 }}
                                             transition={{ duration: 0.6, delay: 0.2 }}
@@ -112,21 +111,21 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
 
             {/* Custom Navigation */}
             {navigation && (
-                <div className="absolute bottom-4 md:bottom-8 right-8 md:right-20 z-30 flex flex-col items-center gap-2 ">
+                <div className="absolute bottom-4 sm:bottom-6 right-4 sm:right-8 z-30 flex gap-2">
                     <button
                         onClick={() => swiperRef.current?.slidePrev()}
-                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500  flex items-center justify-center pointer-events-auto`}
+                        className={`w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} flex items-center justify-center pointer-events-auto`}
                         aria-label="Previous slide"
                     >
-                        <IoMdArrowBack className="" />
+                        <IoMdArrowBack />
                     </button>
 
                     <button
                         onClick={() => swiperRef.current?.slideNext()}
-                        className={`w-8 h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} font-bold transition-colors duration-500  flex items-center justify-center pointer-events-auto`}
+                        className={`w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full text-white ${buttonStyles} flex items-center justify-center pointer-events-auto`}
                         aria-label="Next slide"
                     >
-                        <IoMdArrowForward  className="" />
+                        <IoMdArrowForward />
                     </button>
                 </div>
             )}
@@ -134,12 +133,12 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
             {/* Contact Us Button - Fixed Position (Now Clickable) */}
             {showContactButton && (
                 <motion.div
-                    className="absolute bottom-4 left-8 md:left-20 md:bottom-8 md:right-8 z-20 pointer-events-auto"
+                    className="absolute bottom-4 sm:bottom-6 left-4 sm:left-8 z-20 pointer-events-auto"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                    <button className="bg-orange-500 px-4 py-2 rounded-sm text-white hover:scale-110 transition-all duration-300 ease-in-out hover:bg-orange-600 shadow-md font-bold">
+                    <button className="bg-orange-500 px-3 py-1 sm:px-4 sm:py-2 rounded-sm text-white hover:scale-110 transition-all duration-300 ease-in-out hover:bg-orange-600 shadow-md font-bold">
                         Contact Us
                     </button>
                 </motion.div>

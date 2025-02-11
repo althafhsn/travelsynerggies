@@ -3,8 +3,8 @@ import Image from 'next/image';
 export default function HeroBanner() {
   return (
     <section
-      className="py-8 sm:py-12 lg:py-16 relative bg-cover bg-center bg-no-repeat h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh] xl:h-[100vh]"
-      style={{ backgroundImage: `url(/social-responsibilty/loving-family.webp)` }}
+      className="py-8 sm:py-12 lg:py-16 relative bg-cover  bg-no-repeat min-h-[60vh] md:min-h-[80vh] lg:min-h-[90vh]  w-[100%] bg-bg-social-responsibility"
+
     >
       {/* Overlay for better readability */}
       <div className="absolute inset-0 bg-black/50"></div>

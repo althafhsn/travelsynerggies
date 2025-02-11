@@ -10,7 +10,7 @@ const page = () => {
 
     return (
         <>
-            <div className="container mx-auto px-4 xl:px-0">
+            <div className=" mx-auto px-4 xl:px-0">
                 <Herobanner />
                 <EnvironmentalSustainability />
                 <Community />

@@ -8,7 +8,7 @@ const HeroImageOutbound = () => {
                 autoPlay
                 loop
                 muted
-                className='w-full max-h-[90vh] h-auto object-cover'>
+                className='w-full max-h-[90vh]  h-auto object-cover'>
                 <source src="/outbound/hero/travel-synergies-outbound.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
@@ -39,3 +39,4 @@ const HeroImageOutbound = () => {
 };
 
 export default HeroImageOutbound;
+

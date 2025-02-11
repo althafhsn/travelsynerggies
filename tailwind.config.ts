@@ -61,6 +61,7 @@ export default {
 				'bg-inboundBlogMain': "url('/top-emerging-travel-destinations/postacrds-from-paradise.webp')",
 				'bg-blog10': "url('/blog/blog10.webp')",
 				'bg-top-emerging-travel-destinations': "url('/top-emerging-travel-destinations/main.webp')",
+				'bg-social-responsibility': "url('/social-responsibilty/loving-family.webp')",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
