@@ -52,7 +52,7 @@ const OutboundMobileNav = () => {
                 <div className='flex items-center justify-center'>
 
                 <Link href='/' onClick={() => setOpen(false)}>
-                    <img src="/whitelogo.png" alt="logo" className="w-48 py-4" />
+                    <img src="/logo.png" alt="logo" className="w-48 py-4" />
                 </Link>
                 </div>
                 {/* nav */}
