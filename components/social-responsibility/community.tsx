@@ -5,9 +5,9 @@ import { FaSuitcase } from "react-icons/fa";
 
 export default function Community() {
   return (
-    <div className="container mx-auto px-4 md:px-6 lg:px-8 py-2 md:py-6 lg:py-8 bg-black text-white">
+    <div className="px-4 sm:px-6 lg:px-8 py-8 sm:py-12 container mx-auto text-white">
       {/* Education Section */}
-      <div className="p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg mb-6 sm:mb-8">
+      <div className="  rounded-lg shadow-lg mb-6 sm:mb-8">
         <h2 className="text-md sm:text-2xl lg:text-3xl font-bold text-orange-500 mb-4 ">
           <IoIosPeople className='inline-block mr-2 text-orange-500' /> Empower Through Education: Our Book and Stationery Donation Drive
         </h2>
@@ -17,10 +17,10 @@ export default function Community() {
             alt="Children smiling"
             width={1000}
             height={250}
-            className="rounded-lg object-cover w-full"
+            className="rounded-lg object-cover w-full hidden md:block"
           />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <Image
               src="/social-responsibilty/childrens-education.webp"
@@ -30,11 +30,11 @@ export default function Community() {
               className="rounded-lg h-auto md:w-[600px]"
             />
           </div>
-          <div className="flex flex-col justify-center p-4">
-            <p className=" text-sm lg:text-lg mb-4 text-justify">
+          <div className="flex flex-col justify-center ">
+            <p className=" text-sm lg:text-base mb-4 text-justify">
               Our book donation CSR initiative aims to make a positive impact on education through our Book and Stationery Donation Drive. We believe in the transformative power of education and are committed to providing essential tools for learning to those in need.
             </p>
-            <p className=" text-sm lg:text-lg mb-4 text-justify">
+            <p className=" text-sm lg:text-base mb-4 text-justify">
               Books and Stationery are fundamental to the learning experience. Unfortunately, many individuals, particularly in underserved communities, lack access to these basic resources. By donating books and stationery items, we aim to bridge this gap and provide the necessary support for a brighter future. We have provided over 100 children in Sri Lanka with stationery supplies and uniforms, ensuring they have the necessary tools for their education.
             </p>
           </div>
@@ -42,13 +42,13 @@ export default function Community() {
       </div>
 
       {/* Volunteerism Section */}
-      <div className="p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg mb-6 sm:mb-8">
+      <div className=" rounded-lg shadow-lg mb-6 sm:mb-8">
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-orange-500 mb-4 ">
           <MdPlayArrow className='inline-block mr-2 text-orange-500' /> Employee Volunteerism
         </h2>
         <div className="grid grid-cols-1 gap-6 md:gap-10 mb-4 md:mb-6">
           <div>
-            <p className="text-xs sm:text-sm lg:text-base text-center">
+            <p className="text-xs sm:text-sm lg:text-base text-justify">
               Our employees are at the heart of our CSR efforts. We encourage active participation in community service and volunteer programs to make a meaningful impact.
             </p>
           </div>
@@ -72,12 +72,12 @@ export default function Community() {
       </div>
 
       {/* Ethical Business Conduct */}
-      <div className="p-4 md:p-6 lg:p-8 rounded-lg shadow-lg mb-6 md:mb-8">
-        <h2 className="text-md sm:text-2xl lg:text-3xl font-bold text-orange-500 mb-4 ">
+      <div className="rounded-lg shadow-lg mb-6 md:mb-8">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-orange-500 mb-4 ">
           <FaSuitcase className='inline-block mr-2 text-orange-500' /> Ethical Business Conduct
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-1 gap-6 sm:gap-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4 sm:gap-6 p-4 sm:p-6 bg-black rounded-lg shadow-md">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4 sm:gap-6  bg-black rounded-lg shadow-md">
             <Image
               src="/social-responsibilty/labour.webp"
               width={250}
@@ -89,12 +89,12 @@ export default function Community() {
               <h3 className="font-semibold text-orange-500 mb-2">
                 <MdPlayArrow className='inline-block mr-2 text-orange-500' /> Fair Labour Practices
               </h3>
-              <p className="text-white text-xs sm:text-sm lg:text-base text-justify">
+              <p className="text-white text-sm lg:text-base text-justify">
                 We adhere to fair labor standards and ensure safe working conditions for our employees and partners, including fair wages, equal opportunities, and respect for human rights.
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-6 p-4 md:p-6 bg-black rounded-lg shadow-md">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-6  bg-black rounded-lg shadow-md">
             <div>
               <h3 className="font-semibold text-orange-500 mb-2">
                 <MdPlayArrow className='inline-block mr-2 text-orange-500' /> Transparency and Accountability

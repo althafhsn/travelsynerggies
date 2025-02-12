@@ -21,7 +21,7 @@ const VideoSection = () => {
     }, [statements.length]);
 
     return (
-        <section className="relative w-full max-h-[90vh]  h-[50vh] md:h-auto object-cover">
+        <section className="relative w-full h-[60vh] md:h-[90vh] object-cover">
             <div className="absolute inset-0 z-0">
                 <video
                     src="/landing/ts-landing.mp4"
@@ -33,7 +33,7 @@ const VideoSection = () => {
 
             </div>
 
-            <div className="relative z-10 top-1/3 md:top-auto text-gray-10 flex flex-col items-center justify-center text-center px-4">
+            <div className="relative z-10 top-1/3  text-gray-10 flex flex-col items-center justify-center text-center px-4">
                 <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-8 font-mono leading-tight">
                     Experience the world<br />Live the moment
                 </h1>

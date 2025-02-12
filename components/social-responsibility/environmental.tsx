@@ -4,7 +4,7 @@ import { MdPlayArrow } from "react-icons/md";
 
 export default function EnvironmentalSustainability() {
   return (
-    <div className="px-4 sm:px-6 lg:px-8 py-8 sm:py-12 text-white container mx-auto">
+    <div className="px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 text-white container mx-auto">
       {/* Heading */}
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-500 mb-6 ">
         <FaLeaf className='inline-block mr-2 text-orange-500' /> Environmental Sustainability
@@ -51,25 +51,19 @@ export default function EnvironmentalSustainability() {
         </div>
       </div>
 
-      {/* Eco-friendly Initiatives */}
-      <div className="grid grid-cols-1 xl:grid-cols-2  items-center gap-4   bg-black rounded-lg shadow-md">
-
-      </div>
-
       {/* Responsible Tourism */}
-      <div className="mt-8 flex flex-col md:flex-row items-center gap-4  bg-black rounded-lg shadow-md">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-5  gap-4 items-center justify-center  bg-black rounded-lg shadow-md">
         <img
-          src="/social-responsibilty/responsible-tourism.webp"
-
+          src="/social-responsibilty/responsible-tourism.webp "
           alt="Responsible Tourism"
-          className="rounded-lg shadow-sm w-full h-auto"
+          className="rounded-lg shadow-sm w-full h-auto col-span-3 object-cover"
         />
-        <div>
+        <div className=" col-span-2">
           <h3 className="text-lg sm:text-xl font-bold text-orange-500 mb-2">
             <MdPlayArrow className='inline-block mr-2 text-orange-500' />
             Responsible Tourism
           </h3>
-          <p className="text-sm sm:text-base text-justify">
+          <p className="text-sm sm:text-base text-justify ">
             We partner with local communities and organizations to promote responsible tourism practices that respect cultural heritage, protect wildlife, and support sustainable livelihoods.
           </p>
         </div>

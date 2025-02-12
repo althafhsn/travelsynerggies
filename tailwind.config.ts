@@ -39,6 +39,7 @@ export default {
 			},
 			transformOrigin: {
 				'top-bottom': '50% 0%'
+			
 			},
 			animation: {
 				runningTime: 'runningTime 7s linear forwards',
