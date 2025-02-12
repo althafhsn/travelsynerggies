@@ -80,7 +80,7 @@ const UAETravelHistory = () => {
             Explores the worlds best kept secrets
           </h1>
           <p className="text-center text-xl md:text-3xl mt-2 font-serif pb-4">
-            Tales of Travel Enchantment
+          Where Maps Fade and Wonder Takes the Lead.
           </p>
           <div className="w-52 min-h-[1px] bg-white"></div>
         </div>
