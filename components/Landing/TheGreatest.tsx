@@ -19,7 +19,7 @@ const TheGreatest = () => {
             />
 
             {/* Quote Content */}
-            <div className="absolute text-end px-4 right-[14%] bottom-10">
+            <div className="absolute text-end px-4 right-[4%] bottom-10">
                 <p className="text-lg md:text-2xl lg:text-4xl font-medium italic">
                     “The greatest journeys begin with a single step”
                 </p>
