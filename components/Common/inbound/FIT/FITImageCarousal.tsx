@@ -5,8 +5,14 @@ import ImageSwiper from '../common/ImageSwiper'
 const FITImageCarousal = () => {
     const carousal = [
         {
+            title: 'Tailored Accommodation Options',
+            description: 'Every traveler is unique, and so are their accommodation preferences. Whether you crave the intimate charm of boutique hotels, the opulence of five-star resorts, or the cozy warmth of bed & breakfasts, we’re here to curate the perfect stay for you. At Travel Synergies, we understand that where you rest matters as much as where you explore..            ',
+            image: '/inbound/FIT/carousel/Tailored_Accommodation.webp'
+        },
+
+        {
             title: 'Professional Guides with local insights',
-            description: "We meticulously plan smooth transitions between locations, arranging internal flights, sightseeing tours, and seamless airport transfers. With a diverse fleet of vehicles at our disposal, we can cater to your specific needs. Our team of well trained drivers are committed to driving our guests with utmost safety.            ",
+            description: "Unlock the expertise of passionate local guides. Our knowledgeable guides are deeply rooted in our destination, offering rich insights into local history, culture, and traditions. They don’t just show you the sights; they take you off the beaten path to discover hidden gems and authentic experiences.Let us guide you beyond the ordinary.With Travel Synergies, your adventure is in expert hands.            ",
             image: '/inbound/FIT/carousel/professional-guides.webp'
         },
         {
@@ -16,28 +22,24 @@ const FITImageCarousal = () => {
         },
         {
             title: 'Logistics and Ground Services',
-            description: 'Access to knowledgeable local guides is one of the main benefits of collaborating with Travel Synergies for FIT travel. Our tour guides are enthusiastic about the places they visit and are well-versed in the local history, customs, and culture. We can give you insightful advice, lead you off the beaten track.',
+            description: 'From seamless logistics to personalized ground services, we ensure every detail is handled with care. Whether it’s arranging transportation, recommending local eateries, or crafting unique itineraries, we’re here to make your journey unforgettable.',
             image: '/inbound/FIT/carousel/Logistics_and_Ground.webp'
         },
-        {
-            title: 'Tailored Accommodation Options',
-            description: 'Every traveller has unique accommodation preferences, whether you prefer boutique hotels, luxurious five-star resorts, or charming bed & breakfasts, we are here to recommend and arrange accommodations that align with both your tastes and budget. Travel Synergies grants you access to an extensive rates of accomodations.            ',
-            image: '/inbound/FIT/carousel/Tailored_Accommodation.webp'
-        },
-        {
-            title: 'Technology at your Finger Tips',
-            description: 'Working with Travel Synergies for FIT travel offers you the invaluable peace of mind that comes with 24/7 support and assistance. Our dedicated team is available around the clock throughout your vacation, ready to provide guidance on everything from meals to activities, accommodate last.            ',
-            image: '/inbound/FIT/carousel/Technology.webp'
-        },
+
         {
             title: 'Concierge Excellence',
-            description: 'Access to knowledgeable local guides is one of the main benefits of collaborating with Travel Synergies for FIT travel. Our tour guides are enthusiastic about the places they visit and are well-versed in the local history, customs, and culture. We can give you insightful advice, lead you off the beaten track.',
+            description: 'Concierge excellence is the gold standard. We do much more than just assist our guests—it’s about anticipating their needs, crafting unforgettable experiences, and delivering seamless solutions with precision and care. From securing exclusive reservations to curating bespoke itineraries, Our role is to transform ordinary moments into extraordinary memories.',
             image: '/inbound/FIT/carousel/Concierge_Service.webp'
         },
         {
             title: 'Fine Dining',
-            description: "Experience the food scene in one of the food Capitals of the world, from luxurious dining     and fusion cuisine to unique dining concepts.",
+            description: "Experience the food scene in one of the food Capitals of the world, from luxurious dining and fusion cuisine to unique dining concepts. An immersive experience that tantalizes the senses and elevates culinary artistry to new heights.",
             image: '/inbound/FIT/carousel/Fine_Dining.webp'
+        },
+        {
+            title: 'Technology at your Finger Tips',
+            description: 'Our cutting-edge technology ensures that support and assistance are always within reach, Whether you need dining recommendations, activity suggestions, or last-minute changes, our dedicated team is just a call or click away.  Travel smarter, not harder. Let Travel Synergies put the power of technology in your hands, so you can focus on enjoying the journey.',
+            image: '/inbound/FIT/carousel/Technology.webp'
         },
 
 

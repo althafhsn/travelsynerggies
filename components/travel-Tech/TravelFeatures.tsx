@@ -58,7 +58,7 @@ const TravelFeatures = () => {
     <div className="py-5 px-4 md:px-8 lg:px-16">
       <div className="container mx-auto">
         {/* Header Section */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-4">
           <h2 className="text-xl md:text-3xl font-bold text-orange-500 mb-6">
             Travel Experience
           </h2>

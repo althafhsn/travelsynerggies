@@ -36,6 +36,8 @@ const MICE = () => {
                     At Travel Synergies, we specialize in delivering comprehensive M.I.C.E. services, dedicated to delivering exceptional and seamless event experiences with extensive expertise, our team excels in organizing events of all scales from small, intimate gatherings to large, international events.
                 </p>
             </div>
+            <h1 className='  text-2xl md:text-3xl text-center font-bold  text-orange-500 '>Our Service Portfolio</h1>
+
             <MICEImageCarousal />
             <div className='grid gap-2 py-5'>
             </div>

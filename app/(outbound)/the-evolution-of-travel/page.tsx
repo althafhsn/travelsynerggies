@@ -14,31 +14,31 @@ const page = () => {
             stack: [
                 {
                     title: 'A Greener Skies Initiative',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog4.webp",
                     description:
                         "Climate change has become an urgent global concern, and the aviation industry—long criticized for its environmental impact—is stepping up to the challenge. Airlines, airports, and tech innovators are investing heavily in sustainable practices that aim to reduce carbon footprints while maintaining the convenience and accessibility of air travel."
                 },
                 {
                     title: 'Carbon-Neutral Flights',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog5.webp",
                     description:
                         "Many airlines are already experimenting with carbon offset programs, allowing passengers to neutralize their emissions by funding reforestation projects or renewable energy initiatives. Some carriers have gone further, committing to fully carbon-neutral operations within the next few decades."
                 },
                 {
                     title: 'Sustainable Aviation Fuel (SAF)',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog6.webp",
                     description:
                         "One of the most promising developments in green aviation is the rise of SAF, which can reduce lifecycle carbon emissions by up to 80% compared to traditional jet fuel. Companies like United Airlines and KLM are leading the charge, with SAF-powered flights already taking off in select markets.                        Electric and Hybrid Aircraft : While still in the experimental phase, electric and hybrid planes could revolutionize short-haul flights. Startups like Eviation and major manufacturers like Airbus are pioneering the development of electric aircraft that promise quieter, cleaner, and more energy-efficient flights. These innovations could transform regional travel, making it not only more sustainable but also more affordable."
                 },
                 {
                     title: 'Zero-Emission Airports',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog7.webp",
                     description:
                         "Airports themselves are becoming hubs of sustainability. From solar-powered terminals to waste reduction programs, airports around the world are adopting eco-friendly practices. For instance, Singapore’s Changi Airport has implemented extensive green initiatives, including rainwater harvesting and energy-efficient lighting systems. In the future, we may see entire airport ecosystems powered by renewable energy, with zero-emission ground transportation and carbon-neutral operations."
                 },
                 {
                     title: 'Regulatory Push for Sustainability',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog8.webp",
                     description:
                         "Governments and international bodies like the International Civil Aviation Organization (ICAO) are setting ambitious targets to curb aviation emissions. The Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA), for example, aims to stabilize CO2 emissions at 2020 levels by requiring airlines to offset any growth in emissions. As regulations tighten, the industry will be forced to innovate further, ensuring that air travel becomes a more responsible choice for environmentally conscious travelers."
                 },
@@ -79,31 +79,31 @@ const page = () => {
             stack: [
                 {
                     title: 'The Rise of Smart Airports',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog9.webp",
                     description:
                         "Airports are evolving from mere transit hubs into smart, interconnected ecosystems that prioritize efficiency, convenience, and passenger comfort. The airports of the future will be designed with cutting-edge technology to enhance the travel experience from check-in to takeoff."
                 },
                 {
                     title: 'Autonomous Vehicles and Robotics',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog10.webp",
                     description:
                         "Autonomous baggage handlers, robotic customer service agents, and self-driving shuttles will become commonplace in future airports. These technologies will reduce human error, improve efficiency, and free up staff to focus on more complex tasks. Passengers may even encounter robot concierges who can answer questions, guide them to their gates, and provide real-time updates on flight statuses."
                 },
                 {
                     title: 'Augmented Reality Navigation',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog11.webp",
                     description:
                         "Navigating large, sprawling airports can be daunting, especially for first-time travelers. Augmented reality (AR) apps will help passengers find their way with ease, overlaying digital directions onto their smartphone screens or AR glasses. Need to locate your gate, a specific restaurant, or a charging station? Simply point your device, and AR will guide you there."
                 },
                 {
                     title: 'Contactless Everything',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog12.webp",
                     description:
                         "The COVID-19 pandemic accelerated the adoption of contactless technologies, and this trend will continue to shape the future of air travel. From touchless check-in kiosks to mobile boarding passes and cashless payments, the goal is to minimize physical interactions and create a safer, more hygienic environment for travelers."
                 },
                 {
                     title: 'Smart Lounges and Relaxation Zones',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog13.webp",
                     description:
                         "Airport lounges are getting a tech-savvy makeover. Future lounges will feature smart furniture that adjusts to your body, immersive virtual reality experiences to help you relax, and personalized wellness offerings like meditation pods and sleep chambers. Some airports are even experimenting with biophilic design, incorporating natural elements like living walls and indoor gardens to create calming, stress-free environments."
                 },
@@ -115,25 +115,25 @@ const page = () => {
             stack: [
                 {
                     title: 'Shrinking the Globe',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog14.webp",
                     description:
                         "One of the most exciting prospects for the future of air travel is the return of supersonic and hypersonic flight. While commercial supersonic travel ended with the retirement of the Concorde in 2003, new players are reviving the dream of ultra-fast travel."
                 },
                 {
                     title: 'Supersonic Jets',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog15.webp",
                     description:
                         "Companies like Boom Supersonic and Aerion Corporation are developing next-generation supersonic jets capable of flying at speeds of Mach 2 or higher. These planes could cut transatlantic flight times in half, making it possible to fly from New York to London in just three hours. The first commercial supersonic flights are expected to launch within the next decade, catering primarily to business travelers and high-net-worth individuals."
                 },
                 {
                     title: 'Hypersonic Travel',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog16.webp",
                     description:
                         "Even faster than supersonic, hypersonic aircraft could reach speeds of Mach 5 or more, potentially reducing a flight from Los Angeles to Tokyo to under two hours. While still largely theoretical, hypersonic travel represents the ultimate frontier in speed and efficiency. NASA and private companies like SpaceX are exploring the possibilities, though widespread adoption may still be decades away."
                 },
                 {
                     title: 'Space-Based Travel Networks',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog17.webp",
                     description:
                         "Looking even further ahead, some visionaries believe that space-based travel networks could revolutionize global connectivity. Imagine boarding a spacecraft that launches into low Earth orbit, traveling at incredible speeds, and then re-entering the atmosphere near your destination. While this concept remains speculative, it underscores the limitless potential of human ingenuity."
                 },
@@ -146,94 +146,37 @@ const page = () => {
             stack: [
                 {
                     title: 'Empathy Meets Technology',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog18.webp",
                     description:
                         "As technology continues to advance, so too does our understanding of human emotions and how they influence travel experiences. In the future, airlines and airports will leverage emotional intelligence (EI) to create more empathetic, passenger-centric environments."
                 },
                 {
                     title: 'Emotion-Sensing Technology',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog19.webp",
                     description:
                         "Cameras equipped with facial recognition software and emotion-detection algorithms will monitor passenger moods in real time. If a traveler appears stressed or anxious, airport staff could intervene to offer assistance or provide calming resources like guided meditations or aromatherapy. Similarly, cabin crews could use this technology to identify passengers who may need extra care during long-haul flights."
                 },
                 {
                     title: 'Wellness-Centric Design',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog20.webp",
                     description:
                         "Airports and aircraft interiors will increasingly incorporate wellness-focused features to enhance passenger well-being. Adjustable lighting systems that mimic natural circadian rhythms, noise-canceling materials to reduce cabin noise, and ergonomic seating designed to promote better posture are just a few examples of how future travel will prioritize health and comfort."
                 },
                 {
                     title: 'Post-Flight Recovery Programs',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog21.webp",
                     description:
                         "Long-haul flights can take a toll on the body, leading to jet lag, dehydration, and fatigue. To combat these effects, airlines may offer post-flight recovery programs, including hydration stations, oxygen bars, and even onboard wellness coaches who guide passengers through stretching exercises and breathing techniques."
                 },
 
             ]
         },
-        {
-            title: "Emotional Intelligence in Air Travel",
-            stack: [
-                {
-                    title: 'Empathy Meets Technology',
-                    image: "/images/sustainable-travel.jpg",
-                    description:
-                        "As technology continues to advance, so too does our understanding of human emotions and how they influence travel experiences. In the future, airlines and airports will leverage emotional intelligence (EI) to create more empathetic, passenger-centric environments."
-                },
-                {
-                    title: 'Emotion-Sensing Technology',
-                    image: "/images/sustainable-travel.jpg",
-                    description:
-                        "Cameras equipped with facial recognition software and emotion-detection algorithms will monitor passenger moods in real time. If a traveler appears stressed or anxious, airport staff could intervene to offer assistance or provide calming resources like guided meditations or aromatherapy. Similarly, cabin crews could use this technology to identify passengers who may need extra care during long-haul flights."
-                },
-                {
-                    title: 'Wellness-Centric Design',
-                    image: "/images/sustainable-travel.jpg",
-                    description:
-                        "Airports and aircraft interiors will increasingly incorporate wellness-focused features to enhance passenger well-being. Adjustable lighting systems that mimic natural circadian rhythms, noise-canceling materials to reduce cabin noise, and ergonomic seating designed to promote better posture are just a few examples of how future travel will prioritize health and comfort."
-                },
-                {
-                    title: 'Post-Flight Recovery Programs',
-                    image: "/images/sustainable-travel.jpg",
-                    description:
-                        "Long-haul flights can take a toll on the body, leading to jet lag, dehydration, and fatigue. To combat these effects, airlines may offer post-flight recovery programs, including hydration stations, oxygen bars, and even onboard wellness coaches who guide passengers through stretching exercises and breathing techniques."
-                },
-
-            ]
-        }, {
-            title: "Emotional Intelligence in Air Travel",
-            stack: [
-                {
-                    title: 'Empathy Meets Technology',
-                    image: "/images/sustainable-travel.jpg",
-                    description:
-                        "As technology continues to advance, so too does our understanding of human emotions and how they influence travel experiences. In the future, airlines and airports will leverage emotional intelligence (EI) to create more empathetic, passenger-centric environments."
-                },
-                {
-                    title: 'Emotion-Sensing Technology',
-                    image: "/images/sustainable-travel.jpg",
-                    description:
-                        "Cameras equipped with facial recognition software and emotion-detection algorithms will monitor passenger moods in real time. If a traveler appears stressed or anxious, airport staff could intervene to offer assistance or provide calming resources like guided meditations or aromatherapy. Similarly, cabin crews could use this technology to identify passengers who may need extra care during long-haul flights."
-                },
-                {
-                    title: 'Wellness-Centric Design',
-                    image: "/images/sustainable-travel.jpg",
-                    description:
-                        "Airports and aircraft interiors will increasingly incorporate wellness-focused features to enhance passenger well-being. Adjustable lighting systems that mimic natural circadian rhythms, noise-canceling materials to reduce cabin noise, and ergonomic seating designed to promote better posture are just a few examples of how future travel will prioritize health and comfort."
-                },
-                {
-                    title: 'Post-Flight Recovery Programs',
-                    image: "/images/sustainable-travel.jpg",
-                    description:
-                        "Long-haul flights can take a toll on the body, leading to jet lag, dehydration, and fatigue. To combat these effects, airlines may offer post-flight recovery programs, including hydration stations, oxygen bars, and even onboard wellness coaches who guide passengers through stretching exercises and breathing techniques."
-                },
-
-            ]
-        },
+      
+     
     ];
     return (
         <div className="min-h-screen mb-4">
-            <div className="flex flex-col items-start justify-center text-white bg-bg-blog min-h-[70vh] bg-cover bg-no-repeat bg-center ">
+            <div className="flex flex-col items-start justify-center text-white bg-bg-blog2 min-h-[70vh] bg-cover bg-no-repeat bg-center ">
             </div>
             <div className='px-2 container mx-auto pt-5'>
                 <Breadcrumb>
@@ -282,7 +225,7 @@ const page = () => {
 
                     {/* Section: From Pearls to Skyscrapers */}
                     <div className="grid md:grid-cols-2 gap-10 items-center  pt-10">
-                        <img src="/blog/blog1.webp" alt="Pearl Diving" className="rounded-lg shadow-lg " />
+                        <img src="/the-evolution-of-travel/blog1.webp" alt="Pearl Diving" className="rounded-lg shadow-lg " />
                         <div>
                             <h2 className="text-lg md:text-xl lg:text-4xl font-bold text-orange-500 px-5  my-2 max-lg:text-center font-manrope">
                                 Then: The Golden Age of Travel
@@ -303,7 +246,7 @@ const page = () => {
                         </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-10 items-center pt-10">
-                        <img src="/blog/blog7.webp" alt="Pearl Diving" className="rounded-lg shadow-lg md:order-2" />
+                        <img src="/the-evolution-of-travel/blog2.webp" alt="Pearl Diving" className="rounded-lg shadow-lg md:order-2" />
                         <div>
                             <h2 className="text-lg md:text-xl lg:text-4xl font-bold text-orange-500 px-5  my-2 max-lg:text-center font-manrope">
                                 Now: The Era of Accessibility and Personalization
@@ -316,8 +259,17 @@ const page = () => {
                                 <br />
 
                                 Social media has further transformed the way we perceive and plan travel. Platforms like Instagram and TikTok serve as digital passports, offering endless inspiration for exotic locales and hidden gems. Whether it’s chasing waterfalls in Iceland, hiking Patagonia’s rugged trails, or indulging in Bangkok’s vibrant street food scene, modern travelers crave authenticity and unique experiences. They don’t just want to visit—they want to live the destination.
-                                <br />
-                                <br />
+
+                            </p>
+                        </div>
+
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-10 items-center pt-10">
+                        <img src="/the-evolution-of-travel/blog3.webp" alt="Pearl Diving" className="rounded-lg shadow-lg " />
+                        <div>
+
+                            <p className="text-sm md:text-base text-gray-200 text-justify py-2  mx-auto px-5 ">
+
 
                                 The UAE has emerged as a shining example of this new era of travel. Dubai and Abu Dhabi now rank among the most visited cities globally, thanks to their futuristic skylines, luxurious resorts, and world-class attractions like the Burj Khalifa and Louvre Abu Dhabi.
                                 <br />

@@ -17,10 +17,19 @@ interface BlogCardProps {
   description: string;
   imageUrl: string;
   date: string;
-  category: string;
 }
 
 const blogs: BlogCardProps[] = [
+
+  {
+    title: "The Evolution of Travel",
+    href: "/the-evolution-of-travel",
+    description:
+      "Travel has always been a cornerstone of human experience, a way to explore, connect, and grow. For decades, the travel industry has evolved dramatically, shaped by technological advancements, cultural shifts, and global events. As an outbound holidays tourism company based in the UAE ",
+    imageUrl: "/the-evolution-of-travel/main.webp",
+    date: "Published on 17 Jan 2025",
+  
+  },
   {
     title: "Top Emerging Travel Destinations for 2025",
     href: "/top-emerging-travel-destinations",
@@ -28,20 +37,11 @@ const blogs: BlogCardProps[] = [
       "In our previous blog post, we explored the evolution of travel—from its golden age to the present day and beyond. Today, we’re diving into the exciting world of emerging travel destinations. As an outbound holidays tourism company based in the UAE    ",
     imageUrl: "/top-emerging-travel-destinations/blog-post-1.webp",
     date: "Published on 18 Jan 2025",
-    category: "Eco Travel",
-  },
-  {
-    title: "The Evolution of Travel",
-    href: "/the-evolution-of-travel",
-    description:
-      "Travel has always been a cornerstone of human experience, a way to explore, connect, and grow. For decades, the travel industry has evolved dramatically, shaped by technological advancements, cultural shifts, and global events. As an outbound holidays tourism company based in the UAE ",
-    imageUrl: "/blog/blog2.png",
-    date: "Published on 17 Jan 2025",
-    category: "Business & Leisure",
+   
   },
 ];
 
-const BlogCard: React.FC<BlogCardProps> = ({ title, description, imageUrl, date, category, href }) => {
+const BlogCard: React.FC<BlogCardProps> = ({ title, description, imageUrl, date,  href }) => {
   return (
     <Link href={href} className="bg-gray-300 rounded-lg shadow-lg overflow-hidden w-full sm:w-[48%] lg:w-[30%]">
       {/* Make this relative so absolute children stay inside */}
@@ -59,7 +59,6 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, description, imageUrl, date,
         <div className="min-h-[234px]">
           <h3 className="text-xl font-semibold text-orange-500 mt-6">{title}</h3>
           <p className="text-gray-900 text-sm mt-1 text-justify">{description}</p>
-          <p className="text-gray-800 font-medium mt-2">{category}</p>
         </div>
         <div className="text-orange-600 font-semibold my-2 inline-block">Learn More →</div>
       </div>
@@ -84,6 +83,26 @@ const UAETravelHistory = () => {
             Tales of Travel Enchantment
           </p>
           <div className="w-52 min-h-[1px] bg-white"></div>
+        </div>
+        <div className="absolute bottom-5 right-7 md:right-[80px]">
+          <button
+            className="bg-orange-500 text-white px-6 py-3 rounded-lg text-sm md:text-base hover:bg-orange-600 transition-all">
+            Contact Us
+          </button>
+        </div>
+        <div className="absolute top-2 md:top-[120px] right-7 md:right-[80px] flex">
+          <div className="h-16 md:h-28 flex flex-col gap-4 md:gap-12 items-start">
+            {/* Vertical text aligned to the top */}
+            <p className="text-[10px] md:text-sm tracking-[0.2em] rotate-180 [writing-mode:vertical-rl] h-full flex items-start font-mono text-orange-500 font-bold">
+              SCROLL
+            </p>
+            <div className='h-full ml-2'>
+              <div className='w-[2px] h-12 md:h-28 bg-orange-100 overflow-hidden'>
+                <div className='progress h-full w-full bg-orange-500'></div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <div className=" container mx-auto relative mt-5 px-2">
@@ -114,7 +133,7 @@ const UAETravelHistory = () => {
 
         {/* Main Title */}
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif  mb-6 text-orange-500">
-        Explores the worlds best kept secrets
+          Explores the worlds best kept secrets
         </h1>
 
         {/* Subtitle */}
@@ -125,7 +144,7 @@ const UAETravelHistory = () => {
         {/* Description */}
         <div className="container mx-auto">
           <p className="text-gray-200 text-base md:text-lg leading-relaxed">
-          Welcome to Travel Synergies, where we craft unforgettable journeys. Dive into our handpicked travel guides, tips, and stories that uncover hidden gems and epic adventures. From secluded beaches to off-the-beaten-path wonders, we’re here to fuel your passion for exploration.
+            Welcome to Travel Synergies, where we craft unforgettable journeys. Dive into our handpicked travel guides, tips, and stories that uncover hidden gems and epic adventures. From secluded beaches to off-the-beaten-path wonders, we’re here to fuel your passion for exploration.
           </p>
         </div>
       </div>

@@ -40,7 +40,7 @@ const page = () => {
                 </div>
 
                 {/* Tech Solutions Section */}
-                <div className="bg-black pt-12 px-4 md:px-8 lg:px-16">
+                <div className="bg-black pt-5 px-4 md:px-8 lg:px-16">
                     <div className=" mx-auto text-center">
                         <h2 className="text-2xl md:text-3xl font-bold text-orange-500 mb-2">
                             Our Tech Solutions
@@ -54,7 +54,7 @@ const page = () => {
                            duration-300 hover:scale-105 hover:shadow-2xl"
                                 >
                                     <div className="flex justify-center mb-6">
-                                        <div className="min-h-48 w-48 flex justify-center">
+                                        <div className="min-h-24  flex justify-center">
 
                                             <img
                                                 src={solution.logo}
@@ -73,13 +73,13 @@ const page = () => {
                 </div>
 
                 {/* Innovative Solutions Section */}
-                <div className="py-5 px-4 md:px-8 lg:px-16">
+                <div className="pt-5 px-4 md:px-8 lg:px-16">
                     <div className="max-w-6xl mx-auto my-5">
                         <h2 className="text-2xl md:text-3xl font-bold text-orange-500 mb-8 text-center">
                             Innovative solutions for destinations services
                         </h2>
                         <p className="text-gray-200 text-base md:text-lg text-center leading-relaxed">
-                            We utilize advance Distribution and Destination Management Solutions across our
+                            We utilize advanced Distribution and Destination Management Solutions across our
                             comprehensive range of services. These solutions not only handle the booking process for our
                             partners but also oversee the entire customer lifecycle at their destination.
                         </p>
@@ -110,7 +110,7 @@ const page = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="flex justify-end">
+                            <div className="flex justify-end w-[75%]">
                                 <div className="relative ">
                                     <img src="/inbound/Inbound/travel-tech/XML-connectivity.webp" alt="" className='object-contain rounded-xl ' />
 
@@ -145,7 +145,7 @@ const page = () => {
                                 <img
                                     src="/inbound/Inbound/travel-tech/xml.webp"
                                     alt="Network visualization"
-                                    className="w-full h-full object-cover opacity-70"
+                                    className="w-full h-[450px] object-cover opacity-70"
                                 />
                             </div>
                             <div className="space-y-6">

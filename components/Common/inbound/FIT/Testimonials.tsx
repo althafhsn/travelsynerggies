@@ -26,7 +26,7 @@ const testimonials = [
 
 const TestimonialCarousel = () => {
     return (
-        <div className="bg-black py-16">
+        <div className="bg-black py-5">
             <h2 className="text-orange-500 text-2xl md:text-3xl font-bold text-center mb-8">Testimonials</h2>
             <div className="container mx-auto px-4">
                 <Swiper

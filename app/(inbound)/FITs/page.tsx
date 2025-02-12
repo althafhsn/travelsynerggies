@@ -46,19 +46,17 @@ const FIT = () => {
 
 
 
-                <h1 className='   text-2xl md:text-3xl text-center font-bold  text-orange-500'>Our Service Portfolio</h1>
+                <h1 className='  text-2xl md:text-3xl text-center font-bold  text-orange-500 '>Our Service Portfolio</h1>
                 <FITImageCarousal />
            
 
 
-            <div className=' pt-10 '>
+            <div className=' pt-24 '>
                 <h1 className=' text-2xl md:text-3xl  pb-5 text-center font-bold  text-orange-500'>Your UAE Bucket List</h1>
 
                 <FITTabs />
             </div>
-            <div className='py-10'>
-                <TestimonialCarousel />
-            </div>
+            <TestimonialCarousel />
         </div>
     )
 }

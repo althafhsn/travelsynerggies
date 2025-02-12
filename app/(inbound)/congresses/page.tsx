@@ -40,6 +40,7 @@ const Congresses = () => {
                     With a team of seasoned professionals, we bring deep industry knowledge and precision to every project. We have successfully managed congresses of all scales, from small intimate gatherings to large international events. Our expertise spans diverse industries and event types, including:
                 </p>
             </div>
+            <h1 className='  text-2xl md:text-3xl text-center font-bold  text-orange-500 '>Our Service Portfolio</h1>
 
             <CongressesImageCarousal />
 
@@ -47,15 +48,16 @@ const Congresses = () => {
 
 
             <div className=' pt-10 max-w-6xl mx-auto'>
-                <h1 className='text-2xl md:text-3xl pb-5 text-center font-bold  text-orange-500'>Enhancing your MICE Event</h1>
+                <h1 className='text-2xl md:text-3xl pb-5 text-center font-bold  text-orange-500'>Where Vision Meets Impact
+                </h1>
 
                 <p className="text-sm md:text-base pb-5 text-center font-bold  text-gray-300">
-                    Take your MICE events to the next level with our curated experiences. From thrilling regattas and exhilarating racing at Yas Marina Circuit to the elegance of polo and the artistry of belly dancing classes, we offer unique activities that engage and inspire. Elevate the atmosphere with tailored entertainment and grant your attendees the privilege of VIP access for exclusive and seamless experiences.
+                Transform your congress into a powerhouse of innovation and connection with our end-to-end expertise in professional event management. From cutting-edge venues at globally renowned hubs like Abu Dhabi National Exhibition Centre (ADNEC) to immersive team-building adventures in the Arabian Desert, we craft congresses that blend knowledge-sharing with unforgettable engagement.
                 </p>
 
             </div>
 
-            <div className="pt-10 w-[80%] mx-auto">
+            <div className="py-10 w-[80%] mx-auto">
                 <CongressesInstagram />
             </div>
 

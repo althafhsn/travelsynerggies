@@ -10,7 +10,7 @@ const TheGreatest = () => {
     }, []);
 
     return (
-        <div className=" container mx-auto relative w-full h-[200px] md:h-[300px] lg:h-[300px] flex items-center justify-center text-white py-10 mb-10">
+        <div className=" container mx-auto relative w-full h-[200px] md:h-[300px] lg:h-[300px] flex items-center justify-center text-white p-10 mb-10">
             {/* Background Image */}
             <img
                 src="/landing/TheGreatest.webp"
@@ -19,7 +19,7 @@ const TheGreatest = () => {
             />
 
             {/* Quote Content */}
-            <div className="relative text-center px-4">
+            <div className="absolute text-end px-4 right-[14%] bottom-10">
                 <p className="text-lg md:text-2xl lg:text-4xl font-medium italic">
                     “The greatest journeys begin with a single step”
                 </p>

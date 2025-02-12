@@ -38,7 +38,7 @@ const Groups = () => {
                 </p>
             </div>
 
-
+            <h1 className='  text-2xl md:text-3xl text-center font-bold  text-orange-500 '>Our Service Portfolio</h1>
                 <GroupImageCarousal />
            
 

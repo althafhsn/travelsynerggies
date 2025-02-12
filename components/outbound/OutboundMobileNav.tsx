@@ -24,6 +24,10 @@ const links = [
         path: '/career'
     },
     {
+        name: 'Our Offices',
+        path: '/our-offices'
+    },
+    {
         name: 'Social Responsibility',
         path: '/social-responsibility'
     },

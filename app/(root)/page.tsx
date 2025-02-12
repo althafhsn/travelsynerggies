@@ -21,9 +21,10 @@ export default function Home() {
       <div className="flex flex-col">
         <VideoSection />
         <Marhaba />
-        <VissionMission />
-        <Services />
         <TravelReasons />
+        <Services />
+        <VissionMission />
+
         <TheGreatest />
       </div>
       <CookiesPopup />

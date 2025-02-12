@@ -11,14 +11,14 @@ const FITTabs = () => {
             tabsTrigger: "Our Top Sellers",
             tabsContent: <OurTopSellers />,
             value: "our-top-sellers",
-            tabsHeading: "UNVEILING THE BEST EXCURSIONS IN THE UAE",
+            tabsHeading: "DIVERSE DELIGHTS FOR EVERY DESIRE",
             tabsDescription: "The UAE offers a diverse range of exciting excursions, from the vibrant cityscapes of Dubai and Abu Dhabi to the tranquil beauty of the desert and mountains, ensuring an unforgettable experience that will leave a lasting impression on travelers",
         },
         {
             tabsTrigger: "Golfing",
             tabsContent: <GolfInTheUAETabs />,
             value: "golfing",
-            tabsHeading: "A JOURNEY THROUGH EQUESTRIAN EXCELLENCE",
+            tabsHeading: "UAE AS A GOLFING DESTINATION",
             tabsDescription: "Among the glitz and glamour of Dubai, there lies a world of equestrian excellence waiting to be discovered. Horse riding in Dubai is not merely a leisure activity but an enthralling journey through tradition, luxury, and adventure.",
         },
         {
@@ -32,7 +32,7 @@ const FITTabs = () => {
             tabsTrigger: "Family Pursuits",
             tabsContent: <FamilyPursuits />,
             value: "family-pursuits",
-            tabsHeading: "DISCOVER A WORLD OF EXCITEMENT AT UAE",
+            tabsHeading: "DISCOVER A WORLD OF EXCITEMENT",
             tabsDescription: "Discover a world of excitement at UAE’s premier theme parks, offering endless fun for families. From adrenaline-pumping rides and interactive attractions to water adventures and immersive experiences, there’s something for everyone. Enjoy vibrant entertainment, thrilling adventure and unforgettable moments that bring together a family pursuit.",
         },
         {

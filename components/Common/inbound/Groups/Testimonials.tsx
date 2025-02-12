@@ -15,8 +15,8 @@ const testimonials = [
         author: "Michael Fernandez"
     },
     {
-        text: "Highly professional and accommodated everything to our group’s needs. They ensured our group had a smooth and enjoyable journey and the entire trip exceeded expectations.",
-        author: "Reyna Aleem"
+        text: "Das Travel Synergies team hat uns nicht nur durch hervorragenden Service, sondern durch echte Leidenschaft und Hingabe überzeugt. Was Travel Synergies leistet, geht weit über die üblichen Standards hinaus. Selbst an Wochenenden und nach Bürozeiten stand das Team stets für uns bereit, um Fragen zu beantworten, Änderungen vorzunehmen oder letzte Details zu klären. Diese Flexibilität und Verfügbarkeit haben uns tief beeindruckt.Jeder Kontakt war geprägt von Freundlichkeit, Professionalität und einem echten Interesse daran, unsere Reise zu etwas Besonderem zu machen. Egal, ob kurzfristige Änderungen oder unerwartete Situationen – das Team blieb stets gelassen und lösungsorientiert.Travel Synergies hat unsere Erwartungen nicht nur erfüllt, sondern weit übertroffen.",
+        author: "Rena Kahle"
     },
 
 ];

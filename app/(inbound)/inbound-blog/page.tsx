@@ -125,10 +125,7 @@ const UAETravelHistory = () => {
         {/* Description */}
         <div className="container mx-auto">
           <p className="text-gray-200 text-base md:text-lg leading-relaxed">
-            Welcome to Travel synergies , where wanderlust meets unparalleled experiences.
-            Immerse yourself in our curated collection of travel insights, tips and captivating stories.
-            From hidden gems to island adventures, our blog is your passport to a world of discovery.
-            Join us as we redefine the art of travel and inspire your next adventure.
+          Welcome to Travel synergies , where wanderlust meets unparalleled experiences. Immerse yourself in our curated collection of travel insights, tips and captivating stories. From hidden gems to adventures, our blog is your passport to a world of discovery. Join us as we redefine the art of travel and inspire your next adventure.
           </p>
         </div>
       </div>

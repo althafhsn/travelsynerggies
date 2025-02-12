@@ -7,7 +7,7 @@ export default function TravelTech() {
                 {/* Text Section */}
                 <div>
                     <h2 className="text-2xl md:text-3xl font-semibold text-White">
-                        Travel Synergies <span className="text-orange-500 font-bold">Travel Tech</span>
+                        Our <span className="text-orange-500 font-bold">Travel Tech</span>
                     </h2>
                     <p className="text-gray-200 text-sm md:text-base mt-4 leading-relaxed text-justify">
                         Travel Synergies leads the way in embracing advanced technology, employing state-of-the-art

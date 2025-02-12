@@ -37,7 +37,7 @@ const ClientLogosShowcase = () => {
                     <CardContent className="p-6">
                         <div className="space-y-4">
                             <h2 className="text-1xl md:text-2xl pb-2  font-bold text-orange-500">
-                                Prestigious Events managed by Our Team
+                                Prestigious Events managed by our team
                             </h2>
                             <p className="text-gray-300 text-sm md:text-lg pb-2">Our experience includes some of the most prestigious global events, such as:</p>
 
@@ -80,7 +80,7 @@ const ClientLogosShowcase = () => {
                 </Card>
                 <div className="text-center mt-8">
                     <h3 className="text-2xl md:text-3xl font-semibold text-white">Ready to Partner with Travel Synergies?</h3>
-                    <p className="text-gray-400 text-sm md:text-base mt-2">Whether you're planning a solo adventure, a romantic getaway, or a family vacation, our expertise and resources ensure a memorable journey.</p>
+                    <p className="text-gray-400 text-sm md:text-base mt-2">Trust our 360° approach to deliver smarter agendas, deeper engagement, and flawless execution. Let’s turn your vision into a global benchmark.</p>
                     <button className="mt-4 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl">
                         Contact Us
                     </button>

@@ -26,7 +26,7 @@ const InboundInstagram = () => {
             imageUrl: '/inbound/Inbound/Instagram/adreline-rush.webp'
         },
         {
-            title: 'Gastronomical Retreat',
+            title: 'Gastronomical Delights',
             description: [
                 'In contention with some of the major cities, Dubai is perceived one of the food capitals of the world. Embark on a culinary journey that tantalizes the taste buds with diverse culinary scene that caters to every palate, offering an exquisite fusion of international flavors, authentic Emirati dishes and a fusion gastronomic feast.'
             ],
@@ -40,7 +40,7 @@ const InboundInstagram = () => {
             imageUrl: '/inbound/Inbound/Instagram/soulfull-bliss.webp'
         },
         {
-            title: 'Urban Retreat',
+            title: 'Iconic Marvels',
             description: [
                 'Discover the perfect blend of luxury and modernity in the vibrant cities of the UAE. From soaring skyscrapers to opulent shopping malls, experience the epitome of urban sophistication while enjoying world-class amenities and impeccable hospitality. Treat yourself to the finest, whether it be cuisine, art or architecture.'
             ],

@@ -5,7 +5,7 @@ import ImageSwiper from '../common/ImageSwiper'
 const GroupImageCarousal = () => {
     const carousal = [
         {
-            title: ' Myriad of Accommodation Options',
+            title: 'A Myriad of Accommodation Options',
             description: 'We believe that comfort and convenience are essential for an exceptional travel experience. We work with a wide range of accommodation partners to match your budget and preferences, whether it’s a luxurious hotel with stunning Arabian Gulf views or a centrally located city stay. ',
             image: '/inbound/Groups/carousel/A_Myriad_of.webp'
         },
@@ -47,7 +47,7 @@ const GroupImageCarousal = () => {
 
     ]
     return (
-        <div className=''>
+        <div className='mb-10'>
             <ImageSwiper images={carousal} />
         </div>
     )
