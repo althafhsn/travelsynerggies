@@ -10,7 +10,7 @@ const Marhaba = () => {
         document.head.appendChild(link);
     }, []);
     return (
-        <div className="container mx-auto text-white min-h-screen px-6 md:px-12 lg:px-20 py-6">
+        <div className="container mx-auto text-white min-h-screen px-2 py-6">
 
             {/* Heading */}
             <h1 className="text-2xl lg:text-4xl font-bold text-center mb-5 font-sans text-orange-500">

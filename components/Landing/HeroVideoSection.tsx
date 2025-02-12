@@ -34,11 +34,8 @@ const VideoSection = () => {
             </div>
 
             <div className="relative z-10 top-1/3  text-gray-10 flex flex-col items-center justify-center text-center px-4">
-                <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-8 font-mono leading-tight">
-                    Experience the world<br />Live the moment
-                </h1>
 
-                <div className="impact-statements flex flex-col items-center  text-xs md:text-basejustify-center h-16 relative">
+                <div className="impact-statements flex flex-col items-center  text-xs md:text-base justify-center h-16 relative">
                     <AnimatePresence mode="wait" initial={false}>
                         <motion.div
                             key={currentIndex}
@@ -51,9 +48,9 @@ const VideoSection = () => {
                             }}
                             className="absolute font-serif text-gray-10"
                         >
-                            <h3 className="text-md md:text-lg lg:text-xl whitespace-nowrap">
+                            <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-8 font-mono leading-tight">
                                 {statements[currentIndex]}
-                            </h3>
+                            </h1>
                         </motion.div>
                     </AnimatePresence>
                 </div>

@@ -23,7 +23,7 @@ const MissionVision = () => {
             className="flex flex-col items-center  text-center p-4  rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300  mx-auto md:min-h-[400px] "
           >
             <div className="mb-4 ">
-              <div className="w-24 h-24 md:w-36 md:h-36 flex items-center justify-center mb-4">
+              <div className="w-16 h-16 flex items-center justify-center mb-4">
                 <img 
                   src={section.imageSrc}
                   alt={`${section.title} Icon`}
