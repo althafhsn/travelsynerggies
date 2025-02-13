@@ -73,7 +73,7 @@ const partners = [
 
 const Partners: React.FC = () => {
     return (
-        <div className=" bg-gray-100  px-6 lg:px-8 py-12 min-h-screen">
+        <div className=" bg-gray-100  px-6 lg:px-8 py-12">
             <div
 
                 className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden "

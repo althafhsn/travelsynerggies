@@ -120,7 +120,7 @@ const BucketListPage: React.FC = () => {
     const [activeSection, setActiveSection] = useState<'destinations' | 'dining'>('destinations');
 
     return (
-        <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+        <div className=" bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden py-12 px-4">
                 <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">
                     Bucket List

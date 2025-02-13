@@ -2,7 +2,7 @@
 
 const DiningExperiences = () => {
   return (
-    <div className=" bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 min-h-screen">
+    <div className=" bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-8xl mx-auto bg-white text-gray-800 shadow-xl rounded-lg overflow-hidden p-4 ">
         <div className="p-6 md:p-10">
           <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center md:pt-16">

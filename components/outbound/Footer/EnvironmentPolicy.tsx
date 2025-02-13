@@ -21,7 +21,7 @@ const EnvironmentPolicy = () => {
     ];
 
     return (
-        <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 min-h-screen">
+        <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 ">
             {/* Hero Section */}
             <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden py-4 ">
                 <div className=" mx-auto text-center">

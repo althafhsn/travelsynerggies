@@ -90,7 +90,7 @@ const TermsAndConditions: React.FC = () => {
     };
 
     return (
-        <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 min-h-screen">
+        <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
         <div className=" mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
             <div className="p-6 md:p-10">
                 {/* Title */}
