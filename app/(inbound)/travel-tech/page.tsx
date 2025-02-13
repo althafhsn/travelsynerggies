@@ -59,11 +59,11 @@ const page = () => {
                                             <img
                                                 src={solution.logo}
                                                 alt={`${solution.name} logo`}
-                                                className=' object-contain'
+                                                className=' object-contain h-[60%] w-[60%]'
                                             />
                                         </div>
                                     </div>
-                                    <p className="text-gray-900">
+                                    <p className="text-orange-500 font-bold text-sm md:text-lg">
                                         {solution.category}
                                     </p>
                                 </div>
