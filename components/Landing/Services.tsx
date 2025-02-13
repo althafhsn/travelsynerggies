@@ -39,19 +39,19 @@ const Services = () => {
         <h2 className="text-2xl lg:text-4xl font-bold text-center mb-10 font-sans text-orange-500">Our Services</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-auto">
           <ServicesCard
-            backgroundImage="bg-bg-inbound"
+            backgroundImage=""
             title="Inbound"
             subtitle="Discover local wonders with our expertly curated experiences."
             href="/inbound"
           />
           <ServicesCard
-            backgroundImage="bg-bg-outbound"
+            backgroundImage=""
             title="Outbound"
             subtitle="Explore global destinations with personalized itineraries."
             href="/outbound"
           />
           <ServicesCard
-            backgroundImage="bg-bg-ts-connect"
+            backgroundImage=""
             title="Ts Connect"
             subtitle="Seamless travel solutions powered by innovation."
             href="/ts-connect"
