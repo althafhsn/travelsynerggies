@@ -19,8 +19,6 @@ const page = () => {
                         <div className="lg:w-1/2 px-6">
                             <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">Address</h2>
                             <p className="mt-1 text-[11px] md:text-sm">Nassima Tower, Sheikh Zayed Road, Dubai, UAE</p>
-                            <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">Our Global Offices</h2>
-                            <p className="mt-1 text-[11px] md:text-sm">Oman / Sri Lanka / Malaysia / Qatar</p>
                         </div>
                         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                             <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">Email</h2>

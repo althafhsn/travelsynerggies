@@ -197,7 +197,7 @@ const InboundServiceSpectrum = () => {
             <div className="container mx-auto bg-white shadow-xl rounded-lg overflow-hidden p-6 sm:p-8">
                 {/* Title */}
                 <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">
-                    UAE Travel Safety Guidelines
+                    UAE Service Spectrum 
                 </h1>
 
                 <p className="text-sm text-black mb-4 text-center font-bold ">

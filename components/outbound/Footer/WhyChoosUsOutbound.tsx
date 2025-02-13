@@ -1,9 +1,7 @@
 import { FaBrain, FaFolderOpen, FaTag, FaUserCheck } from "react-icons/fa";
-import { MdBusinessCenter, MdNaturePeople, MdRateReview, MdSecurity, MdSupportAgent } from "react-icons/md";
-import { BiSupport } from 'react-icons/bi';
 
 
-const WhyChooseUs = () => {
+const WhyChoosUsOutbound = () => {
 
 
   const WhyChoose = [
@@ -27,36 +25,6 @@ const WhyChooseUs = () => {
       title: "Unbeatable Prices",
       description: "Travel should be accessible to everyone, and we provide the best deals without compromising quality.",
     },
-    {
-      icon: <MdSupportAgent className="w-10 h-10 text-orange-600 mb-2" />,
-      title: "Dedicated Support",
-      description: "Our commitment to excellence is backed by a team of professionals who provide round-the-clock assistance. With personalized care at every step, we ensure smooth and stress-free journeys for our customers and partners alike.",
-    },
-    {
-      icon: <MdSecurity className="w-10 h-10 text-orange-600 mb-2" />,
-      title: "Safety and Security",
-      description: "The safety of our guests is our utmost priority. With a robust safety and security policy in place, which includes emergency response planning, risk assessment and crisis management, we ensure every aspect in this regard is efficiently handled to provide a hassle free experience. Our team of experts is trained to handle any situation that may arise, ensuring that our customers are always safe and secure.",
-    },
-    {
-      icon: <MdNaturePeople className="w-10 h-10 text-orange-600 mb-2" />,
-      title: "Sustainable Tourism",
-      description: "We're committed to sustainable tourism practices, which means that we strive to minimize our impact on the environment and local communities. By establishing a close collaboration, our team of experts work closely with local suppliers and tour operators to create travel experiences that are both environmentally responsible and economically beneficial to the regions we visit.",
-    },
-    {
-      icon: <MdBusinessCenter className="w-10 h-10 text-orange-600 mb-2" />,
-      title: "Co-Branding Opportunities",
-      description: "Collaborate with Travel Synergies to enhance your brand through co-branded travel solutions. Leverage on our global network and expertise to create unique and memorable experiences.",
-    },
-    {
-      icon: <MdRateReview className="w-10 h-10 text-orange-600 mb-2" />,
-      title: "What our Guests have to say",
-      description: "The Travel Synergies difference is best reflected in the firsthand experiences of our valued guests. We are proud to share their testimonials and showcase the memories we’ve helped create.",
-    },
-    {
-      icon: <BiSupport className="w-10 h-10 text-orange-600 mb-2" />,
-      title: "Get in Touch",
-      description: "If you're interested in partnering with us, we'd love to hear from you. Please contact us at info@travelsynergies.com to explore exciting partnership opportunities.",
-    }
   ]
 
   return (
@@ -104,4 +72,4 @@ const WhyChooseUs = () => {
   );
 };
 
-export default WhyChooseUs;
+export default WhyChoosUsOutbound;

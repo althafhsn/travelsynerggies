@@ -38,24 +38,24 @@ const Footer: React.FC = () => {
         register: {
             title: "",
             links: [
-                { text: "Our Service Spectrum", href: "/blogs#our-service-spectrum" },
+                { text: "Our Service Spectrum", href: "/outbound-footer#our-service-spectrum" },
                 { text: "Blogs", href: "/outbound-blog" }
             ]
         },
         company: {
             title: "",
             links: [
-                { text: "Terms and Conditions", href: "/blogs#terms-conditions" },
+                { text: "Terms and Conditions", href: "/outbound-footer#terms-conditions" },
                 { text: "Privacy Cookies", href: "/privacy-policy" },
-                { text: "Sustainable Tourism", href: "/blogs#sustainable-tourism" },
-                { text: "Bucket List", href: "/blogs#bucket-list" },
+                { text: "Sustainable Tourism", href: "/outbound-footer#sustainable-tourism" },
+                { text: "Bucket List", href: "/outbound-footer#bucket-list" },
             ]
         },
         information: {
             title: "",
             links: [
-                { text: "Safety Guidelines", href: "/blogs#safety-guidelines" },
-                { text: "Environment Policy", href: "/blogs#environment-policy" },
+                { text: "Safety Guidelines", href: "/outbound-footer#safety-guidelines" },
+                { text: "Environment Policy", href: "/outbound-footer#environment-policy" },
 
             ]
         },
@@ -63,9 +63,9 @@ const Footer: React.FC = () => {
             title: "",
             links: [
                 { text: "About Us", href: "/about-us" },
-                { text: "Partners", href: "/blogs#partners" },
+                { text: "Partners", href: "/outbound-footer#partners" },
                 { text: "Partners Login", href: "/" },
-                { text: "Why Choose Us", href: "/blogs#why-choose-us" },
+                { text: "Why Choose Us", href: "/outbound-footer#why-choose-us" },
                 { text: "Careers", href: "/career" },
                 { text: "Contact Us", href: "/contact" }
             ]

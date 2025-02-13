@@ -3,19 +3,17 @@
 import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { FooterLink } from '@/constants';
-import ServiceBlog from '@/components/outbound/Footer/OurServiceSpectrum';
 import TermsAndConditions from '@/components/outbound/Footer/TermsAndCondition';
 import SustainableTourismBlog from '@/components/outbound/Footer/SustainableToursm';
 import OutboundTravelBlog from '@/components/outbound/Footer/OutboundHolidays';
 import SafetyGuidelinesBlog from '@/components/outbound/Footer/SaftyTravel';
 import BucketListPage from '@/components/outbound/Footer/BucketList';
 import Partners from '@/components/outbound/Footer/Parnters';
-import WhyChooseUs from '@/components/outbound/Footer/WhyChoosUs';
+import WhyChooseUsOutbound from '@/components/outbound/Footer/WhyChoosUsOutbound';
 import EnvironmentPolicy from '@/components/outbound/Footer/EnvironmentPolicy';
 import SaftyTravelInbound from '@/components/outbound/Footer/SaftyTravelInbound';
-import UAEBucketList from '@/components/outbound/Footer/UAEBucketList';
-import InboundServiceSpectrum from '@/components/outbound/Footer/InboundServiceSpectrum';
-import DiningExperiences from '@/components/outbound/Footer/DiningExperiences';
+
+import SustainableTourism from '@/components/outbound/Footer/OurServiceSpectrum';
 
 const BlogContent: React.FC = () => {
   const searchParams = useSearchParams();
@@ -24,15 +22,11 @@ const BlogContent: React.FC = () => {
 
   const navigationLinks: FooterLink[] = [
     { title: 'Our Service Spectrum', href: 'our-service-spectrum' },
-    { title: 'Inbound Service', href: 'inbound-service-spectrum' },
     { title: 'Terms & Conditions', href: 'terms-conditions' },
-    { title: 'Dinning', href: 'dinning' },
     { title: 'Sustainable Tourism', href: 'sustainable-tourism' },
     { title: 'Bucket List', href: 'bucket-list' },
-    { title: 'UAE Bucket List', href: 'uae-bucket-list' },
     { title: 'Outbound Holidays', href: 'outbound-holidays' },
     { title: 'Safety Guidelines', href: 'safety-guidelines' },
-    { title: 'Inbound Safety', href: 'inbound-safty-policy' },
     { title: 'Partners', href: 'partners' },
     { title: 'Why Choose Us', href: 'why-choose-us' },
     { title: 'Environment Policy', href: 'environment-policy' },
@@ -131,19 +125,10 @@ const BlogContent: React.FC = () => {
       {/* Content Sections */}
       <div className="container mx-auto md:px-4 mt-10">
         <div id="our-service-spectrum" className="scroll-mt-24">
-          <ServiceBlog />
-        </div>
-        <div id="inbound-service-spectrum" className="scroll-mt-24">
-          <InboundServiceSpectrum />
-        </div>
-        <div id="our-service-spectrum" className="scroll-mt-24">
-          <InboundServiceSpectrum />
+        <SustainableTourism />
         </div>
         <div id="terms-conditions" className="scroll-mt-24">
           <TermsAndConditions />
-        </div>
-        <div id="dinning" className="scroll-mt-24">
-          <DiningExperiences />
         </div>
         <div id="sustainable-tourism" className="scroll-mt-24">
           <SustainableTourismBlog />
@@ -151,23 +136,17 @@ const BlogContent: React.FC = () => {
         <div id="bucket-list" className="scroll-mt-24">
           <BucketListPage />
         </div>
-        <div id="uae-bucket-list" className="scroll-mt-24">
-          <UAEBucketList />
-        </div>
         <div id="outbound-holidays" className="scroll-mt-24">
           <OutboundTravelBlog />
         </div>
         <div id="safety-guidelines" className="scroll-mt-24">
           <SafetyGuidelinesBlog />
         </div>
-        <div id="inbound-safty-policy" className="scroll-mt-24">
-          <SaftyTravelInbound />
-        </div>
         <div id="partners" className="scroll-mt-24">
           <Partners />
         </div>
         <div id="why-choose-us" className="scroll-mt-24">
-          <WhyChooseUs />
+          <WhyChooseUsOutbound />
         </div>
         <div id="environment-policy" className="scroll-mt-24">
           <EnvironmentPolicy />

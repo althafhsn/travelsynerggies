@@ -38,25 +38,25 @@ const InboundFooter: React.FC = () => {
         register: {
             title: "",
             links: [
-                { text: "Our Service Spectrum", href: "/blogs#inbound-service-spectrum" },
+                { text: "Our Service Spectrum", href: "/inbound-footer#inbound-service-spectrum" },
                 { text: "Blogs", href: "/inbound-blog" }
             ]
         },
         company: {
             title: "",
             links: [
-                { text: "Terms and Conditions", href: "/blogs#terms-conditions" },
+                { text: "Terms and Conditions", href: "/inbound-footer#terms-conditions" },
                 { text: "Privacy Cookies", href: "/privacy-policy" },
-                { text: "Sustainable Tourism", href: "/blogs#sustainable-tourism" },
-                { text: "Bucket List", href: "/blogs#uae-bucket-list" },
+                { text: "Sustainable Tourism", href: "/inbound-footer#sustainable-tourism" },
+                { text: "Bucket List", href: "/inbound-footer#uae-bucket-list" },
             ]
         },
         information: {
             title: "",
             links: [
-                { text: "Safety Guidelines", href: "/blogs#inbound-safty-policy" },
-                { text: "Environment Policy", href: "/blogs#environment-policy" },
-                { text: "Dinning Experiences", href: "/blogs#dinning" },
+                { text: "Safety Guidelines", href: "/inbound-footer#inbound-safty-policy" },
+                { text: "Environment Policy", href: "/inbound-footer#environment-policy" },
+                { text: "Dinning Experiences", href: "/inbound-footer#dinning" },
 
             ]
         },
@@ -64,9 +64,9 @@ const InboundFooter: React.FC = () => {
             title: "",
             links: [
                 { text: "About Us", href: "/about-us" },
-                { text: "Partners", href: "/blogs#partners" },
+                { text: "Partners", href: "/inbound-footer#partners" },
                 { text: "Partners Login", href: "/" },
-                { text: "Why Choose Us", href: "/blogs#why-choose-us" },
+                { text: "Why Choose Us", href: "/inbound-footer#why-choose-us" },
                 { text: "Careers", href: "/career" },
                 { text: "Contact Us", href: "/contact" }
             ]

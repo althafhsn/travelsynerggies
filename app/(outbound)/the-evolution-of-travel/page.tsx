@@ -44,30 +44,93 @@ const page = () => {
                 },
             ]
         },
+      
+        {
+            title: "Supersonic and Hypersonic Travel",
+            stack: [
+                {
+                    title: 'Shrinking the Globe',
+                    image: "/the-evolution-of-travel/blog14.webp",
+                    description:
+                        "One of the most exciting prospects for the future of air travel is the return of supersonic and hypersonic flight. While commercial supersonic travel ended with the retirement of the Concorde in 2003, new players are reviving the dream of ultra-fast travel."
+                },
+                {
+                    title: 'Supersonic Jets',
+                    image: "/the-evolution-of-travel/blog15.webp",
+                    description:
+                        "Companies like Boom Supersonic and Aerion Corporation are developing next-generation supersonic jets capable of flying at speeds of Mach 2 or higher. These planes could cut transatlantic flight times in half, making it possible to fly from New York to London in just three hours. The first commercial supersonic flights are expected to launch within the next decade, catering primarily to business travelers and high-net-worth individuals."
+                },
+                {
+                    title: 'Hypersonic Travel',
+                    image: "/the-evolution-of-travel/blog16.webp",
+                    description:
+                        "Even faster than supersonic, hypersonic aircraft could reach speeds of Mach 5 or more, potentially reducing a flight from Los Angeles to Tokyo to under two hours. While still largely theoretical, hypersonic travel represents the ultimate frontier in speed and efficiency. NASA and private companies like SpaceX are exploring the possibilities, though widespread adoption may still be decades away."
+                },
+                {
+                    title: 'Space-Based Travel Networks',
+                    image: "/the-evolution-of-travel/blog17.webp",
+                    description:
+                        "Looking even further ahead, some visionaries believe that space-based travel networks could revolutionize global connectivity. Imagine boarding a spacecraft that launches into low Earth orbit, traveling at incredible speeds, and then re-entering the atmosphere near your destination. While this concept remains speculative, it underscores the limitless potential of human ingenuity."
+                },
+
+
+            ]
+        },
+        
+        {
+            title: "Emotional Intelligence in Air Travel",
+            stack: [
+                {
+                    title: 'Empathy Meets Technology',
+                    image: "/the-evolution-of-travel/blog18.webp",
+                    description:
+                        "As technology continues to advance, so too does our understanding of human emotions and how they influence travel experiences. In the future, airlines and airports will leverage emotional intelligence (EI) to create more empathetic, passenger-centric environments."
+                },
+                {
+                    title: 'Emotion-Sensing Technology',
+                    image: "/the-evolution-of-travel/blog19.webp",
+                    description:
+                        "Cameras equipped with facial recognition software and emotion-detection algorithms will monitor passenger moods in real time. If a traveler appears stressed or anxious, airport staff could intervene to offer assistance or provide calming resources like guided meditations or aromatherapy. Similarly, cabin crews could use this technology to identify passengers who may need extra care during long-haul flights."
+                },
+                {
+                    title: 'Wellness-Centric Design',
+                    image: "/the-evolution-of-travel/blog20.webp",
+                    description:
+                        "Airports and aircraft interiors will increasingly incorporate wellness-focused features to enhance passenger well-being. Adjustable lighting systems that mimic natural circadian rhythms, noise-canceling materials to reduce cabin noise, and ergonomic seating designed to promote better posture are just a few examples of how future travel will prioritize health and comfort."
+                },
+                {
+                    title: 'Post-Flight Recovery Programs',
+                    image: "/the-evolution-of-travel/blog21.webp",
+                    description:
+                        "Long-haul flights can take a toll on the body, leading to jet lag, dehydration, and fatigue. To combat these effects, airlines may offer post-flight recovery programs, including hydration stations, oxygen bars, and even onboard wellness coaches who guide passengers through stretching exercises and breathing techniques."
+                },
+
+            ]
+        },
         {
             title: "Hyper-Personalization",
             stack: [
                 {
                     title: 'Tailoring Every Aspect of Your Journey',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog26.webp",
                     description:
                         "In the future, air travel will no longer be a one-size-fits-all experience. Advances in artificial intelligence (AI), machine learning, and data analytics will enable airlines and travel companies to offer hyper-personalized services that cater to individual preferences, habits, and even moods."
                 },
                 {
                     title: 'Customized Flight Experiences',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog22.webp",
                     description:
                         "Imagine boarding a plane where your seat is already adjusted to your preferred recline angle, the in-flight entertainment system knows your favorite movies, and the cabin crew greets you by name. Airlines are already experimenting with AI-driven personalization, using data from past flights to anticipate passenger needs. In the future, this level of customization could extend to everything from meal preferences to temperature settings in your seating area."
                 },
                 {
                     title: 'Dynamic Pricing and Offers',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog23.webp",
                     description:
                         "AI algorithms will analyze real-time data to offer personalized pricing and deals based on your travel history, budget, and even social media activity. For example, if you frequently post about luxury hotels or fine dining, an airline might offer you a premium upgrade at a discounted rate. This dynamic approach to pricing will make air travel more accessible and flexible, allowing passengers to tailor their journeys to their financial comfort zones."
                 },
                 {
                     title: 'Personal Travel Assistants',
-                    image: "/images/sustainable-travel.jpg",
+                    image: "/the-evolution-of-travel/blog24.webp",
                     description:
                         "Virtual travel assistants powered by AI will become indispensable tools for modern travelers. These assistants will go beyond simple booking functions, offering real-time updates on flight delays, suggesting alternative routes, and even helping you navigate foreign airports. They’ll also provide personalized recommendations for activities, restaurants, and accommodations based on your interests and past behavior. Biometric Convenience : Biometric technology—such as facial recognition and fingerprint scanning—is already being rolled out in airports worldwide to streamline security checks and boarding processes. In the future, these systems will become even more sophisticated, allowing passengers to breeze through every step of their journey without needing physical documents. Your face could become your passport, ticket, and hotel key, all in one seamless experience. "
                 },
@@ -110,69 +173,8 @@ const page = () => {
 
             ]
         },
-        {
-            title: "Supersonic and Hypersonic Travel",
-            stack: [
-                {
-                    title: 'Shrinking the Globe',
-                    image: "/the-evolution-of-travel/blog14.webp",
-                    description:
-                        "One of the most exciting prospects for the future of air travel is the return of supersonic and hypersonic flight. While commercial supersonic travel ended with the retirement of the Concorde in 2003, new players are reviving the dream of ultra-fast travel."
-                },
-                {
-                    title: 'Supersonic Jets',
-                    image: "/the-evolution-of-travel/blog15.webp",
-                    description:
-                        "Companies like Boom Supersonic and Aerion Corporation are developing next-generation supersonic jets capable of flying at speeds of Mach 2 or higher. These planes could cut transatlantic flight times in half, making it possible to fly from New York to London in just three hours. The first commercial supersonic flights are expected to launch within the next decade, catering primarily to business travelers and high-net-worth individuals."
-                },
-                {
-                    title: 'Hypersonic Travel',
-                    image: "/the-evolution-of-travel/blog16.webp",
-                    description:
-                        "Even faster than supersonic, hypersonic aircraft could reach speeds of Mach 5 or more, potentially reducing a flight from Los Angeles to Tokyo to under two hours. While still largely theoretical, hypersonic travel represents the ultimate frontier in speed and efficiency. NASA and private companies like SpaceX are exploring the possibilities, though widespread adoption may still be decades away."
-                },
-                {
-                    title: 'Space-Based Travel Networks',
-                    image: "/the-evolution-of-travel/blog17.webp",
-                    description:
-                        "Looking even further ahead, some visionaries believe that space-based travel networks could revolutionize global connectivity. Imagine boarding a spacecraft that launches into low Earth orbit, traveling at incredible speeds, and then re-entering the atmosphere near your destination. While this concept remains speculative, it underscores the limitless potential of human ingenuity."
-                },
 
 
-            ]
-        },
-        {
-            title: "Emotional Intelligence in Air Travel",
-            stack: [
-                {
-                    title: 'Empathy Meets Technology',
-                    image: "/the-evolution-of-travel/blog18.webp",
-                    description:
-                        "As technology continues to advance, so too does our understanding of human emotions and how they influence travel experiences. In the future, airlines and airports will leverage emotional intelligence (EI) to create more empathetic, passenger-centric environments."
-                },
-                {
-                    title: 'Emotion-Sensing Technology',
-                    image: "/the-evolution-of-travel/blog19.webp",
-                    description:
-                        "Cameras equipped with facial recognition software and emotion-detection algorithms will monitor passenger moods in real time. If a traveler appears stressed or anxious, airport staff could intervene to offer assistance or provide calming resources like guided meditations or aromatherapy. Similarly, cabin crews could use this technology to identify passengers who may need extra care during long-haul flights."
-                },
-                {
-                    title: 'Wellness-Centric Design',
-                    image: "/the-evolution-of-travel/blog20.webp",
-                    description:
-                        "Airports and aircraft interiors will increasingly incorporate wellness-focused features to enhance passenger well-being. Adjustable lighting systems that mimic natural circadian rhythms, noise-canceling materials to reduce cabin noise, and ergonomic seating designed to promote better posture are just a few examples of how future travel will prioritize health and comfort."
-                },
-                {
-                    title: 'Post-Flight Recovery Programs',
-                    image: "/the-evolution-of-travel/blog21.webp",
-                    description:
-                        "Long-haul flights can take a toll on the body, leading to jet lag, dehydration, and fatigue. To combat these effects, airlines may offer post-flight recovery programs, including hydration stations, oxygen bars, and even onboard wellness coaches who guide passengers through stretching exercises and breathing techniques."
-                },
-
-            ]
-        },
-      
-     
     ];
     return (
         <div className="min-h-screen mb-4">
@@ -330,25 +332,29 @@ const page = () => {
 
 
                     {/* Conclusion */}
-                    <div className=" mb-16">
-                        <h2 className="text-3xl text-center font-bold text-orange-500">A Sky Full of Possibilities
-                        </h2>
-                        <p className="text-gray-300 mt-4 max-w-6xl mx-auto text-justify">
-                            The future of air travel is a tapestry woven from threads of innovation, sustainability, and personalization. As we look ahead, it’s clear that the industry is poised for transformative changes that will redefine how we move across the globe. Whether it’s through the advent of green technologies, the rise of hyper-personalized experiences, or the promise of supersonic and hypersonic travel, the skies are no longer a limit—they’re a gateway to endless possibilities.
-                            <br />
-                            <br />
-                            For travelers, this means a future where air travel is not only faster and more convenient but also more responsible and enriching. It’s a future where every journey is tailored to your unique needs, where sustainability is a given, and where the boundaries of exploration are pushed further than ever before.
-                            <br />
-                            <br />
-                            So, as you prepare for your next adventure, remember that the future of air travel isn’t just about getting from one place to another—it’s about creating meaningful, memorable experiences that connect us to the world and to each other. Fasten your seatbelt; the best is yet to come.
-                            <br />
-                            <br />
-                            The evolution of air travel mirrors humanity’s relentless pursuit of progress and connection. What started as a privilege for the elite has blossomed into a universal right, enabling people from all walks of life to explore the globe. Yet, as we embrace the conveniences of modern travel, we must also remain mindful of our responsibility to protect the planet and respect local cultures.
-                            <br />
-                            <br />
-                            Whether you’re dreaming of a weekend getaway or plotting your next big adventure, remember that the joy of travel lies not just in the destinations we visit but in the stories we collect along the way. So buckle up, because the future of travel promises to be as thrilling as the journey itself.
+                    <div className=" grid md:grid-cols-2 gap-10 items-center  py-10">
+                        <div>
+                            <h2 className="text-orange-500 text-3xl font-semibold mb-4 text-center">A Sky Full of Possibilities
+                            </h2>
+                            <p className="text-gray-300 mt-4 max-w-6xl mx-auto text-justify">
+                                The future of air travel is a tapestry woven from threads of innovation, sustainability, and personalization. As we look ahead, it’s clear that the industry is poised for transformative changes that will redefine how we move across the globe. Whether it’s through the advent of green technologies, the rise of hyper-personalized experiences, or the promise of supersonic and hypersonic travel, the skies are no longer a limit—they’re a gateway to endless possibilities.
+                                <br />
+                                <br />
+                                For travelers, this means a future where air travel is not only faster and more convenient but also more responsible and enriching. It’s a future where every journey is tailored to your unique needs, where sustainability is a given, and where the boundaries of exploration are pushed further than ever before.
+                                <br />
+                                <br />
+                                So, as you prepare for your next adventure, remember that the future of air travel isn’t just about getting from one place to another—it’s about creating meaningful, memorable experiences that connect us to the world and to each other. Fasten your seatbelt; the best is yet to come.
+                                <br />
+                                <br />
+                                The evolution of air travel mirrors humanity’s relentless pursuit of progress and connection. What started as a privilege for the elite has blossomed into a universal right, enabling people from all walks of life to explore the globe. Yet, as we embrace the conveniences of modern travel, we must also remain mindful of our responsibility to protect the planet and respect local cultures.
+                                <br />
+                                <br />
+                                Whether you’re dreaming of a weekend getaway or plotting your next big adventure, remember that the joy of travel lies not just in the destinations we visit but in the stories we collect along the way. So buckle up, because the future of travel promises to be as thrilling as the journey itself.
 
-                        </p>
+                            </p>
+                        </div>
+                        <img src="/the-evolution-of-travel/blog25.webp" alt="Pearl Diving" className="rounded-lg shadow-lg object-cover h-full" />
+
                     </div>
                 </div>
             </div>

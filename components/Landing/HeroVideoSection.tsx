@@ -16,7 +16,7 @@ const VideoSection = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % statements.length);
-        }, 2500);
+        }, 1500);
         return () => clearInterval(interval);
     }, [statements.length]);
 
@@ -33,9 +33,9 @@ const VideoSection = () => {
 
             </div>
 
-            <div className="relative z-10 top-1/3  text-gray-10 flex flex-col items-center justify-center text-center px-4">
+            <div className="relative z-10 top-1/3  text-gray-10 flex flex-col max-w-4xl px-4 ">
 
-                <div className="impact-statements flex flex-col items-center  text-xs md:text-base justify-center h-16 relative">
+                <div className="impact-statements flex flex-col items-center  justify-center h-16 relative">
                     <AnimatePresence mode="wait" initial={false}>
                         <motion.div
                             key={currentIndex}
@@ -48,7 +48,7 @@ const VideoSection = () => {
                             }}
                             className="absolute font-serif text-gray-10"
                         >
-                            <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-8 font-mono leading-tight">
+                            <h1 className="text-xl md:text-5xl font-bold mb-8 font-mono leading-tight">
                                 {statements[currentIndex]}
                             </h1>
                         </motion.div>
