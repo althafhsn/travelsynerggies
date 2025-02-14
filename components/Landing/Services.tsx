@@ -66,7 +66,7 @@ const Services = () => {
           />
           <ServicesCard
             icon={<FaNetworkWired className="    " />}
-            title="Ts Connect"
+            title="Traminno"
             subtitle="Seamless travel solutions powered by innovation."
             href="/ts-connect"
           />
