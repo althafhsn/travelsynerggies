@@ -38,7 +38,7 @@ const ServicesCard = ({
 
 
         {/* Description */}
-        <p className="text-left line-clamp-3 opacity-70 text-lg z-50 px-5 pb-10">{subtitle}.</p>
+        <p className="text-left line-clamp-3 opacity-70 text-lg z-50 px-5 pb-6">{subtitle}.</p>
 
         {/* Hover Grid Background */}
         <div className="opacity-0 absolute inset-0 group-hover:opacity-40 transition-all duration-1000" style={{
