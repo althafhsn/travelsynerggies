@@ -2,8 +2,8 @@
 import React from 'react';
 import { LuTreePine } from "react-icons/lu";
 import { CiGlobe } from "react-icons/ci";
-import { IoLeafOutline } from "react-icons/io5";
-import { FaUsers } from "react-icons/fa6";
+import { IoInfiniteSharp, IoLeafOutline } from "react-icons/io5";
+import { FaRecycle, FaUsers } from "react-icons/fa6";
 import { GiElectric, GiWaterRecycling } from 'react-icons/gi';
 import { GoDotFill } from 'react-icons/go';
 
@@ -35,27 +35,27 @@ const SustainableTourismBlog = () => {
         {
             icon: <CiGlobe className="w-10 h-10 text-orange-600 mb-2" />,
             title: 'Unique Experiences',
-            description: 'Connect with local culture and traditions for memorable experiences.'
+            description: 'An opportunity to connect and experience the local culture and traditions firsthand, creating unique and memorable experiences.'
 
         },
         {
             icon: <FaUsers className="w-10 h-10 text-orange-600 mb-2" />,
             title: 'Job Creation',
-            description: 'Generate income and employment opportunities for local communities.'
+            description: 'Generating income and employment opportunities that drive growth and stability for local communities.'
 
         },
         {
             icon: <LuTreePine className="w-10 h-10 text-orange-600 mb-2" />,
             title: 'Environmental Conservation',
-            description: 'Support initiatives that protect wildlife and ecosystems.'
+            description: 'Supporting initiatives that conserve environment and protect the wildlife and its ecosystems.'
 
         },
-        // {
-        //     icon: <LuTreePine className="w-10 h-10 text-orange-600 mb-2" />,
-        //     title: 'Environmental Conservation',
-        //     description: 'Support initiatives that protect wildlife and ecosystems.'
+        {
+            icon: <IoInfiniteSharp   className="w-10 h-10 text-orange-600 mb-2" />,
+            title: 'Responsible Consumption',
+            description: 'Mindful consumption of resources, reducing waste and fostering a culture of ethical travel choices.'
 
-        // },
+        },
 
     ]
     const Shortsectors = [

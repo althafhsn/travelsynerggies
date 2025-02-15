@@ -133,10 +133,24 @@ const Footer: React.FC = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-6 gap-8">
                         {/* Navigation Links Section - Takes 4 columns on large screens */}
                         <div className="lg:col-span-4 grid grid-cols-2 md:grid-cols-4 gap-8">
-                            <FooterLinkColumn {...navigationLinks.register} />
-                            <FooterLinkColumn {...navigationLinks.company} />
-                            <FooterLinkColumn {...navigationLinks.information} />
-                            <FooterLinkColumn {...navigationLinks.destinations} />
+                        <div>
+                                <FooterLinkColumn {...navigationLinks.register} />
+                                <img
+                                    src="/iata.webp"
+                                    alt="Logo"
+                                    className="w-20 pt-5 transition-transform duration-300 hover:scale-105"
+                                />
+                                <p className='text-white text-xs pt-1 transition-colors duration-300 dark:text-gray-300 dark:hover:text-orange-400 hover:underline hover:cursor-pointer hover:text-orange-500'>TIDS: 96175914</p>
+                            </div>
+                            <div>
+                                <FooterLinkColumn {...navigationLinks.company} />
+                            </div>
+                            <div>
+                                <FooterLinkColumn {...navigationLinks.information} />
+                            </div>
+                            <div>
+                                <FooterLinkColumn {...navigationLinks.destinations} />
+                            </div>
                         </div>
 
                         {/* Subscription Section - Takes 2 columns on large screens */}

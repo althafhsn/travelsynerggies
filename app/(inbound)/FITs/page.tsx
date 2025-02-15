@@ -51,7 +51,7 @@ const FIT = () => {
            
 
 
-            <div className=' pt-24 '>
+            <div className=' pt-24 mb-8'>
                 <h1 className=' text-2xl md:text-3xl  pb-5 text-center font-bold  text-orange-500'>Your UAE Bucket List</h1>
 
                 <FITTabs />

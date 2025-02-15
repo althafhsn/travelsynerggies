@@ -53,8 +53,8 @@ const page = () => {
                                     className="bg-gray-50 rounded-lg p-8 transform transition-all 
                            duration-300 hover:scale-105 hover:shadow-2xl"
                                 >
-                                    <div className="flex justify-center mb-6">
-                                        <div className="min-h-24  flex justify-center">
+                                    <div className="flex justify-center mb-6 items-center">
+                                        <div className="min-h-24 flex justify-center items-center">
 
                                             <img
                                                 src={solution.logo}
@@ -76,7 +76,7 @@ const page = () => {
                 <div className="pt-5 px-4 md:px-8 lg:px-16">
                     <div className="max-w-6xl mx-auto my-5">
                         <h2 className="text-2xl md:text-3xl font-bold text-orange-500 mb-8 text-center">
-                            Innovative solutions for destinations services
+                            Innovative Solutions for Destination services
                         </h2>
                         <p className="text-gray-200 text-base md:text-lg text-center leading-relaxed">
                             We utilize advanced Distribution and Destination Management Solutions across our
@@ -89,12 +89,12 @@ const page = () => {
                     </div>
                     <div className="max-w-6xl mx-auto my-5">
 
-                        <p className="text-gray-200 text-base md:text-lg text-center leading-relaxed">
+                        <p className="text-gray-200 text-base md:text-xl text-center leading-relaxed">
                             <span className='font-bold'>Travel Synergies</span> supports their tour operators by offering access to a complete range of services. Our company’s strengths are our high-quality standards, which are ensured throughout our strong network of local experts and our robust systems.
                         </p>
                     </div>
                 </div>
-                <section className="py-5 px-4 md:px-8 lg:px-16">
+                <section className="py-8 px-4 md:px-8 lg:px-16">
                     <div className="container mx-auto px-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                             <div className="space-y-6">
@@ -138,14 +138,14 @@ const page = () => {
                 </section>
 
                 {/* Innovative Solutions Section */}
-                <section className="py-5 px-4 md:px-8 lg:px-16">
+                <section className="py-12 px-4 md:px-8 lg:px-16">
                     <div className="container mx-auto px-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                             <div className=" rounded-lg overflow-hidden">
                                 <img
                                     src="/inbound/Inbound/travel-tech/xml.webp"
                                     alt="Network visualization"
-                                    className="w-full h-[450px] object-cover opacity-70"
+                                    className="w-full  object-cover opacity-70"
                                 />
                             </div>
                             <div className="space-y-6">

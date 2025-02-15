@@ -3,7 +3,10 @@ import {
     FaUserFriends, FaClock, FaHeadset, FaBuilding,
     FaBolt, FaCrown, FaDollarSign, FaFileAlt,
     FaTicketAlt, FaCode, FaShoppingCart, FaLaptopCode,
-    FaHandshake
+    FaHandshake,
+    FaChartLine,
+    FaLock,
+    FaRobot
 } from 'react-icons/fa';
 
 const BenefitCard = ({ icon: Icon, title }: { icon: React.ElementType, title: string }) => {
@@ -35,7 +38,10 @@ const KeyBenefits = () => {
         { icon: FaCode, title: "Application Programming Interface" },
         { icon: FaShoppingCart, title: "E-commerce" },
         { icon: FaLaptopCode, title: "Dedicated in-house I.T. Development Team" },
-        { icon: FaHandshake, title: "Professional Reservations Team" }
+        { icon: FaHandshake, title: "Professional Reservations Team" },
+        { icon: FaChartLine , title: "Data Analytics" },
+        { icon: FaLock , title: "Secure Payment Gateway" },
+        { icon: FaRobot , title: "Smart AI Assistance" },
     ];
 
     return (
@@ -46,13 +52,13 @@ const KeyBenefits = () => {
                     <h1 className="text-xl md:text-3xl font-bold text-orange-500  ">
                         Key Benefits to Travel Agents
                     </h1>
-                    <p className="text-sm md:text-base text-gray-300">
+                    <p className="text-sm md:text-xl text-gray-300 mb-5">
                         Empowering your business with cutting-edge solutions and exclusive advantages
                     </p>
                 </div>
 
                 {/* Benefits Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 mt-5">
                     {benefits.map((benefit, index) => (
                         <div
                             key={index}

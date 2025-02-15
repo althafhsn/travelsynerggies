@@ -1,6 +1,7 @@
 
 import Footer from "@/components/outbound/Footer";
 import OutboundHeader from "@/components/outbound/OutboundHeder";
+import InboundFooter from "@/components/root/Footer";
 
 
 
@@ -19,7 +20,7 @@ export default function RootLayout({
                     <OutboundHeader />
                 </div>
                 {children}
-                <Footer />
+                <InboundFooter />
 
             </body>
         </html>
