@@ -64,14 +64,14 @@ const Services = () => {
         <h2 className="text-2xl lg:text-4xl font-bold text-center mb-10 font-sans text-orange-500">Our Services</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-auto">
           <ServicesCard
-          backgrounImage='/landing/outbound.webp'
+          backgrounImage='/landing/inbound.webp'
             icon={<FaPlaneArrival size={36} className="p-1 rounded-full text-orange-500 border border-orange-500 z-50" />}
             title="Inbound"
             subtitle="Discover local wonders with our expertly curated experiences."
             href="/inbound"
           />
           <ServicesCard
-          backgrounImage='/landing/inbound.webp'
+          backgrounImage='/landing/outbound.webp'
             icon={<FaPlaneDeparture size={36} className="p-1 rounded-full text-orange-500 border border-orange-500 z-50" />}
             title="Outbound"
             subtitle="Explore global destinations with personalized itineraries."
