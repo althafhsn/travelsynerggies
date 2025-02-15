@@ -12,6 +12,8 @@ const InboundServiceSpectrum = () => {
             subtitle: "Elevating Travel Experiences",
             description:
                 "Travel Synergies specializes in crafting personalized travel experiences tailored to individual preferences. As a leading DMC, we offer exceptional leisure holiday services, including highly customizable FIT options for ultimate travel freedom.",
+            itemsTitle: 'Our Service Portfolio',
+            itemdeDescription: '',
 
             items: [
                 "Choice of flexible accommodation",
@@ -25,12 +27,12 @@ const InboundServiceSpectrum = () => {
             stack: [
                 {
                     subTitle: 'We are Experts in Handling Individual Travelers ( FIT’s )',
-                    subDescription: 'Our dedicated team is passionate about travel and brings a deep understanding of the UAE and its unique offerings. ',
+                    subDescription: ['Our dedicated team is passionate about travel and brings a deep understanding of the UAE and its unique offerings.   ',]
 
                 },
                 {
                     subTitle: 'Our Promise to Deliver',
-                    subDescription: 'Our dedicated team is passionate about travel and brings a deep understanding of the UAE and its unique offerings. ',
+                    subDescription: ['Our team is commited to go above and beyond to provide personalized service at every step of the journey. From curating bespoke itineraries to offering round-the-clock support, we ensure a seamless and enriching travel experience to ensure our guests experience the best of what the destination has to offer. ',]
 
                 },
 
@@ -44,6 +46,9 @@ const InboundServiceSpectrum = () => {
             subtitle: "The Pioneer in Group Travel",
             description:
                 "We excel in crafting seamless and personalized group travel experiences. From small tours to corporate retreats or family vacations, our expertise and resources bring your vision to life, ensuring every journey is memorable and stress-free.",
+            itemsTitle: 'Our Service Portfolio',
+            itemdeDescription: '',
+
             items: [
                 "Leisure group tours",
                 "Corporate retreats",
@@ -55,12 +60,12 @@ const InboundServiceSpectrum = () => {
             stack: [
                 {
                     subTitle: 'Our Expertise in Handling Leisure Groups',
-                    subDescription: 'Our dedicated team brings a wealth of knowledge with hands-on experience to deliver tailored solutions, catering to specific requests and value additions that exceeds expectations. ',
+                    subDescription: ['Our dedicated team brings a wealth of knowledge with hands-on experience to deliver tailored solutions, catering to specific requests and value additions that exceeds expectations. ',]
 
                 },
                 {
                     subTitle: 'Our Commitment to Excellence',
-                    subDescription: 'Our team is committed to delivering exceptional services for leisure groups, ensuring every journey exceeds expectations. Our approach is client-centric, and we work closely with our partners to understand their preferences and customize our services to create unforgettable group tours. ',
+                    subDescription: ['Our team is committed to delivering exceptional services for leisure groups, ensuring every journey exceeds expectations. Our approach is client-centric, and we work closely with our partners to understand their preferences and customize our services to create unforgettable group tours. '],
 
                 },
 
@@ -71,7 +76,10 @@ const InboundServiceSpectrum = () => {
             title: "TS - MICE",
             subtitle: "Making M.I.C.E Experiences More Exciting",
             description:
-                "We specialize in creating unforgettable experiences, from intimate gatherings to grand-scale events. Leveraging our expertise, we seamlessly connect with the perfect hotels, venues, tours, and logistics.",
+                "We specialize in creating unforgettable experiences, from intimate gatherings to grand-scale events. Leveraging our expertise, we seamlessly connect with the perfect hotels, venues, tours and logistics. Our portfolio spans diplomatic events, concerts, sporting spectacles and corporate MICE programs, all powered by advanced in-house technology for flawless execution.",
+            itemsTitle: 'Our Service Portfolio',
+            itemdeDescription: '',
+
             items: [
                 "Dedicated experts",
                 "Venue sourcing",
@@ -84,12 +92,12 @@ const InboundServiceSpectrum = () => {
             stack: [
                 {
                     subTitle: 'We are your go to MICE Operator',
-                    subDescription: 'At Travel Synergies, we specialize in delivering comprehensive M.I.C.E. services, dedicated to delivering exceptional and seamless event experiences with extensive expertise.',
+                    subDescription: ['At Travel Synergies, we specialize in delivering comprehensive M.I.C.E. services, dedicated to delivering exceptional and seamless event experiences with extensive expertise.',]
 
                 },
                 {
                     subTitle: 'Our Experience in Handling Top MICE Events',
-                    subDescription: 'Our team has successfully handled several high-profile events for partners such as Visa, Takeda, Nestle, Johnson and Johnson, Kaspersky, Astra Zeneca, Novartis, Pfizer, Stada, Chanel, Microsoft, Samsung, Mars, BAT, Loreal, Colgate, Santander. ',
+                    subDescription: ['Our team has successfully handled several high-profile events for partners such as Visa, Takeda, Nestle, Johnson and Johnson, Kaspersky, Astra Zeneca, Novartis, Pfizer, Stada, Chanel, Microsoft, Samsung, Mars, BAT, Loreal, Colgate, Santander. ',]
 
                 },
 
@@ -103,6 +111,9 @@ const InboundServiceSpectrum = () => {
             subtitle: "Premier Congresses of Global Excellence",
             description:
                 "At Travel Synergies, we are a leading Professional Congress Organizer (PCO) with a proven history of managing and delivering world-class congresses and events. Our portfolio includes prestigious global events, such as those organized by the United Nations for the Federal Government of the UAE, showcasing our expertise and commitment to excellence.",
+            itemsTitle: 'Our Service Portfolio',
+            itemdeDescription: '',
+
             items: [
                 "Venue sourcing & logistics",
                 "Congress management",
@@ -113,12 +124,16 @@ const InboundServiceSpectrum = () => {
             stack: [
                 {
                     subTitle: 'Our Expertise in Congress Organization',
-                    subDescription: 'With a team of seasoned professionals, we bring deep industry knowledge and precision to every project. We have successfully managed congresses of all scales, from small intimate gatherings to large international events from diverse industries. ',
+                    subDescription: ['With a team of seasoned professionals, we bring deep industry knowledge and precision to every project. We have successfully managed congresses of all scales, from small intimate gatherings to large international events from diverse industries. ',]
 
                 },
                 {
-                    subTitle: 'Our Commitment to Excellence',
-                    subDescription: "We meticulously select cruises that embody luxury, comfort and unparalleled service. Whether you're sailing the Mediterranean or discovering the charm of the Caribbean, we take you to the world’s most captivating destinations with sophistication and style.",
+                    subTitle: 'Prestigious Congresses managed by the team',
+                    subDescription: ["ITU (International Telecommunication Union) Congresses",
+                        "WTSA (World Telecommunication Standardization Assembly)",
+                        "GSS (Global Standards Symposium)",
+                        " WCIT (World Conference on International Telecommunications)",
+                    ]
 
                 },
 
@@ -128,8 +143,11 @@ const InboundServiceSpectrum = () => {
             id: 'events',
             title: "TS Events",
             subtitle: "Experience the Art of Exceptional Events",
+
             description:
                 "At TS Events, we craft unforgettable experiences that elevate your business retreat, social event, or private party to new heights. As an experience-led events specialist, we place unique and memorable moments at the heart of every occasion",
+            itemsTitle: 'Customized Events, Unforgettable Memories',
+            itemdeDescription: 'Our range of expertly curated experiences includes:',
             items: [
                 "Award-winning desert experiences",
                 "Desert-based team-building exercises",
@@ -141,23 +159,21 @@ const InboundServiceSpectrum = () => {
             stack: [
                 {
                     subTitle: 'Your Vision, Our Commitment',
-                    subDescription: "Transform your vision into reality. Whether you're hosting a team-building retreat or managing a large-scale event, we understand what it takes to create an unforgettable experience. Our team of experts will collaborate with you to design a bespoke event that exceeds your expectations and leaves a lasting impression on your guests.",
+                    subDescription: ["Transform your vision into reality. Whether you're hosting a team-building retreat or managing a large-scale event, we understand what it takes to create an unforgettable experience. Our team of experts will collaborate with you to design a bespoke event that exceeds your expectations and leaves a lasting impression on your guests.",]
 
                 },
                 {
                     subTitle: 'A Legacy of Excellence',
-                    subDescription: 'We are committed to upholding the highest standards of operational excellence and customer-first approach. Our multiple awards and accolades are a testament to our dedication to delivering first-class experiences that surpass your expectations.',
+                    subDescription: ['We are committed to upholding the highest standards of operational excellence and customer-first approach. Our multiple awards and accolades are a testament to our dedication to delivering first-class experiences that surpass your expectations.',]
 
                 },
                 {
                     subTitle: 'Your Event, Our Expertise',
-                    subDescription: 'At TS Events, we handle every detail of your event with care, ensuring a seamless and hassle-free experience. Simply bring your team along and let us create memories that will last a lifetime. We handle every detail of your event with care, delivering a smooth and hassle-free experience',
-
+                    subDescription: ['At TS Events, we handle every detail of your event with care, ensuring a seamless and hassle-free experience. Simply bring your team along and let us create memories that will last a lifetime. We handle every detail of your event with care, delivering a smooth and hassle-free experience',]
                 },
                 {
                     subTitle: 'Get in Touch',
-                    subDescription: 'To enquire about creating your fully customized event, reach out to our dedicated event specialists at info@travelsynergies.com We look forward to crafting an unforgettable experience for you. ',
-
+                    subDescription: ['To enquire about creating your fully customized event, reach out to our dedicated event specialists at info@travelsynergies.com We look forward to crafting an unforgettable experience for you. ',]
                 },
 
             ],
@@ -167,7 +183,8 @@ const InboundServiceSpectrum = () => {
             title: "TS - Cruises",
             subtitle: "Raising the Bar for Your Cruise Experience",
             description:
-                "We are your DMC go-to resource for designing extraordinary and unforgettable cruises. Travel Synergies offers a variety of services that improve your cruise experience.",
+                "We are your DMC go-to resource for designing extraordinary and unforgettable cruises. Travel Synergies offers a variety of services that improve your cruise experience and guarantee that every second of your journey is filled with delight, relaxation, and discovery thanks to our in-depth knowledge of locations, attention to detail and dedication to customized service.",
+            itemsTitle: 'Our Service Portfolio',
             items: [
                 "Exceptional service",
                 "Shore excursions",
@@ -178,12 +195,12 @@ const InboundServiceSpectrum = () => {
             stack: [
                 {
                     subTitle: 'Discover the Ultimate Getaway Experience with Travel Synergies',
-                    subDescription: "We craft unforgettable cruise experiences that redefine travel. Whether you're seeking the tranquility of a secluded beach, the excitement of bustling port cities, or the adventure of exploring remote destinations, we have the perfect cruise for you. From pre- and post-cruise tours to comprehensive event management, every detail is handled with precision and excellence.",
+                    subDescription: ["We craft unforgettable cruise experiences that redefine travel. Whether you're seeking the tranquility of a secluded beach, the excitement of bustling port cities, or the adventure of exploring remote destinations, we have the perfect cruise for you. From pre- and post-cruise tours to comprehensive event management, every detail is handled with precision and excellence.",]
 
                 },
                 {
                     subTitle: 'Our Commitment to Excellence',
-                    subDescription: "We meticulously select cruises that embody luxury, comfort and unparalleled service. Whether you're sailing the Mediterranean or discovering the charm of the Caribbean, we take you to the world’s most captivating destinations with sophistication and style.",
+                    subDescription: ["We meticulously select cruises that embody luxury, comfort and unparalleled service. Whether you're sailing the Mediterranean or discovering the charm of the Caribbean, we take you to the world’s most captivating destinations with sophistication and style.",]
 
                 },
 
@@ -197,13 +214,8 @@ const InboundServiceSpectrum = () => {
             <div className="container mx-auto bg-white shadow-xl rounded-lg overflow-hidden p-6 sm:p-8">
                 {/* Title */}
                 <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">
-                    UAE Service Spectrum 
+                    UAE Service Spectrum
                 </h1>
-
-                <p className="text-sm text-black mb-4 text-center font-bold ">
-                    At Travel Synergies, we prioritize the safety and well-being of our customers and partners when traveling to the United Arab Emirates (UAE). We understand that safety is a key concern for travelers and our goal is to ensure your experience is both secure and enjoyable.
-
-                </p>
 
                 {/* Grid Layout */}
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
@@ -234,7 +246,10 @@ const InboundServiceSpectrum = () => {
                         <p className="flex items-start text-sm mb-2 ">
                             {activeContent?.description}
                         </p>
-                        <h3 className="text-lg md:text-xl font-bold text-orange-600 mb-2 "> Our Service Portfolio</h3>
+                        <h3 className="text-lg md:text-xl font-bold text-orange-600 mb-2 "> {activeContent?.itemsTitle}</h3>
+                        <p className="flex items-start text-sm mb-2 ">
+                            {activeContent?.itemdeDescription}
+                        </p>
                         {activeContent ? (
                             <ul className="text-gray-700 leading-relaxed text-sm space-y-3">
 
@@ -260,9 +275,11 @@ const InboundServiceSpectrum = () => {
                                     <li key={index} className="mt-4">
 
                                         <h3 className="text-lg md:text-xl font-bold text-orange-600 mb-2 "> {item?.subTitle}</h3>
-                                        <p className="flex items-start text-sm  ">
-                                            {item?.subDescription}
-                                        </p>
+                                        {item?.subDescription.map((des, index) => (
+                                            <li key={index} className="flex items-center">
+                                                {des}
+                                            </li>
+                                        ))}
                                     </li>
                                 ))}
                             </ul>

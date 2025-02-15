@@ -12,6 +12,7 @@ import SaftyTravelInbound from '@/components/outbound/Footer/SaftyTravelInbound'
 import UAEBucketList from '@/components/outbound/Footer/UAEBucketList';
 import InboundServiceSpectrum from '@/components/outbound/Footer/InboundServiceSpectrum';
 import DiningExperiences from '@/components/outbound/Footer/DiningExperiences';
+import OutboundTravelBlog from '@/components/outbound/Footer/OutboundHolidays';
 
 const BlogContent: React.FC = () => {
   const searchParams = useSearchParams();
@@ -24,6 +25,7 @@ const BlogContent: React.FC = () => {
     { title: 'Dinning', href: 'dinning' },
     { title: 'Sustainable Tourism', href: 'sustainable-tourism' },
     { title: 'UAE Bucket List', href: 'uae-bucket-list' },
+    { title: 'Outbound Holidays', href: 'outbound-holidays' },
     { title: 'Inbound Safety', href: 'inbound-safty-policy' },
     { title: 'Partners', href: 'partners' },
     { title: 'Why Choose Us', href: 'why-choose-us' },
@@ -137,6 +139,9 @@ const BlogContent: React.FC = () => {
 
         <div id="uae-bucket-list" className="scroll-mt-24">
           <UAEBucketList />
+        </div>
+        <div id="outbound-holidays" className="scroll-mt-24">
+          <OutboundTravelBlog />
         </div>
 
         <div id="inbound-safty-policy" className="scroll-mt-24">

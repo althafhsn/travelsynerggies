@@ -27,7 +27,7 @@ const EnvironmentPolicy = () => {
                 <div className=" mx-auto text-center">
                     <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center md:pt-16">Environment Policy</h1>
                     <p className="text-sm font-bold  mx-auto text-black p-2">
-                        At Travel Synergies, we are committed to preserving the environment and protecting the natural beauty of the destinations we serve.
+                    At Travel Synergies, we are committed to preserving the environment and protecting the natural beauty of the destinations we serve. We believe that responsible tourism practices are essential to maintaining the health of our planet and ensuring a sustainable future for generations to come.
                     </p>
                 </div>
 

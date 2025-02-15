@@ -50,13 +50,15 @@ const SustainableTourismBlog = () => {
             description: 'Support initiatives that protect wildlife and ecosystems.'
 
         },
+        // {
+        //     icon: <LuTreePine className="w-10 h-10 text-orange-600 mb-2" />,
+        //     title: 'Environmental Conservation',
+        //     description: 'Support initiatives that protect wildlife and ecosystems.'
+
+        // },
 
     ]
     const Shortsectors = [
-        {
-            title: 'Our Approach',
-            description: ' Sustainable tourism is not just a trend, but an imperative aspect for the future of our planet. Our mission is to integrate eco-conscious practices into tourism that bring lasting value to travelers, local communities and the environment. Our strategy is anchored on three core principles'
-        },
         {
             title: 'Responsible Travel',
             description: ' Encouraging travelers to honor local traditions, respect the environment and adopt sustainable habits to minimize their footprint.'
@@ -69,10 +71,7 @@ const SustainableTourismBlog = () => {
             title: 'Environmental Conservation',
             description: ' Close collaboration with local communities to drive tourism initiatives that foster cultural exchange, create jobs and implement community-based tourism projects.'
         },
-        {
-            title: 'Our Initiatives',
-            description: 'We encourage and promote environmentally friendly practices to reduce carbon emissions, conserve natural resources and protect local wildlife and ecosystems.'
-        },
+       
 
     ]
 
@@ -87,6 +86,21 @@ const SustainableTourismBlog = () => {
 
                     <main className="container mx-auto px-4 py-8">
                         <section className="mb-12">
+                            <div className=''>
+
+                                <div >
+                                <h2 className="text-lg font-bold text-center text-orange-500 mb-1">
+                                    Our Approach
+                                </h2>
+                                <p className='text-sm text-black mb-2'>
+                                    Sustainable tourism is not just a trend, but an imperative aspect for the future of our planet. Our mission is to integrate eco-conscious practices into tourism that bring lasting value to travelers, local communities and the environment. Our strategy is anchored on three core principles
+                                </p>
+                                    
+
+                                </div>
+
+
+                            </div>
                             <div className=''>
                                 {Shortsectors.map((sector, index) => (
                                     <div key={index}>
@@ -104,6 +118,17 @@ const SustainableTourismBlog = () => {
 
                             </div>
 
+                            <div >
+                               
+                            <h2 className="text-lg font-bold text-center text-orange-500 mb-1">
+                                    Our Initiatives
+                                    </h2>
+                                    <p className='text-sm text-black mb-2'>
+                                        We encourage and promote environmentally friendly practices to reduce carbon emissions, conserve natural resources and protect local wildlife and ecosystems.
+                                    </p>
+
+
+                            </div>
 
                             <div className="grid md:grid-cols-2 gap-6 pt-5">
                                 {initiatives.map((initiative, index) => (

@@ -15,17 +15,17 @@ const WhyChoosUsInbound = () => {
     {
       icon: <FaFolderOpen className="w-10 h-10 text-orange-600 mb-2" />,
       title: "Comprehensive Portfolio",
-      description: "From FITs and group travel to MICE, events, and cruises, our expertise ensures seamless and memorable experiences for every traveler.",
+      description: "Our team brings a wealth of experience and deep insights into the travel industry, with a deep understanding of the latest trends, destinations and travel requirements, visa requirements, health and safety guidelines, we provide accurate, reliable information to make your journey seamless.",
     },
     {
       icon: <FaUserCheck className="w-10 h-10 text-orange-600 mb-2" />,
       title: "Personalized Service",
-      description: "We tailor travel packages to meet individual preferences, interests, and budgets, providing memorable holiday experiences.",
+      description: "We believe that every customer is unique, with their own preferences, interests and travel style. That's why we offer personalized service, tailoring our travel packages to meet the individual needs of each customer. Our team of experts will work closely with you to understand your requirements, preferences and budget to create a customized travel plan that exceeds your expectations and provide you with a memorable holiday experience.",
     },
     {
       icon: <FaTag className="w-10 h-10 text-orange-600 mb-2" />,
       title: "Unbeatable Prices",
-      description: "Travel should be accessible to everyone, and we provide the best deals without compromising quality.",
+      description: "We understand that travel should be accessible to everyone, which is why we offer unbeatable prices without compromising on quality. By leveraging our strong relationships with leading airlines, hotels, tour operators and other industry stakeholders, we have access to the best deals, with the benefit being passed on to our customers.",
     },
     {
       icon: <MdSupportAgent className="w-10 h-10 text-orange-600 mb-2" />,
@@ -64,7 +64,7 @@ const WhyChoosUsInbound = () => {
       <div className="max-w-8xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden py-12 px-4 min-h-screen items-center justify-center">
         <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-orange-600 mb-6 text-center">Why Choose Travel Synergies?</h1>
         <p className="text-sm  text-center font-bold mt-2 md:mt-4 text-gray-800">
-          At Travel Synergies, we are dedicated to crafting exceptional travel experiences that go beyond expectations.
+          At Travel Synergies, we are dedicated to crafting exceptional travel experiences that go beyond expectations. Supported by a passionate team of travel experts committed to delivering exceptional experiences with decades of expertise in the travel industry, we’ve developed a distinct approach that sets us apart. Collaborating with us provides access to an extensive array of travel services and products,
         </p>
 
 

@@ -25,7 +25,6 @@ const BlogContent: React.FC = () => {
     { title: 'Terms & Conditions', href: 'terms-conditions' },
     { title: 'Sustainable Tourism', href: 'sustainable-tourism' },
     { title: 'Bucket List', href: 'bucket-list' },
-    { title: 'Outbound Holidays', href: 'outbound-holidays' },
     { title: 'Safety Guidelines', href: 'safety-guidelines' },
     { title: 'Partners', href: 'partners' },
     { title: 'Why Choose Us', href: 'why-choose-us' },
@@ -136,9 +135,7 @@ const BlogContent: React.FC = () => {
         <div id="bucket-list" className="scroll-mt-24">
           <BucketListPage />
         </div>
-        <div id="outbound-holidays" className="scroll-mt-24">
-          <OutboundTravelBlog />
-        </div>
+       
         <div id="safety-guidelines" className="scroll-mt-24">
           <SafetyGuidelinesBlog />
         </div>

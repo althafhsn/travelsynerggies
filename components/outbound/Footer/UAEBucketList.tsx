@@ -96,9 +96,12 @@ const UAEBucketList = () => {
                     UAE Bucket List
                 </h1>
 
+                <p className="text-sm  text-gray-700 font-bold text-center mx-auto mb-1">
+                Experience the Best of the UAE with Travel Synergies
+                </p>
                 <p className="text-sm  text-gray-700 font-bold text-center mx-auto mb-12">
                     At Travel Synergies, we’re dedicated to crafting extraordinary experiences that showcase the best of the UAE. Whether you’re exploring majestic sand dunes of the desert, discovering vibrant streets of Dubai or immersing yourself in the unique culture, we've curated a bucket list of experiences and tours that will make your trip to the UAE truly unforgettable.
-                </p>z
+                </p>
 
 
 
