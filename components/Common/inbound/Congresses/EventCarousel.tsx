@@ -84,7 +84,7 @@ export default function EventCarousel() {
                                 </div>
                                 <div className="flex-1 py-1">
                                     <FaQuoteLeft className="text-orange-500 text-2xl mb-4" />
-                                    <div className="overflow-y-auto max-h-36 pr-2">
+                                    <div className="overflow-y-auto max-h-[12rem] pr-2">
                                         <p className="text-gray-300 text-sm md:text-base lg:text-lg leading-relaxed text-center">
                                             {testimonial.description}
                                         </p>

@@ -92,13 +92,13 @@ const TravelReasons = () => {
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
-            1024: { slidesPerView: 4 },
+            1024: { slidesPerView: 3 },
           }}
           className="testimonial-swiper"
         >
           {eventFeatures.map((testimonial, index) => (
-            <SwiperSlide key={index} className="h-[500px]">
-              <div className="bg-gray-900 rounded-lg p-2 lg:p-8 flex flex-col justify-center items-center min-h-[360px] md:min-h-[500px]">
+            <SwiperSlide key={index} className="">
+              <div className="bg-gray-900 rounded-lg p-2 lg:p-8 flex flex-col justify-center items-center min-h-[25rem] lg:min-h-[31.25rem]">
                 <div className="flex flex-col items-center text-center p-2 lg:p-6 rounded-lg">
                   {testimonial.icon}
                 </div>
@@ -109,7 +109,7 @@ const TravelReasons = () => {
                 </div>
                 <div className="flex-1 py-1">
                   <FaQuoteLeft className="text-orange-500 text-2xl mb-4" />
-                  <div className="overflow-y-auto max-h-36 pr-2">
+                  <div className="overflow-y-auto max-h-[12rem] pr-2">
                     <p className="text-gray-300 text-sm md:text-base leading-relaxed text-center">
                       {testimonial.description}
                     </p>

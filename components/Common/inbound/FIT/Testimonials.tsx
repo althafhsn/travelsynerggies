@@ -53,9 +53,9 @@ const TestimonialCarousel = () => {
                     {testimonials.map((testimonial, index) => (
                         <SwiperSlide key={index} className="h-96">
                             <div className="bg-gray-900 rounded-lg p-8 h-full flex flex-col justify-between min-h-[420px]">
-                                <div className="flex-1">
+                                <div className="flex-1 min-h-[90%]">
                                     <FaQuoteLeft className="text-orange-500 text-2xl mb-4" />
-                                    <div className="overflow-y-auto max-h-48 pr-2">
+                                    <div className="overflow-y-auto max-h-[80%] pr-2">
                                         <p className="text-gray-300 text-sm md:text-base leading-relaxed">
                                             {testimonial.text}
                                         </p>

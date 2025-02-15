@@ -100,7 +100,7 @@ const InboundFooter: React.FC = () => {
                 <hr className="border-orange-500 md:mt-1 h-2" />
                 <div className="container mx-auto mt-2 px-2 ">
                     {/* Logo and Social Media Section */}
-                    <div className="flex items-center justify-between lg:-ms-6 lg:-me-4">
+                    <div className="flex items-center justify-between">
                         {/* Logo Section */}
                         <Link href='/'>
 
