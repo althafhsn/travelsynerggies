@@ -46,7 +46,7 @@ const VideoSection = () => {
                                 duration: 0.8,
                                 ease: "easeInOut"
                             }}
-                            className="absolute font-serif text-gray-10"
+                            className="absolute  text-gray-10"
                         >
                             <h1 className="text-xl md:text-5xl font-bold mb-8 font-mono leading-tight">
                                 {statements[currentIndex]}
