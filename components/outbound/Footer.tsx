@@ -100,7 +100,7 @@ const Footer: React.FC = () => {
                 <hr className="border-orange-500 md:mt-1 h-2" />
                 <div className="container mx-auto mt-2 px-2 ">
                     {/* Logo and Social Media Section */}
-                    <div className="flex items-center justify-between lg:-ms-6 lg:-me-4">
+                    <div className="flex items-center justify-between">
                         {/* Logo Section */}
                         <Link href='/'>
 
@@ -130,7 +130,7 @@ const Footer: React.FC = () => {
 
 
                     {/* Main Footer Content */}
-                    <div className="grid grid-cols-1 lg:grid-cols-6 gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-6 gap-8 px-2">
                         {/* Navigation Links Section - Takes 4 columns on large screens */}
                         <div className="lg:col-span-4 grid grid-cols-2 md:grid-cols-4 gap-8">
                         <div>

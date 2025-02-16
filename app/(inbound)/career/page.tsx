@@ -125,7 +125,7 @@ const Careers: React.FC = () => {
   return (
     <div className="min-h-screen mb-4">
       <div className="flex flex-col items-start justify-center text-white bg-bg-career min-h-[70vh] bg-cover">
-        <div className="container mx-auto flex flex-col  items-center md:items-start">
+        <div className="container mx-auto flex flex-col px-2  items-center md:items-start">
           <motion.h1
             className="text-lg md:text-xl font-bold font-sans mb-4 text-orange-500"
             initial={{ opacity: 0, y: -50 }}
